@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spicy-black: #0a0a0a;
+  --color-spicy-dark: #1a1a1a;
+  --color-spicy-red: #dc2626;
+  --color-spicy-neon: #ff2d55;
+  --color-spicy-neon-dim: #991b1b;
+  --color-spicy-white: #fafafa;
+  --color-spicy-gray: #a3a3a3;
+  --color-spicy-gold: #fbbf24;
+
+  --font-sans: "Inter", "Noto Sans SC", "Noto Sans KR", "Noto Sans JP", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-spicy-black text-spicy-white;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    background-color: var(--color-spicy-neon);
+    color: var(--color-spicy-black);
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-spicy-black);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-spicy-neon-dim);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-spicy-neon);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-linear-to-r from-spicy-white via-spicy-neon to-spicy-red bg-clip-text text-transparent;
+  }
+
+  .glow-red {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.3), 0 0 40px rgba(220, 38, 38, 0.1);
+  }
+
+  .glow-neon {
+    box-shadow: 0 0 20px rgba(255, 45, 85, 0.3), 0 0 40px rgba(255, 45, 85, 0.1);
+  }
+
+  .border-glow {
+    border-color: rgba(220, 38, 38, 0.4);
+  }
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  }
+}
