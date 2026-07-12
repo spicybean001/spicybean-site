@@ -9,28 +9,28 @@ const series = [
     className: "bg-linear-to-br from-zinc-900 to-spicy-dark",
     borderColor: "border-zinc-700",
     accent: "text-zinc-300",
-    imageDesc: "Black pebble-grain leather headcover",
+    image: "/images/k1/cover.jpg",
   },
   {
     key: "k2",
     className: "bg-linear-to-br from-zinc-800 to-spicy-dark",
     borderColor: "border-zinc-600",
     accent: "text-rose-200",
-    imageDesc: "White headcover with embroidered heart",
+    image: "/images/k2/cover.jpg",
   },
   {
     key: "k3",
     className: "bg-linear-to-br from-spicy-neon-dim/30 to-spicy-dark",
     borderColor: "border-red-800/50",
     accent: "text-red-300",
-    imageDesc: "Red full-overprint pattern headcover",
+    image: "/images/k3/cover.jpg",
   },
   {
     key: "k4",
     className: "bg-linear-to-br from-spicy-dark to-violet-950/30",
     borderColor: "border-violet-800/40",
     accent: "text-fuchsia-300",
-    imageDesc: "Neon noir cyberpunk signature headcover",
+    image: "/images/k4/cover.jpg",
   },
 ];
 
@@ -73,17 +73,13 @@ export default function Products() {
               transition={{ duration: 0.6, delay: i * 0.1 }}
               className={`group relative overflow-hidden rounded-sm border ${s.borderColor} ${s.className} transition-all duration-500 hover:border-spicy-red/40`}
             >
-              {/* Image placeholder - replace with actual product images */}
-              <div className="aspect-[4/3] flex items-center justify-center bg-spicy-black/50">
-                <div className="text-center p-8">
-                  {/* Product image placeholder */}
-                  <div className="mx-auto mb-4 h-40 w-40 rounded-full border-2 border-dashed border-spicy-red/20 flex items-center justify-center">
-                    <span className="text-4xl font-bold tracking-widest text-spicy-red/30">
-                      {t(`series.${s.key}.name`).split("—")[0]?.trim() ||
-                        s.key.toUpperCase()}
-                    </span>
-                  </div>
-                </div>
+              {/* Product Image */}
+              <div className="aspect-[4/3] overflow-hidden bg-spicy-black/50">
+                <img
+                  src={s.image}
+                  alt={t(`series.${s.key}.name`)}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
               </div>
 
               {/* Info */}
