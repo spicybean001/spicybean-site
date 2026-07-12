@@ -38,11 +38,12 @@ export default function Header() {
     <header className="fixed top-0 z-50 w-full bg-spicy-black/80 backdrop-blur-md border-b border-spicy-red/20">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link
-          href={`/${locale}`}
-          className="text-xl font-bold tracking-wider uppercase"
-        >
-          <span className="text-gradient">SPICYBEAN</span>
+        <Link href={`/${locale}`} className="flex items-center">
+          <img
+            src="/logo.png"
+            alt="SPICYBEAN"
+            className="h-8 w-auto"
+          />
         </Link>
 
         {/* Desktop Nav */}
