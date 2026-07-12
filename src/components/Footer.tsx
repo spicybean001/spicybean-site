@@ -79,7 +79,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.xiaohongshu.com/user/profile/63017212695"
+                  href="https://xhslink.com/m/2zYSBhgCr8M"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
