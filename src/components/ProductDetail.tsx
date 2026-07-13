@@ -79,14 +79,14 @@ const seriesData: Record<string, {
     accent: "text-fuchsia-300",
     images: [
       "/images/k4/cover.jpg",
-      "/images/k4/alt-1.jpg",
       "/images/k4/img-2.jpg",
-      "/images/k4/detail-1.jpg",
-      "/images/k4/detail-2.jpg",
       "/images/k4/img-3.jpg",
       "/images/k4/img-4.jpg",
       "/images/k4/img-5.jpg",
       "/images/k4/img-6.jpg",
+      "/images/k4/img-7.jpg",
+      "/images/k4/img-8.jpg",
+      "/images/k4/img-9.jpg",
     ],
   },
 };
