@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 interface ProductDetailProps {
   series: string;
@@ -17,22 +17,79 @@ const seriesData: Record<string, {
   k1: {
     className: "from-zinc-900 to-spicy-dark",
     accent: "text-zinc-300",
-    images: ["/images/k1/cover.jpg", "/images/k1/alt-1.jpg", "/images/k1/detail-1.jpg", "/images/k1/detail-2.jpg"],
+    images: [
+      "/images/k1/cover.jpg",
+      "/images/k1/alt-1.jpg",
+      "/images/k1/detail-1.jpg",
+      "/images/k1/detail-2.jpg",
+      "/images/k1/img-2.jpg",
+      "/images/k1/img-3.jpg",
+      "/images/k1/img-4.jpg",
+      "/images/k1/img-5.jpg",
+      "/images/k1/img-6.jpg",
+      "/images/k1/img-7.jpg",
+      "/images/k1/img-8.jpg",
+      "/images/k1/img-9.jpg",
+      "/images/k1/img-10.jpg",
+      "/images/k1/img-11.jpg",
+    ],
   },
   k2: {
     className: "from-zinc-800 to-spicy-dark",
     accent: "text-rose-200",
-    images: ["/images/k2/cover.jpg", "/images/k2/alt-1.jpg", "/images/k2/detail-1.jpg", "/images/k2/detail-2.jpg"],
+    images: [
+      "/images/k2/cover.jpg",
+      "/images/k2/alt-1.jpg",
+      "/images/k2/detail-1.jpg",
+      "/images/k2/detail-2.jpg",
+      "/images/k2/img-2.jpg",
+      "/images/k2/img-3.jpg",
+      "/images/k2/img-4.jpg",
+      "/images/k2/img-5.jpg",
+      "/images/k2/img-6.jpg",
+      "/images/k2/img-7.jpg",
+      "/images/k2/img-8.jpg",
+      "/images/k2/img-9.jpg",
+      "/images/k2/img-10.jpg",
+      "/images/k2/img-11.jpg",
+    ],
   },
   k3: {
     className: "from-spicy-neon-dim/30 to-spicy-dark",
     accent: "text-red-300",
-    images: ["/images/k3/cover.jpg", "/images/k3/alt-1.jpg", "/images/k3/detail-1.jpg", "/images/k3/detail-2.jpg"],
+    images: [
+      "/images/k3/cover.jpg",
+      "/images/k3/alt-1.jpg",
+      "/images/k3/detail-1.jpg",
+      "/images/k3/detail-2.jpg",
+      "/images/k3/img-2.jpg",
+      "/images/k3/img-3.jpg",
+      "/images/k3/img-4.jpg",
+      "/images/k3/img-5.jpg",
+      "/images/k3/img-6.jpg",
+      "/images/k3/img-7.jpg",
+      "/images/k3/img-8.jpg",
+      "/images/k3/img-9.jpg",
+      "/images/k3/img-10.jpg",
+      "/images/k3/img-11.jpg",
+    ],
   },
   k4: {
     className: "from-spicy-dark to-violet-950/30",
     accent: "text-fuchsia-300",
-    images: ["/images/k4/cover.jpg", "/images/k4/alt-1.jpg", "/images/k4/detail-1.jpg", "/images/k4/detail-2.jpg"],
+    images: [
+      "/images/k4/cover.jpg",
+      "/images/k4/alt-1.jpg",
+      "/images/k4/detail-1.jpg",
+      "/images/k4/detail-2.jpg",
+      "/images/k4/img-2.jpg",
+      "/images/k4/img-3.jpg",
+      "/images/k4/img-4.jpg",
+      "/images/k4/img-5.jpg",
+      "/images/k4/img-6.jpg",
+      "/images/k4/img-7.jpg",
+      "/images/k4/img-8.jpg",
+    ],
   },
 };
 
@@ -40,9 +97,45 @@ export default function ProductDetail({ series }: ProductDetailProps) {
   const t = useTranslations();
   const [selectedImage, setSelectedImage] = useState(0);
   const data = seriesData[series];
-  const supportsWebP = true; // Next.js Image component handles this
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
 
   if (!data) return null;
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchEndX.current = null;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current === null || touchEndX.current === null) return;
+    const diff = touchStartX.current - touchEndX.current;
+    const threshold = 50; // minimum swipe distance
+
+    if (Math.abs(diff) > threshold) {
+      if (diff > 0 && selectedImage < data.images.length - 1) {
+        // Swipe left → next
+        setSelectedImage(selectedImage + 1);
+      } else if (diff < 0 && selectedImage > 0) {
+        // Swipe right → previous
+        setSelectedImage(selectedImage - 1);
+      }
+    }
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
+
+  const prevImage = () => {
+    if (selectedImage > 0) setSelectedImage(selectedImage - 1);
+  };
+
+  const nextImage = () => {
+    if (selectedImage < data.images.length - 1) setSelectedImage(selectedImage + 1);
+  };
 
   return (
     <section className="relative min-h-screen bg-spicy-black py-24 md:py-32">
@@ -71,21 +164,27 @@ export default function ProductDetail({ series }: ProductDetailProps) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Main image with arrow navigation */}
-            <div className="relative aspect-square overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 mb-4 group">
+            {/* Main image with swipe + arrow nav */}
+            <div
+              className="relative aspect-square overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 mb-4 group select-none"
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
               <picture>
                 <source srcSet={data.images[selectedImage].replace(/\.jpg$/, '.webp')} type="image/webp" />
                 <img
                   src={data.images[selectedImage]}
                   alt={`${t(`series.${series}.name`)} - ${selectedImage + 1}`}
-                  className="w-full h-full object-cover transition-transform duration-500"
+                  className="w-full h-full object-cover transition-transform duration-300"
+                  draggable={false}
                 />
               </picture>
 
               {/* Left arrow */}
               {selectedImage > 0 && (
                 <button
-                  onClick={() => setSelectedImage(selectedImage - 1)}
+                  onClick={prevImage}
                   className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 border border-white/15 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/80 hover:border-white/30"
                   aria-label="Previous image"
                 >
@@ -98,7 +197,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               {/* Right arrow */}
               {selectedImage < data.images.length - 1 && (
                 <button
-                  onClick={() => setSelectedImage(selectedImage + 1)}
+                  onClick={nextImage}
                   className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 border border-white/15 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/80 hover:border-white/30"
                   aria-label="Next image"
                 >
@@ -114,9 +213,9 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               </div>
             </div>
 
-            {/* Thumbnail strip */}
-            <div className="grid grid-cols-4 gap-3">
-              {data.images.map((img, i) => (
+            {/* Thumbnail strip - show first 6 thumbnails + remaining count */}
+            <div className="grid grid-cols-4 sm:grid-cols-6 gap-2 sm:gap-3">
+              {data.images.slice(0, 6).map((img, i) => (
                 <button
                   key={i}
                   onClick={() => setSelectedImage(i)}
@@ -130,10 +229,19 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                       src={img}
                       alt={`${t(`series.${series}.name`)} ${i + 1}`}
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </picture>
                 </button>
               ))}
+              {data.images.length > 6 && (
+                <button
+                  onClick={() => setSelectedImage(6)}
+                  className="aspect-square overflow-hidden rounded-sm border border-white/10 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors text-xs text-spicy-gray"
+                >
+                  +{data.images.length - 6}
+                </button>
+              )}
             </div>
           </motion.div>
 
