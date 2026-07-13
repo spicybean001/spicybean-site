@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const series = [
   {
@@ -65,21 +66,21 @@ export default function Products() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {series.map((s, i) => (
-            <motion.div
+            <Link
+              href={`/products/${s.key}`}
               key={s.key}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              className={`group relative overflow-hidden rounded-sm border ${s.borderColor} ${s.className} transition-all duration-500 hover:border-spicy-red/40`}
+              className={`group relative overflow-hidden rounded-sm border ${s.borderColor} ${s.className} transition-all duration-500 hover:border-spicy-red/40 block`}
             >
               {/* Product Image */}
               <div className="aspect-[4/3] overflow-hidden bg-spicy-black/50">
-                <img
-                  src={s.image}
-                  alt={t(`series.${s.key}.name`)}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <picture>
+                  <source srcSet={s.image.replace(/\.jpg$/, '.webp')} type="image/webp" />
+                  <img
+                    src={s.image}
+                    alt={t(`series.${s.key}.name`)}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </picture>
               </div>
 
               {/* Info */}
@@ -99,7 +100,7 @@ export default function Products() {
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                 <div className="absolute top-0 left-0 w-full h-full bg-linear-to-br from-white/5 to-transparent" />
               </div>
-            </motion.div>
+            </Link>
           ))}
         </div>
 
