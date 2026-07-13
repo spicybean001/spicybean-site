@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 
 interface ProductDetailProps {
   series: string;
@@ -97,6 +97,34 @@ export default function ProductDetail({ series }: ProductDetailProps) {
   const data = seriesData[series];
   const touchStartX = useRef<number | null>(null);
   const touchEndX = useRef<number | null>(null);
+  const autoTimer = useRef<NodeJS.Timeout | null>(null);
+  const [autoPlay, setAutoPlay] = useState(true);
+
+  const nextImage = useCallback(() => {
+    if (selectedImage < data.images.length - 1) {
+      setSelectedImage(selectedImage + 1);
+    } else {
+      setSelectedImage(0); // loop back
+    }
+  }, [selectedImage, data]);
+
+  // Auto-play: switch every 6 seconds
+  useEffect(() => {
+    if (!autoPlay) return;
+    autoTimer.current = setInterval(nextImage, 6000);
+    return () => {
+      if (autoTimer.current) clearInterval(autoTimer.current);
+    };
+  }, [autoPlay, nextImage]);
+
+  const pauseAutoPlay = () => {
+    setAutoPlay(false);
+    if (autoTimer.current) clearInterval(autoTimer.current);
+  };
+
+  const resumeAutoPlay = () => {
+    setAutoPlay(true);
+  };
 
   if (!data) return null;
 
@@ -116,24 +144,28 @@ export default function ProductDetail({ series }: ProductDetailProps) {
 
     if (Math.abs(diff) > threshold) {
       if (diff > 0 && selectedImage < data.images.length - 1) {
-        // Swipe left → next
-        setSelectedImage(selectedImage + 1);
+        changeImage(() => setSelectedImage(selectedImage + 1));
       } else if (diff < 0 && selectedImage > 0) {
-        // Swipe right → previous
-        setSelectedImage(selectedImage - 1);
+        changeImage(() => setSelectedImage(selectedImage - 1));
       }
     }
     touchStartX.current = null;
     touchEndX.current = null;
   };
 
-  const prevImage = () => {
-    if (selectedImage > 0) setSelectedImage(selectedImage - 1);
+  const changeImage = (fn: () => void) => {
+    pauseAutoPlay();
+    fn();
+    setTimeout(resumeAutoPlay, 4000); // resume after 4s idle
   };
 
-  const nextImage = () => {
-    if (selectedImage < data.images.length - 1) setSelectedImage(selectedImage + 1);
+  const prevImage = () => {
+    changeImage(() => {
+      if (selectedImage > 0) setSelectedImage(selectedImage - 1);
+    });
   };
+
+  // nextImage moved above, replaced by the useCallback version
 
   return (
     <section className="relative min-h-screen bg-spicy-black py-24 md:py-32">
@@ -162,12 +194,14 @@ export default function ProductDetail({ series }: ProductDetailProps) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Main image with swipe + arrow nav */}
+            {/* Main image with swipe + arrow nav + auto-play */}
             <div
               className="relative aspect-square overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 mb-4 group select-none"
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
+              onMouseEnter={pauseAutoPlay}
+              onMouseLeave={resumeAutoPlay}
             >
               <picture>
                 <source srcSet={data.images[selectedImage].replace(/\.jpg$/, '.webp')} type="image/webp" />
@@ -182,7 +216,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               {/* Left arrow */}
               {selectedImage > 0 && (
                 <button
-                  onClick={prevImage}
+                  onClick={(e) => { e.stopPropagation(); prevImage(); }}
                   className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 border border-white/15 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/80 hover:border-white/30"
                   aria-label="Previous image"
                 >
@@ -195,7 +229,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               {/* Right arrow */}
               {selectedImage < data.images.length - 1 && (
                 <button
-                  onClick={nextImage}
+                  onClick={(e) => { e.stopPropagation(); changeImage(() => setSelectedImage(selectedImage + 1)); }}
                   className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 border border-white/15 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/80 hover:border-white/30"
                   aria-label="Next image"
                 >
@@ -216,7 +250,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               {data.images.slice(0, 6).map((img, i) => (
                 <button
                   key={i}
-                  onClick={() => setSelectedImage(i)}
+                  onClick={() => changeImage(() => setSelectedImage(i))}
                   className={`aspect-square overflow-hidden rounded-sm border transition-all duration-300 ${
                     i === selectedImage ? "border-spicy-red/60 ring-1 ring-spicy-red/30" : "border-white/10 hover:border-white/30"
                   }`}
@@ -234,7 +268,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               ))}
               {data.images.length > 6 && (
                 <button
-                  onClick={() => setSelectedImage(6)}
+                  onClick={() => changeImage(() => setSelectedImage(6))}
                   className="aspect-square overflow-hidden rounded-sm border border-white/10 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors text-xs text-spicy-gray"
                 >
                   +{data.images.length - 6}
