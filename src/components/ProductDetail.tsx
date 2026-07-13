@@ -19,9 +19,6 @@ const seriesData: Record<string, {
     accent: "text-zinc-300",
     images: [
       "/images/k1/cover.jpg",
-      "/images/k1/alt-1.jpg",
-      "/images/k1/detail-1.jpg",
-      "/images/k1/detail-2.jpg",
       "/images/k1/img-2.jpg",
       "/images/k1/img-3.jpg",
       "/images/k1/img-4.jpg",
@@ -32,6 +29,8 @@ const seriesData: Record<string, {
       "/images/k1/img-9.jpg",
       "/images/k1/img-10.jpg",
       "/images/k1/img-11.jpg",
+      "/images/k1/img-12.jpg",
+      "/images/k1/img-13.jpg",
     ],
   },
   k2: {
@@ -39,9 +38,6 @@ const seriesData: Record<string, {
     accent: "text-rose-200",
     images: [
       "/images/k2/cover.jpg",
-      "/images/k2/alt-1.jpg",
-      "/images/k2/detail-1.jpg",
-      "/images/k2/detail-2.jpg",
       "/images/k2/img-2.jpg",
       "/images/k2/img-3.jpg",
       "/images/k2/img-4.jpg",
@@ -52,6 +48,8 @@ const seriesData: Record<string, {
       "/images/k2/img-9.jpg",
       "/images/k2/img-10.jpg",
       "/images/k2/img-11.jpg",
+      "/images/k2/img-12.jpg",
+      "/images/k2/img-13.jpg",
     ],
   },
   k3: {
@@ -59,9 +57,6 @@ const seriesData: Record<string, {
     accent: "text-red-300",
     images: [
       "/images/k3/cover.jpg",
-      "/images/k3/alt-1.jpg",
-      "/images/k3/detail-1.jpg",
-      "/images/k3/detail-2.jpg",
       "/images/k3/img-2.jpg",
       "/images/k3/img-3.jpg",
       "/images/k3/img-4.jpg",
@@ -72,6 +67,8 @@ const seriesData: Record<string, {
       "/images/k3/img-9.jpg",
       "/images/k3/img-10.jpg",
       "/images/k3/img-11.jpg",
+      "/images/k3/img-12.jpg",
+      "/images/k3/img-13.jpg",
     ],
   },
   k4: {
