@@ -9,13 +9,29 @@ export const metadata: Metadata = {
   title: "SPICYBEAN — Golf Headcovers with Attitude",
   description: "Korean design-driven golf headcovers. Born for those who play with style.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "SPICYBEAN",
-    description: "Korean design-driven golf headcovers.",
+    description: "Korean design-driven golf headcovers. Born for those who play with style.",
     siteName: "SPICYBEAN",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SPICYBEAN — Golf Headcovers with Attitude",
+      },
+    ],
+  },
+  other: {
+    "msapplication-TileImage": "/og-image.jpg",
+    "msapplication-TileColor": "#000000",
   },
 };
 
