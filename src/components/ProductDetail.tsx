@@ -71,8 +71,8 @@ export default function ProductDetail({ series }: ProductDetailProps) {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Main image with WebP support via <picture> */}
-            <div className="aspect-square overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 mb-4">
+            {/* Main image with arrow navigation */}
+            <div className="relative aspect-square overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 mb-4 group">
               <picture>
                 <source srcSet={data.images[selectedImage].replace(/\.jpg$/, '.webp')} type="image/webp" />
                 <img
@@ -81,6 +81,37 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                   className="w-full h-full object-cover transition-transform duration-500"
                 />
               </picture>
+
+              {/* Left arrow */}
+              {selectedImage > 0 && (
+                <button
+                  onClick={() => setSelectedImage(selectedImage - 1)}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 border border-white/15 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/80 hover:border-white/30"
+                  aria-label="Previous image"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+              )}
+
+              {/* Right arrow */}
+              {selectedImage < data.images.length - 1 && (
+                <button
+                  onClick={() => setSelectedImage(selectedImage + 1)}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/60 border border-white/15 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-black/80 hover:border-white/30"
+                  aria-label="Next image"
+                >
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              )}
+
+              {/* Image counter */}
+              <div className="absolute bottom-3 right-3 px-2.5 py-1 rounded-full bg-black/60 text-xs text-white/70">
+                {selectedImage + 1} / {data.images.length}
+              </div>
             </div>
 
             {/* Thumbnail strip */}
