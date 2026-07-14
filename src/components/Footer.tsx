@@ -28,42 +28,96 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Shop Links */}
+          {/* Shop Links — locale-aware */}
           <div>
             <h3 className="text-sm font-semibold tracking-widest uppercase text-spicy-white mb-4">
               {t("shop.title")}
             </h3>
             <ul className="space-y-3">
-              <li>
-                <a
-                  href="https://spicybean.m.tmall.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
-                >
-                  {t("shop.tmall")} ↗
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
-                >
-                  {t("shop.coupang")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
-                >
-                  {t("shop.amazon")}
-                </a>
-              </li>
+              {locale === "zh-CN" && (
+                <>
+                  <li>
+                    <a
+                      href="https://spicybean.m.tmall.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
+                    >
+                      {t("shop.tmall")} ↗
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
+                    >
+                      {t("shop.jd")} ↗
+                    </a>
+                  </li>
+                </>
+              )}
+              {locale === "en" && (
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
+                  >
+                    {t("shop.amazon")} ↗
+                  </a>
+                </li>
+              )}
+              {locale === "ko-KR" && (
+                <>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
+                    >
+                      {t("shop.coupang")} ↗
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
+                    >
+                      {t("shop.naver")} ↗
+                    </a>
+                  </li>
+                </>
+              )}
+              {locale === "ja-JP" && (
+                <>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
+                    >
+                      {t("shop.rakuten")} ↗
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
+                    >
+                      {t("shop.amazonJp")} ↗
+                    </a>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
 
