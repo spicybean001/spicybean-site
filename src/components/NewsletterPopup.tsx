@@ -85,7 +85,7 @@ export default function NewsletterPopup() {
     // Send via Formspree (free, no backend needed)
     // Replace the form ID below with your own Formspree endpoint
     try {
-      const res = await fetch("https://formspree.io/f/meoazzvy", {
+      const res = await fetch("https://formspree.io/f/mdaqkkyl", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ email, locale, source: "spicybean-site-popup" }),
