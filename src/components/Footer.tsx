@@ -75,7 +75,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="text-sm text-spicy-gray">
                 <span className="text-spicy-white">{t("contact.email")}:</span>{" "}
-                hello@spicybean.net
+                hi@spicybean.net
               </li>
               <li>
                 <a
