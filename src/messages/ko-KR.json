@@ -79,8 +79,12 @@
   "shop": {
     "title": "구매하기",
     "tmall": "티몰 (중국)",
-    "coupang": "쿠팡 (한국)",
-    "amazon": "아마존"
+    "jd": "징동 (중국)",
+    "coupang": "쿠팡",
+    "naver": "네이버",
+    "amazon": "아마존",
+    "rakuten": "라쿠텐",
+    "amazonJp": "아마존 재팬"
   },
   "locale": {
     "en": "English",

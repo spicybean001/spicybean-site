@@ -79,8 +79,12 @@
   "shop": {
     "title": "購入はこちら",
     "tmall": "Tmall（中国）",
+    "jd": "JD（中国）",
     "coupang": "Coupang（韓国）",
-    "amazon": "Amazon"
+    "naver": "NAVER",
+    "amazon": "Amazon",
+    "rakuten": "楽天",
+    "amazonJp": "Amazon Japan"
   },
   "locale": {
     "en": "English",
