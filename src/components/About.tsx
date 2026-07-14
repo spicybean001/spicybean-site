@@ -9,33 +9,6 @@ export default function About() {
   const locale = useLocale();
   const [awardOpen, setAwardOpen] = useState(false);
 
-  // Original brand story from the brand assets
-  const brandStoryCN = `我们的爱情故事，始于一个高尔夫头套。在第9洞球道上，TA那别具一格的高尔夫装备引发了我的好奇——"那是什么?"，也由此开启了我们的余生。当我们的宝宝SpicyBean降临后，我们将这份热情倾注于为像你一样大胆不羁的灵魂，打造引人注目的高尔夫配饰。如今，SPICY BEAN代表的已不仅仅是时尚装备：她更是绿茵场上的"红娘"。勇敢表达你独特的个人风采吧。谁知道呢？你的下一次挥杆，或许就能点燃一段超越18洞的缘分。#SpicyLoveStory`;
-
-  const brandStoryEN = `Our love story began with a golf headcover. On the 9th fairway, their distinctive gear caught my eye — "What's that?" — and the rest is history. When our baby SpicyBean arrived, we poured that passion into crafting head-turning accessories for bold, unapologetic souls like you. Today, SPICYBEAN is more than just stylish gear: it's a matchmaker on the greens. Dare to express your unique style. Who knows? Your next swing might just spark a connection that goes beyond 18 holes. #SpicyLoveStory`;
-
-  const brandStoryKO = `우리의 러브스토리는 골프 헤드커버에서 시작되었습니다. 9번 페어웨이에서, 그들의 독특한 장비가 제 호기심을 자극했습니다 — "저게 뭐지?" — 그리고 나머지는 역사가 되었습니다. 아기 SpicyBean이 태어난 후, 우리는 그 열정을 담아 대담하고 자유로운 영혼을 위한 눈길을 사로잡는 골프 액세서리를 만들기 시작했습니다. 오늘날 SPICYBEAN은 단순한 스타일리시한 장비 그 이상입니다: 그린 위의 중매쟁이입니다. 당신만의 개성을 표현할 용기를 가지세요. 당신의 다음 스윙이 18홀을 넘어선 인연을 시작할지 누가 알겠습니까? #SpicyLoveStory`;
-
-  const brandStoryJP = `私たちのラブストーリーは、ゴルフヘッドカバーから始まりました。9番フェアウェイで、彼の個性的なギアが私の目を引きました——「それ、何？」——そして残りは歴史となりました。赤ちゃんのSpicyBeanが誕生した後、私たちはその情熱を、大胆不敵な魂を持つあなたのような人のための存在感のあるゴルフアクセサリー作りに注ぎ込みました。今日、SPICYBEANは単なるスタイリッシュなギア以上のものです：グリーン上のマッチメーカーなのです。自分らしいスタイルを表現する勇気を持って。あなたの次のスイングが、18ホールを超えた縁を紡ぎ出すかもしれません。#SpicyLoveStory`;
-
-  const getStory = () => {
-    switch (locale) {
-      case "zh-CN": return brandStoryCN;
-      case "ko-KR": return brandStoryKO;
-      case "ja-JP": return brandStoryJP;
-      default: return brandStoryEN;
-    }
-  };
-
-  const getStoryTitle = () => {
-    switch (locale) {
-      case "zh-CN": return "#SpicyLoveStory";
-      case "ko-KR": return "#SpicyLoveStory";
-      case "ja-JP": return "#SpicyLoveStory";
-      default: return "#SpicyLoveStory";
-    }
-  };
-
   return (
     <section id="about" className="relative bg-spicy-dark py-24 md:py-32 overflow-hidden">
       {/* Background */}
@@ -72,16 +45,9 @@ export default function About() {
               />
             </div>
 
-            {/* Story text */}
+            {/* Story text — only original p1/p2 from translations */}
             <div className="space-y-4">
-              <p className="text-sm leading-relaxed text-spicy-gray/80 italic border-l-2 border-spicy-neon/50 pl-4">
-                {getStory()}
-              </p>
-              <p className="text-xs tracking-widest text-spicy-neon/60 uppercase">
-                {getStoryTitle()}
-              </p>
-              {/* Original p1/p2 from translations */}
-              <div className="pt-4 border-t border-white/5 space-y-4">
+              <div className="space-y-4">
                 <p className="text-sm leading-relaxed text-spicy-gray/80">
                   {t("about.p1")}
                 </p>
