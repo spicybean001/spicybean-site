@@ -142,30 +142,42 @@ export default function About() {
                 className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4"
               >
                 <div className="overflow-hidden rounded-sm border border-white/5">
-                  <img
-                    src="/images/brand/reddot.jpg"
-                    alt="2012 Red Dot Design Award"
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                  />
+                  <a href="/images/brand/reddot.jpg" target="_blank" rel="noopener noreferrer">
+                    <img
+                      src="/images/brand/reddot.jpg"
+                      alt="2012 Red Dot Design Award"
+                      className="w-full h-auto object-cover"
+                      loading="lazy"
+                      width="600"
+                      height="850"
+                    />
+                  </a>
                   <p className="text-xs text-center text-spicy-gray/60 py-2">2012 Red Dot Design Award — Best of the Best</p>
                 </div>
                 <div className="overflow-hidden rounded-sm border border-white/5">
-                  <img
-                    src="/images/brand/if.jpg"
-                    alt="2016 iF Design Award"
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                  />
+                  <a href="/images/brand/if.jpg" target="_blank" rel="noopener noreferrer">
+                    <img
+                      src="/images/brand/if.jpg"
+                      alt="2016 iF Design Award"
+                      className="w-full h-auto object-cover"
+                      loading="lazy"
+                      width="400"
+                      height="565"
+                    />
+                  </a>
                   <p className="text-xs text-center text-spicy-gray/60 py-2">2016 iF Design Award — Gold Prize</p>
                 </div>
                 <div className="overflow-hidden rounded-sm border border-white/5">
-                  <img
-                    src="/images/brand/dfa.jpg"
-                    alt="2016 DFA Design for Asia"
-                    className="w-full h-auto object-cover"
-                    loading="lazy"
-                  />
+                  <a href="/images/brand/dfa.jpg" target="_blank" rel="noopener noreferrer">
+                    <img
+                      src="/images/brand/dfa.jpg"
+                      alt="2016 DFA Design for Asia"
+                      className="w-full h-auto object-cover"
+                      loading="lazy"
+                      width="600"
+                      height="850"
+                    />
+                  </a>
                   <p className="text-xs text-center text-spicy-gray/60 py-2">2016 DFA Design for Asia — Silver Award</p>
                 </div>
               </motion.div>
@@ -192,13 +204,13 @@ export default function About() {
 
           <div className="flex flex-wrap justify-center gap-6">
             <div className="w-32 h-32 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
-              <img src="/images/brand/logo-color.png" alt="SPICYBEAN Color Logo" className="max-w-full max-h-full object-contain" />
-            </div>
-            <div className="w-32 h-32 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
               <img src="/images/brand/logo-white.png" alt="SPICYBEAN White Logo" className="max-w-full max-h-full object-contain" />
             </div>
             <div className="w-32 h-32 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
               <img src="/images/brand/logo-red.png" alt="SPICYBEAN Red Logo" className="max-w-full max-h-full object-contain" />
+            </div>
+            <div className="w-32 h-32 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
+              <img src="/images/brand/logo-color.png" alt="SPICYBEAN Color Logo" className="max-w-full max-h-full object-contain" />
             </div>
           </div>
         </motion.div>
