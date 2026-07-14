@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const RESEND_API_KEY = "re_RwEi2cX2_GuHFdLknCgSrxcXLq875yKFC";
+const RESEND_API_KEY = process.env.RESEND_API_KEY;
 
 const confirmTexts: Record<string, { subject: string; html: string }> = {
   "zh-CN": {
