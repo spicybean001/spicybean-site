@@ -82,25 +82,27 @@ export default function NewsletterPopup() {
 
     setStatus("loading");
 
-    // Send via Formspree (free, no backend needed)
-    // Replace the form ID below with your own Formspree endpoint
     try {
-      const res = await fetch("https://formspree.io/f/mdaqkkyl", {
+      // 1) Send confirmation email via our own API (Resend)
+      await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, locale }),
+      });
+
+      // 2) Also notify Formspree (so admin gets notified at hello@spicybean.net)
+      fetch("https://formspree.io/f/mdaqkkyl", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ email, locale, source: "spicybean-site-popup" }),
-      });
+      }).catch(() => {});
 
-      if (res.ok) {
-        setStatus("success");
-        sessionStorage.setItem("spicybean-newsletter-dismissed", "true");
-        setTimeout(() => {
-          setShow(false);
-          setDismissed(true);
-        }, 3000);
-      } else {
-        setStatus("error");
-      }
+      setStatus("success");
+      sessionStorage.setItem("spicybean-newsletter-dismissed", "true");
+      setTimeout(() => {
+        setShow(false);
+        setDismissed(true);
+      }, 3000);
     } catch {
       setStatus("error");
     }
