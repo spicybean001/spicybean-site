@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
 
@@ -37,6 +37,7 @@ const series = [
 
 export default function Products() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <section id="products" className="relative bg-spicy-black py-24 md:py-32">
@@ -104,7 +105,7 @@ export default function Products() {
           ))}
         </div>
 
-        {/* Shop CTA */}
+        {/* Shop CTA — locale-aware channels */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,29 +114,67 @@ export default function Products() {
           className="mt-16 text-center"
         >
           <p className="text-sm text-spicy-gray mb-4">
-            Available on our partner platforms
+            {locale === "zh-CN" ? "合作平台" : locale === "ko-KR" ? "파트너 플랫폼" : locale === "ja-JP" ? "取り扱いプラットフォーム" : "Available on our partner platforms"}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="https://spicybean.m.tmall.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
-            >
-              Tmall (天猫) ↗
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
-            >
-              Coupang
-            </a>
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
-            >
-              Amazon
-            </a>
+            {locale === "zh-CN" && (
+              <>
+                <a
+                  href="https://spicybean.m.tmall.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
+                >
+                  {t("shop.tmall")} ↗
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
+                >
+                  {t("shop.jd")} ↗
+                </a>
+              </>
+            )}
+            {locale === "en" && (
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
+              >
+                {t("shop.amazon")} ↗
+              </a>
+            )}
+            {locale === "ko-KR" && (
+              <>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
+                >
+                  {t("shop.coupang")} ↗
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
+                >
+                  {t("shop.naver")} ↗
+                </a>
+              </>
+            )}
+            {locale === "ja-JP" && (
+              <>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
+                >
+                  {t("shop.rakuten")} ↗
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
+                >
+                  {t("shop.amazonJp")} ↗
+                </a>
+              </>
+            )}
           </div>
         </motion.div>
       </div>
