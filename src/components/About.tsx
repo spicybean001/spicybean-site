@@ -60,13 +60,15 @@ export default function About() {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center max-w-5xl mx-auto text-left">
-            {/* Story image */}
+            {/* Story image — locale-aware */}
             <div className="overflow-hidden rounded-sm border border-white/5">
               <img
-                src="/images/brand/story.jpg"
+                src={`/images/brand/story-${locale === "ko-KR" ? "ko" : locale === "ja-JP" ? "ja" : locale === "zh-CN" ? "zh" : "en"}.jpg`}
                 alt="SPICYBEAN Brand Story"
                 className="w-full h-auto object-cover"
                 loading="lazy"
+                width="790"
+                height="1114"
               />
             </div>
 
