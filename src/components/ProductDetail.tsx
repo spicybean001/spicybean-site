@@ -242,35 +242,65 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               </div>
             </div>
 
-            {/* Thumbnail strip - show first 6 thumbnails + remaining count */}
-            <div className="grid grid-cols-4 sm:grid-cols-6 gap-2 sm:gap-3">
-              {data.images.slice(0, 6).map((img, i) => (
-                <button
-                  key={i}
-                  onClick={() => changeImage(() => setSelectedImage(i))}
-                  className={`aspect-square overflow-hidden rounded-sm border transition-all duration-300 ${
-                    i === selectedImage ? "border-spicy-red/60 ring-1 ring-spicy-red/30" : "border-white/10 hover:border-white/30"
-                  }`}
-                >
-                  <picture>
-                    <source srcSet={img.replace(/\.jpg$/, '.webp')} type="image/webp" />
-                    <img
-                      src={img}
-                      alt={`${t(`series.${series}.name`)} ${i + 1}`}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  </picture>
-                </button>
-              ))}
-              {data.images.length > 6 && (
-                <button
-                  onClick={() => changeImage(() => setSelectedImage(6))}
-                  className="aspect-square overflow-hidden rounded-sm border border-white/10 flex items-center justify-center bg-white/5 hover:bg-white/10 transition-colors text-xs text-spicy-gray"
-                >
-                  +{data.images.length - 6}
-                </button>
-              )}
+            {/* Thumbnail strip — horizontally scrollable carousel */}
+            <div className="relative group/thumb">
+              {/* Left scroll arrow (desktop) */}
+              <button
+                onClick={() => {
+                  const el = document.getElementById('thumb-scroll');
+                  if (el) el.scrollBy({ left: -200, behavior: 'smooth' });
+                }}
+                className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 z-10 w-8 h-8 rounded-full bg-black/70 border border-white/15 items-center justify-center text-white opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300 hover:bg-black/90"
+                aria-label="Scroll thumbnails left"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              {/* Scrollable container */}
+              <div
+                id="thumb-scroll"
+                className="flex gap-2 sm:gap-3 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth"
+                style={{
+                  scrollbarWidth: 'none',
+                  msOverflowStyle: 'none',
+                }}
+              >
+                {data.images.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => changeImage(() => setSelectedImage(i))}
+                    className={`thumb-item snap-start shrink-0 aspect-square overflow-hidden rounded-sm border transition-all duration-300 ${
+                      i === selectedImage ? "border-spicy-red/60 ring-1 ring-spicy-red/30" : "border-white/10 hover:border-white/30"
+                    }`}
+                  >
+                    <picture>
+                      <source srcSet={img.replace(/\.jpg$/, '.webp')} type="image/webp" />
+                      <img
+                        src={img}
+                        alt={`${t(`series.${series}.name`)} ${i + 1}`}
+                        className="w-full h-full object-cover pointer-events-none"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </button>
+                ))}
+              </div>
+
+              {/* Right scroll arrow (desktop) */}
+              <button
+                onClick={() => {
+                  const el = document.getElementById('thumb-scroll');
+                  if (el) el.scrollBy({ left: 200, behavior: 'smooth' });
+                }}
+                className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 z-10 w-8 h-8 rounded-full bg-black/70 border border-white/15 items-center justify-center text-white opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300 hover:bg-black/90"
+                aria-label="Scroll thumbnails right"
+              >
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
             </div>
           </motion.div>
 
