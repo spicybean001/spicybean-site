@@ -4,6 +4,7 @@ import ZhCNGuide from "@/components/blog/ZhCNGuide";
 import EnGuide from "@/components/blog/EnGuide";
 import KoGuide from "@/components/blog/KoGuide";
 import JaGuide from "@/components/blog/JaGuide";
+import BlogViewCount from "@/components/blog/BlogViewCount";
 
 const articles = {
   "golf-headcover-buying-guide": {
@@ -78,6 +79,10 @@ export default async function ArticlePage({
         </header>
 
         <Component />
+
+        <div className="mt-16 flex items-center justify-end">
+          <BlogViewCount slug={slug} />
+        </div>
       </div>
     </div>
   );
