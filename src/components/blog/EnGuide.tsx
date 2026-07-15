@@ -81,7 +81,7 @@ export default function EnGuide() {
       <h3>Three Styling Approaches</h3>
       <ul>
         <li><strong>Monochromatic:</strong> One series, same color. Clean, intentional.</li>
-        <li><strong>Hero Piece:</strong> Statement driver cover (e.g. K4 Neon Noir), rest matching basics.</li>
+        <li><strong>Hero Piece:</strong> Statement driver cover (e.g. K4 Cyber Skull), rest matching basics.</li>
         <li><strong>Mashup:</strong> Mix colors/series but keep it under 3 colors max.</li>
       </ul>
 

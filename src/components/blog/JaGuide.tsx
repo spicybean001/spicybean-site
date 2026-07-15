@@ -81,7 +81,7 @@ export default function JaGuide() {
       <h3>3つのスタイリング方法</h3>
       <ul>
         <li><strong>統一派：</strong>同じシリーズ、同系色で統一。シンプルで洗練された印象</li>
-        <li><strong>主役派：</strong>ドライバーに個性的なカバー（例：K4ネオンノワール）、他はベーシックで統一</li>
+        <li><strong>主役派：</strong>ドライバーに個性的なカバー（例：K4サイバースカル）、他はベーシックで統一</li>
         <li><strong>ミックス派：</strong>色やシリーズを混ぜるが、3色以内に抑える</li>
       </ul>
 

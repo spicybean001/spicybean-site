@@ -20,23 +20,23 @@
     "title": "The Collection",
     "subtitle": "Four series, one signature attitude. Every headcover tells a story.",
     "k1": {
-      "name": "K1 — Noir Luxe",
-      "desc": "Black pebble-grain leather finish. Understated elegance for the minimalist.",
+      "name": "K1 — Classic Noir",
+      "desc": "Black pebbled leather. Understated elegance for minimalists.",
       "price": "$25"
     },
     "k2": {
-      "name": "K2 — White Heart",
-      "desc": "Crisp white with embroidered heart motif. Playful, bold, unmistakable.",
+      "name": "K2 — Cartoon White",
+      "desc": "Pure white with embroidered heart. Bold, cute, unmistakable.",
       "price": "$25"
     },
     "k3": {
-      "name": "K3 — Red Heat",
-      "desc": "Full-overprint red pattern. For those who refuse to blend in.",
+      "name": "K3 — Warm Red Heart",
+      "desc": "Full-print warm red. For those who refuse to blend in.",
       "price": "$25"
     },
     "k4": {
-      "name": "K4 — Neon Noir",
-      "desc": "Cyberpunk-inspired signature edition. Our flagship icon.",
+      "name": "K4 — Cyber Skull",
+      "desc": "Cyberpunk limited edition. Our flagship ICON.",
       "price": "$36"
     }
   },

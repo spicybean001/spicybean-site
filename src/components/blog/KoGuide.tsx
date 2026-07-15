@@ -81,7 +81,7 @@ export default function KoGuide() {
       <h3>세 가지 스타일링 방법</h3>
       <ul>
         <li><strong>모노크롬:</strong> 같은 시리즈, 같은 색상. 깔끔하고 의도적인 느낌</li>
-        <li><strong>원포인트:</strong> 드라이버에 스테이트먼트 커버 (예: K4 네온 느와르), 나머지는 베이직</li>
+        <li><strong>원포인트:</strong> 드라이버에 스테이트먼트 커버 (예: K4 사이버 스컬), 나머지는 베이직</li>
         <li><strong>믹스매치:</strong> 시리즈/색상 믹스, 최대 3색 이하로 유지</li>
       </ul>
 
