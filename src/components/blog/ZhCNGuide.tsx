@@ -2,7 +2,6 @@ export default function ZhCNGuide() {
   return (
     <article className="prose prose-invert prose-lg max-w-none prose-headings:text-spicy-white prose-p:text-spicy-gray prose-a:text-spicy-red prose-strong:text-spicy-white prose-li:text-spicy-gray prose-h2:text-spicy-white prose-h3:text-spicy-white">
       <div className="mb-8 aspect-[21/9] rounded-lg bg-spicy-darkgray flex items-center justify-center">
-        <span className="text-spicy-gray/30">📷 主图：杆套选购场景图（待美工出图）</span>
       </div>
 
       <p className="lead text-xl text-spicy-white font-medium">
@@ -20,7 +19,6 @@ export default function ZhCNGuide() {
         <li><strong>缺点：</strong>透气性不如真皮，但杆套不贴身使用，影响不大</li>
         <li><strong>适合：</strong>追求设计感、下场频率高（每月2次+）的球友</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 PU皮纹理特写（待美工出图）</p>
 
       <h3>针织/毛线材质</h3>
       <ul>
@@ -70,7 +68,6 @@ export default function ZhCNGuide() {
           </tr>
         </tbody>
       </table>
-      <p className="text-sm text-spicy-gray/60">📷 四种杆套尺寸实拍对比图（待美工出图）</p>
 
       <p className="mt-4">
         <strong>SPICYBEAN Tip：</strong>每个系列都提供Driver、Fairway、Hybrid、Putter四种尺寸选项。如果不确定，按你球包里的球杆类型选就行。
@@ -87,7 +84,6 @@ export default function ZhCNGuide() {
         <li><strong>主次分明派：</strong>一号木用特色款（如K4暗夜霓虹），其他统一用基础款</li>
         <li><strong>混搭个性派：</strong>不同色系/系列混搭，但不建议超过3个色系</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 球场搭配场景图（待美工出图）</p>
 
       <h2>四、为什么选SPICYBEAN？</h2>
       <ul>
@@ -96,7 +92,6 @@ export default function ZhCNGuide() {
         <li><strong>💧 高端PU皮：</strong>防水、耐磨、易清洁</li>
         <li><strong>🇰🇷 韩国设计基因：</strong>不是流水线公模，是真正的设计驱动品牌</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 红点奖证书+产品同框（待美工出图）</p>
 
       <div className="mt-12 rounded-lg border border-spicy-red/30 bg-spicy-red/5 p-8 text-center">
         <h3 className="text-xl font-bold text-spicy-white mb-2">准备好升级你的球包了吗？</h3>

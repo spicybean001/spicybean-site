@@ -2,7 +2,6 @@ export default function EnGuide() {
   return (
     <article className="prose prose-invert prose-lg max-w-none prose-headings:text-spicy-white prose-p:text-spicy-gray prose-a:text-spicy-red prose-strong:text-spicy-white prose-li:text-spicy-gray prose-h2:text-spicy-white prose-h3:text-spicy-white">
       <div className="mb-8 aspect-[21/9] rounded-lg bg-spicy-darkgray flex items-center justify-center">
-        <span className="text-spicy-gray/30">📷 Hero image: Golf headcover selection guide (artwork pending)</span>
       </div>
 
       <p className="lead text-xl text-spicy-white font-medium">
@@ -20,7 +19,6 @@ export default function EnGuide() {
         <li><strong>Cons:</strong> Less breathable than real leather (not a big deal for headcovers)</li>
         <li><strong>Best for:</strong> Golfers who play 2+ times per month and care about design</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 PU leather texture close-up (artwork pending)</p>
 
       <h3>Knit / Fabric</h3>
       <ul>
@@ -70,7 +68,6 @@ export default function EnGuide() {
           </tr>
         </tbody>
       </table>
-      <p className="text-sm text-spicy-gray/60">📷 4 headcover size comparison (artwork pending)</p>
 
       <p className="mt-4">
         <strong>SPICYBEAN Tip:</strong> All SPICYBEAN collections offer Driver, Fairway, Hybrid, and Putter sizes. Just match your club type.
@@ -87,7 +84,6 @@ export default function EnGuide() {
         <li><strong>Hero Piece:</strong> Statement driver cover (e.g. K4 Neon Noir), rest matching basics.</li>
         <li><strong>Mashup:</strong> Mix colors/series but keep it under 3 colors max.</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 On-course styling shot (artwork pending)</p>
 
       <h2>4. Why SPICYBEAN?</h2>
       <ul>
@@ -96,7 +92,6 @@ export default function EnGuide() {
         <li><strong>💧 Premium PU Leather:</strong> Water-resistant, durable, easy to clean</li>
         <li><strong>🇰🇷 Korean Design DNA:</strong> Not off-the-shelf molds — real design-driven brand</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 Red Dot Award certificate with products (artwork pending)</p>
 
       <div className="mt-12 rounded-lg border border-spicy-red/30 bg-spicy-red/5 p-8 text-center">
         <h3 className="text-xl font-bold text-spicy-white mb-2">Ready to upgrade your bag?</h3>

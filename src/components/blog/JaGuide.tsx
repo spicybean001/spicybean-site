@@ -2,7 +2,6 @@ export default function JaGuide() {
   return (
     <article className="prose prose-invert prose-lg max-w-none prose-headings:text-spicy-white prose-p:text-spicy-gray prose-a:text-spicy-red prose-strong:text-spicy-white prose-li:text-spicy-gray prose-h2:text-spicy-white prose-h3:text-spicy-white">
       <div className="mb-8 aspect-[21/9] rounded-lg bg-spicy-darkgray flex items-center justify-center">
-        <span className="text-spicy-gray/30">📷 ヘッドカバー選び方ガイド メイン画像（アートワーク準備中）</span>
       </div>
 
       <p className="lead text-xl text-spicy-white font-medium">
@@ -20,7 +19,6 @@ export default function JaGuide() {
         <li><strong>デメリット：</strong>本革より通気性が劣る（ヘッドカバー用途では大きな問題なし）</li>
         <li><strong>おすすめ：</strong>デザイン重視、月2回以上ラウンドするゴルファー</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 PUレザー質感クローズアップ（アートワーク準備中）</p>
 
       <h3>ニット/布素材</h3>
       <ul>
@@ -70,7 +68,6 @@ export default function JaGuide() {
           </tr>
         </tbody>
       </table>
-      <p className="text-sm text-spicy-gray/60">📷 4種類のヘッドカバーサイズ比較（アートワーク準備中）</p>
 
       <p className="mt-4">
         <strong>SPICYBEAN Tip：</strong>各シリーズはDriver、Fairway、Hybrid、Putterの4サイズ展開。クラブの種類に合わせてお選びください。
@@ -87,7 +84,6 @@ export default function JaGuide() {
         <li><strong>主役派：</strong>ドライバーに個性的なカバー（例：K4ネオンノワール）、他はベーシックで統一</li>
         <li><strong>ミックス派：</strong>色やシリーズを混ぜるが、3色以内に抑える</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 コースでのスタイリング写真（アートワーク準備中）</p>
 
       <h2>4. なぜSPICYBEANなのか？</h2>
       <ul>
@@ -96,7 +92,6 @@ export default function JaGuide() {
         <li><strong>💧 プレミアムPUレザー：</strong>耐水性、耐久性、お手入れ簡単</li>
         <li><strong>🇰🇷 韓国デザインDNA：</strong>既製品の型にはまらない、真のデザインドリブンブランド</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 レッドドット賞証明書と製品（アートワーク準備中）</p>
 
       <div className="mt-12 rounded-lg border border-spicy-red/30 bg-spicy-red/5 p-8 text-center">
         <h3 className="text-xl font-bold text-spicy-white mb-2">バッグをアップグレードしませんか？</h3>

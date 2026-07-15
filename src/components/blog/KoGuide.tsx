@@ -2,7 +2,6 @@ export default function KoGuide() {
   return (
     <article className="prose prose-invert prose-lg max-w-none prose-headings:text-spicy-white prose-p:text-spicy-gray prose-a:text-spicy-red prose-strong:text-spicy-white prose-li:text-spicy-gray prose-h2:text-spicy-white prose-h3:text-spicy-white">
       <div className="mb-8 aspect-[21/9] rounded-lg bg-spicy-darkgray flex items-center justify-center">
-        <span className="text-spicy-gray/30">📷 헤드커버 선택 가이드 대표 이미지 (아트워크 준비중)</span>
       </div>
 
       <p className="lead text-xl text-spicy-white font-medium">
@@ -20,7 +19,6 @@ export default function KoGuide() {
         <li><strong>단점:</strong> 통기성이 진짜 가죽보다 떨어짐 (헤드커버용으로는 큰 단점 아님)</li>
         <li><strong>추천:</strong> 디자인에 민감하고 월 2회 이상 라운딩하는 골퍼</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 PU 가죽 질감 클로즈업 (아트워크 준비중)</p>
 
       <h3>니트/원단</h3>
       <ul>
@@ -70,7 +68,6 @@ export default function KoGuide() {
           </tr>
         </tbody>
       </table>
-      <p className="text-sm text-spicy-gray/60">📷 4가지 헤드커버 사이즈 비교 (아트워크 준비중)</p>
 
       <p className="mt-4">
         <strong>SPICYBEAN Tip:</strong> SPICYBEAN的全系列均提供 Driver、Fairway、Hybrid、Putter 네 가지 사이즈. 클럽 타입에 맞춰 선택하세요.
@@ -87,7 +84,6 @@ export default function KoGuide() {
         <li><strong>원포인트:</strong> 드라이버에 스테이트먼트 커버 (예: K4 네온 느와르), 나머지는 베이직</li>
         <li><strong>믹스매치:</strong> 시리즈/색상 믹스, 최대 3색 이하로 유지</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 골프장에서의 스타일링 연출샷 (아트워크 준비중)</p>
 
       <h2>4. 왜 SPICYBEAN인가?</h2>
       <ul>
@@ -96,7 +92,6 @@ export default function KoGuide() {
         <li><strong>💧 프리미엄 PU 가죽:</strong> 방수, 내구성, 쉬운 관리</li>
         <li><strong>🇰🇷 한국 디자인 DNA:</strong> 공정에서 찍어낸 제품이 아닌 진정한 디자인 드리븐 브랜드</li>
       </ul>
-      <p className="text-sm text-spicy-gray/60">📷 레드닷 어워드 인증서와 제품 (아트워크 준비중)</p>
 
       <div className="mt-12 rounded-lg border border-spicy-red/30 bg-spicy-red/5 p-8 text-center">
         <h3 className="text-xl font-bold text-spicy-white mb-2">골프백을 업그레이드할 준비가 되셨나요?</h3>
