@@ -8,7 +8,7 @@ const confirmTexts: Record<string, { subject: string; html: string }> = {
     html: `
       <div style="max-width:600px;margin:0 auto;padding:40px 20px;font-family:'Inter','Noto Sans SC',sans-serif;background:#0a0a0a;color:#fafafa;">
         <div style="text-align:center;margin-bottom:30px;">
-          <img src="https://spicybean.net/logo.png" alt="SPICYBEAN" style="height:40px;" />
+          <img src="https://spicybean.net/logo.png" alt="SPICYBEAN" width="60" height="60" style="width:60px;height:60px;display:block;margin:0 auto;" />
         </div>
         <h1 style="text-align:center;font-size:24px;font-weight:700;background:linear-gradient(90deg,#fafafa,#ff2d55,#dc2626);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px;">
           感谢订阅 SPICYBEAN！
@@ -33,7 +33,7 @@ const confirmTexts: Record<string, { subject: string; html: string }> = {
     html: `
       <div style="max-width:600px;margin:0 auto;padding:40px 20px;font-family:'Inter','Noto Sans SC',sans-serif;background:#0a0a0a;color:#fafafa;">
         <div style="text-align:center;margin-bottom:30px;">
-          <img src="https://spicybean.net/logo.png" alt="SPICYBEAN" style="height:40px;" />
+          <img src="https://spicybean.net/logo.png" alt="SPICYBEAN" width="60" height="60" style="width:60px;height:60px;display:block;margin:0 auto;" />
         </div>
         <h1 style="text-align:center;font-size:24px;font-weight:700;background:linear-gradient(90deg,#fafafa,#ff2d55,#dc2626);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px;">
           Welcome to SPICYBEAN!
@@ -58,7 +58,7 @@ const confirmTexts: Record<string, { subject: string; html: string }> = {
     html: `
       <div style="max-width:600px;margin:0 auto;padding:40px 20px;font-family:'Inter','Noto Sans KR',sans-serif;background:#0a0a0a;color:#fafafa;">
         <div style="text-align:center;margin-bottom:30px;">
-          <img src="https://spicybean.net/logo.png" alt="SPICYBEAN" style="height:40px;" />
+          <img src="https://spicybean.net/logo.png" alt="SPICYBEAN" width="60" height="60" style="width:60px;height:60px;display:block;margin:0 auto;" />
         </div>
         <h1 style="text-align:center;font-size:24px;font-weight:700;background:linear-gradient(90deg,#fafafa,#ff2d55,#dc2626);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px;">
           SPICYBEAN 구독을 환영합니다!
@@ -83,7 +83,7 @@ const confirmTexts: Record<string, { subject: string; html: string }> = {
     html: `
       <div style="max-width:600px;margin:0 auto;padding:40px 20px;font-family:'Inter','Noto Sans JP',sans-serif;background:#0a0a0a;color:#fafafa;">
         <div style="text-align:center;margin-bottom:30px;">
-          <img src="https://spicybean.net/logo.png" alt="SPICYBEAN" style="height:40px;" />
+          <img src="https://spicybean.net/logo.png" alt="SPICYBEAN" width="60" height="60" style="width:60px;height:60px;display:block;margin:0 auto;" />
         </div>
         <h1 style="text-align:center;font-size:24px;font-weight:700;background:linear-gradient(90deg,#fafafa,#ff2d55,#dc2626);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px;">
           ご購読ありがとうございます！
