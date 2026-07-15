@@ -15,6 +15,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const productsRef = useRef<HTMLDivElement>(null);
 
   // 点击外部关闭下拉
@@ -215,27 +216,37 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden border-t border-spicy-red/20 bg-spicy-dark/95 backdrop-blur-md">
           <div className="flex flex-col px-6 py-4 gap-4">
-            {/* Mobile: Products with sub-items */}
+            {/* Mobile: Products with collapsible sub-items */}
             <div>
-              <Link
-                href={`/${locale}#products`}
-                onClick={() => setMenuOpen(false)}
-                className="text-sm tracking-widest uppercase text-spicy-gray hover:text-spicy-neon transition-colors"
+              <button
+                onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                className="flex items-center gap-1 text-sm tracking-widest uppercase text-spicy-gray hover:text-spicy-neon transition-colors"
               >
                 {t("nav.products")}
-              </Link>
-              <div className="mt-2 ml-4 flex flex-col gap-2 border-l border-spicy-red/20 pl-4">
-                {seriesList.map((key) => (
-                  <Link
-                    key={key}
-                    href={`/${locale}/products/${key}`}
-                    onClick={() => setMenuOpen(false)}
-                    className="text-xs tracking-wider text-spicy-gray/70 hover:text-spicy-neon transition-colors"
-                  >
-                    {getSeriesName(key)}
-                  </Link>
-                ))}
-              </div>
+                <svg
+                  className={`h-3 w-3 transition-transform duration-200 ${mobileProductsOpen ? "rotate-180" : ""}`}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+              </button>
+              {mobileProductsOpen && (
+                <div className="mt-2 ml-4 flex flex-col gap-2 border-l border-spicy-red/20 pl-4">
+                  {seriesList.map((key) => (
+                    <Link
+                      key={key}
+                      href={`/${locale}/products/${key}`}
+                      onClick={() => setMenuOpen(false)}
+                      className="text-xs tracking-wider text-spicy-gray/70 hover:text-spicy-neon transition-colors"
+                    >
+                      {getSeriesName(key)}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
 
             <Link
