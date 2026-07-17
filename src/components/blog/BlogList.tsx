@@ -26,8 +26,16 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
           href={`/${post.lang}/blog/${post.slug}`}
           className="group block rounded-lg border border-spicy-darkgray bg-spicy-darkgray/50 overflow-hidden hover:border-spicy-red transition-all duration-300"
         >
-          <div className="aspect-[16/9] bg-spicy-darkgray flex items-center justify-center overflow-hidden">
-            <div className="text-spicy-gray/30 text-sm">Image placeholder</div>
+          <div className="aspect-[16/9] bg-spicy-darkgray overflow-hidden">
+            <picture>
+              <source srcSet={`${post.image.replace('.jpg', '.webp')}`} type="image/webp" />
+              <img
+                src={post.image}
+                alt={post.title}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div className="p-6">
             <time className="text-xs text-spicy-gray">{post.date}</time>
