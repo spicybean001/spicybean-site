@@ -178,7 +178,10 @@ export default function About() {
               <img src="/images/brand/logo-red.png" alt="SPICYBEAN Red Logo" className="max-w-full max-h-full object-contain" />
             </div>
             <div className="w-32 h-32 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
-              <img src="/images/brand/logo-color.png" alt="SPICYBEAN Color Logo" className="max-w-full max-h-full object-contain" />
+              <picture>
+                <source srcSet="/images/brand/logo-color.webp" type="image/webp" />
+                <img src="/images/brand/logo-color.png" alt="SPICYBEAN Color Logo" className="max-w-full max-h-full object-contain" />
+              </picture>
             </div>
           </div>
         </motion.div>
