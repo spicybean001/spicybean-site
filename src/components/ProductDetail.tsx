@@ -545,7 +545,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
           >
             {series === "k4" ? (
               <VideoPlayer
-                src="/videos/k4-unboxing.mp4"
+                src={locale === "zh-CN" ? "/videos/k4-unboxing.mp4" : "/videos/k4-unboxing-en.mp4"}
                 poster="/images/k4/video-cover.jpg"
                 badge={"\uD83D\uDCE6"}
                 badgeLabel={t("social.unboxing")}
