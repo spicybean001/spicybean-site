@@ -431,6 +431,112 @@ export default function ProductDetail({ series }: ProductDetailProps) {
           </motion.div>
         </div>
       </div>
+
+      {/* ──────── Social Proof: 买家秀 / 种草 ──────── */}
+      <motion.section
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-80px" }}
+        transition={{ duration: 0.6 }}
+        className="relative z-10 mx-auto mt-24 max-w-5xl px-6"
+      >
+        <div className="text-center mb-12">
+          <p className={`text-xs tracking-[0.3em] uppercase ${data.accent} opacity-50 mb-2`}>
+            SPICYBEAN
+          </p>
+          <h2 className="text-2xl md:text-3xl font-bold text-spicy-white mb-3">
+            {t("social.title")}
+          </h2>
+          <p className={`text-sm ${data.accent} opacity-60 max-w-md mx-auto`}>
+            {t("social.subtitle")}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          {/* ── Left: Video / Unboxing ── */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            {series === "k4" ? (
+              <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group">
+                <video
+                  className="w-full h-full object-cover"
+                  src="/videos/k4-unboxing.mp4"
+                  poster="/images/k4/cover.jpg"
+                  controls
+                  playsInline
+                  preload="metadata"
+                >
+                  {t("social.videoFallback")}
+                </video>
+                {/* Badge */}
+                <div className="absolute top-3 left-3 px-2.5 py-1 rounded-sm bg-black/70 text-xs text-spicy-white tracking-wider">
+                  📦 {t("social.unboxing")}
+                </div>
+              </div>
+            ) : (
+              /* Non-K4: placeholder video card */
+              <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-16 h-16 mx-auto mb-3 rounded-full border-2 border-dashed border-white/20 flex items-center justify-center">
+                    <svg className="w-7 h-7 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <p className="text-xs text-white/30">{t("social.comingSoon")}</p>
+                </div>
+              </div>
+            )}
+          </motion.div>
+
+          {/* ── Right: Buyer Showcase / User Photos ── */}
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="flex flex-col justify-center gap-4"
+          >
+            {/* User-generated content grid */}
+            <div className="grid grid-cols-3 gap-3">
+              {[0, 1, 2, 3, 4, 5].map((i) => {
+                const idx = series === "k4" ? i + 10 : i;
+                const imgSrc = i < 3 ? data.images[Math.min(idx, data.images.length - 1)] : null;
+                // Use actual product images as stand-ins for buyer photos
+                const bgImg = data.images[i % data.images.length];
+                return (
+                  <div
+                    key={i}
+                    className="group/photo relative aspect-square overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 hover:border-white/20 transition-all duration-300 cursor-pointer"
+                  >
+                    <img
+                      src={bgImg}
+                      alt={`${t(`series.${series}.name`)} buyer photo ${i + 1}`}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover/photo:scale-110"
+                      loading="lazy"
+                    />
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/photo:opacity-100 transition-opacity duration-300 flex items-end p-2">
+                      <span className="text-[10px] text-white/80">
+                        {i === 0 ? "@golfer_jane" : i === 1 ? "@seoul_swing" : i === 2 ? "@tee_time_kr" : i === 3 ? "@driver_queen" : i === 4 ? "@fairway_life" : "@green_lover"}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Hashtag / CTA */}
+            <p className={`text-center text-xs ${data.accent} opacity-50 mt-1`}>
+              #{t("social.hashtag")}
+            </p>
+          </motion.div>
+        </div>
+      </motion.section>
     </section>
   );
 }

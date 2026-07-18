@@ -1,96 +1,104 @@
 {
-  "site": {
-    "title": "SPICYBEAN — 有态度的高尔夫杆套",
-    "description": "韩国设计驱动的高尔夫杆头套。为有风格地打球而生。"
-  },
-  "nav": {
-    "products": "全部产品",
-    "about": "品牌故事",
-    "contact": "联系我们",
-    "language": "语言",
-    "blog": "博客"
-  },
-  "hero": {
-    "tagline": "不只是打球。",
-    "subtitle": "韩国设计 · 匠造工艺 · 球场上无需开口的第一张名片",
-    "cta": "探索全系列",
-    "cta_alt": "了解品牌故事"
-  },
-  "series": {
-    "title": "全系列杆套",
-    "subtitle": "四个系列，一种态度。每一只杆套都有自己的故事。",
-    "k1": {
-      "name": "K1 黑色经典系列",
-      "desc": "黑色小荔枝纹皮面。为极简主义者打造的低调优雅。",
-      "price": "¥148"
+    "site": {
+        "title": "SPICYBEAN — 有态度的高尔夫杆套",
+        "description": "韩国设计驱动的高尔夫杆头套。为有风格地打球而生。"
     },
-    "k2": {
-      "name": "K2 白色卡通系列",
-      "desc": "纯白底色搭配刺绣爱心。大胆，可爱，一眼可辨。",
-      "price": "¥148"
+    "nav": {
+        "products": "全部产品",
+        "about": "品牌故事",
+        "contact": "联系我们",
+        "language": "语言",
+        "blog": "博客"
     },
-    "k3": {
-      "name": "K3 暖红爱心系列",
-      "desc": "满版暖红印花。为拒绝平庸的你而生。",
-      "price": "¥148"
+    "hero": {
+        "tagline": "不只是打球。",
+        "subtitle": "韩国设计 · 匠造工艺 · 球场上无需开口的第一张名片",
+        "cta": "探索全系列",
+        "cta_alt": "了解品牌故事"
     },
-    "k4": {
-      "name": "K4 赛博骷髅系列",
-      "desc": "赛博朋克限定款。我们的旗舰ICON。",
-      "price": "¥248"
+    "series": {
+        "title": "全系列杆套",
+        "subtitle": "四个系列，一种态度。每一只杆套都有自己的故事。",
+        "k1": {
+            "name": "K1 黑色经典系列",
+            "desc": "黑色小荔枝纹皮面。为极简主义者打造的低调优雅。",
+            "price": "¥148"
+        },
+        "k2": {
+            "name": "K2 白色卡通系列",
+            "desc": "纯白底色搭配刺绣爱心。大胆，可爱，一眼可辨。",
+            "price": "¥148"
+        },
+        "k3": {
+            "name": "K3 暖红爱心系列",
+            "desc": "满版暖红印花。为拒绝平庸的你而生。",
+            "price": "¥148"
+        },
+        "k4": {
+            "name": "K4 赛博骷髅系列",
+            "desc": "赛博朋克限定款。我们的旗舰ICON。",
+            "price": "¥248"
+        }
+    },
+    "about": {
+        "title": "首尔诞生·为出众而生",
+        "p1": "SPICYBEAN 的诞生源于首尔练习场的一个简单观察——那些引人注目的球手，不一定是最厉害的那一个。而是最有风格的那一个。",
+        "p2": "每一只 SPICYBEAN 杆套均由韩国红点设计奖获奖工作室 DBWD 设计。超过 60,000 针双层刺绣精工打造。结果？一只杆套不仅能保护你的球杆——在你挥杆之前，它已经替你做完了自我介绍。"
+    },
+    "details": {
+        "title": "细节之美",
+        "material": {
+            "title": "优质PU皮",
+            "desc": "防水耐磨，易于清洁。为真实下场而生。"
+        },
+        "stitch": {
+            "title": "60,000+针刺绣",
+            "desc": "双层刺绣工艺，精度媲美高级定制。"
+        },
+        "design": {
+            "title": "红点奖设计基因",
+            "desc": "由韩国获奖设计工作室 DBWD 操刀。"
+        },
+        "fit": {
+            "title": "通用兼容",
+            "desc": "适配一号木、球道木、铁木杆及推杆。"
+        }
+    },
+    "contact": {
+        "title": "联系我们",
+        "subtitle": "有任何问题、批发合作需求，或者只是想打个招呼？",
+        "email": "邮箱",
+        "follow": "关注我们",
+        "wechat": "微信",
+        "xiaohongshu": "小红书",
+        "instagram": "Instagram"
+    },
+    "footer": {
+        "rights": "© 2026 SPICYBEAN. 保留所有权利。",
+        "designed": "首尔设计 · 用心制造"
+    },
+    "shop": {
+        "title": "前往购买",
+        "tmall": "天猫旗舰店",
+        "jd": "京东旗舰店",
+        "coupang": "Coupang（韩国）",
+        "naver": "NAVER",
+        "amazon": "Amazon",
+        "rakuten": "Rakuten",
+        "amazonJp": "Amazon Japan"
+    },
+    "locale": {
+        "en": "English",
+        "zh-CN": "中文",
+        "ko-KR": "한국어",
+        "ja-JP": "日本語"
+    },
+    "social": {
+        "title": "买家秀 · 真实晒单",
+        "subtitle": "看看球友们怎么搭配 SPICYBEAN 下场",
+        "unboxing": "开箱视频",
+        "videoFallback": "您的浏览器不支持视频播放",
+        "comingSoon": "敬请期待",
+        "hashtag": "SPICYBEAN高尔夫"
     }
-  },
-  "about": {
-    "title": "首尔诞生·为出众而生",
-    "p1": "SPICYBEAN 的诞生源于首尔练习场的一个简单观察——那些引人注目的球手，不一定是最厉害的那一个。而是最有风格的那一个。",
-    "p2": "每一只 SPICYBEAN 杆套均由韩国红点设计奖获奖工作室 DBWD 设计。超过 60,000 针双层刺绣精工打造。结果？一只杆套不仅能保护你的球杆——在你挥杆之前，它已经替你做完了自我介绍。"
-  },
-  "details": {
-    "title": "细节之美",
-    "material": {
-      "title": "优质PU皮",
-      "desc": "防水耐磨，易于清洁。为真实下场而生。"
-    },
-    "stitch": {
-      "title": "60,000+针刺绣",
-      "desc": "双层刺绣工艺，精度媲美高级定制。"
-    },
-    "design": {
-      "title": "红点奖设计基因",
-      "desc": "由韩国获奖设计工作室 DBWD 操刀。"
-    },
-    "fit": {
-      "title": "通用兼容",
-      "desc": "适配一号木、球道木、铁木杆及推杆。"
-    }
-  },
-  "contact": {
-    "title": "联系我们",
-    "subtitle": "有任何问题、批发合作需求，或者只是想打个招呼？",
-    "email": "邮箱",
-    "follow": "关注我们",
-    "wechat": "微信",
-    "xiaohongshu": "小红书",
-    "instagram": "Instagram"
-  },
-  "footer": {
-    "rights": "© 2026 SPICYBEAN. 保留所有权利。",
-    "designed": "首尔设计 · 用心制造"
-  },
-  "shop": {
-    "title": "前往购买",
-    "tmall": "天猫旗舰店",
-    "jd": "京东旗舰店",
-    "coupang": "Coupang（韩国）",
-    "naver": "NAVER",
-    "amazon": "Amazon",
-    "rakuten": "Rakuten",
-    "amazonJp": "Amazon Japan"
-  },
-  "locale": {
-    "en": "English",
-    "zh-CN": "中文",
-    "ko-KR": "한국어",
-    "ja-JP": "日本語"
-  }
 }

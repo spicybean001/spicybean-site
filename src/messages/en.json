@@ -1,96 +1,104 @@
 {
-  "site": {
-    "title": "SPICYBEAN — Golf Headcovers with Attitude",
-    "description": "Korean design-driven golf headcovers. Born for those who play with style."
-  },
-  "nav": {
-    "products": "Products",
-    "about": "About",
-    "contact": "Contact",
-    "language": "Language",
-    "blog": "Blog"
-  },
-  "hero": {
-    "tagline": "It's More Than Just Golf.",
-    "subtitle": "Korean design. Studio craftsmanship. A statement on every tee.",
-    "cta": "Explore the Collection",
-    "cta_alt": "See the Story"
-  },
-  "series": {
-    "title": "The Collection",
-    "subtitle": "Four series, one signature attitude. Every headcover tells a story.",
-    "k1": {
-      "name": "K1 — Classic Noir",
-      "desc": "Black pebbled leather. Understated elegance for minimalists.",
-      "price": "$25"
+    "site": {
+        "title": "SPICYBEAN — Golf Headcovers with Attitude",
+        "description": "Korean design-driven golf headcovers. Born for those who play with style."
     },
-    "k2": {
-      "name": "K2 — Cartoon White",
-      "desc": "Pure white with embroidered heart. Bold, cute, unmistakable.",
-      "price": "$25"
+    "nav": {
+        "products": "Products",
+        "about": "About",
+        "contact": "Contact",
+        "language": "Language",
+        "blog": "Blog"
     },
-    "k3": {
-      "name": "K3 — Warm Red Heart",
-      "desc": "Full-print warm red. For those who refuse to blend in.",
-      "price": "$25"
+    "hero": {
+        "tagline": "It's More Than Just Golf.",
+        "subtitle": "Korean design. Studio craftsmanship. A statement on every tee.",
+        "cta": "Explore the Collection",
+        "cta_alt": "See the Story"
     },
-    "k4": {
-      "name": "K4 — Cyber Skull",
-      "desc": "Cyberpunk limited edition. Our flagship ICON.",
-      "price": "$36"
+    "series": {
+        "title": "The Collection",
+        "subtitle": "Four series, one signature attitude. Every headcover tells a story.",
+        "k1": {
+            "name": "K1 — Classic Noir",
+            "desc": "Black pebbled leather. Understated elegance for minimalists.",
+            "price": "$25"
+        },
+        "k2": {
+            "name": "K2 — Cartoon White",
+            "desc": "Pure white with embroidered heart. Bold, cute, unmistakable.",
+            "price": "$25"
+        },
+        "k3": {
+            "name": "K3 — Warm Red Heart",
+            "desc": "Full-print warm red. For those who refuse to blend in.",
+            "price": "$25"
+        },
+        "k4": {
+            "name": "K4 — Cyber Skull",
+            "desc": "Cyberpunk limited edition. Our flagship ICON.",
+            "price": "$36"
+        }
+    },
+    "about": {
+        "title": "Born in Seoul. Made to Stand Out.",
+        "p1": "SPICYBEAN was born from a simple observation at a driving range in Seoul — the players who turned heads weren't always the best golfers. They were the ones with style.",
+        "p2": "Every SPICYBEAN headcover is designed in collaboration with DBWD, a Red Dot Award-winning studio in Korea. Over 60,000 double-layer embroidery stitches go into every piece. The result? A headcover that doesn't just protect your club — it introduces you before you swing."
+    },
+    "details": {
+        "title": "The Details",
+        "material": {
+            "title": "Premium PU Leather",
+            "desc": "Water-resistant, durable, easy to clean. Built for real rounds."
+        },
+        "stitch": {
+            "title": "60,000+ Stitches",
+            "desc": "Double-layer embroidery with precision that rivals haute couture."
+        },
+        "design": {
+            "title": "Red Dot Award DNA",
+            "desc": "Designed by DBWD, Korea's award-winning design studio."
+        },
+        "fit": {
+            "title": "Universal Fit",
+            "desc": "Compatible with driver, fairway wood, hybrid, and blade putter."
+        }
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "subtitle": "Questions, wholesale inquiries, or just want to say hi?",
+        "email": "Email",
+        "follow": "Follow Us",
+        "wechat": "WeChat",
+        "xiaohongshu": "Xiaohongshu (Little Red Book)",
+        "instagram": "Instagram"
+    },
+    "footer": {
+        "rights": "© 2026 SPICYBEAN. All rights reserved.",
+        "designed": "Designed in Seoul. Made with love."
+    },
+    "shop": {
+        "title": "Shop Now",
+        "tmall": "Tmall (China)",
+        "jd": "JD (China)",
+        "coupang": "Coupang (Korea)",
+        "naver": "NAVER",
+        "amazon": "Amazon",
+        "rakuten": "Rakuten",
+        "amazonJp": "Amazon Japan"
+    },
+    "locale": {
+        "en": "English",
+        "zh-CN": "中文",
+        "ko-KR": "한국어",
+        "ja-JP": "日本語"
+    },
+    "social": {
+        "title": "Real Looks · Real Golfers",
+        "subtitle": "See how players style their SPICYBEAN on the course",
+        "unboxing": "Unboxing",
+        "videoFallback": "Your browser does not support video playback",
+        "comingSoon": "Coming Soon",
+        "hashtag": "SPICYBEANGolf"
     }
-  },
-  "about": {
-    "title": "Born in Seoul. Made to Stand Out.",
-    "p1": "SPICYBEAN was born from a simple observation at a driving range in Seoul — the players who turned heads weren't always the best golfers. They were the ones with style.",
-    "p2": "Every SPICYBEAN headcover is designed in collaboration with DBWD, a Red Dot Award-winning studio in Korea. Over 60,000 double-layer embroidery stitches go into every piece. The result? A headcover that doesn't just protect your club — it introduces you before you swing."
-  },
-  "details": {
-    "title": "The Details",
-    "material": {
-      "title": "Premium PU Leather",
-      "desc": "Water-resistant, durable, easy to clean. Built for real rounds."
-    },
-    "stitch": {
-      "title": "60,000+ Stitches",
-      "desc": "Double-layer embroidery with precision that rivals haute couture."
-    },
-    "design": {
-      "title": "Red Dot Award DNA",
-      "desc": "Designed by DBWD, Korea's award-winning design studio."
-    },
-    "fit": {
-      "title": "Universal Fit",
-      "desc": "Compatible with driver, fairway wood, hybrid, and blade putter."
-    }
-  },
-  "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Questions, wholesale inquiries, or just want to say hi?",
-    "email": "Email",
-    "follow": "Follow Us",
-    "wechat": "WeChat",
-    "xiaohongshu": "Xiaohongshu (Little Red Book)",
-    "instagram": "Instagram"
-  },
-  "footer": {
-    "rights": "© 2026 SPICYBEAN. All rights reserved.",
-    "designed": "Designed in Seoul. Made with love."
-  },
-  "shop": {
-    "title": "Shop Now",
-    "tmall": "Tmall (China)",
-    "jd": "JD (China)",
-    "coupang": "Coupang (Korea)",
-    "naver": "NAVER",
-    "amazon": "Amazon",
-    "rakuten": "Rakuten",
-    "amazonJp": "Amazon Japan"
-  },
-  "locale": {
-    "en": "English",
-    "zh-CN": "中文",
-    "ko-KR": "한국어",
-    "ja-JP": "日本語"
-  }
 }
