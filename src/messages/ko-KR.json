@@ -100,5 +100,17 @@
         "videoFallback": "브라우저가 동영상 재생을 지원하지 않습니다",
         "comingSoon": "준비 중",
         "hashtag": "SPICYBEANGolf"
+    },
+    "series_details": {
+        "k4": {
+            "material": {
+                "title": "카본 파이버 PU",
+                "desc": "사이버펑크 스타일 카본 텍스처, 내마모성 및 스크래치 방지, 뛰어난 질감."
+            },
+            "design": {
+                "title": "한국 디자이너 시그니처 한정판",
+                "desc": "SPICYBEAN 시그니처 한정판, 한국 디자이너가 직접 디자인."
+            }
+        }
     }
 }

@@ -100,5 +100,17 @@
         "videoFallback": "お使いのブラウザは動画再生に対応していません",
         "comingSoon": "準備中",
         "hashtag": "SPICYBEANGolf"
+    },
+    "series_details": {
+        "k4": {
+            "material": {
+                "title": "カーボンファイバーPU",
+                "desc": "サイバーパンク風カーボン調テクスチャ、耐摩耗性・耐傷性に優れた高級感ある仕上がり。"
+            },
+            "design": {
+                "title": "韓国デザイナーシグネチャー限定",
+                "desc": "SPICYBEAN シグネチャー限定モデル、韓国人デザイナーによる特別デザイン。"
+            }
+        }
     }
 }

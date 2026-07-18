@@ -100,5 +100,17 @@
         "videoFallback": "Your browser does not support video playback",
         "comingSoon": "Coming Soon",
         "hashtag": "SPICYBEANGolf"
+    },
+    "series_details": {
+        "k4": {
+            "material": {
+                "title": "Carbon Fiber PU",
+                "desc": "Cyberpunk carbon texture, scratch-resistant with premium feel."
+            },
+            "design": {
+                "title": "Korea Designer Signed Edition",
+                "desc": "SPICYBEAN signature limited edition by Korean designer."
+            }
+        }
     }
 }

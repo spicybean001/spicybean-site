@@ -327,42 +327,32 @@ export default function ProductDetail({ series }: ProductDetailProps) {
 
             {/* Details */}
             <div className="space-y-4 mb-8">
-              <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
-                <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
-                  <span className={"text-lg " + data.accent}>{"\u2726"}</span>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-spicy-white">{t("details.material.title")}</p>
-                  <p className="text-xs text-spicy-gray mt-1">{t("details.material.desc")}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
-                <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
-                  <span className={"text-lg " + data.accent}>{"\u2726"}</span>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-spicy-white">{t("details.stitch.title")}</p>
-                  <p className="text-xs text-spicy-gray mt-1">{t("details.stitch.desc")}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
-                <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
-                  <span className={"text-lg " + data.accent}>{"\u2726"}</span>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-spicy-white">{t("details.design.title")}</p>
-                  <p className="text-xs text-spicy-gray mt-1">{t("details.design.desc")}</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
-                <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
-                  <span className={"text-lg " + data.accent}>{"\u2726"}</span>
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-spicy-white">{t("details.fit.title")}</p>
-                  <p className="text-xs text-spicy-gray mt-1">{t("details.fit.desc")}</p>
-                </div>
-              </div>
+              <DetailItem
+                accent={data.accent}
+                title={t("details.material.title")}
+                desc={t("details.material.desc")}
+                seriesKey={series === "k4" ? "series_details.k4.material" : undefined}
+                t={t}
+              />
+              <DetailItem
+                accent={data.accent}
+                title={t("details.stitch.title")}
+                desc={t("details.stitch.desc")}
+                t={t}
+              />
+              <DetailItem
+                accent={data.accent}
+                title={t("details.design.title")}
+                desc={t("details.design.desc")}
+                seriesKey={series === "k4" ? "series_details.k4.design" : undefined}
+                t={t}
+              />
+              <DetailItem
+                accent={data.accent}
+                title={t("details.fit.title")}
+                desc={t("details.fit.desc")}
+                t={t}
+              />
             </div>
 
             {/* Shop CTA — locale-aware channels */}
@@ -541,4 +531,43 @@ function renderBuyerPhotos(series: string, data: any, t: any) {
       </div>
     );
   });
+}
+
+function DetailItem({ accent, title, desc, seriesKey, t }: {
+  accent: string;
+  title: string;
+  desc: string;
+  seriesKey?: string;
+  t: any;
+}) {
+  const finalTitle = seriesKey ? getSafe(t, seriesKey + ".title", title) : title;
+  const finalDesc = seriesKey ? getSafe(t, seriesKey + ".desc", desc) : desc;
+  return (
+    <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
+      <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
+        <span className={"text-lg " + accent}>{"\u2726"}</span>
+      </div>
+      <div>
+        <p className="text-sm font-semibold text-spicy-white">{finalTitle}</p>
+        <p className="text-xs text-spicy-gray mt-1">{finalDesc}</p>
+      </div>
+    </div>
+  );
+}
+
+function getSafe(obj: any, path: string, fallback: string): string {
+  try {
+    const parts = path.split(".");
+    let current = obj;
+    for (const part of parts) {
+      if (current && typeof current === "object" && part in current) {
+        current = current[part];
+      } else {
+        return fallback;
+      }
+    }
+    return typeof current === "string" ? current : fallback;
+  } catch {
+    return fallback;
+  }
 }

@@ -100,5 +100,17 @@
         "videoFallback": "您的浏览器不支持视频播放",
         "comingSoon": "敬请期待",
         "hashtag": "SPICYBEAN高尔夫"
+    },
+    "series_details": {
+        "k4": {
+            "material": {
+                "title": "碳纤维纹理PU",
+                "desc": "赛博朋克风格碳纤维纹理，耐磨防刮，质感出众。"
+            },
+            "design": {
+                "title": "韩国设计师签名限定",
+                "desc": "SPICYBEAN 签名限定款，韩国设计师亲手操刀。"
+            }
+        }
     }
 }
