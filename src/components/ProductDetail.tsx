@@ -179,9 +179,9 @@ export default function ProductDetail({ series }: ProductDetailProps) {
         >
           <Link
             href="/#products"
-            className={`inline-flex items-center gap-2 text-sm ${data.accent} opacity-60 hover:opacity-100 transition-opacity`}
+            className={"inline-flex items-center gap-2 text-sm " + data.accent + " opacity-60 hover:opacity-100 transition-opacity"}
           >
-            ← {t("series.title")}
+            {"\u2190 "}{t("series.title")}
           </Link>
         </motion.div>
 
@@ -202,10 +202,10 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               onMouseLeave={resumeAutoPlay}
             >
               <picture>
-                <source srcSet={data.images[selectedImage].replace(/\.jpg$/, '.webp')} type="image/webp" />
+                <source srcSet={data.images[selectedImage].replace(/\.jpg$/, ".webp")} type="image/webp" />
                 <img
                   src={data.images[selectedImage]}
-                  alt={`${t(`series.${series}.name`)} - ${selectedImage + 1}`}
+                  alt={t("series." + series + ".name") + " - " + (selectedImage + 1)}
                   className="w-full h-full object-cover transition-transform duration-300"
                   draggable={false}
                 />
@@ -248,8 +248,8 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               {/* Left scroll arrow (desktop) */}
               <button
                 onClick={() => {
-                  const el = document.getElementById('thumb-scroll');
-                  if (el) el.scrollBy({ left: -200, behavior: 'smooth' });
+                  const el = document.getElementById("thumb-scroll");
+                  if (el) el.scrollBy({ left: -200, behavior: "smooth" });
                 }}
                 className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 z-10 w-8 h-8 rounded-full bg-black/70 border border-white/15 items-center justify-center text-white opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300 hover:bg-black/90"
                 aria-label="Scroll thumbnails left"
@@ -264,23 +264,21 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                 id="thumb-scroll"
                 className="flex gap-2 sm:gap-3 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth"
                 style={{
-                  scrollbarWidth: 'none',
-                  msOverflowStyle: 'none',
+                  scrollbarWidth: "none",
+                  msOverflowStyle: "none",
                 }}
               >
                 {data.images.map((img, i) => (
                   <button
                     key={i}
                     onClick={() => changeImage(() => setSelectedImage(i))}
-                    className={`thumb-item snap-start shrink-0 aspect-square overflow-hidden rounded-sm border transition-all duration-300 ${
-                      i === selectedImage ? "border-spicy-red/60 ring-1 ring-spicy-red/30" : "border-white/10 hover:border-white/30"
-                    }`}
+                    className={"thumb-item snap-start shrink-0 aspect-square overflow-hidden rounded-sm border transition-all duration-300 " + (i === selectedImage ? "border-spicy-red/60 ring-1 ring-spicy-red/30" : "border-white/10 hover:border-white/30")}
                   >
                     <picture>
-                      <source srcSet={img.replace(/\.jpg$/, '.webp')} type="image/webp" />
+                      <source srcSet={img.replace(/\.jpg$/, ".webp")} type="image/webp" />
                       <img
                         src={img}
-                        alt={`${t(`series.${series}.name`)} ${i + 1}`}
+                        alt={t("series." + series + ".name") + " " + (i + 1)}
                         className="w-full h-full object-cover pointer-events-none"
                         loading="lazy"
                       />
@@ -292,8 +290,8 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               {/* Right scroll arrow (desktop) */}
               <button
                 onClick={() => {
-                  const el = document.getElementById('thumb-scroll');
-                  if (el) el.scrollBy({ left: 200, behavior: 'smooth' });
+                  const el = document.getElementById("thumb-scroll");
+                  if (el) el.scrollBy({ left: 200, behavior: "smooth" });
                 }}
                 className="hidden lg:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 z-10 w-8 h-8 rounded-full bg-black/70 border border-white/15 items-center justify-center text-white opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300 hover:bg-black/90"
                 aria-label="Scroll thumbnails right"
@@ -312,26 +310,26 @@ export default function ProductDetail({ series }: ProductDetailProps) {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="flex flex-col justify-center"
           >
-            <p className={`mb-3 text-xs tracking-[0.3em] uppercase ${data.accent} opacity-60`}>
+            <p className={"mb-3 text-xs tracking-[0.3em] uppercase " + data.accent + " opacity-60"}>
               SPICYBEAN
             </p>
             <h1 className="text-3xl md:text-5xl font-bold text-spicy-white mb-4">
-              {t(`series.${series}.name`)}
+              {t("series." + series + ".name")}
             </h1>
-            <p className={`text-lg leading-relaxed ${data.accent} opacity-80 mb-6`}>
-              {t(`series.${series}.desc`)}
+            <p className={"text-lg leading-relaxed " + data.accent + " opacity-80 mb-6"}>
+              {t("series." + series + ".desc")}
             </p>
 
             {/* Price */}
             <p className="text-3xl font-bold text-spicy-neon mb-8">
-              {t(`series.${series}.price`)}
+              {t("series." + series + ".price")}
             </p>
 
             {/* Details */}
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
                 <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
-                  <span className={`text-lg ${data.accent}`}>✦</span>
+                  <span className={"text-lg " + data.accent}>{"\u2726"}</span>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-spicy-white">{t("details.material.title")}</p>
@@ -340,7 +338,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               </div>
               <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
                 <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
-                  <span className={`text-lg ${data.accent}`}>✦</span>
+                  <span className={"text-lg " + data.accent}>{"\u2726"}</span>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-spicy-white">{t("details.stitch.title")}</p>
@@ -349,7 +347,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               </div>
               <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
                 <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
-                  <span className={`text-lg ${data.accent}`}>✦</span>
+                  <span className={"text-lg " + data.accent}>{"\u2726"}</span>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-spicy-white">{t("details.design.title")}</p>
@@ -358,7 +356,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               </div>
               <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
                 <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
-                  <span className={`text-lg ${data.accent}`}>✦</span>
+                  <span className={"text-lg " + data.accent}>{"\u2726"}</span>
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-spicy-white">{t("details.fit.title")}</p>
@@ -377,13 +375,13 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm bg-spicy-neon px-6 py-3 text-sm font-semibold text-spicy-black hover:bg-spicy-neon/80 transition-all duration-300"
                   >
-                    {t("shop.tmall")} ↗
+                    {t("shop.tmall")} {"\u2197"}
                   </a>
                   <a
                     href="#"
                     className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-3 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
                   >
-                    {t("shop.jd")} ↗
+                    {t("shop.jd")} {"\u2197"}
                   </a>
                 </>
               )}
@@ -392,7 +390,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                   href="#"
                   className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm bg-spicy-neon px-6 py-3 text-sm font-semibold text-spicy-black hover:bg-spicy-neon/80 transition-all duration-300"
                 >
-                  {t("shop.amazon")} ↗
+                  {t("shop.amazon")} {"\u2197"}
                 </a>
               )}
               {locale === "ko-KR" && (
@@ -401,13 +399,13 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                     href="#"
                     className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm bg-spicy-neon px-6 py-3 text-sm font-semibold text-spicy-black hover:bg-spicy-neon/80 transition-all duration-300"
                   >
-                    {t("shop.coupang")} ↗
+                    {t("shop.coupang")} {"\u2197"}
                   </a>
                   <a
                     href="#"
                     className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-3 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
                   >
-                    {t("shop.naver")} ↗
+                    {t("shop.naver")} {"\u2197"}
                   </a>
                 </>
               )}
@@ -417,13 +415,13 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                     href="#"
                     className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm bg-spicy-neon px-6 py-3 text-sm font-semibold text-spicy-black hover:bg-spicy-neon/80 transition-all duration-300"
                   >
-                    {t("shop.rakuten")} ↗
+                    {t("shop.rakuten")} {"\u2197"}
                   </a>
                   <a
                     href="#"
                     className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-3 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
                   >
-                    {t("shop.amazonJp")} ↗
+                    {t("shop.amazonJp")} {"\u2197"}
                   </a>
                 </>
               )}
@@ -432,7 +430,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
         </div>
       </div>
 
-      {/* ──────── Social Proof: 买家秀 / 种草 ──────── */}
+      {/* Social Proof: buyer showcase */}
       <motion.section
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -441,19 +439,19 @@ export default function ProductDetail({ series }: ProductDetailProps) {
         className="relative z-10 mx-auto mt-24 max-w-5xl px-6"
       >
         <div className="text-center mb-12">
-          <p className={`text-xs tracking-[0.3em] uppercase ${data.accent} opacity-50 mb-2`}>
+          <p className={"text-xs tracking-[0.3em] uppercase " + data.accent + " opacity-50 mb-2"}>
             SPICYBEAN
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-spicy-white mb-3">
             {t("social.title")}
           </h2>
-          <p className={`text-sm ${data.accent} opacity-60 max-w-md mx-auto`}>
+          <p className={"text-sm " + data.accent + " opacity-60 max-w-md mx-auto"}>
             {t("social.subtitle")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          {/* ── Left: Video / Unboxing ── */}
+          {/* Left: Video / Unboxing */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -472,13 +470,11 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                 >
                   {t("social.videoFallback")}
                 </video>
-                {/* Badge */}
                 <div className="absolute top-3 left-3 px-2.5 py-1 rounded-sm bg-black/70 text-xs text-spicy-white tracking-wider">
-                  📦 {t("social.unboxing")}
+                  {"\uD83D\uDCE6"} {t("social.unboxing")}
                 </div>
               </div>
             ) : (
-              /* Non-K4: placeholder video card */
               <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-16 h-16 mx-auto mb-3 rounded-full border-2 border-dashed border-white/20 flex items-center justify-center">
@@ -493,7 +489,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
             )}
           </motion.div>
 
-          {/* ── Right: Buyer Showcase / User Photos ── */}
+          {/* Right: Buyer Showcase */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -501,42 +497,48 @@ export default function ProductDetail({ series }: ProductDetailProps) {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-col justify-center gap-4"
           >
-            {/* User-generated content grid */}
             <div className="grid grid-cols-3 gap-3">
-              {[0, 1, 2, 3, 4, 5].map((i) => {
-                const idx = series === "k4" ? i + 10 : i;
-                const imgSrc = i < 3 ? data.images[Math.min(idx, data.images.length - 1)] : null;
-                // Use actual product images as stand-ins for buyer photos
-                const bgImg = data.images[i % data.images.length];
-                return (
-                  <div
-                    key={i}
-                    className="group/photo relative aspect-square overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 hover:border-white/20 transition-all duration-300 cursor-pointer"
-                  >
-                    <img
-                      src={bgImg}
-                      alt={`${t(`series.${series}.name`)} buyer photo ${i + 1}`}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover/photo:scale-110"
-                      loading="lazy"
-                    />
-                    {/* Hover overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/photo:opacity-100 transition-opacity duration-300 flex items-end p-2">
-                      <span className="text-[10px] text-white/80">
-                        {i === 0 ? "@golfer_jane" : i === 1 ? "@seoul_swing" : i === 2 ? "@tee_time_kr" : i === 3 ? "@driver_queen" : i === 4 ? "@fairway_life" : "@green_lover"}
-                      </span>
-                    </div>
-                  </div>
-                );
-              })}
+              {renderBuyerPhotos(series, data, t)}
             </div>
 
-            {/* Hashtag / CTA */}
-            <p className={`text-center text-xs ${data.accent} opacity-50 mt-1`}>
-              #{t("social.hashtag")}
+            <p className={"text-center text-xs " + data.accent + " opacity-50 mt-1"}>
+              {(t("social.hashtag") ? "#" : "#") + t("social.hashtag")}
             </p>
           </motion.div>
         </div>
       </motion.section>
     </section>
   );
+}
+
+function renderBuyerPhotos(series: string, data: any, t: any) {
+  const isK4 = series === "k4";
+  const items = isK4 ? [1, 2, 3, 4] : [0, 1, 2, 3, 4, 5];
+  const k4Labels = ["@golfer_jane", "@seoul_swing", "@tee_time_kr", "@driver_queen"];
+  const allLabels = ["@golfer_jane", "@seoul_swing", "@tee_time_kr", "@driver_queen", "@fairway_life", "@green_lover"];
+  const labels = isK4 ? k4Labels : allLabels;
+
+  return items.map((i, idx) => {
+    const bgImg = isK4
+      ? "/images/k4/buyer-" + i + ".jpg"
+      : data.images[i % data.images.length];
+    return (
+      <div
+        key={isK4 ? "buyer-" + i : String(i)}
+        className="group/photo relative aspect-square overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 hover:border-white/20 transition-all duration-300 cursor-pointer"
+      >
+        <img
+          src={bgImg}
+          alt={t("series." + series + ".name") + " buyer photo " + (idx + 1)}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover/photo:scale-110"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover/photo:opacity-100 transition-opacity duration-300 flex items-end p-2">
+          <span className="text-[10px] text-white/80">
+            {labels[idx]}
+          </span>
+        </div>
+      </div>
+    );
+  });
 }
