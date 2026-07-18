@@ -463,7 +463,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                 <video
                   className="w-full h-full object-cover"
                   src="/videos/k4-unboxing.mp4"
-                  poster="/images/k4/cover.jpg"
+                  poster="/images/k4/video-cover.jpg"
                   controls
                   playsInline
                   preload="metadata"
