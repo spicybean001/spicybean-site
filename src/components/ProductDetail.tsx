@@ -449,21 +449,12 @@ export default function ProductDetail({ series }: ProductDetailProps) {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             {series === "k4" ? (
-              <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group">
-                <video
-                  className="w-full h-full object-cover"
-                  src="/videos/k4-unboxing.mp4"
-                  poster="/images/k4/video-cover.jpg"
-                  controls
-                  playsInline
-                  preload="metadata"
-                >
-                  {t("social.videoFallback")}
-                </video>
-                <div className="absolute top-3 left-3 px-2.5 py-1 rounded-sm bg-black/70 text-xs text-spicy-white tracking-wider">
-                  {"\uD83D\uDCE6"} {t("social.unboxing")}
-                </div>
-              </div>
+              <VideoPlayer
+                src="/videos/k4-unboxing.mp4"
+                poster="/images/k4/video-cover.jpg"
+                badge={"\uD83D\uDCE6"}
+                badgeLabel={t("social.unboxing")}
+              />
             ) : (
               <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 flex items-center justify-center">
                 <div className="text-center">
@@ -570,4 +561,62 @@ function getSafe(obj: any, path: string, fallback: string): string {
   } catch {
     return fallback;
   }
+}
+
+function VideoPlayer({ src, poster, badge, badgeLabel }: {
+  src: string;
+  poster: string;
+  badge?: string;
+  badgeLabel?: string;
+}) {
+  const [playing, setPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlay = () => {
+    setPlaying(true);
+    // Start loading the video on click
+    setTimeout(() => {
+      videoRef.current?.play();
+    }, 50);
+  };
+
+  if (!playing) {
+    return (
+      <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group cursor-pointer" onClick={handlePlay}>
+        <img
+          src={poster}
+          alt=""
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        {/* Play button overlay */}
+        <div className="absolute inset-0 bg-black/30 flex items-center justify-center transition-opacity duration-300 group-hover:bg-black/20">
+          <div className="w-16 h-16 rounded-full bg-spicy-red/80 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+            <svg className="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+        </div>
+        {badge && (
+          <div className="absolute top-3 left-3 px-2.5 py-1 rounded-sm bg-black/70 text-xs text-spicy-white tracking-wider">
+            {badge} {badgeLabel}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group">
+      <video
+        ref={videoRef}
+        className="w-full h-full object-cover"
+        src={src}
+        controls
+        playsInline
+      >
+        Video not supported
+      </video>
+    </div>
+  );
 }
