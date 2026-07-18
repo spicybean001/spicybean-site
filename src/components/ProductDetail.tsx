@@ -88,6 +88,100 @@ const seriesData: Record<string, {
   },
 };
 
+function Lightbox({ images, currentIndex, onClose }: {
+  images: string[];
+  currentIndex: number;
+  onClose: () => void;
+}) {
+  const [idx, setIdx] = useState(currentIndex);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setIdx(currentIndex);
+    setLoaded(false);
+  }, [currentIndex]);
+
+  const prev = () => {
+    setLoaded(false);
+    setIdx((i) => (i > 0 ? i - 1 : images.length - 1));
+  };
+  const next = () => {
+    setLoaded(false);
+    setIdx((i) => (i < images.length - 1 ? i + 1 : 0));
+  };
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowLeft") prev();
+      if (e.key === "ArrowRight") next();
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  });
+
+  return (
+    <div
+      className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center"
+      onClick={onClose}
+    >
+      {/* Close */}
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+        aria-label="Close"
+      >
+        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      {/* Prev */}
+      {images.length > 1 && (
+        <button
+          onClick={(e) => { e.stopPropagation(); prev(); }}
+          className="absolute left-4 z-10 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+          aria-label="Previous"
+        >
+          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+      )}
+
+      {/* Image */}
+      <div className="max-w-[90vw] max-h-[90vh] flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+        <img
+          src={images[idx]}
+          alt={"Photo " + (idx + 1)}
+          className={"max-w-full max-h-[90vh] object-contain transition-opacity duration-300 " + (loaded ? "opacity-100" : "opacity-0")}
+          onLoad={() => setLoaded(true)}
+        />
+      </div>
+
+      {/* Next */}
+      {images.length > 1 && (
+        <button
+          onClick={(e) => { e.stopPropagation(); next(); }}
+          className="absolute right-4 z-10 w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors"
+          aria-label="Next"
+        >
+          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      )}
+
+      {/* Counter */}
+      {images.length > 1 && (
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 px-3 py-1.5 rounded-full bg-white/10 text-sm text-white/80">
+          {idx + 1} / {images.length}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function ProductDetail({ series }: ProductDetailProps) {
   const t = useTranslations();
   const locale = useLocale();
@@ -97,6 +191,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
   const touchEndX = useRef<number | null>(null);
   const autoTimer = useRef<NodeJS.Timeout | null>(null);
   const [autoPlay, setAutoPlay] = useState(true);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const nextImage = useCallback(() => {
     if (selectedImage < data.images.length - 1) {
@@ -479,7 +574,15 @@ export default function ProductDetail({ series }: ProductDetailProps) {
             className="flex flex-col justify-center gap-4"
           >
             <div className="grid grid-cols-3 gap-3">
-              {renderBuyerPhotos(series, data, t)}
+              {(() => {
+                const isK4 = series === "k4";
+                const buyerImages = isK4
+                  ? [1,2,3,4,5,6].map(function(i) { return "/images/k4/buyer-" + i + ".jpg"; })
+                  : data.images.slice(0, 6);
+                return renderBuyerPhotos(series, data, t, function(idx: number) {
+                  setLightboxIndex(idx);
+                });
+              })()}
             </div>
 
             <p className={"text-center text-xs " + data.accent + " opacity-50 mt-1"}>
@@ -488,11 +591,25 @@ export default function ProductDetail({ series }: ProductDetailProps) {
           </motion.div>
         </div>
       </motion.section>
+
+      {/* Lightbox */}
+      {lightboxIndex !== null && (() => {
+        const buyerImages = series === "k4"
+          ? [1,2,3,4,5,6].map(function(i) { return "/images/k4/buyer-" + i + ".jpg"; })
+          : data.images.slice(0, 6);
+        return (
+          <Lightbox
+            images={buyerImages}
+            currentIndex={lightboxIndex}
+            onClose={function() { setLightboxIndex(null); }}
+          />
+        );
+      })()}
     </section>
   );
 }
 
-function renderBuyerPhotos(series: string, data: any, t: any) {
+function renderBuyerPhotos(series: string, data: any, t: any, onImageClick?: (idx: number) => void) {
   const isK4 = series === "k4";
   const items = isK4 ? [1, 2, 3, 4, 5, 6] : [0, 1, 2, 3, 4, 5];
   const k4Labels = ["@golfer_jane", "@seoul_swing", "@tee_time_kr", "@driver_queen", "@fairway_life", "@green_lover"];
@@ -507,6 +624,7 @@ function renderBuyerPhotos(series: string, data: any, t: any) {
       <div
         key={isK4 ? "buyer-" + i : String(i)}
         className="group/photo relative aspect-square overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 hover:border-white/20 transition-all duration-300 cursor-pointer"
+        onClick={() => onImageClick && onImageClick(idx)}
       >
         <img
           src={bgImg}
