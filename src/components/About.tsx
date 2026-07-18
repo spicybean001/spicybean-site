@@ -172,7 +172,10 @@ export default function About() {
 
           <div className="flex flex-wrap justify-center gap-6">
             <div className="w-32 h-32 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
-              <img src="/images/brand/logo-white.png" alt="SPICYBEAN White Logo" className="max-w-full max-h-full object-contain" />
+              <picture>
+                <source srcSet="/images/brand/logo-white.webp" type="image/webp" />
+                <img src="/images/brand/logo-white.png" alt="SPICYBEAN White Logo" className="max-w-full max-h-full object-contain" />
+              </picture>
             </div>
             <div className="w-32 h-32 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
               <picture>
