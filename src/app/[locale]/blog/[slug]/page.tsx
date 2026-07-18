@@ -4,6 +4,10 @@ import ZhCNGuide from "@/components/blog/ZhCNGuide";
 import EnGuide from "@/components/blog/EnGuide";
 import KoGuide from "@/components/blog/KoGuide";
 import JaGuide from "@/components/blog/JaGuide";
+import ZhCNK4Story from "@/components/blog/ZhCNK4Story";
+import EnK4Story from "@/components/blog/EnK4Story";
+import KoK4Story from "@/components/blog/KoK4Story";
+import JaK4Story from "@/components/blog/JaK4Story";
 import BlogViewCount from "@/components/blog/BlogViewCount";
 
 const articles = {
@@ -25,6 +29,24 @@ const articles = {
       date: "2026-07-15",
     },
   },
+  "k4-neon-noir-story": {
+    "zh-CN": {
+      title: "K4暗夜霓虹：一只赛博朋克杆套的诞生",
+      date: "2026-07-19",
+    },
+    en: {
+      title: "K4 Neon Noir: The Birth of a Cyberpunk Headcover",
+      date: "2026-07-19",
+    },
+    "ko-KR": {
+      title: "K4 네온 느와르: 사이버펑크 헤드커버의 탄생",
+      date: "2026-07-19",
+    },
+    "ja-JP": {
+      title: "K4 ネオンノワール：サイバーパンクヘッドカバーの誕生",
+      date: "2026-07-19",
+    },
+  },
 };
 
 const articleComponents: Record<string, Record<string, React.ComponentType>> = {
@@ -33,6 +55,12 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
     en: EnGuide,
     "ko-KR": KoGuide,
     "ja-JP": JaGuide,
+  },
+  "k4-neon-noir-story": {
+    "zh-CN": ZhCNK4Story,
+    en: EnK4Story,
+    "ko-KR": KoK4Story,
+    "ja-JP": JaK4Story,
   },
 };
 

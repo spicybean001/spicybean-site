@@ -11,6 +11,14 @@ const blogPosts = {
       image: "/images/blog/headcover-guide-cover.jpg",
       lang: "zh-CN" as const,
     },
+    {
+      slug: "k4-neon-noir-story",
+      title: "K4暗夜霓虹：一只赛博朋克杆套的诞生",
+      excerpt: "从首尔设计工作室到你的球包，SPICYBEAN旗舰ICON的诞生故事。",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "zh-CN" as const,
+    },
   ],
   en: [
     {
@@ -19,6 +27,14 @@ const blogPosts = {
       excerpt: "Everything you need to know about materials, sizing, styles, and care.",
       date: "2026-07-15",
       image: "/images/blog/headcover-guide-cover.jpg",
+      lang: "en" as const,
+    },
+    {
+      slug: "k4-neon-noir-story",
+      title: "K4 Neon Noir: The Birth of a Cyberpunk Headcover",
+      excerpt: "From a Seoul design studio to your golf bag — the story behind SPICYBEAN's flagship ICON.",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "en" as const,
     },
   ],
@@ -31,6 +47,14 @@ const blogPosts = {
       image: "/images/blog/headcover-guide-cover.jpg",
       lang: "ko-KR" as const,
     },
+    {
+      slug: "k4-neon-noir-story",
+      title: "K4 네온 느와르: 사이버펑크 헤드커버의 탄생",
+      excerpt: "서울 디자인 스튜디오에서 골프백까지, SPICYBEAN 플래그십 ICON의 탄생 이야기.",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "ko-KR" as const,
+    },
   ],
   "ja-JP": [
     {
@@ -39,6 +63,14 @@ const blogPosts = {
       excerpt: "素材、サイズ、デザイン、お手入れ方法まで徹底解説。",
       date: "2026-07-15",
       image: "/images/blog/headcover-guide-cover.jpg",
+      lang: "ja-JP" as const,
+    },
+    {
+      slug: "k4-neon-noir-story",
+      title: "K4 ネオンノワール：サイバーパンクヘッドカバーの誕生",
+      excerpt: "ソウルのデザインスタジオからあなたのゴルフバッグへ — SPICYBEAN旗艦ICONの誕生ストーリー。",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "ja-JP" as const,
     },
   ],
