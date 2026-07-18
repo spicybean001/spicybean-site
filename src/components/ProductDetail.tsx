@@ -95,6 +95,8 @@ function Lightbox({ images, currentIndex, onClose }: {
 }) {
   const [idx, setIdx] = useState(currentIndex);
   const [loaded, setLoaded] = useState(false);
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
 
   useEffect(() => {
     setIdx(currentIndex);
@@ -108,6 +110,26 @@ function Lightbox({ images, currentIndex, onClose }: {
   const next = () => {
     setLoaded(false);
     setIdx((i) => (i < images.length - 1 ? i + 1 : 0));
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchEndX.current = null;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current === null || touchEndX.current === null) return;
+    const diff = touchStartX.current - touchEndX.current;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) next();
+      else prev();
+    }
+    touchStartX.current = null;
+    touchEndX.current = null;
   };
 
   useEffect(() => {
@@ -124,6 +146,9 @@ function Lightbox({ images, currentIndex, onClose }: {
     <div
       className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center"
       onClick={onClose}
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
     >
       {/* Close */}
       <button
