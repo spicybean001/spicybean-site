@@ -13,8 +13,8 @@ const blogPosts = {
     },
     {
       slug: "k4-neon-noir-story",
-      title: "K4暗夜霓虹：一只赛博朋克杆套的诞生",
-      excerpt: "从首尔设计工作室到你的球包，SPICYBEAN旗舰ICON的诞生故事。",
+      title: "K4赛博骷髅:一支赛博暗黑风高尔夫杆套的诞生⛳️",
+      excerpt: "从首尔到球场，SPICYBEAN最具暗黑美学的旗舰杆套是如何诞生的。",
       date: "2026-07-19",
       image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "zh-CN" as const,
@@ -31,8 +31,8 @@ const blogPosts = {
     },
     {
       slug: "k4-neon-noir-story",
-      title: "K4 Neon Noir: The Birth of a Cyberpunk Headcover",
-      excerpt: "From a Seoul design studio to your golf bag — the story behind SPICYBEAN's flagship ICON.",
+      title: "K4 Cyber Skull: The Birth of a Dark Aesthetic Golf Headcover ⛳️",
+      excerpt: "From Seoul to the course — the story behind SPICYBEAN's most daring headcover yet.",
       date: "2026-07-19",
       image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "en" as const,
@@ -49,8 +49,8 @@ const blogPosts = {
     },
     {
       slug: "k4-neon-noir-story",
-      title: "K4 네온 느와르: 사이버펑크 헤드커버의 탄생",
-      excerpt: "서울 디자인 스튜디오에서 골프백까지, SPICYBEAN 플래그십 ICON의 탄생 이야기.",
+      title: "K4 사이버 스컬: 다크한 감성의 골프 헤드커버 탄생 이야기 ⛳️",
+      excerpt: "서울에서 골프장까지, SPICYBEAN의 가장 대담한 헤드커버 이야기.",
       date: "2026-07-19",
       image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "ko-KR" as const,
@@ -67,8 +67,8 @@ const blogPosts = {
     },
     {
       slug: "k4-neon-noir-story",
-      title: "K4 ネオンノワール：サイバーパンクヘッドカバーの誕生",
-      excerpt: "ソウルのデザインスタジオからあなたのゴルフバッグへ — SPICYBEAN旗艦ICONの誕生ストーリー。",
+      title: "K4 サイバースカル：ダークな美しさのゴルフヘッドカバー誕生 ⛳️",
+      excerpt: "ソウルからコースへ — SPICYBEANの最も大胆なヘッドカバーの物語。",
       date: "2026-07-19",
       image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "ja-JP" as const,
