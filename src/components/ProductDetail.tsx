@@ -531,8 +531,24 @@ function DetailItem({ accent, title, desc, seriesKey, t }: {
   seriesKey?: string;
   t: any;
 }) {
-  const finalTitle = seriesKey ? getSafe(t, seriesKey + ".title", title) : title;
-  const finalDesc = seriesKey ? getSafe(t, seriesKey + ".desc", desc) : desc;
+  // next-intl t() supports dot-notation keys like "series_details.k4.material.title"
+  let finalTitle = title;
+  let finalDesc = desc;
+  if (seriesKey) {
+    try {
+      const tTitle = t(seriesKey + ".title");
+      const tDesc = t(seriesKey + ".desc");
+      // only use if translation returns a non-empty string (not the key itself)
+      if (tTitle && tTitle !== seriesKey + ".title") {
+        finalTitle = tTitle;
+      }
+      if (tDesc && tDesc !== seriesKey + ".desc") {
+        finalDesc = tDesc;
+      }
+    } catch (_e) {
+      // fallback to defaults
+    }
+  }
   return (
     <div className="flex items-start gap-4 p-4 rounded-sm border border-white/5 bg-white/5">
       <div className="w-10 h-10 rounded-full bg-spicy-red/10 flex items-center justify-center flex-shrink-0">
@@ -544,23 +560,6 @@ function DetailItem({ accent, title, desc, seriesKey, t }: {
       </div>
     </div>
   );
-}
-
-function getSafe(obj: any, path: string, fallback: string): string {
-  try {
-    const parts = path.split(".");
-    let current = obj;
-    for (const part of parts) {
-      if (current && typeof current === "object" && part in current) {
-        current = current[part];
-      } else {
-        return fallback;
-      }
-    }
-    return typeof current === "string" ? current : fallback;
-  } catch {
-    return fallback;
-  }
 }
 
 function VideoPlayer({ src, poster, badge, badgeLabel }: {
