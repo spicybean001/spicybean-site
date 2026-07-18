@@ -513,8 +513,8 @@ export default function ProductDetail({ series }: ProductDetailProps) {
 
 function renderBuyerPhotos(series: string, data: any, t: any) {
   const isK4 = series === "k4";
-  const items = isK4 ? [1, 2, 3, 4] : [0, 1, 2, 3, 4, 5];
-  const k4Labels = ["@golfer_jane", "@seoul_swing", "@tee_time_kr", "@driver_queen"];
+  const items = isK4 ? [1, 2, 3, 4, 5, 6] : [0, 1, 2, 3, 4, 5];
+  const k4Labels = ["@golfer_jane", "@seoul_swing", "@tee_time_kr", "@driver_queen", "@fairway_life", "@green_lover"];
   const allLabels = ["@golfer_jane", "@seoul_swing", "@tee_time_kr", "@driver_queen", "@fairway_life", "@green_lover"];
   const labels = isK4 ? k4Labels : allLabels;
 
