@@ -575,10 +575,10 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                 badge={"\uD83D\uDCE6"}
                 badgeLabel={t("social.unboxing")}
               />
-            ) : series === "k1" ? (
+            ) : series === "k1" || series === "k2" ? (
               <VideoPlayer
-                src="/videos/k1-showcase.mp4"
-                poster="/images/k1/cover.jpg"
+                src={"/videos/" + series + "-showcase.mp4"}
+                poster={"/images/" + series + "/cover.jpg"}
                 badge={"\uD83C\uDFB3"}
                 badgeLabel={t("social.showcase")}
                 aspectSquare={true}
