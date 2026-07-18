@@ -15,7 +15,7 @@ const confirmTexts: Record<string, { subject: string; html: string }> = {
         </h1>
         <p style="font-size:15px;line-height:1.8;color:#a3a3a3;text-align:center;margin-bottom:30px;">
           您已成功订阅，我们会在第一时间通知您：<br/>
-          🔥 新品发布 &nbsp;|&nbsp; 🎉 折扣活动 &nbsp;|&nbsp; 🇰🇷 COUPANG 开售消息
+          🔥 新品发布 &nbsp;|&nbsp; 🎉 折扣活动 &nbsp;|&nbsp; 🇨🇳 京东开售消息
         </p>
         <div style="text-align:center;margin:30px 0;">
           <a href="https://spicybean.net" style="display:inline-block;padding:12px 32px;background:#ff2d55;color:#0a0a0a;text-decoration:none;font-size:14px;font-weight:600;border-radius:2px;">
@@ -40,7 +40,7 @@ const confirmTexts: Record<string, { subject: string; html: string }> = {
         </h1>
         <p style="font-size:15px;line-height:1.8;color:#a3a3a3;text-align:center;margin-bottom:30px;">
           You're now on the list! We'll keep you posted about:<br/>
-          🔥 New drops &nbsp;|&nbsp; 🎉 Exclusive sales &nbsp;|&nbsp; 🇰🇷 COUPANG launch
+          🔥 New drops &nbsp;|&nbsp; 🎉 Exclusive sales &nbsp;|&nbsp; 🇺🇸 Amazon launch
         </p>
         <div style="text-align:center;margin:30px 0;">
           <a href="https://spicybean.net" style="display:inline-block;padding:12px 32px;background:#ff2d55;color:#0a0a0a;text-decoration:none;font-size:14px;font-weight:600;border-radius:2px;">
