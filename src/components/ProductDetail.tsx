@@ -575,6 +575,14 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                 badge={"\uD83D\uDCE6"}
                 badgeLabel={t("social.unboxing")}
               />
+            ) : series === "k1" ? (
+              <VideoPlayer
+                src="/videos/k1-showcase.mp4"
+                poster="/images/k1/cover.jpg"
+                badge={"\uD83C\uDFB3"}
+                badgeLabel={t("social.showcase")}
+                aspectSquare={true}
+              />
             ) : (
               <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/50 border border-white/5 flex items-center justify-center">
                 <div className="text-center">
@@ -705,11 +713,12 @@ function DetailItem({ accent, title, desc, seriesKey, t }: {
   );
 }
 
-function VideoPlayer({ src, poster, badge, badgeLabel }: {
+function VideoPlayer({ src, poster, badge, badgeLabel, aspectSquare }: {
   src: string;
   poster: string;
   badge?: string;
   badgeLabel?: string;
+  aspectSquare?: boolean;
 }) {
   const [playing, setPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -724,7 +733,7 @@ function VideoPlayer({ src, poster, badge, badgeLabel }: {
 
   if (!playing) {
     return (
-      <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group cursor-pointer" onClick={handlePlay}>
+      <div className={"relative " + (aspectSquare ? "aspect-square" : "aspect-[9/16]") + " max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group cursor-pointer"} onClick={handlePlay}>
         <img
           src={poster}
           alt=""
@@ -749,7 +758,7 @@ function VideoPlayer({ src, poster, badge, badgeLabel }: {
   }
 
   return (
-    <div className="relative aspect-[9/16] max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group">
+    <div className={"relative " + (aspectSquare ? "aspect-square" : "aspect-[9/16]") + " max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group"}>
       <video
         ref={videoRef}
         className="w-full h-full object-cover"
