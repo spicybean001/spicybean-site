@@ -68,6 +68,12 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-sm tracking-widest uppercase">
+          <Link
+            href={`/${locale}`}
+            className="text-spicy-gray hover:text-spicy-neon transition-colors duration-300"
+          >
+            {t("nav.home")}
+          </Link>
           {/* Products Dropdown */}
           <div className="relative" ref={productsRef}>
             <button
@@ -216,6 +222,13 @@ export default function Header() {
       {menuOpen && (
         <div className="md:hidden border-t border-spicy-red/20 bg-spicy-dark/95 backdrop-blur-md">
           <div className="flex flex-col px-6 py-4 gap-4">
+            <Link
+              href={`/${locale}`}
+              onClick={() => setMenuOpen(false)}
+              className="text-sm tracking-widest uppercase text-spicy-gray hover:text-spicy-neon transition-colors"
+            >
+              {t("nav.home")}
+            </Link>
             {/* Mobile: Products with collapsible sub-items */}
             <div>
               <button
