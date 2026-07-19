@@ -142,6 +142,10 @@ export default async function ArticlePage({
   const article = articles[slug as keyof typeof articles];
   const langData = article?.[locale as keyof typeof article];
   const Component = articleComponents[slug]?.[locale];
+  const siteUrl = "https://spicybean.net";
+  const ogImage = slug === "k4-neon-noir-story"
+    ? `${siteUrl}/images/blog/k4-neon-noir-cover.jpg`
+    : `${siteUrl}/images/blog/headcover-guide-cover.jpg`;
 
   if (!article || !langData || !Component) {
     return (
@@ -172,6 +176,72 @@ export default async function ArticlePage({
           </h1>
           <time className="text-sm text-spicy-gray">{langData.date}</time>
         </header>
+
+        {/* Structured Data: BreadcrumbList */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "SPICYBEAN",
+                  "item": "https://spicybean.net"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Blog",
+                  "item": `https://spicybean.net/${locale}/blog`
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": langData.title
+                }
+              ]
+            })
+          }}
+        />
+
+        {/* Structured Data: Article */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              "headline": langData.title,
+              "description": slug === "k4-neon-noir-story"
+                ? "K4 Neon Noir cyber skull golf headcover design story"
+                : "Golf headcover buying guide: materials, sizing, styling",
+              "image": ogImage,
+              "datePublished": langData.date,
+              "dateModified": langData.date,
+              "author": {
+                "@type": "Organization",
+                "name": "SPICYBEAN",
+                "url": "https://spicybean.net"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "SPICYBEAN",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://spicybean.net/logo.png"
+                }
+              },
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://spicybean.net/${locale}/blog/${slug}`
+              },
+              "inLanguage": locale
+            })
+          }}
+        />
 
         <Component />
 

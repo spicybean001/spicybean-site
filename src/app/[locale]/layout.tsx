@@ -64,6 +64,57 @@ export default async function LocaleLayout({
             `,
           }}
         />
+
+        {/* Structured Data: Organization (global) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "SPICYBEAN",
+              "url": "https://spicybean.net",
+              "logo": "https://spicybean.net/logo.png",
+              "description": "Korean design-driven golf headcovers. Premium PU leather headcovers for drivers, fairway woods, and hybrids.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Seoul",
+                "addressCountry": "KR"
+              },
+              "sameAs": [
+                "https://instagram.com/spicybeangolf"
+              ],
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "hi@spicybean.net",
+                "contactType": "customer service"
+              }
+            })
+          }}
+        />
+
+        {/* Structured Data: WebSite (global) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "SPICYBEAN",
+              "url": "https://spicybean.net",
+              "description": "Korean design-driven golf headcovers. Born for those who play with style.",
+              "inLanguage": locale,
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://spicybean.net/{locale}/search?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
       </head>
       <body className="min-h-screen bg-spicy-black text-spicy-white antialiased">
         <NextIntlClientProvider messages={messages}>
