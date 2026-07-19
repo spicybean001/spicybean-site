@@ -5,6 +5,7 @@ import { getMessages } from "next-intl/server";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterPopup from "@/components/NewsletterPopup";
+import ImageProtectorClient from "@/components/ImageProtectorClient";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://spicybean.net"),
@@ -117,6 +118,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="min-h-screen bg-spicy-black text-spicy-white antialiased">
+        <ImageProtectorClient />
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>

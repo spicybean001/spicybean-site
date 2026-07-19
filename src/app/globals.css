@@ -88,17 +88,16 @@
   }
 }
 
-/* 🛡️ 版权保护 - 禁止图片右键保存和拖拽 */
+/* 🛡️ 版权保护 - 禁止右键保存和拖拽 */
 img {
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  pointer-events: none;
 }
 
-/* 恢复视频和控制按钮的操作 */
+/* 恢复可交互元素正常操作 */
 video, button, a, input, textarea, select {
   pointer-events: auto;
 }
