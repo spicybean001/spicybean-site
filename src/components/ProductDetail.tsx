@@ -721,15 +721,60 @@ function VideoPlayer({ src, poster, badge, badgeLabel, aspectSquare }: {
   aspectSquare?: boolean;
 }) {
   const [playing, setPlaying] = useState(false);
+  const [showControls, setShowControls] = useState(false);
+  const [muted, setMuted] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const hideTimer = useRef<NodeJS.Timeout | null>(null);
 
   const handlePlay = () => {
     setPlaying(true);
-    // Start loading the video on click
+    setShowControls(true);
     setTimeout(() => {
       videoRef.current?.play();
     }, 50);
+    // Auto-hide controls after 2.5s
+    hideTimer.current = setTimeout(() => setShowControls(false), 2500);
   };
+
+  const togglePlay = () => {
+    if (!videoRef.current) return;
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setPlaying(false);
+    }
+    setShowControls(true);
+    if (hideTimer.current) clearTimeout(hideTimer.current);
+    hideTimer.current = setTimeout(() => setShowControls(false), 2500);
+  };
+
+  const handleVideoClick = () => {
+    togglePlay();
+  };
+
+  const showControlsTemporarily = () => {
+    setShowControls(true);
+    if (hideTimer.current) clearTimeout(hideTimer.current);
+    hideTimer.current = setTimeout(() => setShowControls(false), 2500);
+  };
+
+  const toggleMute = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (!videoRef.current) return;
+    videoRef.current.muted = !videoRef.current.muted;
+    setMuted(!muted);
+    showControlsTemporarily();
+  };
+
+  // Cleanup timer on unmount
+  useEffect(() => {
+    return () => {
+      if (hideTimer.current) clearTimeout(hideTimer.current);
+    };
+  }, []);
 
   if (!playing) {
     return (
@@ -758,16 +803,99 @@ function VideoPlayer({ src, poster, badge, badgeLabel, aspectSquare }: {
   }
 
   return (
-    <div className={"relative " + (aspectSquare ? "aspect-square" : "aspect-[9/16]") + " max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group"}>
+    <div
+      ref={containerRef}
+      className={"relative " + (aspectSquare ? "aspect-square" : "aspect-[9/16]") + " max-w-[400px] mx-auto overflow-hidden rounded-sm bg-spicy-black/80 border border-white/5 group"}
+      onMouseEnter={() => setShowControls(true)}
+      onMouseLeave={() => { if (!videoRef.current?.paused) setShowControls(false); }}
+      onMouseMove={showControlsTemporarily}
+    >
       <video
         ref={videoRef}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover cursor-pointer"
         src={src}
-        controls
         playsInline
+        onClick={handleVideoClick}
+        onEnded={() => setPlaying(false)}
       >
         Video not supported
       </video>
+
+      {/* Central play/pause overlay button — visible when paused or on first mouse enter */}
+      {!playing && (
+        <div
+          className="absolute inset-0 bg-black/20 flex items-center justify-center cursor-pointer transition-opacity duration-300 hover:bg-black/10"
+          onClick={handleVideoClick}
+        >
+          <div className="w-16 h-16 rounded-full bg-spicy-red/80 flex items-center justify-center transition-transform duration-300 hover:scale-110">
+            <svg className="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          </div>
+        </div>
+      )}
+
+      {/* Pause overlay when video is playing but user hovers */}
+      {playing && (
+        <div
+          className="absolute inset-0 cursor-pointer"
+          onClick={handleVideoClick}
+        />
+      )}
+
+      {/* Custom minimal control bar — fades in/out */}
+      <div
+        className={
+          "absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-10 pb-3 px-4 transition-opacity duration-300 pointer-events-none " +
+          (showControls ? "opacity-100" : "opacity-0")
+        }
+      >
+        <div className="flex items-center gap-3 pointer-events-auto">
+          {/* Play/Pause button */}
+          <button
+            onClick={handleVideoClick}
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors flex-shrink-0"
+            aria-label={playing ? "Pause" : "Play"}
+          >
+            {playing ? (
+              <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+              </svg>
+            ) : (
+              <svg className="w-4 h-4 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            )}
+          </button>
+
+          {/* Mute/Unmute button */}
+          <button
+            onClick={toggleMute}
+            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/10 transition-colors flex-shrink-0"
+            aria-label={muted ? "Unmute" : "Mute"}
+          >
+            {muted ? (
+              <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.531v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.395C2.806 8.757 3.63 8.25 4.51 8.25H6.75z" />
+              </svg>
+            ) : (
+              <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.531v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.395C2.806 8.757 3.63 8.25 4.51 8.25H6.75z" />
+              </svg>
+            )}
+          </button>
+
+          {/* Spacer */}
+          <div className="flex-1" />
+
+          {/* Badge label */}
+          {badge && (
+            <span className="text-[10px] text-white/60 tracking-wider">
+              {badge} {badgeLabel}
+            </span>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
