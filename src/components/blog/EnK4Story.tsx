@@ -43,20 +43,26 @@ export default function EnK4Story() {
 
       <div className="my-8 grid grid-cols-2 gap-4">
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
-          <img
-            src="/images/k4/img-3.jpg"
-            alt="K4 Neon Noir detail"
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
+          <picture>
+            <source srcSet="/images/k4/sketch.webp" type="image/webp" />
+            <img
+              src="/images/k4/sketch.jpg"
+              alt="K4 Neon Noir design sketch"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </picture>
         </div>
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
-          <img
-            src="/images/k4/img-5.jpg"
-            alt="K4 Neon Noir product"
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
+          <picture>
+            <source srcSet="/images/k4/img-5.webp" type="image/webp" />
+            <img
+              src="/images/k4/img-5.jpg"
+              alt="K4 Neon Noir product"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
 

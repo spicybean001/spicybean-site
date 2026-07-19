@@ -33,7 +33,10 @@ export default function KoK4Story() {
 
       <div className="my-8 grid grid-cols-2 gap-4">
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
-          <img src="/images/k4/img-3.jpg" alt="K4 네온 느와르 디테일" className="w-full h-full object-cover" loading="lazy" />
+          <picture>
+            <source srcSet="/images/k4/sketch.webp" type="image/webp" />
+            <img src="/images/k4/sketch.jpg" alt="K4 네온 느와르 디자인 스케치" className="w-full h-full object-cover" loading="lazy" />
+          </picture>
         </div>
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <img src="/images/k4/img-5.jpg" alt="K4 네온 느와르 제품" className="w-full h-full object-cover" loading="lazy" />
