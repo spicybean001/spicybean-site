@@ -26,7 +26,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
           href={`/${post.lang}/blog/${post.slug}`}
           className="group block rounded-lg border border-spicy-darkgray bg-spicy-darkgray/50 overflow-hidden hover:border-spicy-red transition-all duration-300"
         >
-          <div className="aspect-[16/9] bg-spicy-darkgray overflow-hidden">
+          <div className="aspect-[4/3] bg-spicy-darkgray overflow-hidden">
             <picture>
               <source srcSet={`${post.image.replace('.jpg', '.webp')}`} type="image/webp" />
               <img
