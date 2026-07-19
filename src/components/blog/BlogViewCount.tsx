@@ -6,6 +6,7 @@ const views: Record<string, number> = {
   "golf-headcover-buying-guide": 1280,
   "k4-neon-noir-story": 892,
   "golf-headcover-faq": 356,
+  "spicybean-brand-guide": 124,
 };
 
 export default function BlogViewCount({ slug }: { slug: string }) {

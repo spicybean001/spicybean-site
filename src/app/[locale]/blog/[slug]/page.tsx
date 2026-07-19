@@ -13,6 +13,10 @@ import ZhCNFAQ from "@/components/blog/ZhCNFAQ";
 import EnFAQ from "@/components/blog/EnFAQ";
 import KoFAQ from "@/components/blog/KoFAQ";
 import JaFAQ from "@/components/blog/JaFAQ";
+import ZhCNBrandGuide from "@/components/blog/ZhCNBrandGuide";
+import EnBrandGuide from "@/components/blog/EnBrandGuide";
+import KoBrandGuide from "@/components/blog/KoBrandGuide";
+import JaBrandGuide from "@/components/blog/JaBrandGuide";
 import BlogViewCount from "@/components/blog/BlogViewCount";
 
 const articles = {
@@ -70,6 +74,24 @@ const articles = {
       date: "2026-07-19",
     },
   },
+  "spicybean-brand-guide": {
+    "zh-CN": {
+      title: "SPICYBEAN高尔夫杆套品牌完整指南：系列、材质、工艺、购买全解析",
+      date: "2026-07-20",
+    },
+    en: {
+      title: "SPICYBEAN Golf Headcover Brand Guide: Series, Materials, Craftsmanship & Where to Buy",
+      date: "2026-07-20",
+    },
+    "ko-KR": {
+      title: "SPICYBEAN 골프 헤드커버 브랜드 가이드: 시리즈, 소재, 공법, 구매처",
+      date: "2026-07-20",
+    },
+    "ja-JP": {
+      title: "SPICYBEAN ゴルフヘッドカバーブランドガイド：シリーズ、素材、技術、購入先",
+      date: "2026-07-20",
+    },
+  },
 };
 
 const articleComponents: Record<string, Record<string, React.ComponentType>> = {
@@ -91,6 +113,12 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
     "ko-KR": KoFAQ,
     "ja-JP": JaFAQ,
   },
+  "spicybean-brand-guide": {
+    "zh-CN": ZhCNBrandGuide,
+    en: EnBrandGuide,
+    "ko-KR": KoBrandGuide,
+    "ja-JP": JaBrandGuide,
+  },
 };
 
 const descriptions: Record<string, Record<string, string>> = {
@@ -111,6 +139,12 @@ const descriptions: Record<string, Record<string, string>> = {
     en: "Golf headcover FAQ: material comparison, sizing guide, brand differences, and care tips. Everything you need to know.",
     "ko-KR": "골프 헤드커버 FAQ: 소재 비교, 사이즈 가이드, 브랜드 차이, 관리 팁.",
     "ja-JP": "ゴルフヘッドカバーFAQ：素材比較、サイズガイド、ブランドの違い、お手入れのコツ。",
+  },
+  "spicybean-brand-guide": {
+    "zh-CN": "SPICYBEAN韩国高尔夫杆套品牌完整介绍。K1/K2/K3/K4全系列对比，PU皮革材质解析、设计工艺、购买渠道。",
+    en: "Complete SPICYBEAN brand guide. Korean design-driven golf headcovers. K1-K4 series comparison, PU leather materials, craftsmanship, and where to buy.",
+    "ko-KR": "SPICYBEAN 브랜드 가이드. K1-K4 시리즈 소개, PU 가죽 소재, 공법, 구매처 정보.",
+    "ja-JP": "SPICYBEANブランド完全ガイド。K1〜K4シリーズ比較、PUレザー素材、技術、購入先。",
   },
 };
 
@@ -134,6 +168,8 @@ export async function generateMetadata({
     ? `${siteUrl}/images/blog/k4-neon-noir-cover.jpg`
     : slug === "golf-headcover-faq"
     ? `${siteUrl}/og-image.jpg`
+    : slug === "spicybean-brand-guide"
+    ? `${siteUrl}/images/blog/headcover-guide-cover.jpg`
     : `${siteUrl}/images/blog/headcover-guide-cover.jpg`;
 
   return {
@@ -253,6 +289,8 @@ export default async function ArticlePage({
               "headline": langData.title,
               "description": slug === "k4-neon-noir-story"
                 ? "K4 Neon Noir cyber skull golf headcover design story"
+                : slug === "spicybean-brand-guide"
+                ? "Complete SPICYBEAN golf headcover brand guide: series, materials, craftsmanship"
                 : "Golf headcover buying guide: materials, sizing, styling",
               "image": ogImage,
               "datePublished": langData.date,

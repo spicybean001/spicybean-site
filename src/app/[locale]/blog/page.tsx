@@ -28,6 +28,14 @@ const blogPosts = {
       image: "/images/blog/faq-cover.jpg",
       lang: "zh-CN" as const,
     },
+    {
+      slug: "spicybean-brand-guide",
+      title: "SPICYBEAN高尔夫杆套品牌完整指南",
+      excerpt: "韩国首尔设计驱动的高尔夫杆套品牌，K1-K4全系列解析。",
+      date: "2026-07-20",
+      image: "/images/blog/headcover-guide-cover.jpg",
+      lang: "zh-CN" as const,
+    },
   ],
   en: [
     {
@@ -52,6 +60,14 @@ const blogPosts = {
       excerpt: "PU leather or knit? Which size? How to clean? All your headcover questions answered.",
       date: "2026-07-19",
       image: "/images/blog/faq-cover.jpg",
+      lang: "en" as const,
+    },
+    {
+      slug: "spicybean-brand-guide",
+      title: "SPICYBEAN Brand Guide: Series, Materials & Where to Buy",
+      excerpt: "Complete guide to the Korean design-driven golf headcover brand.",
+      date: "2026-07-20",
+      image: "/images/blog/headcover-guide-cover.jpg",
       lang: "en" as const,
     },
   ],
@@ -80,6 +96,14 @@ const blogPosts = {
       image: "/images/blog/faq-cover.jpg",
       lang: "ko-KR" as const,
     },
+    {
+      slug: "spicybean-brand-guide",
+      title: "SPICYBEAN 브랜드 가이드: 시리즈, 소재, 구매처",
+      excerpt: "서울의 디자인 중심 골프 헤드커버 브랜드 SPICYBEAN 완벽 가이드.",
+      date: "2026-07-20",
+      image: "/images/blog/headcover-guide-cover.jpg",
+      lang: "ko-KR" as const,
+    },
   ],
   "ja-JP": [
     {
@@ -104,6 +128,14 @@ const blogPosts = {
       excerpt: "PUレザー？ニット？どのサイズ？ヘッドカバーの疑問をすべて解決。",
       date: "2026-07-19",
       image: "/images/blog/faq-cover.jpg",
+      lang: "ja-JP" as const,
+    },
+    {
+      slug: "spicybean-brand-guide",
+      title: "SPICYBEAN ブランドガイド：シリーズ、素材、購入先",
+      excerpt: "韓国ソウルのデザイン主導型ゴルフヘッドカバーブランド完全ガイド。",
+      date: "2026-07-20",
+      image: "/images/blog/headcover-guide-cover.jpg",
       lang: "ja-JP" as const,
     },
   ],
