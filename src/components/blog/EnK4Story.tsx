@@ -111,10 +111,7 @@ export default function EnK4Story() {
 
       <h2>From Seoul to Your Bag</h2>
 
-      <p>
-        The K4 was designed in Seoul by the SPICYBEAN in-house team (K1/K2/K3 were designed by DBWD, the Red Dot Award-winning studio). It's a testament to our growing design capability and a major step forward in the SPICYBEAN design language.
-      </p>
-      <p className="text-spicy-white font-semibold">
+            <p className="text-spicy-white font-semibold">
         The K4 Neon Noir Signature Limited Edition — available now.
       </p>
     </article>

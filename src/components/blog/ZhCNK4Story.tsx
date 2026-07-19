@@ -111,10 +111,7 @@ export default function ZhCNK4Story() {
 
       <h2>从首尔到你的球包</h2>
 
-      <p>
-        K4 的设计来自首尔，由 SPICYBEAN 团队自主设计（K1/K2/K3 则由红点奖冠军工作室 DBWD 设计）。这是我们品牌自主设计能力的一次验证，也是 SPICYBEAN 设计语言的一次升级。
-      </p>
-      <p className="text-spicy-white font-semibold">
+            <p className="text-spicy-white font-semibold">
         K4 暗夜霓虹签名限定款，现已在天猫旗舰店发售。
       </p>
     </article>

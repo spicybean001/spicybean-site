@@ -81,10 +81,7 @@ export default function KoK4Story() {
       </div>
 
       <h2>서울에서 당신의 골프백까지</h2>
-      <p>
-        K4는 SPICYBEAN 자체 디자인팀이 서울에서 디자인했습니다. 이는 우리 브랜드의 디자인 역량이 한 단계 성장했음을 증명하는 결과물입니다.
-      </p>
-      <p className="text-spicy-white font-semibold">
+            <p className="text-spicy-white font-semibold">
         K4 네온 느와르 시그니처 한정판 — 지금 만나보세요.
       </p>
     </article>

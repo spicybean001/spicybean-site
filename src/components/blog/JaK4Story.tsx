@@ -81,10 +81,7 @@ export default function JaK4Story() {
       </div>
 
       <h2>ソウルからあなたのバッグへ</h2>
-      <p>
-        K4はSPICYBEANの社内デザインチームによってソウルでデザインされました。これは私たちのブランドデザイン能力が次のレベルに達したことを示すマイルストーンです。
-      </p>
-      <p className="text-spicy-white font-semibold">
+            <p className="text-spicy-white font-semibold">
         K4 ネオンノワール シグネチャー限定版 — ただいま発売中。
       </p>
     </article>
