@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import ZhCNGuide from "@/components/blog/ZhCNGuide";
@@ -63,6 +64,72 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
     "ja-JP": JaK4Story,
   },
 };
+
+const descriptions: Record<string, Record<string, string>> = {
+  "golf-headcover-buying-guide": {
+    "zh-CN": "从材质到尺寸，从搭配到品牌，一篇让你成为杆套选购专家。SPICYBEAN高尔夫杆头套选购指南。",
+    en: "Everything you need to know about golf headcover materials, sizing, styles, and care. Complete buying guide from SPICYBEAN.",
+    "ko-KR": "소재부터 사이즈, 스타일까지 한번에 알아보는 골프 헤드커버 완벽 가이드.",
+    "ja-JP": "素材、サイズ、デザインまで完全解説。ゴルフヘッドカバー選び方ガイド。",
+  },
+  "k4-neon-noir-story": {
+    "zh-CN": "K4赛博骷髅暗夜霓虹高尔夫杆套的设计诞生故事。从设计手稿到6万针刺绣，SPICYBEAN最具暗黑美学的限定款。",
+    en: "The story behind K4 Neon Noir cyber skull golf headcover. From design sketches to 60,000 stitches of embroidery — SPICYBEAN's boldest limited edition.",
+    "ko-KR": "K4 네온 느와르 사이버 스컬 골프 헤드커버의 디자인 탄생 이야기. SPICYBEAN의 가장 대담한 한정판.",
+    "ja-JP": "K4サイバースカルネオンノワールゴルフヘッドカバーのデザイン誕生ストーリー。SPICYBEAN限定版。",
+  },
+};
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const article = articles[slug as keyof typeof articles];
+  const langData = article?.[locale as keyof typeof article];
+
+  if (!article || !langData) {
+    return { title: "Article Not Found - SPICYBEAN" };
+  }
+
+  const desc = descriptions[slug]?.[locale] || "";
+  const siteUrl = "https://spicybean.net";
+  const path = `/${locale}/blog/${slug}`;
+  const ogImage = slug === "k4-neon-noir-story"
+    ? `${siteUrl}/images/blog/k4-neon-noir-cover.jpg`
+    : `${siteUrl}/images/blog/headcover-guide-cover.jpg`;
+
+  return {
+    title: `${langData.title} | SPICYBEAN Blog`,
+    description: desc,
+    openGraph: {
+      title: langData.title,
+      description: desc,
+      url: `${siteUrl}${path}`,
+      siteName: "SPICYBEAN",
+      images: [{ url: ogImage, width: 800, height: 600 }],
+      locale: locale === "zh-CN" ? "zh_CN" : locale === "ko-KR" ? "ko_KR" : locale === "ja-JP" ? "ja_JP" : "en_US",
+      type: "article",
+      publishedTime: langData.date,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: langData.title,
+      description: desc,
+      images: [ogImage],
+    },
+    alternates: {
+      canonical: `${siteUrl}${path}`,
+      languages: {
+        en: `${siteUrl}/en/blog/${slug}`,
+        "zh-CN": `${siteUrl}/zh-CN/blog/${slug}`,
+        "ko-KR": `${siteUrl}/ko-KR/blog/${slug}`,
+        "ja-JP": `${siteUrl}/ja-JP/blog/${slug}`,
+      },
+    },
+  };
+}
 
 export default async function ArticlePage({
   params,

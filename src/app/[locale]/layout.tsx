@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import NewsletterPopup from "@/components/NewsletterPopup";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://spicybean.net"),
   title: "SPICYBEAN — Golf Headcovers with Attitude",
   description: "Korean design-driven golf headcovers. Born for those who play with style.",
   icons: {

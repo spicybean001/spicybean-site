@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import BlogList from "@/components/blog/BlogList";
 
@@ -75,6 +76,40 @@ const blogPosts = {
     },
   ],
 } as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const siteUrl = "https://spicybean.net";
+
+  const title: Record<string, string> = {
+    "zh-CN": "SPICYBEAN 博客 — 高尔夫知识与品牌故事",
+    en: "SPICYBEAN Blog — Golf Knowledge & Brand Stories",
+    "ko-KR": "SPICYBEAN 블로그 — 골프 지식과 브랜드 이야기",
+    "ja-JP": "SPICYBEAN ブログ — ゴルフ知識とブランドストーリー",
+  };
+  const desc: Record<string, string> = {
+    "zh-CN": "SPICYBEAN官方博客：高尔夫杆头套选购指南、材质对比、搭配技巧，以及K系列杆套的设计故事。",
+    en: "SPICYBEAN official blog: Golf headcover buying guide, material comparison, styling tips, and K-series design stories.",
+    "ko-KR": "SPICYBEAN 공식 블로그: 골프 헤드커버 가이드, 소재 비교, 스타일링 팁 및 K-시리즈 디자인 이야기.",
+    "ja-JP": "SPICYBEAN公式ブログ：ゴルフヘッドカバーガイド、素材比較、スタイリングのコツ。",
+  };
+
+  return {
+    title: title[locale] || title.en,
+    description: desc[locale] || desc.en,
+    openGraph: {
+      title: title[locale] || title.en,
+      description: desc[locale] || desc.en,
+      url: `${siteUrl}/${locale}/blog`,
+      siteName: "SPICYBEAN",
+      images: [{ url: `${siteUrl}/og-image.jpg`, width: 1200, height: 630 }],
+    },
+  };
+}
 
 export default async function BlogPage({
   params,
