@@ -55,10 +55,10 @@ export default function EnK4Story() {
         </div>
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
-            <source srcSet="/images/k4/img-5.webp" type="image/webp" />
+            <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
             <img
-              src="/images/k4/img-5.jpg"
-              alt="K4 Neon Noir product"
+              src="/images/k4/lineart-product.jpg"
+              alt="K4 Neon Noir product line art"
               className="w-full h-full object-cover"
               loading="lazy"
             />

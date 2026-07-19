@@ -39,7 +39,10 @@ export default function KoK4Story() {
           </picture>
         </div>
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
-          <img src="/images/k4/img-5.jpg" alt="K4 네온 느와르 제품" className="w-full h-full object-cover" loading="lazy" />
+          <picture>
+            <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
+            <img src="/images/k4/lineart-product.jpg" alt="K4 네온 느와르 제품 라인아트" className="w-full h-full object-cover" loading="lazy" />
+          </picture>
         </div>
       </div>
 
