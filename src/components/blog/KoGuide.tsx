@@ -1,7 +1,7 @@
 export default function KoGuide() {
   return (
     <article className="prose prose-invert prose-lg max-w-none prose-headings:text-spicy-white prose-p:text-spicy-gray prose-a:text-spicy-red prose-strong:text-spicy-white prose-li:text-spicy-gray prose-h2:text-spicy-white prose-h3:text-spicy-white">
-      <div className="mb-8 aspect-[21/9] rounded-lg bg-spicy-darkgray overflow-hidden">
+      <div className="mb-8 aspect-[4/3] rounded-lg bg-spicy-darkgray overflow-hidden">
         <picture>
           <source srcSet="/images/blog/headcover-guide-hero.webp" type="image/webp" />
           <img
