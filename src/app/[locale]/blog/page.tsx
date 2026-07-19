@@ -20,6 +20,14 @@ const blogPosts = {
       image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "zh-CN" as const,
     },
+    {
+      slug: "golf-headcover-faq",
+      title: "高尔夫杆头套常见问题FAQ：材质、尺寸、品牌一篇看懂",
+      excerpt: "PU皮革还是针织？多大尺寸？怎么保养？SPICYBEAN常见问题全解答。",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "zh-CN" as const,
+    },
   ],
   en: [
     {
@@ -34,6 +42,14 @@ const blogPosts = {
       slug: "k4-neon-noir-story",
       title: "K4 Cyber Skull: The Birth of a Dark Aesthetic Golf Headcover ⛳️",
       excerpt: "From Seoul to the course — the story behind SPICYBEAN's most daring headcover yet.",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "en" as const,
+    },
+    {
+      slug: "golf-headcover-faq",
+      title: "Golf Headcover FAQ: Materials, Sizing, Brands & Care",
+      excerpt: "PU leather or knit? Which size? How to clean? All your headcover questions answered.",
       date: "2026-07-19",
       image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "en" as const,
@@ -56,6 +72,14 @@ const blogPosts = {
       image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "ko-KR" as const,
     },
+    {
+      slug: "golf-headcover-faq",
+      title: "골프 헤드커버 자주 묻는 질문: 소재, 사이즈, 관리",
+      excerpt: "PU 가죽? 니트? 어떤 사이즈? SPICYBEAN 자주 묻는 질문을 확인하세요.",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "ko-KR" as const,
+    },
   ],
   "ja-JP": [
     {
@@ -70,6 +94,14 @@ const blogPosts = {
       slug: "k4-neon-noir-story",
       title: "K4 サイバースカル：ダークな美しさのゴルフヘッドカバー誕生 ⛳️",
       excerpt: "ソウルからコースへ — SPICYBEANの最も大胆なヘッドカバーの物語。",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "ja-JP" as const,
+    },
+    {
+      slug: "golf-headcover-faq",
+      title: "ゴルフヘッドカバーFAQ：素材、サイズ、お手入れ",
+      excerpt: "PUレザー？ニット？どのサイズ？ヘッドカバーの疑問をすべて解決。",
       date: "2026-07-19",
       image: "/images/blog/k4-neon-noir-cover.jpg",
       lang: "ja-JP" as const,

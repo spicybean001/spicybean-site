@@ -9,6 +9,10 @@ import ZhCNK4Story from "@/components/blog/ZhCNK4Story";
 import EnK4Story from "@/components/blog/EnK4Story";
 import KoK4Story from "@/components/blog/KoK4Story";
 import JaK4Story from "@/components/blog/JaK4Story";
+import ZhCNFAQ from "@/components/blog/ZhCNFAQ";
+import EnFAQ from "@/components/blog/EnFAQ";
+import KoFAQ from "@/components/blog/KoFAQ";
+import JaFAQ from "@/components/blog/JaFAQ";
 import BlogViewCount from "@/components/blog/BlogViewCount";
 
 const articles = {
@@ -48,6 +52,24 @@ const articles = {
       date: "2026-07-19",
     },
   },
+  "golf-headcover-faq": {
+    "zh-CN": {
+      title: "高尔夫杆头套常见问题FAQ：材质、尺寸、品牌一篇看懂",
+      date: "2026-07-19",
+    },
+    en: {
+      title: "Golf Headcover FAQ: Materials, Sizing, Brands & Care",
+      date: "2026-07-19",
+    },
+    "ko-KR": {
+      title: "골프 헤드커버 자주 묻는 질문: 소재, 사이즈, 관리",
+      date: "2026-07-19",
+    },
+    "ja-JP": {
+      title: "ゴルフヘッドカバーFAQ：素材、サイズ、お手入れ",
+      date: "2026-07-19",
+    },
+  },
 };
 
 const articleComponents: Record<string, Record<string, React.ComponentType>> = {
@@ -63,6 +85,12 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
     "ko-KR": KoK4Story,
     "ja-JP": JaK4Story,
   },
+  "golf-headcover-faq": {
+    "zh-CN": ZhCNFAQ,
+    en: EnFAQ,
+    "ko-KR": KoFAQ,
+    "ja-JP": JaFAQ,
+  },
 };
 
 const descriptions: Record<string, Record<string, string>> = {
@@ -77,6 +105,12 @@ const descriptions: Record<string, Record<string, string>> = {
     en: "The story behind K4 Neon Noir cyber skull golf headcover. From design sketches to 60,000 stitches of embroidery — SPICYBEAN's boldest limited edition.",
     "ko-KR": "K4 네온 느와르 사이버 스컬 골프 헤드커버의 디자인 탄생 이야기. SPICYBEAN의 가장 대담한 한정판.",
     "ja-JP": "K4サイバースカルネオンノワールゴルフヘッドカバーのデザイン誕生ストーリー。SPICYBEAN限定版。",
+  },
+  "golf-headcover-faq": {
+    "zh-CN": "高尔夫杆头套常见问题：材质对比、尺寸选择、品牌区别、保养方法。SPICYBEAN品牌FAQ全覆盖。",
+    en: "Golf headcover FAQ: material comparison, sizing guide, brand differences, and care tips. Everything you need to know.",
+    "ko-KR": "골프 헤드커버 FAQ: 소재 비교, 사이즈 가이드, 브랜드 차이, 관리 팁.",
+    "ja-JP": "ゴルフヘッドカバーFAQ：素材比較、サイズガイド、ブランドの違い、お手入れのコツ。",
   },
 };
 
@@ -98,6 +132,8 @@ export async function generateMetadata({
   const path = `/${locale}/blog/${slug}`;
   const ogImage = slug === "k4-neon-noir-story"
     ? `${siteUrl}/images/blog/k4-neon-noir-cover.jpg`
+    : slug === "golf-headcover-faq"
+    ? `${siteUrl}/og-image.jpg`
     : `${siteUrl}/images/blog/headcover-guide-cover.jpg`;
 
   return {
