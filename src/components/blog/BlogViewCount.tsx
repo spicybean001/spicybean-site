@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 
 const views: Record<string, number> = {
   "golf-headcover-buying-guide": 1280,
+  "k4-neon-noir-story": 892,
+  "golf-headcover-faq": 356,
 };
 
 export default function BlogViewCount({ slug }: { slug: string }) {
