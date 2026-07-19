@@ -41,30 +41,44 @@ export default function EnK4Story() {
         <strong>Carbon fiber textured PU</strong> is the K4's exclusive material — not your standard PU leather, but a cyberpunk-inspired carbon texture that's scratch-resistant with a premium feel.
       </p>
 
+      <p>
+        Great design isn't born in a single stroke. From the first rough lines on a sketchpad to the refined product blueprint, every curve of the K4 was questioned and refined — the sharpness of the skull's silhouette, the proportion of the embroidery, the placement of the fluorescent color blocks. Every decision shaped what you see today.
+      </p>
+
       <div className="my-8 grid grid-cols-2 gap-4">
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/sketch.webp" type="image/webp" />
             <img
               src="/images/k4/sketch.jpg"
-              alt="K4 Neon Noir design sketch"
+              alt="K4 Neon Noir initial design sketch on paper"
               className="w-full h-full object-cover"
               loading="lazy"
             />
           </picture>
+          <div className="p-3 text-center">
+            <span className="text-xs text-spicy-gray/60 tracking-wider">Design Sketch · First Lines</span>
+          </div>
         </div>
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
             <img
               src="/images/k4/lineart-product.jpg"
-              alt="K4 Neon Noir product line art"
+              alt="K4 Neon Noir finalized product line art"
               className="w-full h-full object-cover"
               loading="lazy"
             />
           </picture>
+          <div className="p-3 text-center">
+            <span className="text-xs text-spicy-gray/60 tracking-wider">Line Art · Final Blueprint</span>
+          </div>
         </div>
       </div>
+
+      <p>
+        From sketch to line art to 60,000 stitches of embroidery — every K4 carries the craftsmanship of a design journey, not just a production run.
+      </p>
 
       <h2>Signature Limited Edition: More Than a Product, It's an ICON</h2>
 

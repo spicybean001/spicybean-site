@@ -41,30 +41,44 @@ export default function ZhCNK4Story() {
         <strong>碳纤维纹理 PU</strong> 是 K4 独家的材质选择——不是普通的 PU 皮，而是带有赛博朋克风格的碳纤维纹理，耐磨防刮，手感扎实。
       </p>
 
+      <p>
+        好的设计不是一次成型的。从最初在草稿本上的寥寥几笔，到最终细化出完整的产品线稿，K4 的每一根线条都经过了反复推敲——骷髅的角度的锐利感、刺绣图案的比例、荧光色块的分布位置……每一个决定都影响着最终的视觉效果。
+      </p>
+
       <div className="my-8 grid grid-cols-2 gap-4">
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/sketch.webp" type="image/webp" />
             <img
               src="/images/k4/sketch.jpg"
-              alt="K4 暗夜霓虹设计手稿"
+              alt="K4 暗夜霓虹设计手稿——草稿本上的初稿"
               className="w-full h-full object-cover"
               loading="lazy"
             />
           </picture>
+          <div className="p-3 text-center">
+            <span className="text-xs text-spicy-gray/60 tracking-wider">设计手稿 · 从第一笔开始</span>
+          </div>
         </div>
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
             <img
               src="/images/k4/lineart-product.jpg"
-              alt="K4 暗夜霓虹产品线稿"
+              alt="K4 暗夜霓虹产品线稿——细化后的完整设计图"
               className="w-full h-full object-cover"
               loading="lazy"
             />
           </picture>
+          <div className="p-3 text-center">
+            <span className="text-xs text-spicy-gray/60 tracking-wider">产品线稿 · 最终定稿</span>
+          </div>
         </div>
       </div>
+
+      <p>
+        从手稿到线稿，再到 60,000 针刺绣的实物，每一只 K4 都承载着从设计到工艺的精工态度。
+      </p>
 
       <h2>签名限定：不只是产品，是 ICON</h2>
 

@@ -31,20 +31,34 @@ export default function JaK4Story() {
         K4のスカルロゴは印刷ではなく、<strong>60,000ステッチ以上の二重レイヤー刺繍</strong>で丁寧に縫い上げられています。蛍光ピンクとエレクトリックブルーの糸が、ブラックのカーボンテクスチャーPU表面に交差し、闇から光が浮かび上がるような視覚効果を生み出します。
       </p>
 
+      <p>
+        優れたデザインは一発で完成しません。スケッチブックの最初の線から完成された製品図面に至るまで、K4のすべての曲線は問い直しと修正を繰り返してきました—スカルのシルエットの鋭さ、刺繍のプロポーション、蛍光カラーブロックの配置。すべての決定が、今日のK4を形作っています。
+      </p>
+
       <div className="my-8 grid grid-cols-2 gap-4">
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/sketch.webp" type="image/webp" />
-            <img src="/images/k4/sketch.jpg" alt="K4 ネオンノワール デザインスケッチ" className="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/k4/sketch.jpg" alt="K4 ネオンノワール 初期デザインスケッチ" className="w-full h-full object-cover" loading="lazy" />
           </picture>
+          <div className="p-3 text-center">
+            <span className="text-xs text-spicy-gray/60 tracking-wider">デザインスケッチ · 最初の一線</span>
+          </div>
         </div>
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
-            <img src="/images/k4/lineart-product.jpg" alt="K4 ネオンノワール 製品ラインアート" className="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/k4/lineart-product.jpg" alt="K4 ネオンノワール 最終製品ラインアート" className="w-full h-full object-cover" loading="lazy" />
           </picture>
+          <div className="p-3 text-center">
+            <span className="text-xs text-spicy-gray/60 tracking-wider">製品ラインアート · 最終設計図</span>
+          </div>
         </div>
       </div>
+
+      <p>
+        スケッチからラインアート、そして60,000ステッチの刺繍へ—すべてのK4には、単なる生産ではなく、デザインの旅路が込められています。
+      </p>
 
       <h2>シグネチャー限定版：アイコンの誕生</h2>
 

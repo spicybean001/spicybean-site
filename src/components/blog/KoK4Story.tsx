@@ -31,20 +31,34 @@ export default function KoK4Story() {
         K4의 해골 로고는 인쇄가 아닌 <strong>60,000 스티치 이상의 이중 레이어 자수</strong>로 수놓아졌습니다. 형광 핑크와 일렉트릭 블루 실이 블랙 카본 텍스처 PU 표면 위로 교차하며 어둠 속에서 빛을 발하는 듯한 시각 효과를 만들어냅니다.
       </p>
 
+      <p>
+        좋은 디자인은 한 번에 완성되지 않습니다. 스케치북의 첫 번째 선에서 완성된 제품 청사진까지, K4의 모든 곡선은 질문과 수정을 거듭했습니다—해골 실루엣의 날카로움, 자수의 비율, 형광 색상 블록의 배치까지. 모든 결정이 오늘날의 K4를 만들었습니다.
+      </p>
+
       <div className="my-8 grid grid-cols-2 gap-4">
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/sketch.webp" type="image/webp" />
-            <img src="/images/k4/sketch.jpg" alt="K4 네온 느와르 디자인 스케치" className="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/k4/sketch.jpg" alt="K4 네온 느와르 첫 디자인 스케치" className="w-full h-full object-cover" loading="lazy" />
           </picture>
+          <div className="p-3 text-center">
+            <span className="text-xs text-spicy-gray/60 tracking-wider">디자인 스케치 · 첫 시작</span>
+          </div>
         </div>
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
-            <img src="/images/k4/lineart-product.jpg" alt="K4 네온 느와르 제품 라인아트" className="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/k4/lineart-product.jpg" alt="K4 네온 느와르 최종 제품 라인아트" className="w-full h-full object-cover" loading="lazy" />
           </picture>
+          <div className="p-3 text-center">
+            <span className="text-xs text-spicy-gray/60 tracking-wider">제품 라인아트 · 최종 설계도</span>
+          </div>
         </div>
       </div>
+
+      <p>
+        스케치에서 라인아트, 그리고 60,000 스티치 자수까지—모든 K4는 단순한 생산이 아닌 디자인 여정의 장인정신을 담고 있습니다.
+      </p>
 
       <h2>시그니처 한정판: 아이콘의 탄생</h2>
 
