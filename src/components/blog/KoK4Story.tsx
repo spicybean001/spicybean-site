@@ -76,7 +76,7 @@ export default function KoK4Story() {
         <li><strong>사이버펑크 팬이라면</strong> — 블레이드 러너나 사이버펑크 2077을 좋아한다면 K4는 당신의 백에 어울립니다</li>
       </ul>
 
-      <div className="my-8 aspect-[16/9] rounded-sm bg-spicy-darkgray overflow-hidden">
+      <div className="my-8 aspect-[4/3] rounded-sm bg-spicy-darkgray overflow-hidden">
         <img src="/images/k4/img-7.jpg" alt="K4 네온 느와르 컬렉션" className="w-full h-full object-cover" loading="lazy" />
       </div>
 

@@ -100,7 +100,7 @@ export default function ZhCNK4Story() {
         <li><strong>赛博朋克文化爱好者</strong> — 如果你喜欢《银翼杀手》《赛博朋克 2077》，K4 就是你的菜</li>
       </ul>
 
-      <div className="my-8 aspect-[16/9] rounded-sm bg-spicy-darkgray overflow-hidden">
+      <div className="my-8 aspect-[4/3] rounded-sm bg-spicy-darkgray overflow-hidden">
         <img
           src="/images/k4/img-7.jpg"
           alt="K4 暗夜霓虹系列展示"

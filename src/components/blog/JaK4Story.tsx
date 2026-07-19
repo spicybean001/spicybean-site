@@ -76,7 +76,7 @@ export default function JaK4Story() {
         <li><strong>サイバーパンクファンに</strong> — ブレードランナーやサイバーパンク2077が好きなら、K4はあなたのバッグにぴったり</li>
       </ul>
 
-      <div className="my-8 aspect-[16/9] rounded-sm bg-spicy-darkgray overflow-hidden">
+      <div className="my-8 aspect-[4/3] rounded-sm bg-spicy-darkgray overflow-hidden">
         <img src="/images/k4/img-7.jpg" alt="K4 ネオンノワール コレクション" className="w-full h-full object-cover" loading="lazy" />
       </div>
 

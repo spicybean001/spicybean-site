@@ -100,7 +100,7 @@ export default function EnK4Story() {
         <li><strong>Cyberpunk fans</strong> — If you love Blade Runner or Cyberpunk 2077, the K4 belongs in your bag</li>
       </ul>
 
-      <div className="my-8 aspect-[16/9] rounded-sm bg-spicy-darkgray overflow-hidden">
+      <div className="my-8 aspect-[4/3] rounded-sm bg-spicy-darkgray overflow-hidden">
         <img
           src="/images/k4/img-7.jpg"
           alt="K4 Neon Noir collection"
