@@ -29,9 +29,9 @@ export default function ZhCNFAQ() {
         </div>
 
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
-          <h3 className="text-lg font-semibold text-spicy-white mb-2">K4暗夜霓虹签名限定款有什么特别？</h3>
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">K4赛博骷髅系列签名限定款有什么特别？</h3>
           <p className="text-sm text-spicy-gray">
-            K4是SPICYBEAN的首款签名限定系列。采用碳纤维纹理PU材质和60,000针双层刺绣工艺，赛博朋克风格骷髅设计，荧光粉和电光蓝配色。每一只杆套都有SPICYBEAN品牌签名刺绣，标志着这是设计团队最满意的作品。
+            K4赛博骷髅系列是SPICYBEAN的首款签名限定系列。采用碳纤维纹理PU材质和60,000针双层刺绣工艺，赛博朋克风格骷髅设计，荧光粉和电光蓝配色。每一只杆套都有SPICYBEAN品牌签名刺绣，标志着这是设计团队最满意的作品。
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export default function ZhCNFAQ() {
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
           <h3 className="text-lg font-semibold text-spicy-white mb-2">SPICYBEAN杆套可以混搭吗？</h3>
           <p className="text-sm text-spicy-gray">
-            当然可以。很多球友会在一号木上用特色款（比如K4赛博骷髅），其他球杆用同一系列的基础款，既突出重点又保持整体感。也可以不同系列混搭，但建议不超过3个色系。SPICYBEAN的K1（黑色荔枝纹）、K2（白色爱心）和K4（暗夜霓虹）之间可以自由组合。
+            当然可以。很多球友会在一号木上用特色款（比如K4赛博骷髅系列），其他球杆用同一系列的基础款，既突出重点又保持整体感。也可以不同系列混搭，但建议不超过3个色系。SPICYBEAN的K1黑色经典系列、K2白色卡通系列和K4赛博骷髅系列之间可以自由组合。
           </p>
         </div>
       </div>

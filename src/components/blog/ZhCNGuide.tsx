@@ -89,7 +89,7 @@ export default function ZhCNGuide() {
       <h3>三种搭配思路</h3>
       <ul>
         <li><strong>统一风格派：</strong>全包一个系列、同色系，低调有品味</li>
-        <li><strong>主次分明派：</strong>一号木用特色款（如K4赛博骷髅），其他统一用基础款</li>
+        <li><strong>主次分明派：</strong>一号木用特色款（如K4赛博骷髅系列），其他统一用基础款</li>
         <li><strong>混搭个性派：</strong>不同色系/系列混搭，但不建议超过3个色系</li>
       </ul>
 
