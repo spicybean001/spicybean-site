@@ -14,12 +14,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href={`/${locale}`} className="flex items-center gap-3">
-              <video
-                src="/logo-video.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
+              <img
+                src="/logo.png"
+                alt="SPICYBEAN"
                 className="h-7 w-auto"
               />
               <span className="text-xl font-bold tracking-wider uppercase">

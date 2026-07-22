@@ -170,18 +170,16 @@ export default function About() {
             </span>
           </h3>
 
-          <div className="flex flex-wrap justify-center gap-6">
-            <div className="w-32 h-32 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
-              <picture>
-                <source srcSet="/images/brand/logo-white.webp" type="image/webp" />
-                <img src="/images/brand/logo-white.png" alt="SPICYBEAN White Logo" className="max-w-full max-h-full object-contain" />
-              </picture>
-            </div>
-            <div className="w-32 h-32 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
-              <picture>
-                <source srcSet="/images/brand/logo-color.webp" type="image/webp" />
-                <img src="/images/brand/logo-color.png" alt="SPICYBEAN Color Logo" className="max-w-full max-h-full object-contain" />
-              </picture>
+          <div className="flex justify-center">
+            <div className="w-48 h-48 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
+              <video
+                src="/logo-video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="max-w-full max-h-full object-contain"
+              />
             </div>
           </div>
         </motion.div>
