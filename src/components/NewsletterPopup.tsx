@@ -132,7 +132,7 @@ export default function NewsletterPopup() {
 
         {/* Logo */}
         <div className="flex items-center justify-center mb-6">
-          <img src="/logo.png" alt="SPICYBEAN" className="h-8 w-auto" />
+          <video src="/logo-video.mp4" autoPlay loop muted playsInline className="h-8 w-auto" />
         </div>
 
         {status === "success" ? (

@@ -56,9 +56,12 @@ export default function Header() {
           href={`/${locale}`}
           className="flex items-center gap-3"
         >
-          <img
-            src="/logo.png"
-            alt="SPICYBEAN"
+          <video
+            src="/logo-video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
             className="h-8 w-auto"
           />
           <span className="text-xl font-bold tracking-wider uppercase">
