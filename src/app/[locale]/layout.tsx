@@ -115,6 +115,9 @@ export default async function LocaleLayout({
           }}
         />
 
+        {/* Bing Webmaster Tools Verification */}
+        <meta name="msvalidate.01" content="AABECD01D1C1959F835814263DDD41F7" />
+
         {/* Structured Data: Organization (global) */}
         <script
           type="application/ld+json"
