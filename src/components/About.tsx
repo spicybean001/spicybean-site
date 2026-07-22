@@ -47,14 +47,14 @@ export default function About() {
 
             {/* Story text — only original p1/p2 from translations */}
             <div className="space-y-4">
-              <div className="space-y-4">
-                <p className="text-sm leading-relaxed text-spicy-gray/80">
-                  {t("about.p1")}
-                </p>
-                <p className="text-sm leading-relaxed text-spicy-gray/80">
-                  {t("about.p2")}
-                </p>
-              </div>
+            <div className="space-y-4">
+              <p className="text-lg leading-relaxed text-spicy-gray/80">
+                {t("about.p1")}
+              </p>
+              <p className="text-lg leading-relaxed text-spicy-gray/80">
+                {t("about.p2")}
+              </p>
+            </div>
             </div>
           </div>
         </motion.div>
