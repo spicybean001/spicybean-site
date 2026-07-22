@@ -171,7 +171,7 @@ export default function About() {
           </h3>
 
           <div className="flex justify-center">
-            <div className="w-48 h-48 rounded-sm border border-white/10 bg-black/20 p-2 flex items-center justify-center shadow-lg shadow-black/30">
+            <div className="w-72 h-72 rounded-sm border border-white/10 bg-black/20 p-3 flex items-center justify-center shadow-lg shadow-black/30">
               <video
                 src="/logo-video.mp4"
                 autoPlay
