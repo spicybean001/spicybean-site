@@ -171,14 +171,14 @@ export default function About() {
           </h3>
 
           <div className="flex justify-center">
-            <div className="w-48 h-48 rounded-sm border border-white/5 bg-spicy-black/50 p-4 flex items-center justify-center">
+            <div className="w-48 h-48 flex items-center justify-center">
               <video
                 src="/logo-video.mp4"
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="max-w-full max-h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
