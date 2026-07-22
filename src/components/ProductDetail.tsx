@@ -13,10 +13,12 @@ const seriesData: Record<string, {
   className: string;
   accent: string;
   images: string[];
+  tmallId: string;
 }> = {
   k1: {
     className: "from-zinc-900 to-spicy-dark",
     accent: "text-zinc-300",
+    tmallId: "1033412438912",
     images: [
       "/images/k1/cover.jpg",
       "/images/k1/img-2.jpg",
@@ -36,6 +38,7 @@ const seriesData: Record<string, {
   k2: {
     className: "from-zinc-800 to-spicy-dark",
     accent: "text-rose-200",
+    tmallId: "1032734315021",
     images: [
       "/images/k2/cover.jpg",
       "/images/k2/img-2.jpg",
@@ -55,6 +58,7 @@ const seriesData: Record<string, {
   k3: {
     className: "from-spicy-neon-dim/30 to-spicy-dark",
     accent: "text-red-300",
+    tmallId: "1033432898401",
     images: [
       "/images/k3/cover.jpg",
       "/images/k3/img-2.jpg",
@@ -74,6 +78,7 @@ const seriesData: Record<string, {
   k4: {
     className: "from-spicy-dark to-violet-950/30",
     accent: "text-fuchsia-300",
+    tmallId: "1040983367337",
     images: [
       "/images/k4/cover.jpg",
       "/images/k4/img-2.jpg",
@@ -480,7 +485,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               {locale === "zh-CN" && (
                 <>
                   <a
-                    href="https://spicybean.m.tmall.com"
+                    href={`https://detail.tmall.com/item.htm?id=${data.tmallId}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm bg-spicy-neon px-6 py-3 text-sm font-semibold text-spicy-black hover:bg-spicy-neon/80 transition-all duration-300"

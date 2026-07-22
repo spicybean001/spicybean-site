@@ -11,6 +11,7 @@ const series = [
     borderColor: "border-zinc-700",
     accent: "text-zinc-300",
     image: "/images/k1/cover.jpg",
+    tmallId: "1033412438912",
   },
   {
     key: "k2",
@@ -18,6 +19,7 @@ const series = [
     borderColor: "border-zinc-600",
     accent: "text-rose-200",
     image: "/images/k2/cover.jpg",
+    tmallId: "1032734315021",
   },
   {
     key: "k3",
@@ -25,6 +27,7 @@ const series = [
     borderColor: "border-red-800/50",
     accent: "text-red-300",
     image: "/images/k3/cover.jpg",
+    tmallId: "1033432898401",
   },
   {
     key: "k4",
@@ -32,6 +35,7 @@ const series = [
     borderColor: "border-violet-800/40",
     accent: "text-fuchsia-300",
     image: "/images/k4/cover.jpg",
+    tmallId: "1040983367337",
   },
 ];
 
@@ -120,7 +124,7 @@ export default function Products() {
             {locale === "zh-CN" && (
               <>
                 <a
-                  href="https://spicybean.m.tmall.com"
+                  href={`https://detail.tmall.com/item.htm?id=${series[3].tmallId}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
