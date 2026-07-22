@@ -12,7 +12,7 @@
         "home": "Home"
     },
     "hero": {
-        "tagline": "It's More Than Just Golf.",
+        "tagline": "More Than Just a Cover.",
         "subtitle": "Korean design. Studio craftsmanship. A statement on every tee.",
         "cta": "Explore the Collection",
         "cta_alt": "See the Story"
@@ -22,22 +22,22 @@
         "subtitle": "Four series, one signature attitude. Every headcover tells a story.",
         "k1": {
             "name": "K1 — Classic Noir",
-            "desc": "Black pebbled leather. Understated elegance for minimalists.",
+            "desc": "Italian-inspired premium black pebbled PU leather. Understated elegance that speaks volumes.",
             "price": "$25"
         },
         "k2": {
-            "name": "K2 — Cartoon White",
-            "desc": "Pure white with embroidered heart. Bold, cute, unmistakable.",
+            "name": "K2 — Signature White",
+            "desc": "Crisp white with a signature embroidered heart. Pure elegance that commands every glance.",
             "price": "$25"
         },
         "k3": {
-            "name": "K3 — Warm Red Heart",
-            "desc": "Full-print warm red. For those who refuse to blend in.",
+            "name": "K3 — Spicy Red",
+            "desc": "Full-print vibrant red. Passion that burns with every swing.",
             "price": "$25"
         },
         "k4": {
             "name": "K4 — Cyber Skull",
-            "desc": "Cyberpunk limited edition. Our flagship ICON.",
+            "desc": "Cyberpunk limited edition. Carbon fiber PU texture. Our flagship ICON — born for the bold.",
             "price": "$36"
         }
     },
@@ -50,19 +50,19 @@
         "title": "The Details",
         "material": {
             "title": "Premium PU Leather",
-            "desc": "Water-resistant, durable, easy to clean. Built for real rounds."
+            "desc": "Italian-inspired premium PU with deep color depth that defies time. Microfiber lining for superior scratch protection."
         },
         "stitch": {
             "title": "60,000+ Stitches",
-            "desc": "Double-layer embroidery with precision that rivals haute couture."
+            "desc": "Double-layer embroidery with precision that rivals haute couture. Every stitch tells a story of craftsmanship."
         },
         "design": {
             "title": "Red Dot Award DNA",
-            "desc": "Designed by DBWD, Korea's award-winning design studio."
+            "desc": "Masterfully crafted by DBWD — a decade of excellence proven by the world's top 3 design awards (Red Dot, iF, DFA)."
         },
         "fit": {
             "title": "Universal Fit",
-            "desc": "Compatible with driver, fairway wood, hybrid, and blade putter."
+            "desc": "Compatible with driver (up to 460cc), fairway wood, hybrid, blade putter, and mallet putter."
         }
     },
     "contact": {
