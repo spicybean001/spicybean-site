@@ -1,3 +1,30 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Yahoo! Japan
+User-agent: Yahoo Slurp Japan
+Allow: /
+
+# Naver (covers Naver Japan too)
+User-agent: Yeti
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Baidu
+User-agent: Baiduspider
+Allow: /
+
 Sitemap: https://spicybean.net/sitemap.xml
