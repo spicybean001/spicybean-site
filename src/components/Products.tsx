@@ -99,16 +99,12 @@ export default function Products() {
                 <p className="text-sm font-semibold text-spicy-neon">
                   {t(`series.${s.key}.price`)}
                 </p>
-              </div>
-
-              {/* View detail hint */}
-              <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
-                <span className="inline-flex items-center gap-1.5 text-xs tracking-wider uppercase text-spicy-neon bg-spicy-black/80 backdrop-blur-sm px-3 py-1.5 rounded-sm border border-spicy-neon/30">
+                <div className="mt-3 flex items-center gap-1 text-xs tracking-wider uppercase text-spicy-neon/70 group-hover:text-spicy-neon transition-colors duration-300">
                   {t("series.viewDetail")}
                   <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
-                </span>
+                </div>
               </div>
 
               {/* Hover shimmer */}
