@@ -99,7 +99,7 @@ export default function About() {
               onClick={() => setAwardOpen(!awardOpen)}
               className="inline-flex items-center gap-2 text-xs text-spicy-gray hover:text-spicy-neon transition-colors uppercase tracking-widest"
             >
-              {awardOpen ? "▼" : "▶"} {locale === "zh-CN" ? "查看获奖证书" : locale === "ko-KR" ? "수상 증서 보기" : locale === "ja-JP" ? "受賞証明書を見る" : "View Award Certificates"}
+              {awardOpen ? "▼" : "▶"} {locale === "zh-CN" ? "查看获奖证书" : locale === "ko-KR" ? "수상경력 보기" : locale === "ja-JP" ? "受賞証明書を見る" : "View Award Certificates"}
             </button>
 
             {awardOpen && (
