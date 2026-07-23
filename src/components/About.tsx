@@ -170,22 +170,7 @@ export default function About() {
             </span>
           </h3>
 
-          <div className="flex justify-center">
-            <div className="w-72 h-72 rounded-sm border border-spicy-neon/30 bg-gradient-to-br from-spicy-black via-black to-spicy-dark p-3 flex items-center justify-center shadow-lg shadow-spicy-neon/10">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                poster="/logo-poster.png"
-                className="w-full h-full object-contain rounded-sm"
-              >
-                <source src="/logo-video-baseline.mp4" type="video/mp4" />
-                <source src="/logo-video.mp4" type="video/mp4" />
-                <img src="/logo-poster.png" alt="SPICYBEAN" />
-              </video>
-            </div>
-          </div>
+          <LogoVideo />
         </motion.div>
 
         {/* Section: Craftsmanship Details */}
