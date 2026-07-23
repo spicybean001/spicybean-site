@@ -40,10 +40,10 @@ export default function KoK2Story() {
         레드 벨벳 내부는 클럽을 부드럽게 감싸며, 섬세한 털이 스크래치를 방지합니다. 하트 로고는 고밀도 실크 자수로 제작되어 선명한 색상이 오래 지속됩니다.
       </p>
 
-      <div className="my-8 rounded-sm bg-spicy-darkgray overflow-hidden">
+      <div className="my-8 rounded-sm bg-spicy-darkgray overflow-hidden aspect-[4/3]">
         <img
-          src="/images/blog/k2-white-love-detail.jpg"
-          alt="K2 화이트 러브 디테일"
+          src="/images/blog/k2-white-love-img-3.jpg"
+          alt="K2 시그니처 화이트 제품 쇼케이스"
           className="w-full h-full object-cover"
           loading="lazy"
         />

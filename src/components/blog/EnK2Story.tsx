@@ -43,10 +43,10 @@ export default function EnK2Story() {
         The red velvet interior gently wraps your club, with soft fibers that prevent scratches — the most tender care for your beloved driver. The heart logo uses high-density silk thread embroidery, with rich color that never fades. Every stitch is a commitment to quality.
       </p>
 
-      <div className="my-8 rounded-sm bg-spicy-darkgray overflow-hidden">
+      <div className="my-8 rounded-sm bg-spicy-darkgray overflow-hidden aspect-[4/3]">
         <img
-          src="/images/blog/k2-white-love-detail.jpg"
-          alt="K2 White Love detail view"
+          src="/images/blog/k2-white-love-img-3.jpg"
+          alt="K2 Signature White product showcase"
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -78,19 +78,19 @@ export default function EnK2Story() {
 
       <h2>More Styling Inspiration</h2>
 
-      <div className="my-8 grid grid-cols-2 gap-4">
-        <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
+      <div className="my-8 space-y-4">
+        <div className="rounded-sm bg-spicy-darkgray overflow-hidden aspect-[4/3]">
           <img
-            src="/images/blog/k2-white-love-style.jpg"
-            alt="K2 White Love outfit styling"
+            src="/images/blog/k2-white-love-img-6.jpg"
+            alt="K2 Signature White on the course"
             className="w-full h-full object-cover"
             loading="lazy"
           />
         </div>
-        <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
+        <div className="rounded-sm bg-spicy-darkgray overflow-hidden aspect-[4/3]">
           <img
-            src="/images/blog/k2-white-love-embroidery.jpg"
-            alt="K2 heart embroidery detail"
+            src="/images/blog/k2-white-love-img-9.jpg"
+            alt="K2 Signature White detail closeup"
             className="w-full h-full object-cover"
             loading="lazy"
           />

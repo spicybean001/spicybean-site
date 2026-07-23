@@ -78,19 +78,27 @@ export default function ZhCNK2Story() {
 
       <h2>更多搭配灵感</h2>
 
-      <div className="my-8 grid grid-cols-2 gap-4">
-        <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
+      <div className="my-8 space-y-4">
+        <div className="rounded-sm bg-spicy-darkgray overflow-hidden aspect-[4/3]">
           <img
-            src="/images/blog/k2-white-love-style.jpg"
-            alt="K2 白色爱心款搭配展示"
+            src="/images/blog/k2-white-love-img-3.jpg"
+            alt="K2 标志性白色系列产品展示"
             className="w-full h-full object-cover"
             loading="lazy"
           />
         </div>
-        <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
+        <div className="rounded-sm bg-spicy-darkgray overflow-hidden aspect-[4/3]">
           <img
-            src="/images/blog/k2-white-love-embroidery.jpg"
-            alt="K2 爱心刺绣细节"
+            src="/images/blog/k2-white-love-img-6.jpg"
+            alt="K2 标志性白色系列球场搭配"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="rounded-sm bg-spicy-darkgray overflow-hidden aspect-[4/3]">
+          <img
+            src="/images/blog/k2-white-love-img-9.jpg"
+            alt="K2 标志性白色系列细节特写"
             className="w-full h-full object-cover"
             loading="lazy"
           />

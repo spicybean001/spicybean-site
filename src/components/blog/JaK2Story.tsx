@@ -40,10 +40,10 @@ export default function JaK2Story() {
         レッドベルベットの内部はクラブを優しく包み込み、繊細な毛足が傷を防ぎます。ハートロゴは高密度シルク刺繍で製作され、色褪せない鮮やかな発色が長く続きます。
       </p>
 
-      <div className="my-8 rounded-sm bg-spicy-darkgray overflow-hidden">
+      <div className="my-8 rounded-sm bg-spicy-darkgray overflow-hidden aspect-[4/3]">
         <img
-          src="/images/blog/k2-white-love-detail.jpg"
-          alt="K2 ホワイトラブ ディテール"
+          src="/images/blog/k2-white-love-img-3.jpg"
+          alt="K2 シグネチャーホワイト プロダクトショーケース"
           className="w-full h-full object-cover"
           loading="lazy"
         />
