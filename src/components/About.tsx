@@ -2,13 +2,40 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
-
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default function About() {
   const t = useTranslations();
   const locale = useLocale();
   const [awardOpen, setAwardOpen] = useState(false);
+  const brandVideoRef = useRef<HTMLVideoElement>(null);
+
+  // 移动端autoPlay兼容：监听页面交互后播放
+  useEffect(() => {
+    const v = brandVideoRef.current;
+    if (!v) return;
+
+    // 立即尝试播放
+    const tryPlay = () => {
+      v.play().catch(() => {});
+    };
+
+    tryPlay();
+
+    // 如果未播放（移动端拦截），监听一次触摸后播放
+    const handler = () => {
+      tryPlay();
+      document.removeEventListener("touchstart", handler);
+      document.removeEventListener("click", handler);
+    };
+    document.addEventListener("touchstart", handler, { once: true });
+    document.addEventListener("click", handler, { once: true });
+
+    return () => {
+      document.removeEventListener("touchstart", handler);
+      document.removeEventListener("click", handler);
+    };
+  }, []);
 
 
   return (
@@ -174,9 +201,13 @@ export default function About() {
 
           <div className="flex justify-center">
             <div className="w-72 h-72 rounded-sm border border-spicy-neon/30 bg-gradient-to-br from-spicy-black via-black to-spicy-dark p-3 flex items-center justify-center shadow-lg shadow-spicy-neon/10">
-              <img
-                src="/logo-video.webp"
-                alt="SPICYBEAN"
+              <video
+                ref={brandVideoRef}
+                src="/logo-video.mp4"
+                muted
+                loop
+                playsInline
+                preload="auto"
                 className="w-full h-full object-contain rounded-sm"
               />
             </div>
