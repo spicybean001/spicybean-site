@@ -17,6 +17,10 @@ import ZhCNBrandGuide from "@/components/blog/ZhCNBrandGuide";
 import EnBrandGuide from "@/components/blog/EnBrandGuide";
 import KoBrandGuide from "@/components/blog/KoBrandGuide";
 import JaBrandGuide from "@/components/blog/JaBrandGuide";
+import ZhCNK2Story from "@/components/blog/ZhCNK2Story";
+import EnK2Story from "@/components/blog/EnK2Story";
+import KoK2Story from "@/components/blog/KoK2Story";
+import JaK2Story from "@/components/blog/JaK2Story";
 import BlogViewCount from "@/components/blog/BlogViewCount";
 
 const articles = {
@@ -74,6 +78,24 @@ const articles = {
       date: "2026-07-19",
     },
   },
+  "k2-white-love-story": {
+    "zh-CN": {
+      title: "K2白色爱心：高尔夫杆套也可以很浪漫 🖤",
+      date: "2026-07-24",
+    },
+    en: {
+      title: "K2 White Love: When Golf Headcovers Embrace Romance 🖤",
+      date: "2026-07-24",
+    },
+    "ko-KR": {
+      title: "K2 화이트 러브: 골프 헤드커버도 로맨틱할 수 있다 🖤",
+      date: "2026-07-24",
+    },
+    "ja-JP": {
+      title: "K2 ホワイトラブ：ゴルフヘッドカバーもロマンチックに 🖤",
+      date: "2026-07-24",
+    },
+  },
   "spicybean-brand-guide": {
     "zh-CN": {
       title: "SPICYBEAN高尔夫杆套品牌完整指南：系列、材质、工艺、购买全解析",
@@ -113,6 +135,12 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
     "ko-KR": KoFAQ,
     "ja-JP": JaFAQ,
   },
+  "k2-white-love-story": {
+    "zh-CN": ZhCNK2Story,
+    en: EnK2Story,
+    "ko-KR": KoK2Story,
+    "ja-JP": JaK2Story,
+  },
   "spicybean-brand-guide": {
     "zh-CN": ZhCNBrandGuide,
     en: EnBrandGuide,
@@ -140,6 +168,12 @@ const descriptions: Record<string, Record<string, string>> = {
     "ko-KR": "골프 헤드커버 FAQ: 소재 비교, 사이즈 가이드, 브랜드 차이, 관리 팁.",
     "ja-JP": "ゴルフヘッドカバーFAQ：素材比較、サイズガイド、ブランドの違い、お手入れのコツ。",
   },
+  "k2-white-love-story": {
+    "zh-CN": "K2白色爱心高尔夫杆套设计故事。纯白超纤PU × 爱心刺绣，韩式浪漫美学。K1-K4系列对比。",
+    en: "K2 White Love golf headcover design story. Pure white microfiber PU × heart embroidery. Korean romantic aesthetics. K1-K4 series comparison.",
+    "ko-KR": "K2 화이트 러브 골프 헤드커버 디자인 스토리. 순백 PU × 하트 자수. 한국적 로맨틱 감성.",
+    "ja-JP": "K2 ホワイトラブ ゴルフヘッドカバーデザインストーリー。純白PU×ハート刺繍。",
+  },
   "spicybean-brand-guide": {
     "zh-CN": "SPICYBEAN韩国高尔夫杆套品牌完整介绍。K1/K2/K3/K4全系列对比，PU皮革材质解析、设计工艺、购买渠道。",
     en: "Complete SPICYBEAN brand guide. Korean design-driven golf headcovers. K1-K4 series comparison, PU leather materials, craftsmanship, and where to buy.",
@@ -166,6 +200,8 @@ export async function generateMetadata({
   const path = `/${locale}/blog/${slug}`;
   const ogImage = slug === "k4-neon-noir-story"
     ? `${siteUrl}/images/blog/k4-neon-noir-cover.jpg`
+    : slug === "k2-white-love-story"
+    ? `${siteUrl}/images/blog/k2-white-love-cover.jpg`
     : slug === "golf-headcover-faq"
     ? `${siteUrl}/og-image.jpg`
     : slug === "spicybean-brand-guide"
@@ -289,6 +325,8 @@ export default async function ArticlePage({
               "headline": langData.title,
               "description": slug === "k4-neon-noir-story"
                 ? "K4 Neon Noir cyber skull golf headcover design story"
+                : slug === "k2-white-love-story"
+                ? "K2 White Love golf headcover design story — pure white PU with heart embroidery, Korean romantic aesthetics"
                 : slug === "spicybean-brand-guide"
                 ? "Complete SPICYBEAN golf headcover brand guide: series, materials, craftsmanship"
                 : "Golf headcover buying guide: materials, sizing, styling",

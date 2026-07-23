@@ -29,6 +29,14 @@ const blogPosts = {
       lang: "zh-CN" as const,
     },
     {
+      slug: "k2-white-love-story",
+      title: "K2白色爱心：高尔夫杆套也可以很浪漫 🖤",
+      excerpt: "纯白超纤PU × 爱心刺绣，SPICYBEAN最具韩式浪漫气质的高尔夫杆套。设计故事全解析。",
+      date: "2026-07-24",
+      image: "/images/blog/k2-white-love-cover.jpg",
+      lang: "zh-CN" as const,
+    },
+    {
       slug: "golf-headcover-buying-guide",
       title: "高尔夫杆头套选购指南：材质、尺寸、搭配一篇看懂",
       excerpt: "从材质到尺寸，从搭配到品牌，一篇让你成为杆套选购专家。",
@@ -60,6 +68,14 @@ const blogPosts = {
       excerpt: "From Seoul to the course — the story behind SPICYBEAN's most daring headcover yet.",
       date: "2026-07-19",
       image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "en" as const,
+    },
+    {
+      slug: "k2-white-love-story",
+      title: "K2 White Love: When Golf Headcovers Embrace Romance 🖤",
+      excerpt: "Pure white microfiber PU × heart embroidery — SPICYBEAN's most Korean-romantic golf headcover. The full design story.",
+      date: "2026-07-24",
+      image: "/images/blog/k2-white-love-cover.jpg",
       lang: "en" as const,
     },
     {
@@ -97,6 +113,14 @@ const blogPosts = {
       lang: "ko-KR" as const,
     },
     {
+      slug: "k2-white-love-story",
+      title: "K2 화이트 러브: 골프 헤드커버도 로맨틱할 수 있다 🖤",
+      excerpt: "순백 마이크로화이버 PU × 하트 자수 — SPICYBEAN의 가장 한국적 로맨틱 헤드커버 디자인 스토리.",
+      date: "2026-07-24",
+      image: "/images/blog/k2-white-love-cover.jpg",
+      lang: "ko-KR" as const,
+    },
+    {
       slug: "golf-headcover-buying-guide",
       title: "골프 헤드커버 완벽 구매 가이드",
       excerpt: "소재, 사이즈, 스타일, 관리법까지 한번에 알아보세요.",
@@ -128,6 +152,14 @@ const blogPosts = {
       excerpt: "ソウルからコースへ — SPICYBEANの最も大胆なヘッドカバーの物語。",
       date: "2026-07-19",
       image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "ja-JP" as const,
+    },
+    {
+      slug: "k2-white-love-story",
+      title: "K2 ホワイトラブ：ゴルフヘッドカバーもロマンチックに 🖤",
+      excerpt: "純白マイクロファイバーPU × ハート刺繍 — SPICYBEANで最も韓国的ロマンティックなヘッドカバー。",
+      date: "2026-07-24",
+      image: "/images/blog/k2-white-love-cover.jpg",
       lang: "ja-JP" as const,
     },
     {
