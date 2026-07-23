@@ -30,8 +30,8 @@ const blogPosts = {
     },
     {
       slug: "k2-white-love-story",
-      title: "K2白色爱心：高尔夫杆套也可以很浪漫 🖤",
-      excerpt: "纯白超纤PU × 爱心刺绣，SPICYBEAN最具韩式浪漫气质的高尔夫杆套。设计故事全解析。",
+      title: "K2 标志性白色系列：高尔夫杆套也可以很浪漫 🖤",
+      excerpt: "纯白超纤PU × 爱心刺绣 — SPICYBEAN K2 标志性白色系列全解析。韩式浪漫美学高尔夫杆套，适合追求精致品味的球友。",
       date: "2026-07-24",
       image: "/images/blog/k2-white-love-cover.jpg",
       lang: "zh-CN" as const,
@@ -72,8 +72,8 @@ const blogPosts = {
     },
     {
       slug: "k2-white-love-story",
-      title: "K2 White Love: When Golf Headcovers Embrace Romance 🖤",
-      excerpt: "Pure white microfiber PU × heart embroidery — SPICYBEAN's most Korean-romantic golf headcover. The full design story.",
+      title: "K2 — Signature White: When Golf Headcovers Embrace Romance 🖤",
+      excerpt: "Pure white microfiber PU × heart embroidery — SPICYBEAN K2 Signature White series. Korean romantic aesthetic golf headcovers for style-conscious players.",
       date: "2026-07-24",
       image: "/images/blog/k2-white-love-cover.jpg",
       lang: "en" as const,
@@ -114,8 +114,8 @@ const blogPosts = {
     },
     {
       slug: "k2-white-love-story",
-      title: "K2 화이트 러브: 골프 헤드커버도 로맨틱할 수 있다 🖤",
-      excerpt: "순백 마이크로화이버 PU × 하트 자수 — SPICYBEAN의 가장 한국적 로맨틱 헤드커버 디자인 스토리.",
+      title: "K2 — 시그니처 화이트: 골프 헤드커버도 로맨틱할 수 있다 🖤",
+      excerpt: "순백 마이크로화이버 PU × 하트 자수 — SPICYBEAN K2 시그니처 화이트 시리즈. 한국적 로맨틱 감성의 골프 헤드커버.",
       date: "2026-07-24",
       image: "/images/blog/k2-white-love-cover.jpg",
       lang: "ko-KR" as const,
@@ -156,8 +156,8 @@ const blogPosts = {
     },
     {
       slug: "k2-white-love-story",
-      title: "K2 ホワイトラブ：ゴルフヘッドカバーもロマンチックに 🖤",
-      excerpt: "純白マイクロファイバーPU × ハート刺繍 — SPICYBEANで最も韓国的ロマンティックなヘッドカバー。",
+      title: "K2 — シグネチャーホワイト：ゴルフヘッドカバーもロマンチックに 🖤",
+      excerpt: "純白マイクロファイバーPU × ハート刺繍 — SPICYBEAN K2 シグネチャーホワイトシリーズ。韓国ロマンティック感性のゴルフヘッドカバー。",
       date: "2026-07-24",
       image: "/images/blog/k2-white-love-cover.jpg",
       lang: "ja-JP" as const,
