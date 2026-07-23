@@ -70,10 +70,10 @@ export default function EnK2Story() {
         Every K-series headcover has its own personality. Not sure which one? Check your vibe:
       </p>
       <ul>
-        <li><strong>K1 Black Classic</strong> — Italian-crafted black PU leather, understated luxury for the business-casual course</li>
-        <li><strong>K2 White Love</strong> — Korean romantic aesthetics, pure white × heart embroidery, soft power on the green</li>
-        <li><strong>K3 Red Passion</strong> — Bold red PU leather, confident and loud, for the social golfer</li>
-        <li><strong>K4 Neon Noir</strong> — Cyberpunk dark aesthetics, fluorescent skull embroidery, signature limited edition</li>
+        <li><strong>K1 — Classic Noir</strong> — Italian-crafted black PU leather, understated luxury for the business-casual course</li>
+        <li><strong>K2 — Signature White</strong> — Korean romantic aesthetics, pure white × heart embroidery, soft power on the green</li>
+        <li><strong>K3 — Spicy Red</strong> — Bold red PU leather, confident and loud, for the social golfer</li>
+        <li><strong>K4 — Cyber Skull</strong> — Cyberpunk dark aesthetics, fluorescent skull embroidery, signature limited edition</li>
       </ul>
 
       <h2>More Styling Inspiration</h2>

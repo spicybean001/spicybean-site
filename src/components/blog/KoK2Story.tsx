@@ -61,10 +61,10 @@ export default function KoK2Story() {
       <h2>K-시리즈 비교: 당신에게 맞는 스타일은?</h2>
 
       <ul>
-        <li><strong>K1 블랙 클래식</strong> — 이탈리안 공법 블랙 PU 가죽, 언더스테이트먼트 럭셔리</li>
-        <li><strong>K2 화이트 러브</strong> — 한국적 로맨틱 감성, 순백 × 하트 자수, 그린 위의 부드러운 파워</li>
-        <li><strong>K3 레드 패션</strong> — 대담한 레드 PU 가죽, 자신감 넘치는 소셜 골퍼를 위한 디자인</li>
-        <li><strong>K4 네온 느와르</strong> — 사이버펑크 다크 미학, 형광 해골 자수, 시그니처 한정판</li>
+        <li><strong>K1 — 클래식 느와르</strong> — 이탈리안 공법 블랙 PU 가죽, 언더스테이트먼트 럭셔리</li>
+        <li><strong>K2 — 시그니처 화이트</strong> — 한국적 로맨틱 감성, 순백 × 하트 자수, 그린 위의 부드러운 파워</li>
+        <li><strong>K3 — 스파이시 레드</strong> — 대담한 레드 PU 가죽, 자신감 넘치는 소셜 골퍼를 위한 디자인</li>
+        <li><strong>K4 — 사이버 스컬</strong> — 사이버펑크 다크 미학, 형광 해골 자수, 시그니처 한정판</li>
       </ul>
 
       <h2>감성: 삶을 사랑하는 당신을 위한 디자인</h2>

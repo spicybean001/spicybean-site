@@ -70,10 +70,10 @@ export default function ZhCNK2Story() {
         每一款K系列杆套都有自己的性格。不知道选哪个？看看你的风格：
       </p>
       <ul>
-        <li><strong>K1 黑色经典</strong> — 意大利工艺级黑色PU皮革，低调奢华，适合商务风球场</li>
-        <li><strong>K2 白色爱心</strong> — 韩式浪漫美学，纯白×爱心刺绣，球场上的温柔力量</li>
-        <li><strong>K3 红色热情</strong> — 亮眼红色PU皮革，张扬自信，适合球场上的社交达人</li>
-        <li><strong>K4 暗夜霓虹</strong> — 赛博朋克暗黑美学，荧光骷髅刺绣，签名限定款</li>
+        <li><strong>K1 黑色经典系列</strong> — 意大利工艺级黑色PU皮革，低调奢华，适合商务风球场</li>
+        <li><strong>K2 标志性白色系列</strong> — 韩式浪漫美学，纯白×爱心刺绣，球场上的温柔力量</li>
+        <li><strong>K3 辛红系列</strong> — 亮眼辛红PU皮革，张扬自信，适合球场上的社交达人</li>
+        <li><strong>K4 赛博骷髅系列</strong> — 赛博朋克暗黑美学，荧光骷髅刺绣，签名限定款</li>
       </ul>
 
       <h2>更多搭配灵感</h2>
