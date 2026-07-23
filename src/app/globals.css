@@ -101,3 +101,19 @@ img {
 video, button, a, input, textarea, select {
   pointer-events: auto;
 }
+
+/* 🎬 Logo视频隐藏原生控件按钮 */
+.logo-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+  opacity: 0;
+}
+.logo-video::-webkit-media-controls {
+  display: none !important;
+}
+.logo-video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+.logo-video::-webkit-media-controls-panel {
+  display: none !important;
+}
