@@ -38,12 +38,23 @@ export default function LogoVideo() {
       canvas.height = v.videoHeight || 720;
 
       const drawFrame = () => {
+        // 手动循环：播放完毕后重置
+        if (v.ended) {
+          v.currentTime = 0;
+          v.play().catch(() => {});
+        }
         ctx!.drawImage(v, 0, 0, canvas!.width, canvas!.height);
         animRef.current = requestAnimationFrame(drawFrame);
       };
 
       v.play().catch(() => {});
       drawFrame();
+    });
+
+    // 备用：监听ended事件强制循环
+    v.addEventListener("ended", () => {
+      v.currentTime = 0;
+      v.play().catch(() => {});
     });
   };
 
@@ -52,6 +63,7 @@ export default function LogoVideo() {
     setInteracted(true);
     const video = videoRef.current;
     if (video) {
+      video.loop = true;
       video.play().catch(() => {
         // 如果video还是播不了，转canvas
         setFailed(true);
@@ -70,6 +82,7 @@ export default function LogoVideo() {
       // 非微信环境，正常视频自动播放
       const video = videoRef.current;
       if (video) {
+        video.loop = true;
         video.play().then(() => setPlaying(true)).catch(() => {
           setFailed(true);
           startCanvasRender();
