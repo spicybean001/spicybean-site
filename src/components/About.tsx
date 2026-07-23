@@ -2,12 +2,22 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
+import { useRef, useEffect } from "react";
 import { useState } from "react";
 
 export default function About() {
   const t = useTranslations();
   const locale = useLocale();
   const [awardOpen, setAwardOpen] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  // 确保视频自动播放（解决移动端autoPlay属性失效问题）
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      videoRef.current?.play().catch(() => {});
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <section id="about" className="relative bg-spicy-dark py-24 md:py-32 overflow-hidden">
@@ -173,6 +183,7 @@ export default function About() {
           <div className="flex justify-center">
             <div className="w-72 h-72 rounded-sm border border-spicy-neon/30 bg-gradient-to-br from-spicy-black via-black to-spicy-dark p-3 flex items-center justify-center shadow-lg shadow-spicy-neon/10">
               <video
+                ref={videoRef}
                 src="/logo-video.mp4"
                 autoPlay
                 loop
