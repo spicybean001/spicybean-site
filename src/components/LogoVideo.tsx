@@ -37,13 +37,13 @@ export default function LogoVideo() {
       canvas.width = v.videoWidth || 720;
       canvas.height = v.videoHeight || 720;
 
-      function draw() {
-        ctx.drawImage(v, 0, 0, canvas.width, canvas.height);
-        animRef.current = requestAnimationFrame(draw);
-      }
+      const drawFrame = () => {
+        ctx!.drawImage(v, 0, 0, canvas!.width, canvas!.height);
+        animRef.current = requestAnimationFrame(drawFrame);
+      };
 
       v.play().catch(() => {});
-      draw();
+      drawFrame();
     });
   };
 

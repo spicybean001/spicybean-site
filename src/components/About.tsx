@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import LogoVideo from "./LogoVideo";
 
 export default function About() {
   const t = useTranslations();
