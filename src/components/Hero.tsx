@@ -9,8 +9,8 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-spicy-black">
-      {/* Korean mountain golf course grayscale background */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* Korean mountain golf course grayscale background - mobile only */}
+      <div className="absolute inset-0 overflow-hidden md:hidden">
         <img
           src="/images/bg-hero.webp"
           alt=""
