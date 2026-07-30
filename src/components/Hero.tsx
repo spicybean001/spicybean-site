@@ -16,7 +16,6 @@ export default function Hero() {
           alt=""
           className="w-full h-full object-cover opacity-20"
           style={{ filter: 'grayscale(100%) brightness(0.4) contrast(1.25)' }}
-          style={{ filter: 'grayscale(100%) brightness(0.4) contrast(1.25)' }}
           loading="eager"
         />
       </div>
