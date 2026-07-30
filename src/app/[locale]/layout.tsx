@@ -118,6 +118,8 @@ export default async function LocaleLayout({
         {/* Google Search Console Verification */}
         <meta name="google-site-verification" content="tHRQCRyLLYY50YmJzhgFw45qBEsYXjM6Fb42s3kGhD8" />
 
+        <meta name="naver-site-verification" content="7246a767fc80594982ecec70460bb559f773ac17" />
+
         {/* Bing Webmaster Tools Verification */}
         <meta name="msvalidate.01" content="AABECD01D1C1959F835814263DDD41F7" />
 
