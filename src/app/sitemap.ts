@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]);
 
   // Blog articles
-  const articles = ["golf-headcover-buying-guide", "k4-neon-noir-story", "golf-headcover-faq", "spicybean-brand-guide"];
+  const articles = ["golf-headcover-buying-guide", "k4-neon-noir-story", "golf-headcover-faq", "spicybean-brand-guide", "k2-white-love-story", "spicybean-series-comparison"];
   const articlePages = locales.flatMap((locale) =>
     articles.map((slug) => ({
       url: `${baseUrl}/${locale}/blog/${slug}`,

@@ -5,6 +5,14 @@ import BlogList from "@/components/blog/BlogList";
 const blogPosts = {
   "zh-CN": [
     {
+      slug: "spicybean-series-comparison",
+      title: "K1/K2/K3/K4怎么选？一篇看懂SPICYBEAN全系列对比",
+      excerpt: "K1黑色经典、K2白色爱心、K3辛红、K4赛博骷髅——价格、风格、搭配全对比，3分钟找到你的那款。",
+      date: "2026-07-30",
+      image: "/images/blog/brand-guide-cover.jpg",
+      lang: "zh-CN" as const,
+    },
+    {
       slug: "spicybean-brand-guide",
       title: "SPICYBEAN高尔夫杆套品牌完整指南",
       excerpt: "韩国首尔设计驱动的高尔夫杆套品牌，K1-K4全系列解析。",
@@ -46,6 +54,14 @@ const blogPosts = {
     },
   ],
   en: [
+    {
+      slug: "spicybean-series-comparison",
+      title: "K1 vs K2 vs K3 vs K4: Which SPICYBEAN Headcover Is Right for You?",
+      excerpt: "Complete comparison of all four SPICYBEAN series — price, style, matching tips, and recommendations in 3 minutes.",
+      date: "2026-07-30",
+      image: "/images/blog/brand-guide-cover.jpg",
+      lang: "en" as const,
+    },
     {
       slug: "spicybean-brand-guide",
       title: "SPICYBEAN Brand Guide: Series, Materials & Where to Buy",
@@ -89,6 +105,14 @@ const blogPosts = {
   ],
   "ko-KR": [
     {
+      slug: "spicybean-series-comparison",
+      title: "K1/K2/K3/K4 비교: 나에게 맞는 SPICYBEAN 헤드커버는?",
+      excerpt: "K1 블랙, K2 화이트, K3 레드, K4 네온 느와르 — 가격, 스타일, 추천을 한눈에 비교합니다.",
+      date: "2026-07-30",
+      image: "/images/blog/brand-guide-cover.jpg",
+      lang: "ko-KR" as const,
+    },
+    {
       slug: "spicybean-brand-guide",
       title: "SPICYBEAN 브랜드 가이드: 시리즈, 소재, 구매처",
       excerpt: "서울의 디자인 중심 골프 헤드커버 브랜드 SPICYBEAN 완벽 가이드.",
@@ -130,6 +154,14 @@ const blogPosts = {
     },
   ],
   "ja-JP": [
+    {
+      slug: "spicybean-series-comparison",
+      title: "K1/K2/K3/K4比較：自分に合うSPICYBEANヘッドカバーは？",
+      excerpt: "K1ブラック、K2ホワイト、K3レッド、K4サイバースカル — 価格、スタイル、おすすめを比較。",
+      date: "2026-07-30",
+      image: "/images/blog/brand-guide-cover.jpg",
+      lang: "ja-JP" as const,
+    },
     {
       slug: "spicybean-brand-guide",
       title: "SPICYBEAN ブランドガイド：シリーズ、素材、購入先",

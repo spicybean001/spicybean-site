@@ -60,7 +60,7 @@ export default function NewsletterPopup() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [dismissed, setDismissed] = useState(false);
 
-  // Show popup after 30s on first visit (only once per session)
+  // Show popup: after 30s OR on exit intent (mouse leaves window near top)
   useEffect(() => {
     if (typeof window === "undefined") return;
     const alreadyDismissed = sessionStorage.getItem("spicybean-newsletter-dismissed");
@@ -69,12 +69,28 @@ export default function NewsletterPopup() {
       return;
     }
 
+    // Timer: 30 seconds
     const timer = setTimeout(() => {
       setShow(true);
     }, 30000);
 
-    return () => clearTimeout(timer);
-  }, []);
+    // Exit intent: mouse leaves window from top
+    let exitFired = false;
+    const handleMouseLeave = (e: MouseEvent) => {
+      if (exitFired || show || dismissed) return;
+      if (e.clientY <= 0) {
+        exitFired = true;
+        clearTimeout(timer);
+        setShow(true);
+      }
+    };
+    document.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, [show, dismissed]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

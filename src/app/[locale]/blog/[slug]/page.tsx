@@ -168,6 +168,12 @@ const descriptions: Record<string, Record<string, string>> = {
     "ko-KR": "골프 헤드커버 FAQ: 소재 비교, 사이즈 가이드, 브랜드 차이, 관리 팁.",
     "ja-JP": "ゴルフヘッドカバーFAQ：素材比較、サイズガイド、ブランドの違い、お手入れのコツ。",
   },
+  "spicybean-series-comparison": {
+    "zh-CN": "K1/K2/K3/K4全系列对比：价格、风格、推荐人群一图看懂。SPICYBEAN杆套选购指南。",
+    en: "K1 vs K2 vs K3 vs K4: complete SPICYBEAN series comparison. Price, style, matching tips, and recommendations.",
+    "ko-KR": "K1/K2/K3/K4 시리즈 비교: 가격, 스타일, 추천 대상 한눈에 비교.",
+    "ja-JP": "K1/K2/K3/K4シリーズ比較：価格、スタイル、おすすめを一目で比較。",
+  },
   "k2-white-love-story": {
     "zh-CN": "K2白色爱心高尔夫杆套设计故事。纯白超纤PU × 爱心刺绣，韩式浪漫美学。K1-K4系列对比。",
     en: "K2 White Love golf headcover design story. Pure white microfiber PU × heart embroidery. Korean romantic aesthetics. K1-K4 series comparison.",

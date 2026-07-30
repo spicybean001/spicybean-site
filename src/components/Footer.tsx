@@ -47,81 +47,51 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
-                    >
-                      {t("shop.jd")} ↗
-                    </a>
+                    <span className="text-sm text-spicy-gray/40">
+                      {t("shop.jd")} 🚧
+                    </span>
                   </li>
                 </>
               )}
               {locale === "en" && (
                 <li>
-                  <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
-                  >
-                    {t("shop.amazon")} ↗
-                  </a>
+                  <span className="text-sm text-spicy-gray/40">
+                    {t("shop.amazon")} 🚧
+                  </span>
                 </li>
               )}
               {locale === "ko-KR" && (
                 <>
                   <li>
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
-                    >
-                      {t("shop.coupang")} ↗
-                    </a>
+                    <span className="text-sm text-spicy-gray/40">
+                      {t("shop.coupang")} 🚧
+                    </span>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
-                    >
-                      {t("shop.naver")} ↗
-                    </a>
+                    <span className="text-sm text-spicy-gray/40">
+                      {t("shop.naver")} 🚧
+                    </span>
                   </li>
                 </>
               )}
               {locale === "ja-JP" && (
                 <>
                   <li>
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
-                    >
-                      {t("shop.rakuten")} ↗
-                    </a>
+                    <span className="text-sm text-spicy-gray/40">
+                      {t("shop.rakuten")} 🚧
+                    </span>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
-                    >
-                      {t("shop.amazonJp")} ↗
-                    </a>
+                    <span className="text-sm text-spicy-gray/40">
+                      {t("shop.amazonJp")} 🚧
+                    </span>
                   </li>
                 </>
               )}
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact + Social QR */}
           <div>
             <h3 className="text-sm font-semibold tracking-widest uppercase text-spicy-white mb-4">
               {t("contact.title")}
@@ -152,6 +122,26 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+
+            {/* Xiaohongshu QR Code */}
+            <div className="mt-6">
+              <p className="text-xs tracking-widest uppercase text-spicy-gray/50 mb-3">
+                {t("contact.xiaohongshu")}
+              </p>
+              <div className="w-24 h-24 rounded-sm border border-white/10 bg-white p-1.5 overflow-hidden">
+                <img
+                  src="/images/brand/xiaohongshu-qr.png"
+                  alt="SPICYBEAN 小红书"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                  width="330"
+                  height="330"
+                />
+              </div>
+              <p className="text-[10px] text-spicy-gray/40 mt-1">
+                {locale === "zh-CN" ? "扫码关注小红书" : locale === "ko-KR" ? "샤오홍슈 팔로우" : locale === "ja-JP" ? "小紅書をフォロー" : "Scan to follow on Xiaohongshu"}
+              </p>
+            </div>
           </div>
         </div>
 
