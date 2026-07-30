@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Korean mountain golf course grayscale background */}
       <div className="absolute inset-0 overflow-hidden">
         <img
-          src="/images/bg-test-a-grayscale.jpg"
+          src="/images/bg-test-v2.jpg"
           alt=""
           className="w-full h-full object-cover opacity-20"
           style={{ filter: 'grayscale(100%) brightness(0.4) contrast(1.25)' }}
