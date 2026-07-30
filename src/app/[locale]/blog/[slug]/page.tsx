@@ -363,7 +363,76 @@ export default async function ArticlePage({
 
         <Component />
 
-        <div className="mt-16 flex items-center justify-end">
+        {/* Related Articles — internal links for SEO */}
+        <div className="mt-16 pt-8 border-t border-white/10">
+          <h3 className="text-lg font-bold text-spicy-white mb-4">
+            {locale === "zh-CN" ? "📖 推荐阅读" : locale === "ko-KR" ? "📖 함께 읽기" : locale === "ja-JP" ? "📖 関連記事" : "📖 Related Articles"}
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {slug !== "spicybean-series-comparison" && (
+              <a
+                href={`/${locale}/blog/spicybean-series-comparison`}
+                className="group flex items-center gap-3 rounded-sm border border-white/5 bg-spicy-black/30 p-4 hover:border-spicy-red/30 transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-sm overflow-hidden shrink-0 bg-spicy-darkgray">
+                  <img src="/images/blog/brand-guide-cover.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-spicy-white group-hover:text-spicy-neon transition-colors line-clamp-2">
+                    {locale === "zh-CN" ? "K1/K2/K3/K4怎么选？一篇看懂" : locale === "ko-KR" ? "K1/K2/K3/K4 비교: 나에게 맞는 헤드커버는?" : locale === "ja-JP" ? "K1/K2/K3/K4比較：自分に合うヘッドカバーは？" : "K1 vs K2 vs K3 vs K4: Which SPICYBEAN Headcover Is Right for You?"}
+                  </p>
+                </div>
+              </a>
+            )}
+            {slug !== "spicybean-brand-guide" && (
+              <a
+                href={`/${locale}/blog/spicybean-brand-guide`}
+                className="group flex items-center gap-3 rounded-sm border border-white/5 bg-spicy-black/30 p-4 hover:border-spicy-red/30 transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-sm overflow-hidden shrink-0 bg-spicy-darkgray">
+                  <img src="/images/blog/brand-guide-cover.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-spicy-white group-hover:text-spicy-neon transition-colors line-clamp-2">
+                    {locale === "zh-CN" ? "SPICYBEAN品牌完整指南" : locale === "ko-KR" ? "SPICYBEAN 브랜드 가이드" : locale === "ja-JP" ? "SPICYBEANブランドガイド" : "SPICYBEAN Brand Guide"}
+                  </p>
+                </div>
+              </a>
+            )}
+            {slug !== "golf-headcover-faq" && (
+              <a
+                href={`/${locale}/blog/golf-headcover-faq`}
+                className="group flex items-center gap-3 rounded-sm border border-white/5 bg-spicy-black/30 p-4 hover:border-spicy-red/30 transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-sm overflow-hidden shrink-0 bg-spicy-darkgray">
+                  <img src="/images/blog/faq-cover.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-spicy-white group-hover:text-spicy-neon transition-colors line-clamp-2">
+                    {locale === "zh-CN" ? "高尔夫杆套FAQ常见问题" : locale === "ko-KR" ? "헤드커버 FAQ" : locale === "ja-JP" ? "ヘッドカバーFAQ" : "Golf Headcover FAQ"}
+                  </p>
+                </div>
+              </a>
+            )}
+            {slug !== "golf-headcover-buying-guide" && (
+              <a
+                href={`/${locale}/blog/golf-headcover-buying-guide`}
+                className="group flex items-center gap-3 rounded-sm border border-white/5 bg-spicy-black/30 p-4 hover:border-spicy-red/30 transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-sm overflow-hidden shrink-0 bg-spicy-darkgray">
+                  <img src="/images/blog/headcover-guide-cover.jpg" alt="" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-spicy-white group-hover:text-spicy-neon transition-colors line-clamp-2">
+                    {locale === "zh-CN" ? "高尔夫杆头套选购指南" : locale === "ko-KR" ? "골프 헤드커버 구매 가이드" : locale === "ja-JP" ? "ゴルフヘッドカバー選び方" : "The Ultimate Golf Headcover Buying Guide"}
+                  </p>
+                </div>
+              </a>
+            )}
+          </div>
+        </div>
+
+        <div className="flex items-center justify-end">
           <BlogViewCount slug={slug} />
         </div>
       </div>
