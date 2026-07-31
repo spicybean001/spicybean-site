@@ -125,13 +125,6 @@ export default function ZhCNSeriesCompare() {
                 <td className="py-3 px-4">★★★</td>
                 <td className="py-3 px-4">★★★★</td>
               </tr>
-              <tr>
-                <td className="py-3 px-4 text-spicy-gray">购买热度</td>
-                <td className="py-3 px-4">🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥🔥🔥🔥</td>
-              </tr>
             </tbody>
           </table>
         </div>

@@ -103,13 +103,6 @@ export default function JaSeriesCompare() {
                 <td className="py-3 px-4">大胆</td>
                 <td className="py-3 px-4">ダークサイバー</td>
               </tr>
-              <tr>
-                <td className="py-3 px-4 text-spicy-gray">人気度</td>
-                <td className="py-3 px-4">🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥🔥🔥🔥</td>
-              </tr>
             </tbody>
           </table>
         </div>

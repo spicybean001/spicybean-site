@@ -125,13 +125,6 @@ export default function EnSeriesCompare() {
                 <td className="py-3 px-4">★★★</td>
                 <td className="py-3 px-4">★★★★</td>
               </tr>
-              <tr>
-                <td className="py-3 px-4 text-spicy-gray">Popularity</td>
-                <td className="py-3 px-4">🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥🔥🔥🔥</td>
-              </tr>
             </tbody>
           </table>
         </div>

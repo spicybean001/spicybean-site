@@ -111,13 +111,6 @@ export default function KoSeriesCompare() {
                 <td className="py-3 px-4">외향적 성향</td>
                 <td className="py-3 px-4">개성파</td>
               </tr>
-              <tr>
-                <td className="py-3 px-4 text-spicy-gray">인기도</td>
-                <td className="py-3 px-4">🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥</td>
-                <td className="py-3 px-4">🔥🔥🔥🔥🔥</td>
-              </tr>
             </tbody>
           </table>
         </div>
