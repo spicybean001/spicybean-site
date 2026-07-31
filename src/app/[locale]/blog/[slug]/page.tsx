@@ -21,6 +21,10 @@ import ZhCNK2Story from "@/components/blog/ZhCNK2Story";
 import EnK2Story from "@/components/blog/EnK2Story";
 import KoK2Story from "@/components/blog/KoK2Story";
 import JaK2Story from "@/components/blog/JaK2Story";
+import ZhCNSeriesCompare from "@/components/blog/ZhCNSeriesCompare";
+import EnSeriesCompare from "@/components/blog/EnSeriesCompare";
+import KoSeriesCompare from "@/components/blog/KoSeriesCompare";
+import JaSeriesCompare from "@/components/blog/JaSeriesCompare";
 import BlogViewCount from "@/components/blog/BlogViewCount";
 
 const articles = {
@@ -114,6 +118,24 @@ const articles = {
       date: "2026-07-20",
     },
   },
+  "spicybean-series-comparison": {
+    "zh-CN": {
+      title: "K1/K2/K3/K4怎么选？一篇看懂SPICYBEAN全系列对比",
+      date: "2026-07-30",
+    },
+    en: {
+      title: "K1 vs K2 vs K3 vs K4: Which SPICYBEAN Headcover Is Right for You?",
+      date: "2026-07-30",
+    },
+    "ko-KR": {
+      title: "K1/K2/K3/K4 비교: 나에게 맞는 SPICYBEAN 헤드커버는?",
+      date: "2026-07-30",
+    },
+    "ja-JP": {
+      title: "K1/K2/K3/K4比較：自分に合うSPICYBEANヘッドカバーは？",
+      date: "2026-07-30",
+    },
+  },
 };
 
 const articleComponents: Record<string, Record<string, React.ComponentType>> = {
@@ -146,6 +168,12 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
     en: EnBrandGuide,
     "ko-KR": KoBrandGuide,
     "ja-JP": JaBrandGuide,
+  },
+  "spicybean-series-comparison": {
+    "zh-CN": ZhCNSeriesCompare,
+    en: EnSeriesCompare,
+    "ko-KR": KoSeriesCompare,
+    "ja-JP": JaSeriesCompare,
   },
 };
 
