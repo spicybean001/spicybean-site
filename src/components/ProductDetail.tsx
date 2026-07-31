@@ -476,6 +476,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
                 accent={data.accent}
                 title={t("details.fit.title")}
                 desc={t("details.fit.desc")}
+                seriesKey={series === "k4" ? "series_details.k4.fit" : undefined}
                 t={t}
               />
             </div>
