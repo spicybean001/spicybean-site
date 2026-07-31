@@ -9,8 +9,18 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-spicy-black">
-      {/* Korean mountain golf course grayscale background */}
-      <div className="absolute inset-0 overflow-hidden">
+      {/* Desktop: wide 16:9 Korean golf course grayscale background */}
+      <div className="absolute inset-0 overflow-hidden hidden md:block">
+        <img
+          src="/images/bg-hero-desktop.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-20"
+          style={{ filter: 'grayscale(100%) brightness(0.4) contrast(1.25)', objectPosition: 'center 60%' }}
+          loading="eager"
+        />
+      </div>
+      {/* Mobile: vertical Korean golf course grayscale background */}
+      <div className="absolute inset-0 overflow-hidden md:hidden">
         <img
           src="/images/bg-hero.webp"
           alt=""
