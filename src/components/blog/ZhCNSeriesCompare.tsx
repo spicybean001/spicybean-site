@@ -4,7 +4,7 @@ export default function ZhCNSeriesCompare() {
   return (
     <article className="prose prose-invert max-w-none">
       <p className="text-lg text-spicy-gray/70 mb-8">
-        K1？K2？K3？K4？第一次买 SPICYBEAN 杆套，四个系列到底怎么选？这篇对比帮你3分钟找到最适合你的那一款。
+        K1？K2？K3？K4？第一次买 SPICYBEAN <strong>高尔夫杆头套</strong>，四个系列到底怎么选？这篇对比帮你3分钟找到最适合你的那一款。SPICYBEAN全系列都提供<strong>一号木杆套、球道木杆套、铁木杆套、推杆杆套</strong>四种规格，配齐一套球包杆套很轻松。
       </p>
 
       {/* K1 */}

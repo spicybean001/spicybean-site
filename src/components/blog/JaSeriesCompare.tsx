@@ -4,7 +4,7 @@ export default function JaSeriesCompare() {
   return (
     <article className="prose prose-invert max-w-none">
       <p className="text-lg text-spicy-gray/70 mb-8">
-        K1？K2？K3？K4？SPICYBEANのヘッドカバー、初めて買うならどのシリーズ？3分でわかる比較ガイド。
+        K1？K2？K3？K4？SPICYBEANの<strong>ゴルフヘッドカバー</strong>、初めて買うならどのシリーズ？3分でわかる比較ガイド。すべてのSPICYBEANシリーズは<strong>ドライバーヘッドカバー、フェアウェイウッドヘッドカバー、ユーティリティヘッドカバー、パターヘッドカバー</strong>の4サイズで展開しています。
       </p>
 
       {/* K1 */}

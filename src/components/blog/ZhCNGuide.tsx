@@ -43,7 +43,7 @@ export default function ZhCNGuide() {
       </ul>
 
       <h2>二、尺寸怎么对应？</h2>
-      <p>很多人买杆套最大的坑就是尺寸买错。其实只要记住一句话：<strong>杆套是按球杆类型分的，不看品牌、不看型号。</strong></p>
+      <p>很多人买杆套最大的坑就是尺寸买错。其实只要记住一句话：<strong>杆套是按球杆类型分的，不看品牌、不看型号。</strong>下面这张表帮你快速对应：<strong>一号木杆套</strong>最大、<strong>球道木杆套</strong>中等、<strong>铁木杆套</strong>较小、<strong>推杆杆套</strong>按形状分。</p>
 
       <table className="w-full text-sm">
         <thead>
@@ -78,10 +78,18 @@ export default function ZhCNGuide() {
       </table>
 
       <p className="mt-4">
-        <strong>SPICYBEAN Tip：</strong>每个系列都提供Driver、Fairway、Hybrid、Putter四种尺寸选项。如果不确定，按你球包里的球杆类型选就行。
+        <strong>SPICYBEAN Tip：</strong>每个系列都提供Driver、Fairway、Hybrid、Putter四种尺寸选项，也就是常说的<strong>一号木杆套、球道木杆套、铁木杆套、推杆杆套</strong>。如果不确定，按你球包里的球杆类型选就行。
       </p>
 
-      <h2>三、杆套搭配的「高尔夫穿搭学」</h2>
+      <h2>三、高尔夫杆头套/高尔夫球杆套：这些叫法都是同一个东西</h2>
+      <p>
+        很多人搜索时会有困惑：<strong>"高尔夫杆头套"、"高尔夫球杆套"、"高尔夫杆套"</strong>到底有什么区别？其实它们指的是同一个产品——套在高尔夫球杆杆头上、起到保护和装饰作用的配件。英文统一叫<strong>Golf Headcover</strong>，韩语叫<strong>골프 헤드커버</strong>，日语叫<strong>ゴルフヘッドカバー</strong>。无论你用哪个关键词搜索，找到的都是同一类产品。
+      </p>
+      <p>
+        选购时唯一要注意的是<strong>按杆型区分</strong>：一号木杆套（Driver Cover）适配最大的一号木杆头，推杆杆套（Putter Cover）则需要按推杆形状选择。SPICYBEAN全系列四款杆型套都齐全，一套配齐你的球包。
+      </p>
+
+      <h2>四、杆套搭配的「高尔夫穿搭学」</h2>
       <p>
         高尔夫从"贵族运动"走向"社交运动"的今天，杆套早已不是随便套上的配件。在球场上，球包里的杆套排列在一起，就是你的视觉名片。
       </p>
@@ -93,7 +101,7 @@ export default function ZhCNGuide() {
         <li><strong>混搭个性派：</strong>不同色系/系列混搭，但不建议超过3个色系</li>
       </ul>
 
-      <h2>四、为什么选SPICYBEAN？</h2>
+      <h2>五、为什么选SPICYBEAN？</h2>
       <ul>
         <li><strong>🏆 红点设计奖背书：</strong>K1/K2/K3由红点设计奖冠军DBWD韩国设计公司操刀</li>
         <li><strong>🧵 60,000针双层刺绣：</strong>精致到每一个细节</li>

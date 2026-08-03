@@ -78,10 +78,18 @@ export default function EnGuide() {
       </table>
 
       <p className="mt-4">
-        <strong>SPICYBEAN Tip:</strong> All SPICYBEAN collections offer Driver, Fairway, Hybrid, and Putter sizes. Just match your club type.
+        <strong>SPICYBEAN Tip:</strong> All SPICYBEAN collections offer Driver, Fairway, Hybrid, and Putter sizes — that&apos;s a <strong>driver headcover, fairway wood headcover, hybrid headcover, and putter headcover</strong> for your whole bag. Just match your club type.
       </p>
 
-      <h2>3. Style Your Bag: The Art of Headcover Coordination</h2>
+      <h2>3. Golf Headcover vs Golf Club Cover: Same Thing, Different Names</h2>
+      <p>
+        Searching for the right product can be confusing because the same item goes by several names: <strong>golf headcover</strong>, <strong>golf club cover</strong>, <strong>golf club headcover</strong>, or simply <strong>golf club head cover</strong>. They all refer to the same accessory — a protective cover for the club head. The Korean term is <strong>골프 헤드커버</strong>, and in Japanese it&apos;s <strong>ゴルフヘッドカバー</strong>.
+      </p>
+      <p>
+        What actually matters is matching the cover to your club: a <strong>driver headcover</strong> fits the largest clubhead (~460cc), a <strong>putter headcover</strong> must match your putter shape (blade or mallet), and <strong>fairway wood headcovers</strong> and <strong>hybrid headcovers</strong> fall in between. SPICYBEAN covers every club type in one cohesive set.
+      </p>
+
+      <h2>4. Style Your Bag: The Art of Headcover Coordination</h2>
       <p>
         Golf is as much a social game as a sport. Your headcovers lined up in your bag say something about you before you even take a swing.
       </p>

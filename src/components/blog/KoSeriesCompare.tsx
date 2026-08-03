@@ -4,7 +4,7 @@ export default function KoSeriesCompare() {
   return (
     <article className="prose prose-invert max-w-none">
       <p className="text-lg text-spicy-gray/70 mb-8">
-        K1? K2? K3? K4? 처음 SPICYBEAN 헤드커버를 구매한다면, 어떤 시리즈가 나에게 맞을까요? 3분 만에 비교해드립니다.
+        K1? K2? K3? K4? 처음 SPICYBEAN <strong>골프 헤드커버</strong>를 구매한다면, 어떤 시리즈가 나에게 맞을까요? 3분 만에 비교해드립니다. 모든 SPICYBEAN 시리즈는 <strong>드라이버 헤드커버, 페어웨이 우드 헤드커버, 하이브리드 헤드커버, 퍼터 헤드커버</strong> 네 가지 사이즈로 준비되어 있습니다.
       </p>
 
       {/* K1 */}

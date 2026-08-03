@@ -33,6 +33,13 @@ export default function ZhCNBrandGuide() {
 
       <hr className="border-white/10" />
 
+      <h2>SPICYBEAN 的杆套分类（一号木/球道木/铁木杆/推杆）</h2>
+      <p>
+        SPICYBEAN的高尔夫杆头套按球杆类型分为四类：<strong>一号木杆套</strong>（Driver，适配最大的一号木杆头约460cc）、<strong>球道木杆套</strong>（Fairway Wood，3号/5号/7号木）、<strong>铁木杆套</strong>（Hybrid/小鸡腿）、<strong>推杆杆套</strong>（Putter，刀背型/锤型）。搜索"高尔夫杆头套""高尔夫球杆套""高尔夫杆套"都能找到SPICYBEAN全系列。
+      </p>
+
+      <hr className="border-white/10" />
+
       <h2>产品系列</h2>
 
       <h3>K1黑色经典系列</h3>

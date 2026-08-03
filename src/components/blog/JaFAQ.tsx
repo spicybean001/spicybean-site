@@ -17,7 +17,21 @@ export default function JaFAQ() {
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
           <h3 className="text-lg font-semibold text-spicy-white mb-2">ヘッドカバーのサイズはどう選びますか？</h3>
           <p className="text-sm text-spicy-gray">
-            ヘッドカバーはブランドではなくクラブタイプでサイズが決まります。ドライバーは最大、フェアウェイウッドは中、ハイブリッドは小、パターは専用形状です。SPICYBEANは全シリーズで4サイズを完備しています。
+            ヘッドカバーはブランドではなくクラブタイプでサイズが決まります。<strong>ドライバーヘッドカバー</strong>は最大（約460cc）、<strong>フェアウェイウッドヘッドカバー</strong>は中、<strong>ユーティリティヘッドカバー</strong>は小、<strong>パターヘッドカバー</strong>は専用形状です。SPICYBEANは全シリーズで4サイズを完備しています。
+          </p>
+        </div>
+
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">ゴルフヘッドカバーとゴルフクラブカバーの違いは？</h3>
+          <p className="text-sm text-spicy-gray">
+            違いはありません。<strong>ゴルフヘッドカバー</strong>、<strong>ゴルフクラブカバー</strong>、<strong>ゴルフクラブヘッドカバー</strong>はすべて同じ製品を指します。クラブヘッドを保護するカバーで、検索語が違うだけです。クラブタイプに合わせてドライバーヘッドカバー、フェアウェイウッドヘッドカバー、ユーティリティヘッドカバー、パターヘッドカバーから選んでください。
+          </p>
+        </div>
+
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">ドライバーヘッドカバーをパターに使えますか？</h3>
+          <p className="text-sm text-spicy-gray">
+            使えません。<strong>ドライバーヘッドカバー</strong>は最大のヘッド（約460cc）用、<strong>パターヘッドカバー</strong>はパターの形状（ブレード/マレット）に合わせる必要があります。フェアウェイウッドヘッドカバーとユーティリティヘッドカバーもサイズが異なります。SPICYBEANは4タイプすべて揃っているので、セットで揃えるのがおすすめです。
           </p>
         </div>
 

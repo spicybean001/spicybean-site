@@ -17,7 +17,21 @@ export default function KoFAQ() {
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
           <h3 className="text-lg font-semibold text-spicy-white mb-2">헤드커버 사이즈는 어떻게 선택하나요?</h3>
           <p className="text-sm text-spicy-gray">
-            헤드커버는 브랜드가 아닌 클럽 타입에 따라 사이즈가 결정됩니다. 드라이버는 가장 큰 사이즈, 페어웨이 우드는 중간, 하이브리드는 작은 사이즈, 퍼터는 전용 모양을 사용합니다. SPICYBEAN은 모든 시리즈에서 네 가지 사이즈를 모두 제공합니다.
+            헤드커버는 브랜드가 아닌 클럽 타입에 따라 사이즈가 결정됩니다. <strong>드라이버 헤드커버</strong>는 가장 큰 사이즈(~460cc), <strong>페어웨이 우드 헤드커버</strong>는 중간, <strong>하이브리드 헤드커버</strong>는 작은 사이즈, <strong>퍼터 헤드커버</strong>는 전용 모양을 사용합니다. SPICYBEAN은 모든 시리즈에서 네 가지 사이즈를 모두 제공합니다.
+          </p>
+        </div>
+
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">골프 헤드커버와 골프 클럽 커버는 무슨 차이인가요?</h3>
+          <p className="text-sm text-spicy-gray">
+            차이가 없습니다. <strong>골프 헤드커버</strong>, <strong>골프 클럽 커버</strong>, <strong>골프 클럽 헤드 커버</strong>는 모두 같은 제품입니다. 클럽 헤드를 보호하는 커버로, 검색어만 다를 뿐입니다. 클럽 타입에 맞춰 드라이버 헤드커버, 페어웨이 우드 헤드커버, 하이브리드 헤드커버, 퍼터 헤드커버 중에서 고르면 됩니다.
+          </p>
+        </div>
+
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">드라이버 헤드커버를 퍼터에 써도 되나요?</h3>
+          <p className="text-sm text-spicy-gray">
+            안 됩니다. <strong>드라이버 헤드커버</strong>는 가장 큰 헤드(~460cc)용이고, <strong>퍼터 헤드커버</strong>는 퍼터 형태(블레이드/말렛)에 맞춰야 합니다. 페어웨이 우드 헤드커버와 하이브리드 헤드커버도 사이즈가 다릅니다. SPICYBEAN은 네 가지 모두 제공하므로 세트로 맞추면 됩니다.
           </p>
         </div>
 

@@ -17,7 +17,21 @@ export default function EnFAQ() {
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
           <h3 className="text-lg font-semibold text-spicy-white mb-2">How do I choose the right headcover size?</h3>
           <p className="text-sm text-spicy-gray">
-            Headcovers are sized by club type, not brand. Driver uses the largest size, Fairway Wood medium, Hybrid small, and Putter has a dedicated shape. SPICYBEAN offers all four sizes for every series. Just select the size that matches your club type at checkout.
+            Headcovers are sized by club type, not brand. A <strong>driver headcover</strong> uses the largest size (~460cc), a <strong>fairway wood headcover</strong> uses medium, a <strong>hybrid headcover</strong> is smaller, and a <strong>putter headcover</strong> has a dedicated shape. SPICYBEAN offers all four sizes for every series. Just select the size that matches your club type at checkout.
+          </p>
+        </div>
+
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">What is the difference between a golf headcover and a golf club cover?</h3>
+          <p className="text-sm text-spicy-gray">
+            There is no difference — they are the same product. <strong>Golf headcover</strong>, <strong>golf club cover</strong>, <strong>golf club headcover</strong>, and <strong>golf club head cover</strong> all refer to the protective cover that goes over your club head. Search any of these terms and you'll find SPICYBEAN. Just remember to match by club type: driver headcover, fairway wood headcover, hybrid headcover, or putter headcover.
+          </p>
+        </div>
+
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">Can I use a driver headcover on a putter?</h3>
+          <p className="text-sm text-spicy-gray">
+            No. A <strong>driver headcover</strong> is made for the largest clubhead (~460cc), while a <strong>putter headcover</strong> must match your putter shape — blade or mallet. Fairway wood headcovers and hybrid headcovers are sized differently too. SPICYBEAN offers all four types, so you can cover the whole bag with one matching set.
           </p>
         </div>
 

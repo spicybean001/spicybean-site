@@ -78,10 +78,18 @@ export default function KoGuide() {
       </table>
 
       <p className="mt-4">
-        <strong>SPICYBEAN Tip:</strong> SPICYBEAN的全系列均提供 Driver、Fairway、Hybrid、Putter 네 가지 사이즈. 클럽 타입에 맞춰 선택하세요.
+        <strong>SPICYBEAN Tip:</strong> SPICYBEAN的全系列均提供 <strong>드라이버 헤드커버, 페어웨이 우드 헤드커버, 하이브리드 헤드커버, 퍼터 헤드커버</strong> 네 가지 사이즈. 클럽 타입에 맞춰 선택하세요.
       </p>
 
-      <h2>3. 골프백 스타일링: 헤드커버 코디네이션의 기술</h2>
+      <h2>3. 골프 헤드커버 / 골프 클럽 커버: 같은 제품, 다른 이름</h2>
+      <p>
+        검색할 때 헷갈릴 수 있는데, <strong>골프 헤드커버</strong>, <strong>골프 클럽 커버</strong>, <strong>골프 클럽 헤드 커버</strong>는 모두 같은 제품을 말합니다. 클럽 헤드를 보호하고 골프백을 꾸미는 골프 액세서리죠. 영어로는 Golf Headcover, 일본어로는 ゴルフヘッドカバー라고 합니다.
+      </p>
+      <p>
+        중요한 것은 클럽 타입에 맞추는 것입니다: <strong>드라이버 헤드커버</strong>는 가장 큰 헤드(~460cc)에 맞고, <strong>퍼터 헤드커버</strong>는 퍼터 형태(블레이드/말렛)에 맞춰야 하며, <strong>페어웨이 우드 헤드커버</strong>와 <strong>하이브리드 헤드커버</strong>는 그 사이입니다. SPICYBEAN은 모든 클럽 타입을 한 세트로 준비합니다.
+      </p>
+
+      <h2>4. 골프백 스타일링: 헤드커버 코디네이션의 기술</h2>
       <p>
         오늘날 골프는 스포츠이자 소셜 활동입니다. 골프백에 정렬된 헤드커버들은 당신이 스윙하기 전부터 무언가를 말해줍니다.
       </p>
@@ -93,7 +101,7 @@ export default function KoGuide() {
         <li><strong>믹스매치:</strong> 시리즈/색상 믹스, 최대 3색 이하로 유지</li>
       </ul>
 
-      <h2>4. 왜 SPICYBEAN인가?</h2>
+      <h2>5. 왜 SPICYBEAN인가?</h2>
       <ul>
         <li><strong>🏆 레드닷 디자인 어워드:</strong> K1/K2/K3, 한국 레드닷 우승 디자인 스튜디오 DBWD 디자인</li>
         <li><strong>🧵 60,000바늘 더블레이더 자수:</strong> 디테일의 정밀함</li>

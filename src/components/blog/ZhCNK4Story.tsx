@@ -13,7 +13,7 @@ export default function ZhCNK4Story() {
       </div>
 
       <p className="lead text-xl text-spicy-white font-medium">
-        如果高尔夫杆套也有性格，K4赛博骷髅系列大概是最叛逆的那一个。不是在草坪上安静躺着，而是在赛博朋克的霓虹灯下，带着骷髅标语的刺绣，宣告着什么。
+        如果高尔夫杆套也有性格，K4赛博骷髅系列大概是最叛逆的那一个。这不是一支普通的一号木杆套，而是在赛博朋克的霓虹灯下，带着骷髅标语的刺绣，宣告着什么。
       </p>
 
       <p>

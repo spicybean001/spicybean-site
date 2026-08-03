@@ -17,7 +17,21 @@ export default function ZhCNFAQ() {
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
           <h3 className="text-lg font-semibold text-spicy-white mb-2">高尔夫杆套的尺寸怎么选？</h3>
           <p className="text-sm text-spicy-gray">
-            杆套是按球杆类型区分的，不是按品牌。一号木（Driver）用最大号、球道木（Fairway Wood）用中号、铁木杆（Hybrid/小鸡腿）用小号、推杆（Putter）用专用形状。SPICYBEAN每个系列都有完整的四种尺寸可选，下单时按你的球杆类型选就行。
+            杆套是按球杆类型区分的，不是按品牌。<strong>一号木杆套</strong>（Driver）用最大号、<strong>球道木杆套</strong>（Fairway Wood）用中号、<strong>铁木杆套</strong>（Hybrid/小鸡腿）用小号、<strong>推杆杆套</strong>（Putter）用专用形状。SPICYBEAN每个系列都有完整的四种尺寸可选，下单时按你的球杆类型选就行。
+          </p>
+        </div>
+
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">高尔夫杆头套、高尔夫球杆套、高尔夫杆套有什么区别？</h3>
+          <p className="text-sm text-spicy-gray">
+            没有区别，都是指同一个产品——<strong>高尔夫杆头套</strong>（也叫高尔夫球杆套、高尔夫杆套，英文Golf Headcover）。它套在球杆杆头上起到保护杆面、防撞防刮的作用，同时是球包上的装饰。搜索"高尔夫杆头套""高尔夫球杆套"都能找到SPICYBEAN。选购时按杆型区分：一号木杆套、球道木杆套、铁木杆套、推杆杆套四种。
+          </p>
+        </div>
+
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">一号木杆套和推杆杆套可以通用吗？</h3>
+          <p className="text-sm text-spicy-gray">
+            不可以。<strong>一号木杆套</strong>适配最大的一号木杆头（约460cc），<strong>推杆杆套</strong>则需要按推杆形状（刀背型/锤型）选择。球道木杆套和铁木杆套尺寸也各不相同。SPICYBEAN每个系列都提供Driver、Fairway、Hybrid、Putter四种尺寸，一套配齐最稳妥。
           </p>
         </div>
 

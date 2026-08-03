@@ -4,7 +4,7 @@ export default function EnSeriesCompare() {
   return (
     <article className="prose prose-invert max-w-none">
       <p className="text-lg text-spicy-gray/70 mb-8">
-        K1, K2, K3, or K4? First time buying SPICYBEAN headcovers? This comparison guide helps you find your perfect match in 3 minutes.
+        K1, K2, K3, or K4? First time buying SPICYBEAN <strong>golf headcovers</strong>? This comparison guide helps you find your perfect match in 3 minutes. Every SPICYBEAN series comes in <strong>driver headcover, fairway wood headcover, hybrid headcover, and putter headcover</strong> sizes, so you can cover the whole bag in one style.
       </p>
 
       {/* K1 */}
