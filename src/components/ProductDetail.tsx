@@ -512,7 +512,9 @@ export default function ProductDetail({ series }: ProductDetailProps) {
               {locale === "ko-KR" && (
                 <>
                   <a
-                    href="#"
+                    href="https://link.coupang.com/a/f2GrHhLK1Y"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center gap-2 rounded-sm bg-spicy-neon px-6 py-3 text-sm font-semibold text-spicy-black hover:bg-spicy-neon/80 transition-all duration-300"
                   >
                     {t("shop.coupang")} {"\u2197"}
