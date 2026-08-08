@@ -65,7 +65,7 @@ const confirmTexts: Record<string, { subject: string; html: string }> = {
         </h1>
         <p style="font-size:15px;line-height:1.8;color:#a3a3a3;text-align:center;margin-bottom:30px;">
           구독이 완료되었습니다! 새로운 소식을 가장 먼저 알려드립니다:<br/>
-          🔥 신제품 출시 &nbsp;|&nbsp; 🎉 할인 이벤트 &nbsp;|&nbsp; 🇰🇷 COUPANG 입점 소식
+          🔥 신제품 출시 &nbsp;|&nbsp; 🎉 할인 이벤트 &nbsp;|&nbsp; 🇰🇷 COUPANG 출시 소식
         </p>
         <div style="text-align:center;margin:30px 0;">
           <a href="https://spicybean.net" style="display:inline-block;padding:12px 32px;background:#ff2d55;color:#0a0a0a;text-decoration:none;font-size:14px;font-weight:600;border-radius:2px;">

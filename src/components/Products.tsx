@@ -150,9 +150,14 @@ export default function Products() {
             )}
             {locale === "ko-KR" && (
               <>
-                <span className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/10 px-6 py-2.5 text-sm text-spicy-gray/40">
-                  {t("shop.coupang")} 🚧
-                </span>
+                <a
+                  href="https://link.coupang.com/a/f2GrHhLK1Y"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
+                >
+                  {t("shop.coupang")} ↗
+                </a>
                 <span className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/10 px-6 py-2.5 text-sm text-spicy-gray/40">
                   {t("shop.naver")} 🚧
                 </span>

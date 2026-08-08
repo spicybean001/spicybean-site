@@ -63,9 +63,14 @@ export default function Footer() {
               {locale === "ko-KR" && (
                 <>
                   <li>
-                    <span className="text-sm text-spicy-gray/40">
-                      {t("shop.coupang")} 🚧
-                    </span>
+                    <a
+                      href="https://link.coupang.com/a/f2GrHhLK1Y"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors duration-300"
+                    >
+                      {t("shop.coupang")} ↗
+                    </a>
                   </li>
                   <li>
                     <span className="text-sm text-spicy-gray/40">

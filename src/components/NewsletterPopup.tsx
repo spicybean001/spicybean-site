@@ -34,7 +34,7 @@ const texts: Record<string, LangTexts> = {
   },
   "ko-KR": {
     title: "SPICYBEAN 신제품 소식을 가장 먼저 받아보세요",
-    subtitle: "COUPANG 입점 소식, 할인 이벤트, 신제품 출시 알림",
+    subtitle: "COUPANG 출시 소식, 할인 이벤트, 신제품 출시 알림",
     placeholder: "이메일 주소 입력",
     button: "구독하기",
     success: "✅ 구독 완료! 소식을 가장 먼저 알려드립니다",
