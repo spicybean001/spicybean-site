@@ -218,12 +218,14 @@ export async function generateMetadata({
     en: "SPICYBEAN Blog — Golf Knowledge & Brand Stories",
     "ko-KR": "SPICYBEAN 블로그 — 골프 지식과 브랜드 이야기",
     "ja-JP": "SPICYBEAN ブログ — ゴルフ知識とブランドストーリー",
+    "th-TH": "SPICYBEAN บล็อก — ความรู้กอล์ฟและเรื่องราวแบรนด์",
   };
   const desc: Record<string, string> = {
     "zh-CN": "SPICYBEAN官方博客：高尔夫杆头套选购指南、材质对比、搭配技巧，以及K系列杆套的设计故事。",
     en: "SPICYBEAN official blog: Golf headcover buying guide, material comparison, styling tips, and K-series design stories.",
     "ko-KR": "SPICYBEAN 공식 블로그: 골프 헤드커버 가이드, 소재 비교, 스타일링 팁 및 K-시리즈 디자인 이야기.",
     "ja-JP": "SPICYBEAN公式ブログ：ゴルフヘッドカバーガイド、素材比較、スタイリングのコツ。",
+    "th-TH": "บล็อกอย่างเป็นทางการของ SPICYBEAN: คู่มือคัฟเวอร์หัวไม้กอล์ฟ การเปรียบเทียบวัสดุ และเคล็ดลับการแมตช์",
   };
 
   return {
@@ -256,12 +258,14 @@ export default async function BlogPage({
           {locale === "zh-CN" ? "SPICYBEAN 博客" :
            locale === "ko-KR" ? "SPICYBEAN 블로그" :
            locale === "ja-JP" ? "SPICYBEAN ブログ" :
+           locale === "th-TH" ? "SPICYBEAN บล็อก" :
            "SPICYBEAN Blog"}
         </h1>
         <p className="text-spicy-gray mb-12">
           {locale === "zh-CN" ? "高尔夫知识与品牌故事" :
            locale === "ko-KR" ? "골프 지식과 브랜드 이야기" :
            locale === "ja-JP" ? "ゴルフ知識とブランドストーリー" :
+           locale === "th-TH" ? "ความรู้กอล์ฟและเรื่องราวแบรนด์" :
            "Golf knowledge and brand stories"}
         </p>
         <BlogList posts={posts as any} />

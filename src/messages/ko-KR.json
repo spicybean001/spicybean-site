@@ -72,7 +72,7 @@
         "email": "이메일",
         "follow": "팔로우",
         "wechat": "위챗",
-        "thered": "더레드",
+        "xiaohongshu": "샤오홍슈 (Little Red Book)",
         "instagram": "인스타그램"
     },
     "footer": {
@@ -93,7 +93,8 @@
         "en": "English",
         "zh-CN": "中文",
         "ko-KR": "한국어",
-        "ja-JP": "日本語"
+        "ja-JP": "日本語",
+        "th-TH": "ไทย"
     },
     "social": {
         "title": "실제 구매자 · 리얼 리뷰",

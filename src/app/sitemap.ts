@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://spicybean.net";
-  const locales = ["en", "zh-CN", "ko-KR", "ja-JP"];
+  const locales = ["en", "zh-CN", "ko-KR", "ja-JP", "th-TH"];
 
   // Static pages
   const staticPages = locales.flatMap((locale) => [
