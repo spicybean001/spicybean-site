@@ -15,7 +15,7 @@ export default function ThSeriesCompare() {
           <div>
             <p className="text-spicy-gray/80">PU เลเธอร์หนังเม็ดสีดำแรงบันดาลใจจากอิตาลี คลาสสิก ใช้งานได้หลากหลาย — เข้ากับถุงกอล์ฟทุกใบ ทุกสไตล์ ตัวเลือกที่ "เลือกแล้วไม่ผิดแน่นอน"</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
-              <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> ราคา: $25 (เข้าถึงง่าย)</li>
+              <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> ราคา: ฿729 (เข้าถึงง่าย)</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> สไตล์: คลาสสิก · รอบคอบ · หลากหลาย</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> เหมาะกับ: ของขวัญ มือใหม่ สายมินิมอล</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> เข้ากับ: ถุงกอล์ฟทุกสี</li>
@@ -32,7 +32,7 @@ export default function ThSeriesCompare() {
           <div>
             <p className="text-spicy-gray/80">PU ไมโครไฟเบอร์สีขาวบริสุทธิ์พร้อมงานปักหัวใจซิกเนเจอร์ จุดสูงสุดของความงามโรแมนติกแบบเกาหลี ถ่ายรูปออกมาสวยมาก — เหมาะกับโซเชียลมีเดีย</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
-              <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> ราคา: $25 (เข้าถึงง่าย)</li>
+              <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> ราคา: ฿729 (เข้าถึงง่าย)</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> สไตล์: โรแมนติก · สง่างาม · ถ่ายรูปสวย</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> เหมาะกับ: นักกอล์ฟหญิง คู่รัก ครีเอเตอร์</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> หมายเหตุ: สีขาวต้องดูแลบ่อยขึ้น</li>
@@ -49,7 +49,7 @@ export default function ThSeriesCompare() {
           <div>
             <p className="text-spicy-gray/80">แดงอบอุ่นพิมพ์เต็มแผ่น กล้าหาญและเปี่ยมพลัง — ชิ้นที่ทำให้คุณโดดเด่นบนแฟร์เวย์</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
-              <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> ราคา: $25 (เข้าถึงง่าย)</li>
+              <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> ราคา: ฿729 (เข้าถึงง่าย)</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> สไตล์: เปี่ยมพลัง · กล้าหาญ · สปอร์ต</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> เหมาะกับ: บุคลิกเปิดเผย สายรักสีสด</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> เข้ากันดีที่สุดกับ: ถุงโทนสีเข้ม</li>
@@ -66,7 +66,7 @@ export default function ThSeriesCompare() {
           <div>
             <p className="text-spicy-gray/80">พื้นผิว PU คาร์บอนไฟเบอร์พร้อมงานปักกะโหลก ลิมิเต็ดเรือธงของ SPICYBEAN ไซเบอร์พังค์พบนีออนนัวร์ งานฝีมือที่ซับซ้อนที่สุด เอกลักษณ์สูงสุด</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
-              <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> ราคา: $36 (เรือธง)</li>
+              <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> ราคา: ฿1,229 (เรือธง)</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> สไตล์: ดาร์ก · ไซเบอร์ · ลิมิเต็ด</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> เหมาะกับ: ผู้กำหนดเทรนด์ สายสไตล์ไม่กลัวใคร</li>
               <li className="flex items-start gap-2"><span className="text-spicy-neon shrink-0">✦</span> เกร็ดน่ารู้: K4 คือซีรีส์ที่ขายดีที่สุดของเรา</li>
@@ -92,10 +92,10 @@ export default function ThSeriesCompare() {
             <tbody>
               <tr className="border-b border-white/5">
                 <td className="py-3 px-4 text-spicy-gray">ราคา</td>
-                <td className="py-3 px-4">$25</td>
-                <td className="py-3 px-4">$25</td>
-                <td className="py-3 px-4">$25</td>
-                <td className="py-3 px-4">$36</td>
+                <td className="py-3 px-4">฿729</td>
+                <td className="py-3 px-4">฿729</td>
+                <td className="py-3 px-4">฿729</td>
+                <td className="py-3 px-4">฿1,229</td>
               </tr>
               <tr className="border-b border-white/5">
                 <td className="py-3 px-4 text-spicy-gray">Vibe</td>
