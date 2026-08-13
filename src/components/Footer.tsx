@@ -93,6 +93,25 @@ export default function Footer() {
                   </li>
                 </>
               )}
+              {locale === "th-TH" && (
+                <>
+                  <li>
+                    <a
+                      href="https://spicybean.m.tmall.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
+                    >
+                      {t("shop.tmall")} ↗
+                    </a>
+                  </li>
+                  <li>
+                    <span className="text-sm text-spicy-gray/40">
+                      {t("shop.shopee")} 🚧
+                    </span>
+                  </li>
+                </>
+              )}
             </ul>
           </div>
 

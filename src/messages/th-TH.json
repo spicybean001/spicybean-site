@@ -81,7 +81,8 @@
     },
     "shop": {
         "title": "สั่งซื้อเลย",
-        "tmall": "Tmall (จีน)",
+        "tmall": "TMALL (จีน)",
+        "shopee": "SHOPEE",
         "jd": "JD (จีน)",
         "coupang": "Coupang (เกาหลี)",
         "naver": "NAVER",
