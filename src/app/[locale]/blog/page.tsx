@@ -203,6 +203,56 @@ const blogPosts = {
       lang: "ja-JP" as const,
     },
   ],
+  "th-TH": [
+    {
+      slug: "spicybean-series-comparison",
+      title: "K1/K2/K3/K4 เปรียบเทียบ: ตัวไหนใช่คุณ SPICYBEAN เฮดคัฟเวอร์?",
+      excerpt: "K1 แบล็ค, K2 ไวท์, K3 เรด, K4 นีออนนัวร์ — เปรียบเทียบราคา สไตล์ และคำแนะนำใน 3 นาที",
+      date: "2026-07-30",
+      image: "/images/blog/brand-guide-cover.jpg",
+      lang: "th-TH" as const,
+    },
+    {
+      slug: "spicybean-brand-guide",
+      title: "คู่มือแบรนด์ SPICYBEAN: ซีรีส์ วัสดุ และช่องทางซื้อ",
+      excerpt: "คู่มือฉบับสมบูรณ์ของแบรนด์คัฟเวอร์หัวไม้กอล์ฟที่ขับเคลื่อนด้วยดีไซน์จากเกาหลี",
+      date: "2026-07-20",
+      image: "/images/blog/brand-guide-cover.jpg",
+      lang: "th-TH" as const,
+    },
+    {
+      slug: "golf-headcover-faq",
+      title: "คำถามที่พบบ่อยคัฟเวอร์หัวไม้กอล์ฟ: วัสดุ ไซส์ แบรนด์และการดูแล",
+      excerpt: "PU เลเธอร์หรือผ้าถัก? ไซส์ไหน? ดูแลอย่างไร? ตอบทุกคำถามเกี่ยวกับคัฟเวอร์หัวไม้",
+      date: "2026-07-19",
+      image: "/images/blog/faq-cover.jpg",
+      lang: "th-TH" as const,
+    },
+    {
+      slug: "k4-neon-noir-story",
+      title: "K4 กะโหลกไซเบอร์: กำเนิดคัฟเวอร์หัวไม้กอล์ฟสายดาร์ก ⛳️",
+      excerpt: "จากโซลสู่สนาม — เรื่องราวเบื้องหลังคัฟเวอร์ที่กล้าหาญที่สุดของ SPICYBEAN",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "th-TH" as const,
+    },
+    {
+      slug: "k2-white-love-story",
+      title: "K2 — ซิกเนเจอร์ไวท์: คัฟเวอร์หัวไม้กอล์ฟก็โรแมนติกได้ 🖤",
+      excerpt: "PU ไมโครไฟเบอร์สีขาวบริสุทธิ์ × งานปักหัวใจ — ซีรีส์ K2 Signature White ความงามโรแมนติกแบบเกาหลี",
+      date: "2026-07-24",
+      image: "/images/blog/k2-white-love-cover.jpg",
+      lang: "th-TH" as const,
+    },
+    {
+      slug: "golf-headcover-buying-guide",
+      title: "คู่มือเลือกซื้อคัฟเวอร์หัวไม้กอล์ฟฉบับสมบูรณ์",
+      excerpt: "ทุกอย่างที่ต้องรู้เกี่ยวกับวัสดุ ไซส์ สไตล์ และการดูแล",
+      date: "2026-07-15",
+      image: "/images/blog/headcover-guide-cover.jpg",
+      lang: "th-TH" as const,
+    },
+  ],
 } as const;
 
 export async function generateMetadata({

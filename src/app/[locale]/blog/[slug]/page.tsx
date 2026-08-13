@@ -25,6 +25,12 @@ import ZhCNSeriesCompare from "@/components/blog/ZhCNSeriesCompare";
 import EnSeriesCompare from "@/components/blog/EnSeriesCompare";
 import KoSeriesCompare from "@/components/blog/KoSeriesCompare";
 import JaSeriesCompare from "@/components/blog/JaSeriesCompare";
+import ThGuide from "@/components/blog/ThGuide";
+import ThK4Story from "@/components/blog/ThK4Story";
+import ThFAQ from "@/components/blog/ThFAQ";
+import ThBrandGuide from "@/components/blog/ThBrandGuide";
+import ThK2Story from "@/components/blog/ThK2Story";
+import ThSeriesCompare from "@/components/blog/ThSeriesCompare";
 import BlogViewCount from "@/components/blog/BlogViewCount";
 
 const articles = {
@@ -45,6 +51,10 @@ const articles = {
       title: "ゴルフヘッドカバー選び方完全ガイド",
       date: "2026-07-15",
     },
+    "th-TH": {
+      title: "คู่มือเลือกซื้อคัฟเวอร์หัวไม้กอล์ฟฉบับสมบูรณ์",
+      date: "2026-07-15",
+    },
   },
   "k4-neon-noir-story": {
     "zh-CN": {
@@ -61,6 +71,10 @@ const articles = {
     },
     "ja-JP": {
       title: "K4 サイバースカル：ダークな美しさのゴルフヘッドカバー誕生 ⛳️",
+      date: "2026-07-19",
+    },
+    "th-TH": {
+      title: "K4 กะโหลกไซเบอร์: กำเนิดคัฟเวอร์หัวไม้กอล์ฟสายดาร์ก ⛳️",
       date: "2026-07-19",
     },
   },
@@ -81,6 +95,10 @@ const articles = {
       title: "ゴルフヘッドカバーFAQ：素材、サイズ、お手入れ",
       date: "2026-07-19",
     },
+    "th-TH": {
+      title: "คำถามที่พบบ่อยคัฟเวอร์หัวไม้กอล์ฟ: วัสดุ ไซส์ และการดูแล",
+      date: "2026-07-19",
+    },
   },
   "k2-white-love-story": {
     "zh-CN": {
@@ -97,6 +115,10 @@ const articles = {
     },
     "ja-JP": {
       title: "K2 ホワイトラブ：ゴルフヘッドカバーもロマンチックに 🖤",
+      date: "2026-07-24",
+    },
+    "th-TH": {
+      title: "K2 — ซิกเนเจอร์ไวท์: คัฟเวอร์หัวไม้กอล์ฟก็โรแมนติกได้ 🖤",
       date: "2026-07-24",
     },
   },
@@ -117,6 +139,10 @@ const articles = {
       title: "SPICYBEAN ゴルフヘッドカバーブランドガイド：シリーズ、素材、技術、購入先",
       date: "2026-07-20",
     },
+    "th-TH": {
+      title: "คู่มือแบรนด์คัฟเวอร์หัวไม้กอล์ฟ SPICYBEAN: ซีรีส์ วัสดุ งานฝีมือ และช่องทางซื้อ",
+      date: "2026-07-20",
+    },
   },
   "spicybean-series-comparison": {
     "zh-CN": {
@@ -135,6 +161,10 @@ const articles = {
       title: "K1/K2/K3/K4比較：自分に合うSPICYBEANヘッドカバーは？",
       date: "2026-07-30",
     },
+    "th-TH": {
+      title: "K1/K2/K3/K4 เปรียบเทียบ: ตัวไหนใช่คุณ SPICYBEAN เฮดคัฟเวอร์?",
+      date: "2026-07-30",
+    },
   },
 };
 
@@ -144,36 +174,42 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
     en: EnGuide,
     "ko-KR": KoGuide,
     "ja-JP": JaGuide,
+    "th-TH": ThGuide,
   },
   "k4-neon-noir-story": {
     "zh-CN": ZhCNK4Story,
     en: EnK4Story,
     "ko-KR": KoK4Story,
     "ja-JP": JaK4Story,
+    "th-TH": ThK4Story,
   },
   "golf-headcover-faq": {
     "zh-CN": ZhCNFAQ,
     en: EnFAQ,
     "ko-KR": KoFAQ,
     "ja-JP": JaFAQ,
+    "th-TH": ThFAQ,
   },
   "k2-white-love-story": {
     "zh-CN": ZhCNK2Story,
     en: EnK2Story,
     "ko-KR": KoK2Story,
     "ja-JP": JaK2Story,
+    "th-TH": ThK2Story,
   },
   "spicybean-brand-guide": {
     "zh-CN": ZhCNBrandGuide,
     en: EnBrandGuide,
     "ko-KR": KoBrandGuide,
     "ja-JP": JaBrandGuide,
+    "th-TH": ThBrandGuide,
   },
   "spicybean-series-comparison": {
     "zh-CN": ZhCNSeriesCompare,
     en: EnSeriesCompare,
     "ko-KR": KoSeriesCompare,
     "ja-JP": JaSeriesCompare,
+    "th-TH": ThSeriesCompare,
   },
 };
 
@@ -183,36 +219,42 @@ const descriptions: Record<string, Record<string, string>> = {
     en: "Everything you need to know about golf headcover materials, sizing, styles, and care. Complete buying guide from SPICYBEAN.",
     "ko-KR": "소재부터 사이즈, 스타일까지 한번에 알아보는 골프 헤드커버 완벽 가이드.",
     "ja-JP": "素材、サイズ、デザインまで完全解説。ゴルフヘッドカバー選び方ガイド。",
+    "th-TH": "ทุกอย่างที่ต้องรู้เกี่ยวกับวัสดุ ไซส์ สไตล์ และการดูแลคัฟเวอร์หัวไม้กอล์ฟ คู่มือฉบับสมบูรณ์จาก SPICYBEAN",
   },
   "k4-neon-noir-story": {
     "zh-CN": "K4赛博骷髅暗夜霓虹高尔夫杆套的设计诞生故事。从设计手稿到6万针刺绣，SPICYBEAN最具暗黑美学的限定款。",
     en: "The story behind K4 Neon Noir cyber skull golf headcover. From design sketches to 60,000 stitches of embroidery — SPICYBEAN's boldest limited edition.",
     "ko-KR": "K4 네온 느와르 사이버 스컬 골프 헤드커버의 디자인 탄생 이야기. SPICYBEAN의 가장 대담한 한정판.",
     "ja-JP": "K4サイバースカルネオンノワールゴルフヘッドカバーのデザイン誕生ストーリー。SPICYBEAN限定版。",
+    "th-TH": "เรื่องราวการกำเนิดดีไซน์คัฟเวอร์หัวไม้กอล์ฟ K4 Neon Noir กะโหลกไซเบอร์ จากแบบร่างสู่การปัก 60,000 ฝีเข็ม — ลิมิเต็ดที่กล้าหาญที่สุดของ SPICYBEAN",
   },
   "golf-headcover-faq": {
     "zh-CN": "高尔夫杆头套常见问题：材质对比、尺寸选择、品牌区别、保养方法。SPICYBEAN品牌FAQ全覆盖。",
     en: "Golf headcover FAQ: material comparison, sizing guide, brand differences, and care tips. Everything you need to know.",
     "ko-KR": "골프 헤드커버 FAQ: 소재 비교, 사이즈 가이드, 브랜드 차이, 관리 팁.",
     "ja-JP": "ゴルフヘッドカバーFAQ：素材比較、サイズガイド、ブランドの違い、お手入れのコツ。",
+    "th-TH": "FAQ คัฟเวอร์หัวไม้กอล์ฟ: เปรียบเทียบวัสดุ คู่มือไซส์ ความแตกต่างของแบรนด์ และเคล็ดลับการดูแล",
   },
   "spicybean-series-comparison": {
     "zh-CN": "K1/K2/K3/K4全系列对比：价格、风格、推荐人群一图看懂。SPICYBEAN杆套选购指南。",
     en: "K1 vs K2 vs K3 vs K4: complete SPICYBEAN series comparison. Price, style, matching tips, and recommendations.",
     "ko-KR": "K1/K2/K3/K4 시리즈 비교: 가격, 스타일, 추천 대상 한눈에 비교.",
     "ja-JP": "K1/K2/K3/K4シリーズ比較：価格、スタイル、おすすめを一目で比較。",
+    "th-TH": "K1/K2/K3/K4 เปรียบเทียบซีรีส์แบบครบถ้วน: ราคา สไตล์ เคล็ดลับการแมตช์ และคำแนะนำ",
   },
   "k2-white-love-story": {
     "zh-CN": "K2白色爱心高尔夫杆套设计故事。纯白超纤PU × 爱心刺绣，韩式浪漫美学。K1-K4系列对比。",
     en: "K2 White Love golf headcover design story. Pure white microfiber PU × heart embroidery. Korean romantic aesthetics. K1-K4 series comparison.",
     "ko-KR": "K2 화이트 러브 골프 헤드커버 디자인 스토리. 순백 PU × 하트 자수. 한국적 로맨틱 감성.",
     "ja-JP": "K2 ホワイトラブ ゴルフヘッドカバーデザインストーリー。純白PU×ハート刺繍。",
+    "th-TH": "เรื่องราวดีไซน์คัฟเวอร์หัวไม้กอล์ฟ K2 White Love สีขาวบริสุทธิ์ PU × ปักหัวใจ ความงามโรแมนติกแบบเกาหลี เปรียบเทียบซีรีส์ K1-K4",
   },
   "spicybean-brand-guide": {
     "zh-CN": "SPICYBEAN韩国高尔夫杆套品牌完整介绍。K1/K2/K3/K4全系列对比，PU皮革材质解析、设计工艺、购买渠道。",
     en: "Complete SPICYBEAN brand guide. Korean design-driven golf headcovers. K1-K4 series comparison, PU leather materials, craftsmanship, and where to buy.",
     "ko-KR": "SPICYBEAN 브랜드 가이드. K1-K4 시리즈 소개, PU 가죽 소재, 공법, 구매처 정보.",
     "ja-JP": "SPICYBEANブランド完全ガイド。K1〜K4シリーズ比較、PUレザー素材、技術、購入先。",
+    "th-TH": "คู่มือแบรนด์ SPICYBEAN ฉบับสมบูรณ์: เปรียบเทียบซีรีส์ K1-K4 วัสดุ PU งานฝีมือ และช่องทางซื้อ",
   },
 };
 
@@ -251,7 +293,7 @@ export async function generateMetadata({
       url: `${siteUrl}${path}`,
       siteName: "SPICYBEAN",
       images: [{ url: ogImage, width: 800, height: 600 }],
-      locale: locale === "zh-CN" ? "zh_CN" : locale === "ko-KR" ? "ko_KR" : locale === "ja-JP" ? "ja_JP" : "en_US",
+      locale: locale === "zh-CN" ? "zh_CN" : locale === "ko-KR" ? "ko_KR" : locale === "ja-JP" ? "ja_JP" : locale === "th-TH" ? "th_TH" : "en_US",
       type: "article",
       publishedTime: langData.date,
     },
@@ -268,6 +310,7 @@ export async function generateMetadata({
         "zh-CN": `${siteUrl}/zh-CN/blog/${slug}`,
         "ko-KR": `${siteUrl}/ko-KR/blog/${slug}`,
         "ja-JP": `${siteUrl}/ja-JP/blog/${slug}`,
+        "th-TH": `${siteUrl}/th-TH/blog/${slug}`,
       },
     },
   };
@@ -309,7 +352,7 @@ export default async function ArticlePage({
           href={`/${locale}/blog`}
           className="inline-flex items-center text-sm text-spicy-gray hover:text-spicy-red mb-8 transition-colors"
         >
-          ← {locale === "zh-CN" ? "返回博客" : locale === "ko-KR" ? "블로그로 돌아가기" : locale === "ja-JP" ? "ブログに戻る" : "Back to Blog"}
+          ← {locale === "zh-CN" ? "返回博客" : locale === "ko-KR" ? "블로그로 돌아가기" : locale === "ja-JP" ? "ブログに戻る" : locale === "th-TH" ? "กลับสู่บล็อก" : "Back to Blog"}
         </Link>
 
         <header className="mb-12">
