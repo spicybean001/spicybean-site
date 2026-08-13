@@ -125,7 +125,7 @@ export default function Products() {
           className="mt-8 text-center"
         >
           <p className="text-sm text-spicy-gray mb-4">
-            {locale === "zh-CN" ? "合作平台" : locale === "ko-KR" ? "파트너 플랫폼" : locale === "ja-JP" ? "取り扱いプラットフォーム" : "Available on our partner platforms"}
+            {locale === "zh-CN" ? "合作平台" : locale === "ko-KR" ? "파트너 플랫폼" : locale === "ja-JP" ? "取り扱いプラットフォーム" : locale === "th-TH" ? "มีจำหน่ายบนแพลตฟอร์มพันธมิตรของเรา" : "Available on our partner platforms"}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {locale === "zh-CN" && (
@@ -170,6 +170,21 @@ export default function Products() {
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/10 px-6 py-2.5 text-sm text-spicy-gray/40">
                   {t("shop.amazonJp")} 🚧
+                </span>
+              </>
+            )}
+            {locale === "th-TH" && (
+              <>
+                <a
+                  href="https://spicybean.m.tmall.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
+                >
+                  {t("shop.tmall")} ↗
+                </a>
+                <span className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/10 px-6 py-2.5 text-sm text-spicy-gray/40">
+                  {t("shop.shopee")} 🚧
                 </span>
               </>
             )}

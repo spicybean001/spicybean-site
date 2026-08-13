@@ -50,6 +50,15 @@ const texts: Record<string, LangTexts> = {
     error: "❌ エラーが発生しました。もう一度お試しください",
     dismiss: "後で",
   },
+  "th-TH": {
+    title: "รับข่าวสาร SPICYBEAN ก่อนใคร",
+    subtitle: "รับทราบสินค้าใหม่ โปรโมชัน และการเปิดตัวบน SHOPEE เป็นคนแรก",
+    placeholder: "กรอกอีเมลของคุณ",
+    button: "สมัครรับข่าวสาร",
+    success: "✅ สมัครแล้ว! เราจะแจ้งข่าวสารให้คุณทราบ",
+    error: "❌ เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง",
+    dismiss: "ไว้ทีหลัง",
+  },
 };
 
 export default function NewsletterPopup() {
