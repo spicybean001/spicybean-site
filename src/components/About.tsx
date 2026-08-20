@@ -37,7 +37,7 @@ export default function About() {
             {/* Story image — locale-aware */}
             <div className="overflow-hidden rounded-sm border border-white/5">
               <img
-                src={`/images/brand/story-${locale === "ko-KR" ? "ko" : locale === "ja-JP" ? "ja" : locale === "zh-CN" ? "zh" : "en"}.jpg`}
+                src={`/images/brand/story-${locale === "ko-KR" ? "ko" : locale === "ja-JP" ? "ja" : (locale === "zh-CN" || locale === "zh-TW") ? "zh" : "en"}.jpg`}
                 alt="SPICYBEAN Brand Story"
                 className="w-full h-auto object-cover"
                 loading="lazy"
@@ -100,7 +100,7 @@ export default function About() {
               onClick={() => setAwardOpen(!awardOpen)}
               className="inline-flex items-center gap-2 text-xs text-spicy-gray hover:text-spicy-neon transition-colors uppercase tracking-widest"
             >
-              {awardOpen ? "▼" : "▶"} {locale === "zh-CN" ? "查看获奖证书" : locale === "ko-KR" ? "수상경력 보기" : locale === "ja-JP" ? "受賞証明書を見る" : "View Award Certificates"}
+              {awardOpen ? "▼" : "▶"} {locale === "zh-CN" ? "查看获奖证书" : locale === "zh-TW" ? "查看獲獎證書" : locale === "ko-KR" ? "수상경력 보기" : locale === "ja-JP" ? "受賞証明書を見る" : "View Award Certificates"}
             </button>
 
             {awardOpen && (
@@ -167,7 +167,7 @@ export default function About() {
           </p>
           <h3 className="text-2xl md:text-4xl font-bold text-center mb-12">
             <span className="text-gradient">
-              {locale === "zh-CN" ? "品牌视觉" : locale === "ko-KR" ? "브랜드 아이덴티티" : locale === "ja-JP" ? "ブランドアイデンティティ" : "Brand Identity"}
+              {locale === "zh-CN" ? "品牌视觉" : locale === "zh-TW" ? "品牌視覺" : locale === "ko-KR" ? "브랜드 아이덴티티" : locale === "ja-JP" ? "ブランドアイデンティティ" : "Brand Identity"}
             </span>
           </h3>
 

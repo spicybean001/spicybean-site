@@ -483,7 +483,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
 
             {/* Shop CTA — locale-aware channels */}
             <div className="flex flex-col sm:flex-row gap-3">
-              {locale === "zh-CN" && (
+              {(locale === "zh-CN" || locale === "zh-TW") && (
                 <>
                   <a
                     href={`https://detail.tmall.com/item.htm?id=${data.tmallId}`}
@@ -580,7 +580,7 @@ export default function ProductDetail({ series }: ProductDetailProps) {
           >
             {series === "k4" ? (
               <VideoPlayer
-                src={locale === "zh-CN" ? "/videos/k4-unboxing.mp4" : "/videos/k4-unboxing-en.mp4"}
+                src={(locale === "zh-CN" || locale === "zh-TW") ? "/videos/k4-unboxing.mp4" : "/videos/k4-unboxing-en.mp4"}
                 poster="/images/k4/video-cover.jpg"
                 badge={"\uD83D\uDCE6"}
                 badgeLabel={t("social.unboxing")}

@@ -9,24 +9,28 @@ type Series = (typeof validSeries)[number];
 const seriesMeta: Record<string, Record<string, { title: string; description: string }>> = {
   k1: {
     "zh-CN": { title: "K1黑色经典PU高尔夫杆套 | SPICYBEAN", description: "意大利工艺级黑色PU皮革高尔夫杆头套。经典百搭，适配一号木、球道木、铁木杆。" },
+    "zh-TW": { title: "K1黑色經典PU高爾夫桿套 | SPICYBEAN", description: "義大利工藝級黑色PU皮革高爾夫桿頭套。經典百搭，適配一號木、球道木、鐵木桿。" },
     en: { title: "K1 Classic Black PU Golf Headcover | SPICYBEAN", description: "Italian-crafted black pebble grain PU leather golf headcover. Classic, versatile, fits driver, fairway wood & hybrid." },
     "ko-KR": { title: "K1 블랙 클래식 PU 골프 헤드커버 | SPICYBEAN", description: "이탈리아 공법 블랙 PU 가죽 골프 헤드커버. 클래식하고 다양한 스타일에 어울립니다." },
     "ja-JP": { title: "K1 ブラッククラシックPUゴルフヘッドカバー | SPICYBEAN", description: "イタリア製法ブラックPUレザーゴルフヘッドカバー。クラシックでどんなバッグにも合う。" },
   },
   k2: {
     "zh-CN": { title: "K2白色爱心PU高尔夫杆套 | SPICYBEAN", description: "纯白超纤PU配爱心刺绣高尔夫杆头套。韩式浪漫美学，拍照出片率极高。" },
+    "zh-TW": { title: "K2白色愛心PU高爾夫桿套 | SPICYBEAN", description: "純白超纖PU配愛心刺繡高爾夫桿頭套。韓式浪漫美學，拍照出片率極高。" },
     en: { title: "K2 White Heart PU Golf Headcover | SPICYBEAN", description: "Pure white microfiber PU with heart embroidery golf headcover. Korean romantic aesthetic, highly photogenic." },
     "ko-KR": { title: "K2 화이트 러브 PU 골프 헤드커버 | SPICYBEAN", description: "순백 마이크로화이버 PU와 하트자수 골프 헤드커버. 한국적 로맨틱 감성." },
     "ja-JP": { title: "K2 ホワイトラブPUゴルフヘッドカバー | SPICYBEAN", description: "純白マイクロファイバーPU×ハート刺繍ゴルフヘッドカバー。韓国ロマンティックデザイン。" },
   },
   k3: {
     "zh-CN": { title: "K3辛红印花PU高尔夫杆套 | SPICYBEAN", description: "满版辛红印花高尔夫杆头套。热情张扬的设计，球场一眼就能看到。" },
+    "zh-TW": { title: "K3辛紅印花PU高爾夫桿套 | SPICYBEAN", description: "滿版辛紅印花高爾夫桿頭套。熱情張揚的設計，球場一眼就能看到。" },
     en: { title: "K3 Warm Red Print PU Golf Headcover | SPICYBEAN", description: "Full-coverage warm red print golf headcover. Bold and passionate design that stands out on the fairway." },
     "ko-KR": { title: "K3 레드 프린트 PU 골프 헤드커버 | SPICYBEAN", description: "풀커버리지 레드 프린트 골프 헤드커버. 대담하고 열정적인 디자인." },
     "ja-JP": { title: "K3 レッドプリントPUゴルフヘッドカバー | SPICYBEAN", description: "全面レッドプリントゴルフヘッドカバー。大胆で情熱的なデザイン。" },
   },
   k4: {
     "zh-CN": { title: "K4赛博骷髅暗夜霓虹高尔夫杆套 | SPICYBEAN", description: "碳纤维PU纹理骷髅刺绣高尔夫杆头套。赛博朋克风格，SPICYBEAN旗舰限定款。" },
+    "zh-TW": { title: "K4賽博骷髏暗夜霓虹高爾夫桿套 | SPICYBEAN", description: "碳纖維PU紋理骷髏刺繡高爾夫桿頭套。賽博龐克風格，SPICYBEAN旗艦限定款。" },
     en: { title: "K4 Neon Noir Cyber Skull Golf Headcover | SPICYBEAN", description: "Carbon fiber PU with skull embroidery golf headcover. Cyberpunk style, SPICYBEAN flagship limited edition." },
     "ko-KR": { title: "K4 네온 느와르 사이버 스컬 골프 헤드커버 | SPICYBEAN", description: "카본 파이버 PU 스컬 자수 골프 헤드커버. SPICYBEAN 플래그십 한정판." },
     "ja-JP": { title: "K4 サイバースカルネオンノワールゴルフヘッドカバー | SPICYBEAN", description: "カーボンファイバーPU×スカル刺繍ゴルフヘッドカバー。SPICYBEANフラッグシップ限定モデル。" },

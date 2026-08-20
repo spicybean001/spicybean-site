@@ -14,12 +14,37 @@ const confirmTexts: Record<string, { subject: string; html: string }> = {
           感谢订阅 SPICYBEAN！
         </h1>
         <p style="font-size:15px;line-height:1.8;color:#a3a3a3;text-align:center;margin-bottom:30px;">
-          您已成功订阅，我们会在第一时间通知您：<br/>
-          🔥 新品发布 &nbsp;|&nbsp; 🎉 折扣活动 &nbsp;|&nbsp; 🇨🇳 京东开售消息
+          感谢订阅！关注我们获取：<br/>
+          🔥 新品发布 &nbsp;|&nbsp; 🎉 折扣活动 &nbsp;|&nbsp; 🇨🇳 京东现货
         </p>
         <div style="text-align:center;margin:30px 0;">
           <a href="https://spicybean.net" style="display:inline-block;padding:12px 32px;background:#ff2d55;color:#0a0a0a;text-decoration:none;font-size:14px;font-weight:600;border-radius:2px;">
             浏览官网
+          </a>
+        </div>
+        <p style="text-align:center;font-size:12px;color:#525252;margin-top:40px;">
+          SPICYBEAN · Seoul · <a href="https://spicybean.net" style="color:#ff2d55;">spicybean.net</a>
+        </p>
+      </div>
+    `,
+  },
+  "zh-TW": {
+    subject: "感謝訂閱 SPICYBEAN！🎉",
+    html: `
+      <div style="max-width:600px;margin:0 auto;padding:40px 20px;font-family:'Inter','Noto Sans TC',sans-serif;background:#0a0a0a;color:#fafafa;">
+        <div style="text-align:center;margin-bottom:30px;">
+          <img src="https://spicybean.net/logo.png" alt="SPICYBEAN" width="60" height="60" style="width:60px;height:60px;display:block;margin:0 auto;" />
+        </div>
+        <h1 style="text-align:center;font-size:24px;font-weight:700;background:linear-gradient(90deg,#fafafa,#ff2d55,#dc2626);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:20px;">
+          感謝訂閱 SPICYBEAN！
+        </h1>
+        <p style="font-size:15px;line-height:1.8;color:#a3a3a3;text-align:center;margin-bottom:30px;">
+          您已成功訂閱，我們會在第一時間通知您：<br/>
+          🔥 新品發布 &nbsp;|&nbsp; 🎉 折扣活動 &nbsp;|&nbsp; 🛍️ 最新開賣訊息
+        </p>
+        <div style="text-align:center;margin:30px 0;">
+          <a href="https://spicybean.net" style="display:inline-block;padding:12px 32px;background:#ff2d55;color:#0a0a0a;text-decoration:none;font-size:14px;font-weight:600;border-radius:2px;">
+            瀏覽官網
           </a>
         </div>
         <p style="text-align:center;font-size:12px;color:#525252;margin-top:40px;">
@@ -113,7 +138,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
     }
 
-    const lang = locale === "ko-KR" ? "ko-KR" : locale === "ja-JP" ? "ja-JP" : locale === "zh-CN" ? "zh-CN" : "en";
+    const lang = locale === "ko-KR" ? "ko-KR" : locale === "ja-JP" ? "ja-JP" : locale === "zh-CN" ? "zh-CN" : locale === "zh-TW" ? "zh-TW" : "en";
     const mailData = confirmTexts[lang];
 
     const res = await fetch("https://api.resend.com/emails", {

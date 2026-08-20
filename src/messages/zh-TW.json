@@ -1,0 +1,125 @@
+{
+    "site": {
+        "title": "SPICYBEAN — 有態度的高爾夫桿套",
+        "description": "韓國設計驅動的高爾夫桿頭套。為有風格地打球而生。"
+    },
+    "nav": {
+        "products": "全部產品",
+        "about": "品牌故事",
+        "contact": "聯絡我們",
+        "language": "語言",
+        "blog": "部落格",
+        "home": "首頁"
+    },
+    "hero": {
+        "tagline": "不只是桿套。",
+        "subtitle": "韓國設計 · 匠造工藝 · 球場上無需開口的第一張名片",
+        "cta": "探索全系列",
+        "cta_alt": "了解品牌故事"
+    },
+    "series": {
+        "title": "全系列桿套",
+        "subtitle": "四個系列，一種態度。每一支桿套都有自己的故事。",
+        "viewDetail": "查看詳情",
+        "k1": {
+            "name": "K1 黑色經典系列",
+            "desc": "義大利工藝級黑色PU皮革。無需言語的經典品味，低調中盡顯奢華。",
+            "price": "¥148"
+        },
+        "k2": {
+            "name": "K2 標誌性白色系列",
+            "desc": "純淨白色配上標誌性刺繡愛心。無需言語的優雅，讓每一道目光為你停留。",
+            "price": "¥148"
+        },
+        "k3": {
+            "name": "K3 辛紅系列",
+            "desc": "滿版辛紅印花。每一桿都燃燒著不滅的熱情。",
+            "price": "¥148"
+        },
+        "k4": {
+            "name": "K4 賽博骷髏系列",
+            "desc": "賽博龐克限定款。碳纖維PU紋理。為勇者而生的旗艦ICON。",
+            "price": "¥248"
+        }
+    },
+    "about": {
+        "title": "不只是桿套，更是您對高爾夫\n那份執著而熾熱的表達。",
+        "p1": "我們深知，高爾夫不只是運動，更是您個人風格的延伸。SPICY BEAN 將每一次揮桿背後的熱情，化為大膽前衛的設計。",
+        "p2": "在球場上最耀眼的時刻，SPICY BEAN 與您同行。"
+    },
+    "details": {
+        "title": "細節之美",
+        "material": {
+            "title": "優質PU皮",
+            "desc": "義大利工藝級顯色，歷久彌新的奢華PU質感。超細纖維內襯，為珍貴桿頭提供精密防刮保護。"
+        },
+        "stitch": {
+            "title": "匠心刺繡工藝",
+            "desc": "雙層刺繡工藝，精度媲美高級訂製。每一針都承載著匠人的執著。"
+        },
+        "design": {
+            "title": "紅點獎設計基因",
+            "desc": "全球三大設計獎（Red Dot、iF、DFA）加持的 DBWD 設計團隊親自操刀，十年匠心積澱融入每一處細節。"
+        },
+        "fit": {
+            "title": "通用相容",
+            "desc": "適配一號木（460cc）、球道木、鐵木桿、刀型及錘型推桿。"
+        }
+    },
+    "contact": {
+        "title": "聯絡我們",
+        "subtitle": "有任何問題、批發合作需求，或者只是想打個招呼？",
+        "email": "信箱",
+        "follow": "追蹤我們",
+        "wechat": "微信",
+        "xiaohongshu": "小紅書",
+        "instagram": "Instagram"
+    },
+    "footer": {
+        "rights": "© 2026 SPICYBEAN. 保留所有權利。",
+        "designed": "首爾設計 · 用心製造"
+    },
+    "shop": {
+        "title": "前往購買",
+        "tmall": "天貓旗艦店",
+        "jd": "京東旗艦店",
+        "coupang": "Coupang（韓國）",
+        "naver": "NAVER",
+        "amazon": "Amazon",
+        "rakuten": "Rakuten",
+        "amazonJp": "Amazon Japan"
+    },
+    "locale": {
+        "en": "English",
+        "zh-CN": "简体中文",
+        "zh-TW": "繁體中文",
+        "ko-KR": "한국어",
+        "ja-JP": "日本語",
+        "th-TH": "ไทย"
+    },
+    "social": {
+        "title": "買家秀 · 真實曬單",
+        "subtitle": "看看球友們怎麼搭配 SPICYBEAN 下場",
+        "unboxing": "開箱影片",
+        "videoFallback": "您的瀏覽器不支援影片播放",
+        "comingSoon": "敬請期待",
+        "hashtag": "SPICYBEAN高爾夫",
+        "showcase": "展示影片"
+    },
+    "series_details": {
+        "k4": {
+            "material": {
+                "title": "碳纖維紋理PU",
+                "desc": "賽博龐克風格碳纖維紋理，耐磨防刮，質感出眾。"
+            },
+            "design": {
+                "title": "韓國設計師簽名限定",
+                "desc": "SPICYBEAN 簽名限定款，韓國設計師親手操刀。"
+            },
+            "fit": {
+                "title": "通用相容",
+                "desc": "適配一號木（460cc）、球道木、鐵木桿。"
+            }
+        }
+    }
+}

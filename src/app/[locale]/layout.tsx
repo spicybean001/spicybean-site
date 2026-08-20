@@ -21,6 +21,11 @@ const localeMetadata: Record<string, { title: string; description: string; ogLoc
     description: "韩国设计驱动的高尔夫杆头套品牌。红点奖工作室设计，高品质PU皮革，彰显个性的球场印记。",
     ogLocale: "zh_CN",
   },
+  "zh-TW": {
+    title: "SPICYBEAN — 高爾夫桿頭套｜韓式設計潮牌",
+    description: "韓國設計驅動的高爾夫桿頭套品牌。紅點獎工作室設計，高品質PU皮革，彰顯個性的球場印記。",
+    ogLocale: "zh_TW",
+  },
   "ko-KR": {
     title: "SPICYBEAN — 골프 헤드커버｜한국 디자인 브랜드",
     description: "한국 감성 디자인 골프 헤드커브. 레드닷 디자인 수상 스튜디오 DBWD와의 협업. 프리미엄 PU 가죽.",

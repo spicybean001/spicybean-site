@@ -125,10 +125,10 @@ export default function Products() {
           className="mt-8 text-center"
         >
           <p className="text-sm text-spicy-gray mb-4">
-            {locale === "zh-CN" ? "合作平台" : locale === "ko-KR" ? "파트너 플랫폼" : locale === "ja-JP" ? "取り扱いプラットフォーム" : locale === "th-TH" ? "มีจำหน่ายบนแพลตฟอร์มพันธมิตรของเรา" : "Available on our partner platforms"}
+            {locale === "zh-CN" || locale === "zh-TW" ? "合作平台" : locale === "ko-KR" ? "파트너 플랫폼" : locale === "ja-JP" ? "取り扱いプラットフォーム" : locale === "th-TH" ? "มีจำหน่ายบนแพลตฟอร์มพันธมิตรของเรา" : "Available on our partner platforms"}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            {locale === "zh-CN" && (
+            {(locale === "zh-CN" || locale === "zh-TW") && (
               <>
                 <a
                   href={`https://detail.tmall.com/item.htm?id=${series[3].tmallId}`}

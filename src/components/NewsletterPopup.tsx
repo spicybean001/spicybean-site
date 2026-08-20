@@ -16,12 +16,21 @@ type LangTexts = {
 const texts: Record<string, LangTexts> = {
   "zh-CN": {
     title: "抢先获取 SPICYBEAN 新品通知",
-    subtitle: "第一时间了解新品上架、折扣活动和京东开售信息",
+    subtitle: "第一时间了解新品上架、折扣活动和京东现货信息",
     placeholder: "输入您的邮箱",
     button: "订阅通知",
     success: "✅ 订阅成功！我们会第一时间通知您",
     error: "❌ 订阅失败，请稍后再试",
     dismiss: "稍后再说",
+  },
+  "zh-TW": {
+    title: "搶先獲取 SPICYBEAN 新品通知",
+    subtitle: "第一時間了解新品上架、折扣活動與開賣資訊",
+    placeholder: "輸入您的信箱",
+    button: "訂閱通知",
+    success: "✅ 訂閱成功！我們會第一時間通知您",
+    error: "❌ 訂閱失敗，請稍後再試",
+    dismiss: "稍後再說",
   },
   en: {
     title: "Get SPICYBEAN Updates First",

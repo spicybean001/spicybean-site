@@ -2,26 +2,32 @@ import { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 import ZhCNGuide from "@/components/blog/ZhCNGuide";
+import ZhTWGuide from "@/components/blog/ZhTWGuide";
 import EnGuide from "@/components/blog/EnGuide";
 import KoGuide from "@/components/blog/KoGuide";
 import JaGuide from "@/components/blog/JaGuide";
 import ZhCNK4Story from "@/components/blog/ZhCNK4Story";
+import ZhTWK4Story from "@/components/blog/ZhTWK4Story";
 import EnK4Story from "@/components/blog/EnK4Story";
 import KoK4Story from "@/components/blog/KoK4Story";
 import JaK4Story from "@/components/blog/JaK4Story";
 import ZhCNFAQ from "@/components/blog/ZhCNFAQ";
+import ZhTWFAQ from "@/components/blog/ZhTWFAQ";
 import EnFAQ from "@/components/blog/EnFAQ";
 import KoFAQ from "@/components/blog/KoFAQ";
 import JaFAQ from "@/components/blog/JaFAQ";
 import ZhCNBrandGuide from "@/components/blog/ZhCNBrandGuide";
+import ZhTWBrandGuide from "@/components/blog/ZhTWBrandGuide";
 import EnBrandGuide from "@/components/blog/EnBrandGuide";
 import KoBrandGuide from "@/components/blog/KoBrandGuide";
 import JaBrandGuide from "@/components/blog/JaBrandGuide";
 import ZhCNK2Story from "@/components/blog/ZhCNK2Story";
+import ZhTWK2Story from "@/components/blog/ZhTWK2Story";
 import EnK2Story from "@/components/blog/EnK2Story";
 import KoK2Story from "@/components/blog/KoK2Story";
 import JaK2Story from "@/components/blog/JaK2Story";
 import ZhCNSeriesCompare from "@/components/blog/ZhCNSeriesCompare";
+import ZhTWSeriesCompare from "@/components/blog/ZhTWSeriesCompare";
 import EnSeriesCompare from "@/components/blog/EnSeriesCompare";
 import KoSeriesCompare from "@/components/blog/KoSeriesCompare";
 import JaSeriesCompare from "@/components/blog/JaSeriesCompare";
@@ -37,6 +43,10 @@ const articles = {
   "golf-headcover-buying-guide": {
     "zh-CN": {
       title: "高尔夫杆头套选购指南：材质、尺寸、搭配一篇看懂",
+      date: "2026-07-15",
+    },
+    "zh-TW": {
+      title: "高爾夫桿頭套選購指南：材質、尺寸、搭配一篇看懂",
       date: "2026-07-15",
     },
     en: {
@@ -61,6 +71,10 @@ const articles = {
       title: "K4赛博骷髅:一支赛博暗黑风高尔夫杆套的诞生⛳️",
       date: "2026-07-19",
     },
+    "zh-TW": {
+      title: "K4賽博骷髏:一支賽博暗黑風高爾夫桿套的誕生⛳️",
+      date: "2026-07-19",
+    },
     en: {
       title: "K4 Cyber Skull: The Birth of a Dark Aesthetic Golf Headcover ⛳️",
       date: "2026-07-19",
@@ -81,6 +95,10 @@ const articles = {
   "golf-headcover-faq": {
     "zh-CN": {
       title: "高尔夫杆头套常见问题FAQ：材质、尺寸、品牌一篇看懂",
+      date: "2026-07-19",
+    },
+    "zh-TW": {
+      title: "高爾夫桿頭套常見問題FAQ：材質、尺寸、品牌一篇看懂",
       date: "2026-07-19",
     },
     en: {
@@ -105,6 +123,10 @@ const articles = {
       title: "K2白色爱心：高尔夫杆套也可以很浪漫 🖤",
       date: "2026-07-24",
     },
+    "zh-TW": {
+      title: "K2白色愛心：高爾夫桿套也可以很浪漫 🖤",
+      date: "2026-07-24",
+    },
     en: {
       title: "K2 White Love: When Golf Headcovers Embrace Romance 🖤",
       date: "2026-07-24",
@@ -125,6 +147,10 @@ const articles = {
   "spicybean-brand-guide": {
     "zh-CN": {
       title: "SPICYBEAN高尔夫杆套品牌完整指南：系列、材质、工艺、购买全解析",
+      date: "2026-07-20",
+    },
+    "zh-TW": {
+      title: "SPICYBEAN高爾夫桿套品牌完整指南：系列、材質、工藝、購買全解析",
       date: "2026-07-20",
     },
     en: {
@@ -149,6 +175,10 @@ const articles = {
       title: "K1/K2/K3/K4怎么选？一篇看懂SPICYBEAN全系列对比",
       date: "2026-07-30",
     },
+    "zh-TW": {
+      title: "K1/K2/K3/K4怎麼選？一篇看懂SPICYBEAN全系列比較",
+      date: "2026-07-30",
+    },
     en: {
       title: "K1 vs K2 vs K3 vs K4: Which SPICYBEAN Headcover Is Right for You?",
       date: "2026-07-30",
@@ -171,6 +201,7 @@ const articles = {
 const articleComponents: Record<string, Record<string, React.ComponentType>> = {
   "golf-headcover-buying-guide": {
     "zh-CN": ZhCNGuide,
+    "zh-TW": ZhTWGuide,
     en: EnGuide,
     "ko-KR": KoGuide,
     "ja-JP": JaGuide,
@@ -178,6 +209,7 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
   },
   "k4-neon-noir-story": {
     "zh-CN": ZhCNK4Story,
+    "zh-TW": ZhTWK4Story,
     en: EnK4Story,
     "ko-KR": KoK4Story,
     "ja-JP": JaK4Story,
@@ -185,6 +217,7 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
   },
   "golf-headcover-faq": {
     "zh-CN": ZhCNFAQ,
+    "zh-TW": ZhTWFAQ,
     en: EnFAQ,
     "ko-KR": KoFAQ,
     "ja-JP": JaFAQ,
@@ -192,6 +225,7 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
   },
   "k2-white-love-story": {
     "zh-CN": ZhCNK2Story,
+    "zh-TW": ZhTWK2Story,
     en: EnK2Story,
     "ko-KR": KoK2Story,
     "ja-JP": JaK2Story,
@@ -199,6 +233,7 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
   },
   "spicybean-brand-guide": {
     "zh-CN": ZhCNBrandGuide,
+    "zh-TW": ZhTWBrandGuide,
     en: EnBrandGuide,
     "ko-KR": KoBrandGuide,
     "ja-JP": JaBrandGuide,
@@ -206,6 +241,7 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
   },
   "spicybean-series-comparison": {
     "zh-CN": ZhCNSeriesCompare,
+    "zh-TW": ZhTWSeriesCompare,
     en: EnSeriesCompare,
     "ko-KR": KoSeriesCompare,
     "ja-JP": JaSeriesCompare,
@@ -216,6 +252,7 @@ const articleComponents: Record<string, Record<string, React.ComponentType>> = {
 const descriptions: Record<string, Record<string, string>> = {
   "golf-headcover-buying-guide": {
     "zh-CN": "从材质到尺寸，从搭配到品牌，一篇让你成为杆套选购专家。SPICYBEAN高尔夫杆头套选购指南。",
+    "zh-TW": "從材質到尺寸，從搭配到品牌，一篇讓你成為桿套選購專家。SPICYBEAN高爾夫桿頭套選購指南。",
     en: "Everything you need to know about golf headcover materials, sizing, styles, and care. Complete buying guide from SPICYBEAN.",
     "ko-KR": "소재부터 사이즈, 스타일까지 한번에 알아보는 골프 헤드커버 완벽 가이드.",
     "ja-JP": "素材、サイズ、デザインまで完全解説。ゴルフヘッドカバー選び方ガイド。",
@@ -223,6 +260,7 @@ const descriptions: Record<string, Record<string, string>> = {
   },
   "k4-neon-noir-story": {
     "zh-CN": "K4赛博骷髅暗夜霓虹高尔夫杆套的设计诞生故事。从设计手稿到6万针刺绣，SPICYBEAN最具暗黑美学的限定款。",
+    "zh-TW": "K4賽博骷髏暗夜霓虹高爾夫桿套的設計誕生故事。從設計手稿到6萬針刺繡，SPICYBEAN最具暗黑美學的限定款。",
     en: "The story behind K4 Neon Noir cyber skull golf headcover. From design sketches to 60,000 stitches of embroidery — SPICYBEAN's boldest limited edition.",
     "ko-KR": "K4 네온 느와르 사이버 스컬 골프 헤드커버의 디자인 탄생 이야기. SPICYBEAN의 가장 대담한 한정판.",
     "ja-JP": "K4サイバースカルネオンノワールゴルフヘッドカバーのデザイン誕生ストーリー。SPICYBEAN限定版。",
@@ -230,6 +268,7 @@ const descriptions: Record<string, Record<string, string>> = {
   },
   "golf-headcover-faq": {
     "zh-CN": "高尔夫杆头套常见问题：材质对比、尺寸选择、品牌区别、保养方法。SPICYBEAN品牌FAQ全覆盖。",
+    "zh-TW": "高爾夫桿頭套常見問題：材質比較、尺寸選擇、品牌區別、保養方法。SPICYBEAN品牌FAQ全覆蓋。",
     en: "Golf headcover FAQ: material comparison, sizing guide, brand differences, and care tips. Everything you need to know.",
     "ko-KR": "골프 헤드커버 FAQ: 소재 비교, 사이즈 가이드, 브랜드 차이, 관리 팁.",
     "ja-JP": "ゴルフヘッドカバーFAQ：素材比較、サイズガイド、ブランドの違い、お手入れのコツ。",
@@ -237,6 +276,7 @@ const descriptions: Record<string, Record<string, string>> = {
   },
   "spicybean-series-comparison": {
     "zh-CN": "K1/K2/K3/K4全系列对比：价格、风格、推荐人群一图看懂。SPICYBEAN杆套选购指南。",
+    "zh-TW": "K1/K2/K3/K4全系列比較：價格、風格、推薦人群一圖看懂。SPICYBEAN桿套選購指南。",
     en: "K1 vs K2 vs K3 vs K4: complete SPICYBEAN series comparison. Price, style, matching tips, and recommendations.",
     "ko-KR": "K1/K2/K3/K4 시리즈 비교: 가격, 스타일, 추천 대상 한눈에 비교.",
     "ja-JP": "K1/K2/K3/K4シリーズ比較：価格、スタイル、おすすめを一目で比較。",
@@ -244,6 +284,7 @@ const descriptions: Record<string, Record<string, string>> = {
   },
   "k2-white-love-story": {
     "zh-CN": "K2白色爱心高尔夫杆套设计故事。纯白超纤PU × 爱心刺绣，韩式浪漫美学。K1-K4系列对比。",
+    "zh-TW": "K2白色愛心高爾夫桿套設計故事。純白超纖PU × 愛心刺繡，韓式浪漫美學。K1-K4系列比較。",
     en: "K2 White Love golf headcover design story. Pure white microfiber PU × heart embroidery. Korean romantic aesthetics. K1-K4 series comparison.",
     "ko-KR": "K2 화이트 러브 골프 헤드커버 디자인 스토리. 순백 PU × 하트 자수. 한국적 로맨틱 감성.",
     "ja-JP": "K2 ホワイトラブ ゴルフヘッドカバーデザインストーリー。純白PU×ハート刺繍。",
@@ -251,6 +292,7 @@ const descriptions: Record<string, Record<string, string>> = {
   },
   "spicybean-brand-guide": {
     "zh-CN": "SPICYBEAN韩国高尔夫杆套品牌完整介绍。K1/K2/K3/K4全系列对比，PU皮革材质解析、设计工艺、购买渠道。",
+    "zh-TW": "SPICYBEAN韓國高爾夫桿套品牌完整介紹。K1/K2/K3/K4全系列比較，PU皮革材質解析、設計工藝、購買管道。",
     en: "Complete SPICYBEAN brand guide. Korean design-driven golf headcovers. K1-K4 series comparison, PU leather materials, craftsmanship, and where to buy.",
     "ko-KR": "SPICYBEAN 브랜드 가이드. K1-K4 시리즈 소개, PU 가죽 소재, 공법, 구매처 정보.",
     "ja-JP": "SPICYBEANブランド完全ガイド。K1〜K4シリーズ比較、PUレザー素材、技術、購入先。",
@@ -293,7 +335,7 @@ export async function generateMetadata({
       url: `${siteUrl}${path}`,
       siteName: "SPICYBEAN",
       images: [{ url: ogImage, width: 800, height: 600 }],
-      locale: locale === "zh-CN" ? "zh_CN" : locale === "ko-KR" ? "ko_KR" : locale === "ja-JP" ? "ja_JP" : locale === "th-TH" ? "th_TH" : "en_US",
+      locale: locale === "zh-CN" ? "zh_CN" : locale === "zh-TW" ? "zh_TW" : locale === "ko-KR" ? "ko_KR" : locale === "ja-JP" ? "ja_JP" : locale === "th-TH" ? "th_TH" : "en_US",
       type: "article",
       publishedTime: langData.date,
     },
@@ -308,6 +350,7 @@ export async function generateMetadata({
       languages: {
         en: `${siteUrl}/en/blog/${slug}`,
         "zh-CN": `${siteUrl}/zh-CN/blog/${slug}`,
+        "zh-TW": `${siteUrl}/zh-TW/blog/${slug}`,
         "ko-KR": `${siteUrl}/ko-KR/blog/${slug}`,
         "ja-JP": `${siteUrl}/ja-JP/blog/${slug}`,
         "th-TH": `${siteUrl}/th-TH/blog/${slug}`,
@@ -352,7 +395,7 @@ export default async function ArticlePage({
           href={`/${locale}/blog`}
           className="inline-flex items-center text-sm text-spicy-gray hover:text-spicy-red mb-8 transition-colors"
         >
-          ← {locale === "zh-CN" ? "返回博客" : locale === "ko-KR" ? "블로그로 돌아가기" : locale === "ja-JP" ? "ブログに戻る" : locale === "th-TH" ? "กลับสู่บล็อก" : "Back to Blog"}
+          ← {locale === "zh-CN" ? "返回博客" : locale === "zh-TW" ? "返回部落格" : locale === "ko-KR" ? "블로그로 돌아가기" : locale === "ja-JP" ? "ブログに戻る" : locale === "th-TH" ? "กลับสู่บล็อก" : "Back to Blog"}
         </Link>
 
         <header className="mb-12">
@@ -437,7 +480,7 @@ export default async function ArticlePage({
         {/* Related Articles — internal links for SEO */}
         <div className="mt-16 pt-8 border-t border-white/10">
           <h3 className="text-lg font-bold text-spicy-white mb-4">
-            {locale === "zh-CN" ? "📖 推荐阅读" : locale === "ko-KR" ? "📖 함께 읽기" : locale === "ja-JP" ? "📖 関連記事" : "📖 Related Articles"}
+            {locale === "zh-CN" ? "📖 推荐阅读" : locale === "zh-TW" ? "📖 推薦閱讀" : locale === "ko-KR" ? "📖 함께 읽기" : locale === "ja-JP" ? "📖 関連記事" : "📖 Related Articles"}
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {slug !== "spicybean-series-comparison" && (
@@ -450,7 +493,7 @@ export default async function ArticlePage({
                 </div>
                 <div>
                   <p className="text-sm font-medium text-spicy-white group-hover:text-spicy-neon transition-colors line-clamp-2">
-                    {locale === "zh-CN" ? "K1/K2/K3/K4怎么选？一篇看懂" : locale === "ko-KR" ? "K1/K2/K3/K4 비교: 나에게 맞는 헤드커버는?" : locale === "ja-JP" ? "K1/K2/K3/K4比較：自分に合うヘッドカバーは？" : "K1 vs K2 vs K3 vs K4: Which SPICYBEAN Headcover Is Right for You?"}
+                    {locale === "zh-CN" ? "K1/K2/K3/K4怎么选？一篇看懂" : locale === "zh-TW" ? "K1/K2/K3/K4怎麼選？一篇看懂" : locale === "ko-KR" ? "K1/K2/K3/K4 비교: 나에게 맞는 헤드커버는?" : locale === "ja-JP" ? "K1/K2/K3/K4比較：自分に合うヘッドカバーは？" : "K1 vs K2 vs K3 vs K4: Which SPICYBEAN Headcover Is Right for You?"}
                   </p>
                 </div>
               </a>
@@ -465,7 +508,7 @@ export default async function ArticlePage({
                 </div>
                 <div>
                   <p className="text-sm font-medium text-spicy-white group-hover:text-spicy-neon transition-colors line-clamp-2">
-                    {locale === "zh-CN" ? "SPICYBEAN品牌完整指南" : locale === "ko-KR" ? "SPICYBEAN 브랜드 가이드" : locale === "ja-JP" ? "SPICYBEANブランドガイド" : "SPICYBEAN Brand Guide"}
+                    {locale === "zh-CN" ? "SPICYBEAN品牌完整指南" : locale === "zh-TW" ? "SPICYBEAN品牌完整指南" : locale === "ko-KR" ? "SPICYBEAN 브랜드 가이드" : locale === "ja-JP" ? "SPICYBEANブランドガイド" : "SPICYBEAN Brand Guide"}
                   </p>
                 </div>
               </a>
@@ -480,7 +523,7 @@ export default async function ArticlePage({
                 </div>
                 <div>
                   <p className="text-sm font-medium text-spicy-white group-hover:text-spicy-neon transition-colors line-clamp-2">
-                    {locale === "zh-CN" ? "高尔夫杆套FAQ常见问题" : locale === "ko-KR" ? "헤드커버 FAQ" : locale === "ja-JP" ? "ヘッドカバーFAQ" : "Golf Headcover FAQ"}
+                    {locale === "zh-CN" ? "高尔夫杆套FAQ常见问题" : locale === "zh-TW" ? "高爾夫桿套FAQ常見問題" : locale === "ko-KR" ? "헤드커버 FAQ" : locale === "ja-JP" ? "ヘッドカバーFAQ" : "Golf Headcover FAQ"}
                   </p>
                 </div>
               </a>
@@ -495,7 +538,7 @@ export default async function ArticlePage({
                 </div>
                 <div>
                   <p className="text-sm font-medium text-spicy-white group-hover:text-spicy-neon transition-colors line-clamp-2">
-                    {locale === "zh-CN" ? "高尔夫杆头套选购指南" : locale === "ko-KR" ? "골프 헤드커버 구매 가이드" : locale === "ja-JP" ? "ゴルフヘッドカバー選び方" : "The Ultimate Golf Headcover Buying Guide"}
+                    {locale === "zh-CN" ? "高尔夫杆头套选购指南" : locale === "zh-TW" ? "高爾夫桿頭套選購指南" : locale === "ko-KR" ? "골프 헤드커버 구매 가이드" : locale === "ja-JP" ? "ゴルフヘッドカバー選び方" : "The Ultimate Golf Headcover Buying Guide"}
                   </p>
                 </div>
               </a>

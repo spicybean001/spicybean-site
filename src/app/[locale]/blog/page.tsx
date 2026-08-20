@@ -3,6 +3,56 @@ import { setRequestLocale } from "next-intl/server";
 import BlogList from "@/components/blog/BlogList";
 
 const blogPosts = {
+  "zh-TW": [
+    {
+      slug: "spicybean-series-comparison",
+      title: "K1/K2/K3/K4怎麼選？一篇看懂SPICYBEAN全系列比較",
+      excerpt: "K1黑色經典、K2白色愛心、K3辛紅、K4賽博骷髏——價格、風格、搭配全比較，3分鐘找到你的那一款。",
+      date: "2026-07-30",
+      image: "/images/blog/brand-guide-cover.jpg",
+      lang: "zh-TW" as const,
+    },
+    {
+      slug: "spicybean-brand-guide",
+      title: "SPICYBEAN高爾夫桿套品牌完整指南",
+      excerpt: "韓國首爾設計驅動的高爾夫桿套品牌，K1-K4全系列解析。",
+      date: "2026-07-20",
+      image: "/images/blog/brand-guide-cover.jpg",
+      lang: "zh-TW" as const,
+    },
+    {
+      slug: "golf-headcover-faq",
+      title: "高爾夫桿頭套常見問題FAQ：材質、尺寸、品牌一篇看懂",
+      excerpt: "PU皮革還是針織？多大尺寸？怎麼保養？SPICYBEAN常見問題全解答。",
+      date: "2026-07-19",
+      image: "/images/blog/faq-cover.jpg",
+      lang: "zh-TW" as const,
+    },
+    {
+      slug: "k4-neon-noir-story",
+      title: "K4賽博骷髏:一支賽博暗黑風高爾夫桿套的誕生⛳️",
+      excerpt: "從首爾到球場，SPICYBEAN最具暗黑美學的旗艦桿套是如何誕生的。",
+      date: "2026-07-19",
+      image: "/images/blog/k4-neon-noir-cover.jpg",
+      lang: "zh-TW" as const,
+    },
+    {
+      slug: "k2-white-love-story",
+      title: "K2 標誌性白色系列：高爾夫桿套也可以很浪漫 🖤",
+      excerpt: "純白超纖PU × 愛心刺繡 — SPICYBEAN K2 標誌性白色系列全解析。韓式浪漫美學高爾夫桿套，適合追求精緻品味的球友。",
+      date: "2026-07-24",
+      image: "/images/blog/k2-white-love-cover.jpg",
+      lang: "zh-TW" as const,
+    },
+    {
+      slug: "golf-headcover-buying-guide",
+      title: "高爾夫桿頭套選購指南：材質、尺寸、搭配一篇看懂",
+      excerpt: "從材質到尺寸，從搭配到品牌，一篇讓你成為桿套選購專家。",
+      date: "2026-07-15",
+      image: "/images/blog/headcover-guide-cover.jpg",
+      lang: "zh-TW" as const,
+    },
+  ],
   "zh-CN": [
     {
       slug: "spicybean-series-comparison",
@@ -264,6 +314,7 @@ export async function generateMetadata({
   const siteUrl = "https://spicybean.net";
 
   const title: Record<string, string> = {
+    "zh-TW": "SPICYBEAN 部落格 — 高爾夫知識與品牌故事",
     "zh-CN": "SPICYBEAN 博客 — 高尔夫知识与品牌故事",
     en: "SPICYBEAN Blog — Golf Knowledge & Brand Stories",
     "ko-KR": "SPICYBEAN 블로그 — 골프 지식과 브랜드 이야기",
@@ -271,6 +322,7 @@ export async function generateMetadata({
     "th-TH": "SPICYBEAN บล็อก — ความรู้กอล์ฟและเรื่องราวแบรนด์",
   };
   const desc: Record<string, string> = {
+    "zh-TW": "SPICYBEAN官方部落格：高爾夫桿頭套選購指南、材質比較、搭配技巧，以及K系列桿套的設計故事。",
     "zh-CN": "SPICYBEAN官方博客：高尔夫杆头套选购指南、材质对比、搭配技巧，以及K系列杆套的设计故事。",
     en: "SPICYBEAN official blog: Golf headcover buying guide, material comparison, styling tips, and K-series design stories.",
     "ko-KR": "SPICYBEAN 공식 블로그: 골프 헤드커버 가이드, 소재 비교, 스타일링 팁 및 K-시리즈 디자인 이야기.",
@@ -305,14 +357,14 @@ export default async function BlogPage({
     <div className="min-h-screen bg-spicy-black py-24">
       <div className="mx-auto max-w-4xl px-4">
         <h1 className="text-4xl font-bold text-spicy-white mb-8">
-          {locale === "zh-CN" ? "SPICYBEAN 博客" :
+          {locale === "zh-CN" || locale === "zh-TW" ? "SPICYBEAN 部落格" :
            locale === "ko-KR" ? "SPICYBEAN 블로그" :
            locale === "ja-JP" ? "SPICYBEAN ブログ" :
            locale === "th-TH" ? "SPICYBEAN บล็อก" :
            "SPICYBEAN Blog"}
         </h1>
         <p className="text-spicy-gray mb-12">
-          {locale === "zh-CN" ? "高尔夫知识与品牌故事" :
+          {locale === "zh-CN" || locale === "zh-TW" ? "高爾夫知識與品牌故事" :
            locale === "ko-KR" ? "골프 지식과 브랜드 이야기" :
            locale === "ja-JP" ? "ゴルフ知識とブランドストーリー" :
            locale === "th-TH" ? "ความรู้กอล์ฟและเรื่องราวแบรนด์" :

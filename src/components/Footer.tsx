@@ -34,7 +34,7 @@ export default function Footer() {
               {t("shop.title")}
             </h3>
             <ul className="space-y-3">
-              {locale === "zh-CN" && (
+              {(locale === "zh-CN" || locale === "zh-TW") && (
                 <>
                   <li>
                     <a
@@ -163,7 +163,7 @@ export default function Footer() {
                 />
               </div>
               <p className="text-[10px] text-spicy-gray/40 mt-1">
-                {locale === "zh-CN" ? "扫码关注小红书" : locale === "ko-KR" ? "샤오홍슈 팔로우" : locale === "ja-JP" ? "小紅書をフォロー" : "Scan to follow on Xiaohongshu"}
+                {locale === "zh-CN" ? "扫码关注小红书" : locale === "zh-TW" ? "掃碼關注小紅書" : locale === "ko-KR" ? "샤오홍슈 팔로우" : locale === "ja-JP" ? "小紅書をフォロー" : "Scan to follow on Xiaohongshu"}
               </p>
             </div>
           </div>
