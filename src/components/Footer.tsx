@@ -47,9 +47,14 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <span className="text-sm text-spicy-gray/40">
-                      {t("shop.jd")} 🚧
-                    </span>
+                    <a
+                      href="https://mall.jd.com/index-91376156.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-spicy-gray hover:text-spicy-neon transition-colors"
+                    >
+                      {t("shop.jd")} ↗
+                    </a>
                   </li>
                 </>
               )}

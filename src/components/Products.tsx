@@ -139,7 +139,7 @@ export default function Products() {
                   {t("shop.tmall")} ↗
                 </a>
                 <a
-                  href="http://mall.jd.com/index-91376156.html"
+                  href="https://mall.jd.com/index-91376156.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-sm border border-spicy-gray/30 px-6 py-2.5 text-sm text-spicy-gray hover:border-spicy-neon hover:text-spicy-neon transition-all duration-300"
