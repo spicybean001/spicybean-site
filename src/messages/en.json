@@ -1,125 +1,125 @@
 {
-    "site": {
-        "title": "SPICYBEAN — Golf Headcovers with Attitude",
-        "description": "Korean design-driven golf headcovers. Born for those who play with style."
+  "site": {
+    "title": "SPICYBEAN — Golf Headcovers with Attitude",
+    "description": "Korean design-driven golf headcovers. Born for those who play with style."
+  },
+  "nav": {
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language",
+    "blog": "Blog",
+    "home": "Home"
+  },
+  "hero": {
+    "tagline": "More Than Just a Cover.",
+    "subtitle": "Korean design. Studio craftsmanship. A statement on every tee.",
+    "cta": "Explore the Collection",
+    "cta_alt": "See the Story"
+  },
+  "series": {
+    "title": "The Collection",
+    "subtitle": "Four series, one signature attitude. Every headcover tells a story.",
+    "viewDetail": "View Detail",
+    "k1": {
+      "name": "K1 — Classic Noir",
+      "desc": "Italian-inspired premium black pebbled PU leather. Understated elegance that speaks volumes.",
+      "price": "$25"
     },
-    "nav": {
-        "products": "Products",
-        "about": "About",
-        "contact": "Contact",
-        "language": "Language",
-        "blog": "Blog",
-        "home": "Home"
+    "k2": {
+      "name": "K2 — Signature White",
+      "desc": "Crisp white with a signature embroidered heart. Pure elegance that commands every glance.",
+      "price": "$25"
     },
-    "hero": {
-        "tagline": "More Than Just a Cover.",
-        "subtitle": "Korean design. Studio craftsmanship. A statement on every tee.",
-        "cta": "Explore the Collection",
-        "cta_alt": "See the Story"
+    "k3": {
+      "name": "K3 — Spicy Red",
+      "desc": "Full-print vibrant red. Passion that burns with every swing.",
+      "price": "$25"
     },
-    "series": {
-        "title": "The Collection",
-        "subtitle": "Four series, one signature attitude. Every headcover tells a story.",
-        "viewDetail": "View Detail",
-        "k1": {
-            "name": "K1 — Classic Noir",
-            "desc": "Italian-inspired premium black pebbled PU leather. Understated elegance that speaks volumes.",
-            "price": "$25"
-        },
-        "k2": {
-            "name": "K2 — Signature White",
-            "desc": "Crisp white with a signature embroidered heart. Pure elegance that commands every glance.",
-            "price": "$25"
-        },
-        "k3": {
-            "name": "K3 — Spicy Red",
-            "desc": "Full-print vibrant red. Passion that burns with every swing.",
-            "price": "$25"
-        },
-        "k4": {
-            "name": "K4 — Cyber Skull",
-            "desc": "Cyberpunk limited edition. Carbon fiber PU texture. Our flagship ICON — born for the bold.",
-            "price": "$36"
-        }
-    },
-    "about": {
-        "title": "More than just a cover — It's the heat of your passion for the game.",
-        "p1": "We believe golf is more than a sport; it's a stage for self-expression. SPICY BEAN transforms the fire behind every shot into bold, daring design.",
-        "p2": "In your brightest moments on the course, we are right there with you. Ignite Your Passion."
-    },
-    "details": {
-        "title": "The Details",
-        "material": {
-            "title": "Premium PU Leather",
-            "desc": "Italian-inspired premium PU with deep color depth that defies time. Microfiber lining for superior scratch protection."
-        },
-        "stitch": {
-            "title": "Artisan Embroidery Craft",
-            "desc": "Double-layer embroidery with precision that rivals haute couture. Every stitch tells a story of craftsmanship."
-        },
-        "design": {
-            "title": "Red Dot Award DNA",
-            "desc": "Masterfully crafted by DBWD — a decade of excellence proven by the world's top 3 design awards (Red Dot, iF, DFA)."
-        },
-        "fit": {
-            "title": "Universal Fit",
-            "desc": "Compatible with driver (up to 460cc), fairway wood, hybrid, blade and mallet putters."
-        }
-    },
-    "contact": {
-        "title": "Get in Touch",
-        "subtitle": "Questions, wholesale inquiries, or just want to say hi?",
-        "email": "Email",
-        "follow": "Follow Us",
-        "wechat": "WeChat",
-        "xiaohongshu": "Xiaohongshu (Little Red Book)",
-        "instagram": "Instagram"
-    },
-    "footer": {
-        "rights": "© 2026 SPICYBEAN. All rights reserved.",
-        "designed": "Designed in Seoul. Made with love."
-    },
-    "shop": {
-        "title": "Shop Now",
-        "tmall": "Tmall (China)",
-        "jd": "JD (China)",
-        "coupang": "Coupang (Korea)",
-        "naver": "NAVER",
-        "amazon": "Amazon",
-        "rakuten": "Rakuten",
-        "amazonJp": "Amazon Japan"
-    },
-    "locale": {
-        "en": "English",
-        "zh-CN": "中文",
-        "zh-TW": "繁體中文",
-        "ko-KR": "한국어",
-        "ja-JP": "日本語",
-        "th-TH": "ไทย"
-    },
-    "social": {
-        "title": "Real Looks · Real Golfers",
-        "subtitle": "See how players style their SPICYBEAN on the course",
-        "unboxing": "Unboxing",
-        "videoFallback": "Your browser does not support video playback",
-        "comingSoon": "Coming Soon",
-        "hashtag": "SPICYBEANGolf",
-        "showcase": "Showcase"
-    },
-    "series_details": {
-        "k4": {
-            "material": {
-                "title": "Carbon Fiber PU",
-                "desc": "Cyberpunk carbon texture, scratch-resistant with premium feel."
-            },
-            "design": {
-                "title": "Korea Designer Signed Edition",
-                "desc": "SPICYBEAN signature limited edition by Korean designer."
-            },
-            "fit": {
-                "title": "Universal Fit",
-                "desc": "Compatible with driver (up to 460cc), fairway wood, and hybrid."
-            }
-        }
+    "k4": {
+      "name": "K4 — Cyber Skull",
+      "desc": "Cyberpunk limited edition. Carbon fiber PU texture. Our flagship ICON — born for the bold.",
+      "price": "$36"
     }
+  },
+  "about": {
+    "title": "More than just a cover — It's the heat of your passion for the game.",
+    "p1": "We believe golf is more than a sport; it's a stage for self-expression. SPICY BEAN transforms the fire behind every shot into bold, daring design.",
+    "p2": "In your brightest moments on the course, we are right there with you. Ignite Your Passion."
+  },
+  "details": {
+    "title": "The Details",
+    "material": {
+      "title": "Premium PU Leather",
+      "desc": "Italian-inspired premium PU with deep color depth that defies time. Microfiber lining for superior scratch protection."
+    },
+    "stitch": {
+      "title": "Artisan Embroidery Craft",
+      "desc": "Double-layer embroidery with precision that rivals haute couture. Every stitch tells a story of craftsmanship."
+    },
+    "design": {
+      "title": "Red Dot Award DNA",
+      "desc": "Masterfully crafted by DBWD — a decade of excellence proven by the world's top 3 design awards (Red Dot, iF, DFA)."
+    },
+    "fit": {
+      "title": "Universal Fit",
+      "desc": "Compatible with driver (up to 460cc), fairway wood, hybrid, blade and mallet putters."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Questions, wholesale inquiries, or just want to say hi?",
+    "email": "Email",
+    "follow": "Follow Us",
+    "wechat": "WeChat",
+    "xiaohongshu": "Xiaohongshu (Little Red Book)",
+    "instagram": "Instagram"
+  },
+  "footer": {
+    "rights": "© 2026 SPICYBEAN. All rights reserved.",
+    "designed": "Designed in Seoul. Made with love."
+  },
+  "shop": {
+    "title": "Shop Now",
+    "tmall": "Tmall (China)",
+    "jd": "JD (China)",
+    "coupang": "Coupang (Korea)",
+    "naver": "NAVER",
+    "amazon": "Amazon",
+    "rakuten": "Rakuten",
+    "amazonJp": "Amazon Japan"
+  },
+  "locale": {
+    "en": "English",
+    "zh-CN": "简体中文",
+    "zh-TW": "繁體中文",
+    "ko-KR": "한국어",
+    "ja-JP": "日本語",
+    "th-TH": "ไทย"
+  },
+  "social": {
+    "title": "Real Looks · Real Golfers",
+    "subtitle": "See how players style their SPICYBEAN on the course",
+    "unboxing": "Unboxing",
+    "videoFallback": "Your browser does not support video playback",
+    "comingSoon": "Coming Soon",
+    "hashtag": "SPICYBEANGolf",
+    "showcase": "Showcase"
+  },
+  "series_details": {
+    "k4": {
+      "material": {
+        "title": "Carbon Fiber PU",
+        "desc": "Cyberpunk carbon texture, scratch-resistant with premium feel."
+      },
+      "design": {
+        "title": "Korea Designer Signed Edition",
+        "desc": "SPICYBEAN signature limited edition by Korean designer."
+      },
+      "fit": {
+        "title": "Universal Fit",
+        "desc": "Compatible with driver (up to 460cc), fairway wood, and hybrid."
+      }
+    }
+  }
 }
