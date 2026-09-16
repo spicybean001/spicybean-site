@@ -129,7 +129,7 @@ export default async function LocaleLayout({
         <meta name="msvalidate.01" content="AABECD01D1C1959F835814263DDD41F7" />
 
         {/* Shenma Zhanzhang Verification */}
-        <meta name="shenma-site-verification" content="4c3e4ff91ef8df9ec302fe024442e5a5_1789529412" />
+        <meta name="shenma-site-verification" content="4c3e4ff91ef8df9ec302fe024442e5a5_1789543122" />
 
         {/* Structured Data: Organization (global) */}
         <script
