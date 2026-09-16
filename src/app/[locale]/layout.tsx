@@ -128,6 +128,9 @@ export default async function LocaleLayout({
         {/* Bing Webmaster Tools Verification */}
         <meta name="msvalidate.01" content="AABECD01D1C1959F835814263DDD41F7" />
 
+        {/* Shenma Zhanzhang Verification */}
+        <meta name="shenma-site-verification" content="4c3e4ff91ef8df9ec302fe024442e5a5_1789522481" />
+
         {/* Structured Data: Organization (global) */}
         <script
           type="application/ld+json"
