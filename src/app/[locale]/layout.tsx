@@ -28,7 +28,7 @@ const localeMetadata: Record<string, { title: string; description: string; ogLoc
   },
   "ko-KR": {
     title: "SPICYBEAN — 골프 헤드커버｜한국 디자인 브랜드",
-    description: "한국 감성 디자인 골프 헤드커브. 레드닷 디자인 수상 스튜디오 DBWD와의 협업. 프리미엄 PU 가죽.",
+    description: "SPICYBEAN(스파이시빈)은 서울에서 디자인하는 한국 골프 브랜드입니다. 프리미엄 PU 레더 골프 헤드커버 K1~K4와 골프장갑 GLV, 레드닷 수상 디자인 DNA.",
     ogLocale: "ko_KR",
   },
   "ja-JP": {
@@ -139,9 +139,11 @@ export default async function LocaleLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "SPICYBEAN",
+              "alternateName": ["스파이시빈", "SPICYBEAN 골프"],
               "url": "https://spicybean.net",
               "logo": "https://spicybean.net/logo.png",
               "description": "Korean design-driven golf headcovers. Premium PU leather headcovers for drivers, fairway woods, and hybrids.",
+              "knowsAbout": ["golf headcovers", "골프 헤드커버", "golf gloves", "골프장갑"],
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Seoul",
@@ -194,3 +196,4 @@ export default async function LocaleLayout({
     </html>
   );
 }
+
