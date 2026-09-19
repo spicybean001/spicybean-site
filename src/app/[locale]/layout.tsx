@@ -161,6 +161,145 @@ export default async function LocaleLayout({
           }}
         />
 
+        {/* Structured Data: Brand + disambiguation (ko-KR) — Naver AI 브리핑(Cue:) 오인 교정 */}
+        {locale === "ko-KR" && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": ["Organization", "Brand"],
+                "name": "SPICYBEAN",
+                "alternateName": ["스파이시빈", "SPICYBEAN 골프", "스파이시빈 골프"],
+                "url": "https://spicybean.net",
+                "logo": "https://spicybean.net/logo.png",
+                "slogan": "골프 그 이상 — 서울에서 디자인하는 골프 헤드커버",
+                "description":
+                  "SPICYBEAN(스파이시빈)은 서울에서 디자인하는 한국 골프 용품 브랜드입니다. 프리미엄 PU 레더 골프 헤드커버 K1~K4와 골프장갑 GLV를 만듭니다.",
+                "disambiguatingDescription":
+                  "SPICYBEAN은 향신료(spice)나 콩(bean)을 뜻하는 단어나 식품 브랜드가 아니라, 서울에서 디자인하는 한국 골프 용품 브랜드입니다. 골프 헤드커버와 골프장갑을 제조·판매합니다.",
+                "knowsAbout": [
+                  "골프 헤드커버",
+                  "골프장갑",
+                  "드라이버 헤드커버",
+                  "퍼터 커버",
+                  "PU 레더 골프 용품",
+                  "golf headcovers"
+                ],
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Seoul",
+                  "addressCountry": "KR"
+                },
+                "sameAs": ["https://instagram.com/spicybeangolf"],
+                "contactPoint": {
+                  "@type": "ContactPoint",
+                  "email": "hi@spicybean.net",
+                  "contactType": "customer service"
+                },
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "SPICYBEAN 골프 헤드커버 라인업",
+                  "itemListElement": [
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Product",
+                        "name": "SPICYBEAN K1 골프 헤드커버 클래식 느와르",
+                        "url": "https://spicybean.net/ko-KR/products/k1"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Product",
+                        "name": "SPICYBEAN K2 골프 헤드커버 시그니처 화이트",
+                        "url": "https://spicybean.net/ko-KR/products/k2"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Product",
+                        "name": "SPICYBEAN K3 골프 헤드커버 스파이시 레드",
+                        "url": "https://spicybean.net/ko-KR/products/k3"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Product",
+                        "name": "SPICYBEAN K4 골프 헤드커버 사이버 스컬 한정판",
+                        "url": "https://spicybean.net/ko-KR/products/k4"
+                      }
+                    },
+                    {
+                      "@type": "Offer",
+                      "itemOffered": {
+                        "@type": "Product",
+                        "name": "SPICYBEAN GLV 골프장갑",
+                        "url": "https://spicybean.net/ko-KR/products"
+                      }
+                    }
+                  ]
+                }
+              })
+            }}
+          />
+        )}
+
+        {/* Structured Data: FAQPage (ko-KR) — AI 검색 인용용 한국어 문답 */}
+        {locale === "ko-KR" && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "inLanguage": "ko-KR",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "SPICYBEAN(스파이시빈)은 어떤 브랜드인가요?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "SPICYBEAN(스파이시빈)은 서울에서 디자인하는 한국 골프 용품 브랜드입니다. 골프 헤드커버 K1~K4 시리즈와 골프장갑 GLV 시리즈를 만들며, 프리미엄 PU 레더와 초극세사 안감을 사용합니다."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "spice bean(향신료 콩)이나 식품 브랜드와 같은 건가요?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "아닙니다. SPICYBEAN은 향신료나 콩과 무관한 골프 용품 브랜드명입니다. 골프 헤드커버와 골프장갑을 만드는 한국 브랜드입니다."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "SPICYBEAN 헤드커버는 어떤 클럽에 맞나요?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "유니버설 핏으로 드라이버(460cc), 페어웨이 우드, 하이브리드, 블레이드형·말렛형 퍼터에 모두 사용할 수 있습니다."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "SPICYBEAN 제품은 어디서 구매하나요?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "공식 사이트 spicybean.net에서 구매할 수 있으며, 한국에서는 쿠팡, 중국에서는 티몰·징동에서도 판매합니다. 문의는 hi@spicybean.net으로 받습니다."
+                    }
+                  }
+                ]
+              })
+            }}
+          />
+        )}
+
         {/* Structured Data: WebSite (global) */}
         <script
           type="application/ld+json"
@@ -196,4 +335,5 @@ export default async function LocaleLayout({
     </html>
   );
 }
+
 
