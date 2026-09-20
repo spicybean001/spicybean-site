@@ -78,6 +78,7 @@ export async function generateMetadata({
       description: meta?.description,
       url: `${siteUrl}/${locale}/products/${series}`,
       siteName: "SPICYBEAN",
+      type: "website",
       images: [{ url: `${siteUrl}/images/${series}/cover.jpg`, width: 800, height: 600 }],
       locale: locale === "zh-CN" ? "zh_CN" : locale === "ko-KR" ? "ko_KR" : locale === "ja-JP" ? "ja_JP" : "en_US",
     },
@@ -102,3 +103,4 @@ export default async function ProductPage({
 
   return <ProductDetail series={series} />;
 }
+
