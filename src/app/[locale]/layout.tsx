@@ -68,6 +68,7 @@ export async function generateMetadata({
     openGraph: {
       title: meta.title,
       description: meta.description,
+      url: `${siteUrl}/${locale}`,
       siteName: "SPICYBEAN",
       type: "website",
       locale: meta.ogLocale,
