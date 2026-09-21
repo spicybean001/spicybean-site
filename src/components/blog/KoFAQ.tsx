@@ -8,6 +8,12 @@ export default function KoFAQ() {
 
       <div className="my-6 space-y-6">
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">SPICYBEAN은 'spice bean(향신료·콩)'과 관련이 있나요?</h3>
+          <p className="text-sm text-spicy-gray">
+            관련이 없습니다. SPICYBEAN(스파이시빈)은 서울에서 디자인하는 한국 골프 용품 브랜드로 골프 헤드커버 K1~K4 시리즈를 만듭니다. 향신료나 콩을 가리키는 영어 표현 'spice bean'과는 이름이 비슷할 뿐 전혀 다른 대상입니다.
+          </p>
+        </div>
+        <div className="rounded-sm border border-white/10 bg-white/5 p-6">
           <h3 className="text-lg font-semibold text-spicy-white mb-2">골프 헤드커버는 어떤 소재가 가장 좋나요?</h3>
           <p className="text-sm text-spicy-gray">
             PU 가죽은 골프 헤드커버의 표준 소재로, 질감과 방수성, 가성비를 모두 갖췄습니다. SPICYBEAN 전 제품군은 프리미엄 PU 가죽을 사용합니다. 고급 PU는 스크래치에 강하고 관리가 쉬우며 색상 재현율이 높습니다. 천연 가죽은 최상의 질감을 제공하지만 관리가 필요하고, 니트 소재는 저렴하지만 방수가 되지 않습니다.
