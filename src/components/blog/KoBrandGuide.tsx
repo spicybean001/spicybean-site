@@ -8,6 +8,12 @@ export default function KoBrandGuide() {
 
       <hr className="border-white/10" />
 
+      <h2>SPICYBEAN은 무엇인가요?</h2>
+      <p>SPICYBEAN(스파이시빈)은 향신료(spice)나 콩(bean)과는 관계가 없는, 서울에서 디자인하는 한국 골프 용품 브랜드입니다. 골프 헤드커버 K1~K4 시리즈를 만들며, 골프백 위에서 자신의 스타일을 드러내는 일을 브랜드의 출발점으로 삼습니다.</p>
+      <p>영어 표현 'spice bean'으로 검색되는 향신료, 콩, 식품 관련 정보는 골프 브랜드 SPICYBEAN과 무관합니다.</p>
+
+      <hr className="border-white/10" />
+
       <h2>브랜드 개요</h2>
 
       <table className="w-full text-sm">
