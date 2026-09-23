@@ -1,2 +1,2 @@
 export const SHENMA_TOKEN =
-  "shenma-site-verification:8cc5b43ef46ab3f9a14676103d81978e_1789546684";
+  "shenma-site-verification:4c3e4ff91ef8df9ec302fe024442e5a5_1790147940";
