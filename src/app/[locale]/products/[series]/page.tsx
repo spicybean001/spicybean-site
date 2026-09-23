@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import ProductDetail from "@/components/ProductDetail";
 import { locales } from "@/i18n/routing";
+import { localeUrl } from "@/i18n/urls";
 import { setRequestLocale } from "next-intl/server";
 
 const validSeries = ["k1", "k2", "k3", "k4"] as const;
@@ -62,21 +63,21 @@ export async function generateMetadata({
 
   const languages: Record<string, string> = {};
   for (const loc of locales) {
-    languages[loc] = `${siteUrl}/${loc}/products/${series}`;
+    languages[loc] = localeUrl(loc, `/products/${series}`);
   }
-  languages["x-default"] = `${siteUrl}/en/products/${series}`;
+  languages["x-default"] = localeUrl("en", `/products/${series}`);
 
   return {
     title: meta?.title || `SPICYBEAN ${series.toUpperCase()} Golf Headcover`,
     description: meta?.description || "",
     alternates: {
-      canonical: `${siteUrl}/${locale}/products/${series}`,
+      canonical: localeUrl(locale, `/products/${series}`),
       languages,
     },
     openGraph: {
       title: meta?.title,
       description: meta?.description,
-      url: `${siteUrl}/${locale}/products/${series}`,
+      url: localeUrl(locale, `/products/${series}`),
       siteName: "SPICYBEAN",
       type: "website",
       images: [{ url: `${siteUrl}/images/${series}/cover.jpg`, width: 800, height: 600 }],
@@ -103,4 +104,5 @@ export default async function ProductPage({
 
   return <ProductDetail series={series} />;
 }
+
 
