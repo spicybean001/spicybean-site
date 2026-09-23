@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import NewsletterPopup from "@/components/NewsletterPopup";
 import ImageProtectorClient from "@/components/ImageProtectorClient";
 import { locales } from "@/i18n/routing";
+import { localeUrl } from "@/i18n/urls";
 
 const siteLocales = locales as readonly string[];
 
@@ -47,12 +48,12 @@ export async function generateMetadata({
   const meta = localeMetadata[locale] || localeMetadata.en;
   const siteUrl = "https://spicybean.net";
 
-  // Build hreflang alternates
+  // Build hreflang alternates (default locale "en" is served unprefixed)
   const languages: Record<string, string> = {};
   for (const loc of siteLocales) {
-    languages[loc] = `${siteUrl}/${loc}`;
+    languages[loc] = localeUrl(loc);
   }
-  languages["x-default"] = `${siteUrl}/en`;
+  languages["x-default"] = localeUrl("en");
 
   return {
     metadataBase: new URL(siteUrl),
@@ -68,7 +69,7 @@ export async function generateMetadata({
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `${siteUrl}/${locale}`,
+      url: localeUrl(locale),
       siteName: "SPICYBEAN",
       type: "website",
       locale: meta.ogLocale,
@@ -82,7 +83,7 @@ export async function generateMetadata({
       ],
     },
     alternates: {
-      canonical: `${siteUrl}/${locale}`,
+      canonical: localeUrl(locale),
       languages,
     },
     other: {
@@ -336,5 +337,6 @@ export default async function LocaleLayout({
     </html>
   );
 }
+
 
 
