@@ -1,19 +1,14 @@
 import { MetadataRoute } from "next";
-
-const BASE_URL = "https://spicybean.net";
-const LOCALES = ["en", "zh-CN", "zh-TW", "ko-KR", "ja-JP", "th-TH"];
-
-// hreflang alternates for Google international targeting (Search + AI Overviews)
-function languagesFor(path: string): Record<string, string> {
-  return Object.fromEntries(
-    LOCALES.map((locale) => [locale, `${BASE_URL}/${locale}${path}`])
-  );
-}
+import { localeUrl, languageAlternates } from "@/i18n/urls";
+import { locales } from "@/i18n/routing";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
 
-  const staticPages = ["", "/blog"];
+  const staticPages: { path: string; priority: number }[] = [
+    { path: "", priority: 1.0 },
+    { path: "/blog", priority: 0.8 },
+  ];
 
   const articles = [
     "golf-headcover-buying-guide",
@@ -28,38 +23,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const entries: MetadataRoute.Sitemap = [];
 
-  for (const locale of LOCALES) {
-    for (const path of staticPages) {
+  const push = (path: string, priority: number, changeFrequency: "weekly" | "monthly") => {
+    for (const locale of locales) {
       entries.push({
-        url: `${BASE_URL}/${locale}${path}`,
+        url: localeUrl(locale, path),
         lastModified,
-        changeFrequency: "weekly",
-        priority: path === "" ? 1.0 : 0.8,
-        alternates: { languages: languagesFor(path) },
+        changeFrequency,
+        priority,
+        alternates: { languages: languageAlternates(path) },
       });
     }
+  };
 
-    for (const slug of articles) {
-      const path = `/blog/${slug}`;
-      entries.push({
-        url: `${BASE_URL}/${locale}${path}`,
-        lastModified,
-        changeFrequency: "monthly",
-        priority: 0.7,
-        alternates: { languages: languagesFor(path) },
-      });
-    }
-
-    for (const s of series) {
-      const path = `/products/${s}`;
-      entries.push({
-        url: `${BASE_URL}/${locale}${path}`,
-        lastModified,
-        changeFrequency: "monthly",
-        priority: 0.6,
-        alternates: { languages: languagesFor(path) },
-      });
-    }
+  for (const page of staticPages) {
+    push(page.path, page.priority, "weekly");
+  }
+  for (const slug of articles) {
+    push(`/blog/${slug}`, 0.7, "monthly");
+  }
+  for (const s of series) {
+    push(`/products/${s}`, 0.6, "monthly");
   }
 
   return entries;
