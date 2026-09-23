@@ -3,4 +3,14 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
+# Google Search + AI Overviews / Gemini grounding (explicit allow)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://spicybean.net/sitemap.xml
