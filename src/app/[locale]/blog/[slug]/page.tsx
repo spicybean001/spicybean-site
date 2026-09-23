@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
+import { localeUrl, languageAlternates } from "@/i18n/urls";
 import Link from "next/link";
 import ZhCNGuide from "@/components/blog/ZhCNGuide";
 import ZhTWGuide from "@/components/blog/ZhTWGuide";
@@ -315,7 +316,7 @@ export async function generateMetadata({
 
   const desc = descriptions[slug]?.[locale] || "";
   const siteUrl = "https://spicybean.net";
-  const path = `/${locale}/blog/${slug}`;
+  const path = localeUrl(locale, `/blog/${slug}`);
   const ogImage = slug === "k4-neon-noir-story"
     ? `${siteUrl}/images/blog/k4-neon-noir-cover.jpg`
     : slug === "k2-white-love-story"
@@ -332,7 +333,7 @@ export async function generateMetadata({
     openGraph: {
       title: langData.title,
       description: desc,
-      url: `${siteUrl}${path}`,
+      url: path,
       siteName: "SPICYBEAN",
       images: [{ url: ogImage, width: 800, height: 600 }],
       locale: locale === "zh-CN" ? "zh_CN" : locale === "zh-TW" ? "zh_TW" : locale === "ko-KR" ? "ko_KR" : locale === "ja-JP" ? "ja_JP" : locale === "th-TH" ? "th_TH" : "en_US",
@@ -346,15 +347,8 @@ export async function generateMetadata({
       images: [ogImage],
     },
     alternates: {
-      canonical: `${siteUrl}${path}`,
-      languages: {
-        en: `${siteUrl}/en/blog/${slug}`,
-        "zh-CN": `${siteUrl}/zh-CN/blog/${slug}`,
-        "zh-TW": `${siteUrl}/zh-TW/blog/${slug}`,
-        "ko-KR": `${siteUrl}/ko-KR/blog/${slug}`,
-        "ja-JP": `${siteUrl}/ja-JP/blog/${slug}`,
-        "th-TH": `${siteUrl}/th-TH/blog/${slug}`,
-      },
+      canonical: path,
+      languages: languageAlternates(`/blog/${slug}`),
     },
   };
 }
@@ -553,3 +547,4 @@ export default async function ArticlePage({
     </div>
   );
 }
+
