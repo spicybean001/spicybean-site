@@ -1,3 +1,4 @@
+http=200 size=13772B
 import type { Metadata } from "next";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
@@ -302,6 +303,76 @@ export default async function LocaleLayout({
           />
         )}
 
+        {/* Structured Data: FAQPage (en, default root) — Bing/Copilot·글로벌 LLM 인용용 영문 문답 */}
+        {locale === "en" && (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "inLanguage": "en",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is SPICYBEAN?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "SPICYBEAN is a South Korea-based golf gear brand, designed in Seoul, making expressive golf headcovers (K1-K4 series) and golf gloves (GLV series) in premium PU leather with microfiber lining."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is SPICYBEAN a food or spice brand?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "No. SPICYBEAN is not a food, spice or bean brand. It is a Korean golf equipment and accessories brand making golf headcovers and golf gloves."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Which SPICYBEAN headcover series are there?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "Four series: K1 Classic Noir (black pebbled PU), K2 Signature White (white with embroidered heart), K3 Spicy Red (vibrant red all-over print) and K4 Cyber Skull (cyberpunk limited edition flagship, carbon-fiber texture PU)."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do SPICYBEAN headcovers fit my clubs?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "Yes. Universal fit for drivers up to 460cc, fairway woods, hybrids, and both blade and mallet putters."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How much do SPICYBEAN headcovers cost?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "In China, K1-K3 headcovers are ¥148 each and the K4 flagship is ¥248; overseas pricing is $25 USD for K1-K3 and $36 USD for K4."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Where can I buy SPICYBEAN products?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text":
+                        "Official site spicybean.net, Tmall and JD.com flagship stores in China, and Coupang in Korea. Contact: hi@spicybean.net"
+                    }
+                  }
+                ]
+              })
+            }}
+          />
+        )}
+
         {/* Structured Data: WebSite (global) */}
         <script
           type="application/ld+json"
@@ -337,6 +408,7 @@ export default async function LocaleLayout({
     </html>
   );
 }
+
 
 
 
