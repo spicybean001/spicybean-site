@@ -1,4 +1,3 @@
-http=200 size=13772B
 import type { Metadata } from "next";
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
