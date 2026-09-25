@@ -13,4 +13,11 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+# Perplexity AI search (explicit allow — PerplexityBot crawl + Perplexity-User on-demand fetch)
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
 Sitemap: https://spicybean.net/sitemap.xml
