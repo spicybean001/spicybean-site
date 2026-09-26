@@ -20,4 +20,14 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
+# OpenAI / ChatGPT (explicit allow — training crawl + ChatGPT search index + on-demand fetch)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 Sitemap: https://spicybean.net/sitemap.xml
