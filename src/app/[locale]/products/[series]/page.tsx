@@ -7,6 +7,45 @@ import { setRequestLocale } from "next-intl/server";
 const validSeries = ["k1", "k2", "k3", "k4"] as const;
 type Series = (typeof validSeries)[number];
 
+// GEO 2026-09-29 — Product/Offer structured data for the global locales.
+// Google AI Overviews / Gemini grounding read Product + Offer markup; before this
+// patch only the ko-KR brand level carried any offer data, so the en / zh-CN /
+// zh-TW / ja-JP product pages had no machine-readable price at all.
+const seriesPrice: Record<Series, { cny: string; usd: string }> = {
+  k1: { cny: "148", usd: "25" },
+  k2: { cny: "148", usd: "25" },
+  k3: { cny: "148", usd: "25" },
+  k4: { cny: "248", usd: "36" },
+};
+
+function productJsonLd(locale: string, series: Series) {
+  const meta = seriesMeta[series]?.[locale] || seriesMeta[series]?.en;
+  const isZh = locale === "zh-CN" || locale === "zh-TW";
+  const url = localeUrl(locale, `/products/${series}`);
+  const title = meta?.title || `SPICYBEAN ${series.toUpperCase()} Golf Headcover`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: title.replace(/\s*\|\s*SPICYBEAN\s*$/, ""),
+    description: meta?.description || "",
+    image: [`https://spicybean.net/images/${series}/cover.jpg`],
+    sku: `SPICYBEAN-${series.toUpperCase()}`,
+    category: "Golf headcovers",
+    brand: { "@type": "Brand", name: "SPICYBEAN" },
+    inLanguage: locale,
+    url,
+    offers: {
+      "@type": "Offer",
+      url,
+      priceCurrency: isZh ? "CNY" : "USD",
+      price: isZh ? seriesPrice[series].cny : seriesPrice[series].usd,
+      availability: "https://schema.org/InStock",
+      itemCondition: "https://schema.org/NewCondition",
+      seller: { "@type": "Organization", name: "SPICYBEAN", url: "https://spicybean.net" },
+    },
+  };
+}
+
 const seriesMeta: Record<string, Record<string, { title: string; description: string }>> = {
   k1: {
     "zh-CN": { title: "K1黑色经典PU高尔夫杆套 | SPICYBEAN", description: "意大利工艺级黑色PU皮革高尔夫杆头套。经典百搭，适配一号木、球道木、铁木杆。" },
@@ -102,7 +141,18 @@ export default async function ProductPage({
     );
   }
 
-  return <ProductDetail series={series} />;
+  // ko-KR keeps its existing brand-level offer catalog in the ko layout.
+  if (locale === "ko-KR") {
+    return <ProductDetail series={series} />;
+  }
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd(locale, series as Series)) }}
+      />
+      <ProductDetail series={series} />
+    </>
+  );
 }
-
-
