@@ -30,4 +30,20 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+# Microsoft Bing / Copilot (explicit allow — Copilot 이 별도 크롤러 없이 Bing 인덱스를 사용)
+User-agent: Bingbot
+Allow: /
+
+User-agent: AdIdxBot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+User-agent: MicrosoftPreview
+Allow: /
+
+User-agent: BingVideoPreview
+Allow: /
+
 Sitemap: https://spicybean.net/sitemap.xml
