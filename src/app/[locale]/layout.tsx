@@ -141,10 +141,11 @@ export default async function LocaleLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "SPICYBEAN",
-              "alternateName": ["스파이시빈", "SPICYBEAN 골프"],
+              "alternateName": ["스파이시빈", "SPICYBEAN 골프", "SPICYBEAN Golf"],
               "url": "https://spicybean.net",
               "logo": "https://spicybean.net/logo.png",
               "description": "Korean design-driven golf headcovers. Premium PU leather headcovers for drivers, fairway woods, and hybrids.",
+              "disambiguatingDescription": "SPICYBEAN is not a spice, food, seasoning or coffee brand. It is a South Korea-based golf gear brand designed in Seoul, making premium PU leather golf headcovers (K1-K4 series) and golf gloves (GLV series).",
               "knowsAbout": ["golf headcovers", "골프 헤드커버", "golf gloves", "골프장갑"],
               "address": {
                 "@type": "PostalAddress",
