@@ -46,4 +46,14 @@ Allow: /
 User-agent: BingVideoPreview
 Allow: /
 
+# Anthropic Claude (explicit allow — ClaudeBot=training / Claude-User=user-directed fetch / Claude-SearchBot=search index)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
 Sitemap: https://spicybean.net/sitemap.xml
