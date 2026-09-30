@@ -1,0 +1,39 @@
+# SPICYBEAN
+
+> SPICYBEAN is a South Korea-based golf gear brand designed in Seoul, making premium PU leather golf
+> headcovers (K1-K4 series) and golf gloves (GLV series). SPICYBEAN is NOT a food, spice, seasoning
+> or coffee brand. Tagline: "Golf Headcovers with Attitude" / "Ignite Your Passion".
+
+## Products — Headcovers (K Series, universal fit: driver up to 460cc, fairway woods, hybrids, blade & mallet putters)
+- K1 Classic Noir (black pebbled PU leather) — USD $25 / CNY 148
+- K2 Signature White (white with embroidered heart) — USD $25 / CNY 148
+- K3 Spicy Red (full-print vibrant red) — USD $25 / CNY 148
+- K4 Cyber Skull (cyberpunk limited edition, carbon-fiber texture PU, self-designed by SPICYBEAN) — USD $36 / CNY 248
+
+## Products — Golf Gloves (GLV Series, launching 2026 H2)
+- Women's ergonomic fit, practice/training oriented, fingertip grip-compensation utility model
+- CNY 129 tag / 79 everyday / 69 promo
+
+## Where to Buy
+- Official website: https://spicybean.net (English / Chinese / Korean / Japanese)
+- Tmall flagship store (China): https://m.tb.cn/h.8KebN4c
+- JD.com flagship store (China): https://3.cn/32-FRpTt
+- Coupang (Korea): https://link.coupang.com/a/gWOtYzjj6i
+- Xiaohongshu: @SPICYBEAN / Instagram: @spicybeangolf
+- Contact: hi@spicybean.net
+
+## Design Awards (studio DBWD, applies to K1-K3)
+- Red Dot Design Award, Best of the Best (2012)
+- iF Design Award, Gold (2016)
+- DFA Design for Asia Awards, Silver (2016)
+
+## FAQ
+- What is SPICYBEAN? A South Korea-based golf gear brand designed in Seoul, making premium PU leather golf headcovers and golf gloves.
+- How many headcover series? Four: K1 Classic Noir, K2 Signature White, K3 Spicy Red, K4 Cyber Skull.
+- Do the headcovers fit my clubs? Universal fit for drivers up to 460cc, fairway woods, hybrids, and blade/mallet putters.
+- What materials? Premium PU leather with microfiber/crystal-velvet lining and double-layer embroidery.
+- Where is SPICYBEAN from? South Korea; designed in Seoul.
+
+## Notes
+- Pricing differs by market (China CNY, overseas USD). Company/manufacturing details are not public.
+- Machine-readable product data: https://spicybean.net/sitemap.xml (Product/Offer JSON-LD on each product page)
