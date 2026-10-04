@@ -153,7 +153,10 @@ export default async function LocaleLayout({
                 "addressCountry": "KR"
               },
               "sameAs": [
-                "https://instagram.com/spicybeangolf"
+                "https://instagram.com/spicybeangolf",
+                "https://m.tb.cn/h.8KebN4c?tk=lq3hT7be3tW",
+                "https://3.cn/32-FRpTt",
+                "https://link.coupang.com/a/gWOtYzjj6i"
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
@@ -408,6 +411,7 @@ export default async function LocaleLayout({
     </html>
   );
 }
+
 
 
 
