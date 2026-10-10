@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link href={`/${locale}`} className="flex items-center gap-3">
+            <Link href={locale === "en" ? "/" : `/${locale}`} className="flex items-center gap-3">
               <img
                 src="/logo.png"
                 alt="SPICYBEAN"
@@ -181,3 +181,4 @@ export default function Footer() {
     </footer>
   );
 }
+
