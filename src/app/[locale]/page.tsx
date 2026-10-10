@@ -1,8 +1,14 @@
 import Hero from "@/components/Hero";
 import Products from "@/components/Products";
 import About from "@/components/About";
+import { localeUrl } from "@/i18n/urls";
 
-export default function HomePage() {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   return (
     <>
       {/* Structured Data: BreadcrumbList (Home) */}
@@ -38,25 +44,25 @@ export default function HomePage() {
               {
                 "@type": "ListItem",
                 "position": 1,
-                "url": "https://spicybean.net/en/products/k1",
+                "url": localeUrl(locale, "/products/k1"),
                 "name": "K1 — Classic Black Pebble Grain"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
-                "url": "https://spicybean.net/en/products/k2",
+                "url": localeUrl(locale, "/products/k2"),
                 "name": "K2 — White Heart"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
-                "url": "https://spicybean.net/en/products/k3",
+                "url": localeUrl(locale, "/products/k3"),
                 "name": "K3 — Warm Red"
               },
               {
                 "@type": "ListItem",
                 "position": 4,
-                "url": "https://spicybean.net/en/products/k4",
+                "url": localeUrl(locale, "/products/k4"),
                 "name": "K4 — Neon Noir Cyber Skull Limited Edition"
               }
             ]
