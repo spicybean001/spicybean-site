@@ -12,6 +12,9 @@ export default function Header() {
   const t = useTranslations();
   const locale = useLocale();
   const pathname = usePathname();
+  // localePrefix "as-needed": default locale (en) is served unprefixed — internal
+  // links must match, otherwise every nav click hits a 307 redirect.
+  const prefix = locale === "en" ? "" : `/${locale}`;
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
@@ -45,7 +48,9 @@ export default function Header() {
     } else {
       segments.unshift(newLocale);
     }
-    return "/" + segments.join("/");
+    // strip the prefix when switching to the default locale (served unprefixed)
+    const out = newLocale === "en" ? segments.slice(1) : segments;
+    return "/" + out.join("/");
   };
 
   return (
@@ -53,7 +58,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link
-          href={`/${locale}`}
+          href={prefix || "/"}
           className="flex items-center gap-3"
         >
           <img
@@ -69,7 +74,7 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-sm tracking-widest uppercase">
           <Link
-            href={`/${locale}`}
+            href={prefix || "/"}
             className="text-spicy-gray hover:text-spicy-neon transition-colors duration-300"
           >
             {t("nav.home")}
@@ -101,7 +106,7 @@ export default function Header() {
                 {seriesList.map((key) => (
                   <Link
                     key={key}
-                    href={`/${locale}/products/${key}`}
+                    href={`${prefix}/products/${key}`}
                     onClick={() => setProductsOpen(false)}
                     className="flex items-center gap-3 px-4 py-3 text-sm transition-colors hover:bg-spicy-red/10 group"
                   >
@@ -127,19 +132,19 @@ export default function Header() {
           </div>
 
           <Link
-            href={`/${locale}/blog`}
+            href={`${prefix}/blog`}
             className="text-spicy-gray hover:text-spicy-neon transition-colors duration-300"
           >
             {t("nav.blog")}
           </Link>
           <Link
-            href={`/${locale}#about`}
+            href={`${prefix}#about`}
             className="text-spicy-gray hover:text-spicy-neon transition-colors duration-300"
           >
             {t("nav.about")}
           </Link>
           <Link
-            href={`/${locale}#contact`}
+            href={`${prefix}#contact`}
             className="text-spicy-gray hover:text-spicy-neon transition-colors duration-300"
           >
             {t("nav.contact")}
@@ -223,7 +228,7 @@ export default function Header() {
         <div className="md:hidden border-t border-spicy-red/20 bg-spicy-dark/95 backdrop-blur-md">
           <div className="flex flex-col px-6 py-4 gap-4">
             <Link
-              href={`/${locale}`}
+              href={prefix || "/"}
               onClick={() => setMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-spicy-gray hover:text-spicy-neon transition-colors"
             >
@@ -251,7 +256,7 @@ export default function Header() {
                   {seriesList.map((key) => (
                     <Link
                       key={key}
-                      href={`/${locale}/products/${key}`}
+                      href={`${prefix}/products/${key}`}
                       onClick={() => setMenuOpen(false)}
                       className="text-xs tracking-wider text-spicy-gray/70 hover:text-spicy-neon transition-colors"
                     >
@@ -263,21 +268,21 @@ export default function Header() {
             </div>
 
             <Link
-              href={`/${locale}/blog`}
+              href={`${prefix}/blog`}
               onClick={() => setMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-spicy-gray hover:text-spicy-neon transition-colors"
             >
               {t("nav.blog")}
             </Link>
             <Link
-              href={`/${locale}#about`}
+              href={`${prefix}#about`}
               onClick={() => setMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-spicy-gray hover:text-spicy-neon transition-colors"
             >
               {t("nav.about")}
             </Link>
             <Link
-              href={`/${locale}#contact`}
+              href={`${prefix}#contact`}
               onClick={() => setMenuOpen(false)}
               className="text-sm tracking-widest uppercase text-spicy-gray hover:text-spicy-neon transition-colors"
             >
