@@ -43,7 +43,7 @@ export default function JaFAQ() {
         </div>
 
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
-          <h3 className="text-lg font-semibold text-spicy-white mb-2">K4ネオンノワール限定版の特徴は？</h3>
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">K4サイバースカル限定版の特徴は？</h3>
           <p className="text-sm text-spicy-gray">
             K4はSPICYBEAN初のシグネチャー限定版シリーズです。カーボンテクスチャーPU素材、60,000ステッチの二重刺繍、サイバーパンクスタイルのスカルデザイン、蛍光ピンクとエレクトリックブルーの配色が特徴。すべてのヘッドカバーにSPICYBEANのシグネチャー刺繍が施されています。
           </p>
