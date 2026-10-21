@@ -6,7 +6,7 @@ export default function ZhTWK4Story() {
           <source srcSet="/images/blog/k4-neon-noir-hero.webp" type="image/webp" />
           <img
             src="/images/blog/k4-neon-noir-hero.jpg"
-            alt="K4 暗夜霓虹 賽博龐克高爾夫桿套"
+            alt="K4 賽博骷髏 賽博龐克高爾夫桿套"
             className="w-full h-full object-cover"
           />
         </picture>
@@ -51,7 +51,7 @@ export default function ZhTWK4Story() {
             <source srcSet="/images/k4/sketch.webp" type="image/webp" />
             <img
               src="/images/k4/sketch.jpg"
-              alt="K4 暗夜霓虹設計手稿——草稿本上的初稿"
+              alt="K4 賽博骷髏設計手稿——草稿本上的初稿"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -65,7 +65,7 @@ export default function ZhTWK4Story() {
             <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
             <img
               src="/images/k4/lineart-product.jpg"
-              alt="K4 暗夜霓虹產品線稿——細化後的完整設計圖"
+              alt="K4 賽博骷髏產品線稿——細化後的完整設計圖"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -103,7 +103,7 @@ export default function ZhTWK4Story() {
       <div className="my-8 aspect-[4/3] rounded-sm bg-spicy-darkgray overflow-hidden">
         <img
           src="/images/k4/img-7.jpg"
-          alt="K4 暗夜霓虹系列展示"
+          alt="K4 賽博骷髏系列展示"
           className="w-full h-full object-cover"
           loading="lazy"
         />
