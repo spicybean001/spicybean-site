@@ -51,19 +51,19 @@ export default async function HomePage({
                 "@type": "ListItem",
                 "position": 2,
                 "url": localeUrl(locale, "/products/k2"),
-                "name": "K2 — White Heart"
+                "name": "K2 — Signature White"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "url": localeUrl(locale, "/products/k3"),
-                "name": "K3 — Warm Red"
+                "name": "K3 — Spicy Red"
               },
               {
                 "@type": "ListItem",
                 "position": 4,
                 "url": localeUrl(locale, "/products/k4"),
-                "name": "K4 — Neon Noir Cyber Skull Limited Edition"
+                "name": "K4 — Cyber Skull Limited Edition"
               }
             ]
           })
