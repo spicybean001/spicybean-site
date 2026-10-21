@@ -157,7 +157,7 @@ const blogPosts = {
     {
       slug: "spicybean-series-comparison",
       title: "K1/K2/K3/K4 비교: 나에게 맞는 SPICYBEAN 헤드커버는?",
-      excerpt: "K1 블랙, K2 화이트, K3 레드, K4 네온 느와르 — 가격, 스타일, 추천을 한눈에 비교합니다.",
+      excerpt: "K1 블랙, K2 화이트, K3 레드, K4 사이버 스컬 — 가격, 스타일, 추천을 한눈에 비교합니다.",
       date: "2026-07-30",
       image: "/images/blog/brand-guide-cover.jpg",
       lang: "ko-KR" as const,
