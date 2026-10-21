@@ -43,7 +43,7 @@ export default function ThFAQ() {
         </div>
 
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
-          <h3 className="text-lg font-semibold text-spicy-white mb-2">อะไรที่ทำให้ K4 Neon Noir ลิมิเต็ดอิดิชันพิเศษ?</h3>
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">อะไรที่ทำให้ K4 Cyber Skull ลิมิเต็ดอิดิชันพิเศษ?</h3>
           <p className="text-sm text-spicy-gray">
             K4 คือซีรีส์ซิกเนเจอร์ลิมิเต็ดรุ่นแรกของ SPICYBEAN มีวัสดุ PU ลายคาร์บอนไฟเบอร์ งานปักสองชั้น 60,000 ฝีเข็ม ดีไซน์กะโหลกสไตล์ไซเบอร์พังค์ และโทนสีฟลูออเรสเซนต์ชมพูกับฟ้าไฟฟ้า ทุกคัฟเวอร์มีงานปักซิกเนเจอร์ของแบรนด์ SPICYBEAN บ่งบอกว่านี่คือผลงานที่น่าภูมิใจที่สุดของทีมดีไซน์
           </p>
