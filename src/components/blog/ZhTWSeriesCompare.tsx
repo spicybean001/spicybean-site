@@ -28,7 +28,7 @@ export default function ZhTWSeriesCompare() {
       <section className="mb-12 p-6 rounded-sm border border-zinc-600 bg-gradient-to-br from-zinc-800 to-spicy-dark">
         <h2 className="text-2xl font-bold text-spicy-white mt-0">K2 白色愛心 — 球場「小心機」</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/images/k2/cover.jpg" alt="K2 White Heart" className="rounded-sm w-full object-cover" loading="lazy" />
+          <img src="/images/k2/cover.jpg" alt="K2 Signature White" className="rounded-sm w-full object-cover" loading="lazy" />
           <div>
             <p className="text-spicy-gray/80">純白超纖 PU 配上標誌性愛心刺繡。韓式浪漫美學的代表，拍照出片率極高。女生和高球情侶的最愛。</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
@@ -45,7 +45,7 @@ export default function ZhTWSeriesCompare() {
       <section className="mb-12 p-6 rounded-sm border border-red-800/50 bg-gradient-to-br from-spicy-neon-dim/30 to-spicy-dark">
         <h2 className="text-2xl font-bold text-spicy-white mt-0">K3 辛紅 — 熱情滿桿</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/images/k3/cover.jpg" alt="K3 Warm Red" className="rounded-sm w-full object-cover" loading="lazy" />
+          <img src="/images/k3/cover.jpg" alt="K3 Spicy Red" className="rounded-sm w-full object-cover" loading="lazy" />
           <div>
             <p className="text-spicy-gray/80">滿版辛紅印花，熱情奔放的設計風格。球場上一眼就能看到——如果你喜歡引人注目，K3 就是你的菜。</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
@@ -62,7 +62,7 @@ export default function ZhTWSeriesCompare() {
       <section className="mb-12 p-6 rounded-sm border border-violet-800/40 bg-gradient-to-br from-spicy-dark to-violet-950/30">
         <h2 className="text-2xl font-bold text-spicy-white mt-0">K4 賽博骷髏 — 旗艦暗黑美學</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/images/k4/cover.jpg" alt="K4 Neon Noir" className="rounded-sm w-full object-cover" loading="lazy" />
+          <img src="/images/k4/cover.jpg" alt="K4 Cyber Skull" className="rounded-sm w-full object-cover" loading="lazy" />
           <div>
             <p className="text-spicy-gray/80">碳纖維 PU 紋理配上骷髏刺繡，SPICYBEAN 的旗艦限定款。賽博龐克風格，暗夜霓虹主題。做工最複雜、用料最頂、辨識度最高。</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
