@@ -6,14 +6,14 @@ export default function JaK4Story() {
           <source srcSet="/images/blog/k4-neon-noir-hero.webp" type="image/webp" />
           <img
             src="/images/blog/k4-neon-noir-hero.jpg"
-            alt="K4 ネオンノワール サイバーパンクゴルフヘッドカバー"
+            alt="K4 サイバースカル サイバーパンクゴルフヘッドカバー"
             className="w-full h-full object-cover"
           />
         </picture>
       </div>
 
       <p className="lead text-xl text-spicy-white font-medium">
-        ゴルフヘッドカバーに性格があるとしたら、K4 ネオンノワールは最も叛逆的な存在でしょう。静かにフェアウェイに横たわるのではなく、サイバーパンクなネオンの下で、スカル刺繍のメッセージを輝かせています。
+        ゴルフヘッドカバーに性格があるとしたら、K4 サイバースカルは最も叛逆的な存在でしょう。静かにフェアウェイに横たわるのではなく、サイバーパンクなネオンの下で、スカル刺繍のメッセージを輝かせています。
       </p>
 
       <h2>デザインの始まり：ゴルフとサイバーパンクの融合</h2>
@@ -39,7 +39,7 @@ export default function JaK4Story() {
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/sketch.webp" type="image/webp" />
-            <img src="/images/k4/sketch.jpg" alt="K4 ネオンノワール 初期デザインスケッチ" className="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/k4/sketch.jpg" alt="K4 サイバースカル 初期デザインスケッチ" className="w-full h-full object-cover" loading="lazy" />
           </picture>
           <div className="p-3 text-center">
             <span className="text-xs text-spicy-gray/60 tracking-wider">デザインスケッチ · 最初の一線</span>
@@ -48,7 +48,7 @@ export default function JaK4Story() {
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
-            <img src="/images/k4/lineart-product.jpg" alt="K4 ネオンノワール 最終製品ラインアート" className="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/k4/lineart-product.jpg" alt="K4 サイバースカル 最終製品ラインアート" className="w-full h-full object-cover" loading="lazy" />
           </picture>
           <div className="p-3 text-center">
             <span className="text-xs text-spicy-gray/60 tracking-wider">製品ラインアート · 最終設計図</span>
@@ -77,12 +77,12 @@ export default function JaK4Story() {
       </ul>
 
       <div className="my-8 aspect-[4/3] rounded-sm bg-spicy-darkgray overflow-hidden">
-        <img src="/images/k4/img-7.jpg" alt="K4 ネオンノワール コレクション" className="w-full h-full object-cover" loading="lazy" />
+        <img src="/images/k4/img-7.jpg" alt="K4 サイバースカル コレクション" className="w-full h-full object-cover" loading="lazy" />
       </div>
 
       <h2>ソウルからあなたのバッグへ</h2>
             <p className="text-spicy-white font-semibold">
-        K4 ネオンノワール シグネチャー限定版 — ただいま発売中。
+        K4 サイバースカル シグネチャー限定版 — ただいま発売中。
       </p>
     </article>
   );
