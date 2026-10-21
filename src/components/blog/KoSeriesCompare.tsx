@@ -28,7 +28,7 @@ export default function KoSeriesCompare() {
       <section className="mb-12 p-6 rounded-sm border border-zinc-600 bg-gradient-to-br from-zinc-800 to-spicy-dark">
         <h2 className="text-2xl font-bold text-spicy-white mt-0">K2 화이트 러브 — 코스의 로맨틱</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/images/k2/cover.jpg" alt="K2 White Heart" className="rounded-sm w-full object-cover" loading="lazy" />
+          <img src="/images/k2/cover.jpg" alt="K2 Signature White" className="rounded-sm w-full object-cover" loading="lazy" />
           <div>
             <p className="text-spicy-gray/80">순백 마이크로화이버 PU와 시그니처 하트 자수. 사진 찍기 가장 좋은 시리즈.</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
@@ -45,7 +45,7 @@ export default function KoSeriesCompare() {
       <section className="mb-12 p-6 rounded-sm border border-red-800/50 bg-gradient-to-br from-spicy-neon-dim/30 to-spicy-dark">
         <h2 className="text-2xl font-bold text-spicy-white mt-0">K3 레드 — 열정을 담아</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/images/k3/cover.jpg" alt="K3 Warm Red" className="rounded-sm w-full object-cover" loading="lazy" />
+          <img src="/images/k3/cover.jpg" alt="K3 Spicy Red" className="rounded-sm w-full object-cover" loading="lazy" />
           <div>
             <p className="text-spicy-gray/80">풀커버리지 레드 프린트. 코스에서 가장 눈에 띄는 선택.</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
@@ -60,9 +60,9 @@ export default function KoSeriesCompare() {
 
       {/* K4 */}
       <section className="mb-12 p-6 rounded-sm border border-violet-800/40 bg-gradient-to-br from-spicy-dark to-violet-950/30">
-        <h2 className="text-2xl font-bold text-spicy-white mt-0">K4 네온 느와르 — 다크 에스테틱</h2>
+        <h2 className="text-2xl font-bold text-spicy-white mt-0">K4 사이버 스컬 — 다크 에스테틱</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/images/k4/cover.jpg" alt="K4 Neon Noir" className="rounded-sm w-full object-cover" loading="lazy" />
+          <img src="/images/k4/cover.jpg" alt="K4 Cyber Skull" className="rounded-sm w-full object-cover" loading="lazy" />
           <div>
             <p className="text-spicy-gray/80">카본 파이버 PU 텍스처에 스컬 자수. SPICYBEAN의 플래그십 한정판. 사이버펑크 감성의 대표작.</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
