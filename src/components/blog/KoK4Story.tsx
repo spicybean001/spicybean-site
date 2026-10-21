@@ -6,14 +6,14 @@ export default function KoK4Story() {
           <source srcSet="/images/blog/k4-neon-noir-hero.webp" type="image/webp" />
           <img
             src="/images/blog/k4-neon-noir-hero.jpg"
-            alt="K4 네온 느와르 사이버펑크 골프 헤드커버"
+            alt="K4 사이버 스컬 사이버펑크 골프 헤드커버"
             className="w-full h-full object-cover"
           />
         </picture>
       </div>
 
       <p className="lead text-xl text-spicy-white font-medium">
-        골프 헤드커버에도 성격이 있다면, K4 네온 느와르는 가장 반항적인 아이일 것입니다. 잔디 위에 조용히 눕지 않고, 사이버펑크 네온 아래에서 해골 자수 메시지를 반짝이며 존재감을 드러냅니다.
+        골프 헤드커버에도 성격이 있다면, K4 사이버 스컬는 가장 반항적인 아이일 것입니다. 잔디 위에 조용히 눕지 않고, 사이버펑크 네온 아래에서 해골 자수 메시지를 반짝이며 존재감을 드러냅니다.
       </p>
 
       <h2>시작점: 골프가 사이버펑크를 만나다</h2>
@@ -39,7 +39,7 @@ export default function KoK4Story() {
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/sketch.webp" type="image/webp" />
-            <img src="/images/k4/sketch.jpg" alt="K4 네온 느와르 첫 디자인 스케치" className="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/k4/sketch.jpg" alt="K4 사이버 스컬 첫 디자인 스케치" className="w-full h-full object-cover" loading="lazy" />
           </picture>
           <div className="p-3 text-center">
             <span className="text-xs text-spicy-gray/60 tracking-wider">디자인 스케치 · 첫 시작</span>
@@ -48,7 +48,7 @@ export default function KoK4Story() {
         <div className="rounded-sm bg-spicy-darkgray overflow-hidden">
           <picture>
             <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
-            <img src="/images/k4/lineart-product.jpg" alt="K4 네온 느와르 최종 제품 라인아트" className="w-full h-full object-cover" loading="lazy" />
+            <img src="/images/k4/lineart-product.jpg" alt="K4 사이버 스컬 최종 제품 라인아트" className="w-full h-full object-cover" loading="lazy" />
           </picture>
           <div className="p-3 text-center">
             <span className="text-xs text-spicy-gray/60 tracking-wider">제품 라인아트 · 최종 설계도</span>
@@ -77,12 +77,12 @@ export default function KoK4Story() {
       </ul>
 
       <div className="my-8 aspect-[4/3] rounded-sm bg-spicy-darkgray overflow-hidden">
-        <img src="/images/k4/img-7.jpg" alt="K4 네온 느와르 컬렉션" className="w-full h-full object-cover" loading="lazy" />
+        <img src="/images/k4/img-7.jpg" alt="K4 사이버 스컬 컬렉션" className="w-full h-full object-cover" loading="lazy" />
       </div>
 
       <h2>서울에서 당신의 골프백까지</h2>
             <p className="text-spicy-white font-semibold">
-        K4 네온 느와르 시그니처 한정판 — 지금 만나보세요.
+        K4 사이버 스컬 시그니처 한정판 — 지금 만나보세요.
       </p>
     </article>
   );
