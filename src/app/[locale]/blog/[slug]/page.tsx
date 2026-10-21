@@ -260,12 +260,12 @@ const descriptions: Record<string, Record<string, string>> = {
     "th-TH": "ทุกอย่างที่ต้องรู้เกี่ยวกับวัสดุ ไซส์ สไตล์ และการดูแลคัฟเวอร์หัวไม้กอล์ฟ คู่มือฉบับสมบูรณ์จาก SPICYBEAN",
   },
   "k4-neon-noir-story": {
-    "zh-CN": "K4赛博骷髅暗夜霓虹高尔夫杆套的设计诞生故事。从设计手稿到6万针刺绣，SPICYBEAN最具暗黑美学的限定款。",
-    "zh-TW": "K4賽博骷髏暗夜霓虹高爾夫桿套的設計誕生故事。從設計手稿到6萬針刺繡，SPICYBEAN最具暗黑美學的限定款。",
-    en: "The story behind K4 Neon Noir cyber skull golf headcover. From design sketches to 60,000 stitches of embroidery — SPICYBEAN's boldest limited edition.",
-    "ko-KR": "K4 네온 느와르 사이버 스컬 골프 헤드커버의 디자인 탄생 이야기. SPICYBEAN의 가장 대담한 한정판.",
-    "ja-JP": "K4サイバースカルネオンノワールゴルフヘッドカバーのデザイン誕生ストーリー。SPICYBEAN限定版。",
-    "th-TH": "เรื่องราวการกำเนิดดีไซน์คัฟเวอร์หัวไม้กอล์ฟ K4 Neon Noir กะโหลกไซเบอร์ จากแบบร่างสู่การปัก 60,000 ฝีเข็ม — ลิมิเต็ดที่กล้าหาญที่สุดของ SPICYBEAN",
+    "zh-CN": "K4赛博骷髅高尔夫杆套的设计诞生故事。从设计手稿到6万针刺绣，SPICYBEAN最具暗黑美学的限定款。",
+    "zh-TW": "K4賽博骷髏高爾夫桿套的設計誕生故事。從設計手稿到6萬針刺繡，SPICYBEAN最具暗黑美學的限定款。",
+    en: "The story behind the K4 Cyber Skull golf headcover. From design sketches to 60,000 stitches of embroidery — SPICYBEAN's boldest limited edition.",
+    "ko-KR": "K4 사이버 스컬 골프 헤드커버의 디자인 탄생 이야기. SPICYBEAN의 가장 대담한 한정판.",
+    "ja-JP": "K4サイバースカルゴルフヘッドカバーのデザイン誕生ストーリー。SPICYBEAN限定版。",
+    "th-TH": "เรื่องราวการกำเนิดดีไซน์คัฟเวอร์หัวไม้กอล์ฟ K4 Cyber Skull กะโหลกไซเบอร์ จากแบบร่างสู่การปัก 60,000 ฝีเข็ม — ลิมิเต็ดที่กล้าหาญที่สุดของ SPICYBEAN",
   },
   "golf-headcover-faq": {
     "zh-CN": "高尔夫杆头套常见问题：材质对比、尺寸选择、品牌区别、保养方法。SPICYBEAN品牌FAQ全覆盖。",
@@ -438,7 +438,7 @@ export default async function ArticlePage({
               "@type": "Article",
               "headline": langData.title,
               "description": slug === "k4-neon-noir-story"
-                ? "K4 Neon Noir cyber skull golf headcover design story"
+                ? "K4 Cyber Skull golf headcover design story"
                 : slug === "k2-white-love-story"
                 ? "K2 White Love golf headcover design story — pure white PU with heart embroidery, Korean romantic aesthetics"
                 : slug === "spicybean-brand-guide"
