@@ -6,14 +6,14 @@ export default function ThK4Story() {
           <source srcSet="/images/blog/k4-neon-noir-hero.webp" type="image/webp" />
           <img
             src="/images/blog/k4-neon-noir-hero.jpg"
-            alt="K4 Neon Noir คัฟเวอร์หัวไม้กอล์ฟไซเบอร์พังค์"
+            alt="K4 Cyber Skull คัฟเวอร์หัวไม้กอล์ฟไซเบอร์พังค์"
             className="w-full h-full object-cover"
           />
         </picture>
       </div>
 
       <p className="lead text-xl text-spicy-white font-medium">
-        ถ้าคัฟเวอร์หัวไม้มีบุคลิก K4 Neon Noir คงเป็นตัวกบฎ ไม่ได้นอนนิ่งบนแฟร์เวย์ แต่เปล่งประกายใต้แสงนีออนไซเบอร์พังค์ พร้อมลายปักกะโหลกที่บอกถึงตัวตน
+        ถ้าคัฟเวอร์หัวไม้มีบุคลิก K4 Cyber Skull คงเป็นตัวกบฎ ไม่ได้นอนนิ่งบนแฟร์เวย์ แต่เปล่งประกายใต้แสงนีออนไซเบอร์พังค์ พร้อมลายปักกะโหลกที่บอกถึงตัวตน
       </p>
 
       <p>
@@ -51,7 +51,7 @@ export default function ThK4Story() {
             <source srcSet="/images/k4/sketch.webp" type="image/webp" />
             <img
               src="/images/k4/sketch.jpg"
-              alt="สเก็ตช์ดีไซน์เริ่มต้นของ K4 Neon Noir บนกระดาษ"
+              alt="สเก็ตช์ดีไซน์เริ่มต้นของ K4 Cyber Skull บนกระดาษ"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -65,7 +65,7 @@ export default function ThK4Story() {
             <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
             <img
               src="/images/k4/lineart-product.jpg"
-              alt="ไลน์อาร์ตผลิตภัณฑ์ขั้นสุดท้ายของ K4 Neon Noir"
+              alt="ไลน์อาร์ตผลิตภัณฑ์ขั้นสุดท้ายของ K4 Cyber Skull"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -92,7 +92,7 @@ export default function ThK4Story() {
       <h2>เคล็ดลับการแต่งสไตล์</h2>
 
       <p>
-        K4 Neon Noir เหมาะกับใคร?
+        K4 Cyber Skull เหมาะกับใคร?
       </p>
       <ul>
         <li><strong>ไม่ซ้ำใคร</strong> — ท่ามกลางคัฟเวอร์สีดำ ขาว น้ำตาลมากมาย สีฟลูออเรสเซนต์ของ K4 ทำให้คุณโดดเด่นทันที</li>
@@ -103,7 +103,7 @@ export default function ThK4Story() {
       <div className="my-8 aspect-[4/3] rounded-sm bg-spicy-darkgray overflow-hidden">
         <img
           src="/images/k4/img-7.jpg"
-          alt="คอลเลกชัน K4 Neon Noir"
+          alt="คอลเลกชัน K4 Cyber Skull"
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -112,7 +112,7 @@ export default function ThK4Story() {
       <h2>จากโซลสู่ถุงกอล์ฟของคุณ</h2>
 
             <p className="text-spicy-white font-semibold">
-        K4 Neon Noir ซิกเนเจอร์ลิมิเต็ดอิดิชัน — วางจำหน่ายแล้ววันนี้
+        K4 Cyber Skull ซิกเนเจอร์ลิมิเต็ดอิดิชัน — วางจำหน่ายแล้ววันนี้
       </p>
     </article>
   );
