@@ -43,7 +43,7 @@ export default function EnFAQ() {
         </div>
 
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
-          <h3 className="text-lg font-semibold text-spicy-white mb-2">What makes the K4 Neon Noir limited edition special?</h3>
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">What makes the K4 Cyber Skull limited edition special?</h3>
           <p className="text-sm text-spicy-gray">
             The K4 is SPICYBEAN's first signature limited edition series. It features carbon fiber textured PU material, 60,000 stitches of dual-layer embroidery, a cyberpunk-style skull design, and fluorescent pink & electric blue color scheme. Each headcover carries the SPICYBEAN brand signature embroidery, marking it as the design team's proudest work.
           </p>
