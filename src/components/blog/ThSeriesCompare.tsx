@@ -28,7 +28,7 @@ export default function ThSeriesCompare() {
       <section className="mb-12 p-6 rounded-sm border border-zinc-600 bg-gradient-to-br from-zinc-800 to-spicy-dark">
         <h2 className="text-2xl font-bold text-spicy-white mt-0">K2 ขาวหัวใจ — เสน่ห์บนสนาม</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/images/k2/cover.jpg" alt="K2 White Heart" className="rounded-sm w-full object-cover" loading="lazy" />
+          <img src="/images/k2/cover.jpg" alt="K2 Signature White" className="rounded-sm w-full object-cover" loading="lazy" />
           <div>
             <p className="text-spicy-gray/80">PU ไมโครไฟเบอร์สีขาวบริสุทธิ์พร้อมงานปักหัวใจซิกเนเจอร์ จุดสูงสุดของความงามโรแมนติกแบบเกาหลี ถ่ายรูปออกมาสวยมาก — เหมาะกับโซเชียลมีเดีย</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
@@ -45,7 +45,7 @@ export default function ThSeriesCompare() {
       <section className="mb-12 p-6 rounded-sm border border-red-800/50 bg-gradient-to-br from-spicy-neon-dim/30 to-spicy-dark">
         <h2 className="text-2xl font-bold text-spicy-white mt-0">K3 แดงอบอุ่น — สตีตเมนต์ที่กล้าหาญ</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/images/k3/cover.jpg" alt="K3 Warm Red" className="rounded-sm w-full object-cover" loading="lazy" />
+          <img src="/images/k3/cover.jpg" alt="K3 Spicy Red" className="rounded-sm w-full object-cover" loading="lazy" />
           <div>
             <p className="text-spicy-gray/80">แดงอบอุ่นพิมพ์เต็มแผ่น กล้าหาญและเปี่ยมพลัง — ชิ้นที่ทำให้คุณโดดเด่นบนแฟร์เวย์</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
@@ -60,9 +60,9 @@ export default function ThSeriesCompare() {
 
       {/* K4 */}
       <section className="mb-12 p-6 rounded-sm border border-violet-800/40 bg-gradient-to-br from-spicy-dark to-violet-950/30">
-        <h2 className="text-2xl font-bold text-spicy-white mt-0">K4 Neon Noir — เรือธงสายดาร์ก</h2>
+        <h2 className="text-2xl font-bold text-spicy-white mt-0">K4 Cyber Skull — เรือธงสายดาร์ก</h2>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <img src="/images/k4/cover.jpg" alt="K4 Neon Noir" className="rounded-sm w-full object-cover" loading="lazy" />
+          <img src="/images/k4/cover.jpg" alt="K4 Cyber Skull" className="rounded-sm w-full object-cover" loading="lazy" />
           <div>
             <p className="text-spicy-gray/80">พื้นผิว PU คาร์บอนไฟเบอร์พร้อมงานปักกะโหลก ลิมิเต็ดเรือธงของ SPICYBEAN ไซเบอร์พังค์พบนีออนนัวร์ งานฝีมือที่ซับซ้อนที่สุด เอกลักษณ์สูงสุด</p>
             <ul className="mt-4 space-y-1 text-sm text-spicy-gray/70">
