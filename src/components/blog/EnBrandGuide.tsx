@@ -36,13 +36,13 @@ export default function EnBrandGuide() {
       <h3>K1 — Classic Black Pebble Grain</h3>
       <p>Simple, understated design in pebble-grain textured PU leather. Perfect for golfers who prefer classic looks. Available for Driver, Fairway Wood, and Hybrid.</p>
 
-      <h3>K2 — White Heart</h3>
+      <h3>K2 — Signature White</h3>
       <p>Pure white PU leather with delicate heart embroidery. Clean, bright Korean aesthetic. One of the most recognizable designs at the driving range.</p>
 
-      <h3>K3 — Warm Red Print</h3>
+      <h3>K3 — Spicy Red</h3>
       <p>Full-print red headcover with bold visual impact. For golfers who want to stand out on the course.</p>
 
-      <h3>K4 — Neon Noir Cyber Skull Limited Edition</h3>
+      <h3>K4 — Cyber Skull Limited Edition</h3>
       <p>SPICYBEAN's first signature limited edition. Carbon fiber textured PU leather, 60,000-stitch dual-layer embroidery, cyberpunk skull design in fluorescent pink & electric blue. Each piece carries the SPICYBEAN signature embroidery — the brand's proudest work.</p>
 
       <hr className="border-white/10" />
