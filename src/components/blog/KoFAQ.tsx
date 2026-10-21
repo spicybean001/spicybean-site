@@ -49,7 +49,7 @@ export default function KoFAQ() {
         </div>
 
         <div className="rounded-sm border border-white/10 bg-white/5 p-6">
-          <h3 className="text-lg font-semibold text-spicy-white mb-2">K4 네온 느와르 한정판의 특별한 점은?</h3>
+          <h3 className="text-lg font-semibold text-spicy-white mb-2">K4 사이버 스컬 한정판의 특별한 점은?</h3>
           <p className="text-sm text-spicy-gray">
             K4는 SPICYBEAN의 첫 번째 시그니처 한정판 시리즈입니다. 카본 텍스처 PU 소재, 60,000스티치 이중 자수, 사이버펑크 스타일의 해골 디자인, 형광 핑크와 일렉트릭 블루 색상이 특징입니다. 모든 헤드커버에는 SPICYBEAN 브랜드 시그니처 자수가 새겨져 있습니다.
           </p>
