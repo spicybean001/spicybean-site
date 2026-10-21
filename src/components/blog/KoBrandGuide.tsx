@@ -48,7 +48,7 @@ export default function KoBrandGuide() {
       <h3>K3 — 웜 레드 프린트</h3>
       <p>과감한 레드 풀프린트 헤드커버. 코스에서 눈에 띄고 싶은 골퍼를 위한 디자인입니다.</p>
 
-      <h3>K4 — 네온 느와르 사이버 스컬 한정판</h3>
+      <h3>K4 — 사이버 스컬 한정판</h3>
       <p>SPICYBEAN의 첫 시그니처 한정판. 카본 텍스처 PU, 60,000스티치 자수, 사이버펑크 해골 디자인. 모든 제품에 SPICYBEAN 시그니처 자수가 새겨져 있습니다.</p>
 
       <hr className="border-white/10" />
