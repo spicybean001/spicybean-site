@@ -6,14 +6,14 @@ export default function EnK4Story() {
           <source srcSet="/images/blog/k4-neon-noir-hero.webp" type="image/webp" />
           <img
             src="/images/blog/k4-neon-noir-hero.jpg"
-            alt="K4 Neon Noir Cyberpunk Golf Headcover"
+            alt="K4 Cyber Skull Cyberpunk Golf Headcover"
             className="w-full h-full object-cover"
           />
         </picture>
       </div>
 
       <p className="lead text-xl text-spicy-white font-medium">
-        If headcovers had personalities, the K4 Neon Noir would be the rebel. Not quietly resting on the fairway, but glowing under cyberpunk neon with a skull-embroidered statement.
+        If headcovers had personalities, the K4 Cyber Skull would be the rebel. Not quietly resting on the fairway, but glowing under cyberpunk neon with a skull-embroidered statement.
       </p>
 
       <p>
@@ -51,7 +51,7 @@ export default function EnK4Story() {
             <source srcSet="/images/k4/sketch.webp" type="image/webp" />
             <img
               src="/images/k4/sketch.jpg"
-              alt="K4 Neon Noir initial design sketch on paper"
+              alt="K4 Cyber Skull initial design sketch on paper"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -65,7 +65,7 @@ export default function EnK4Story() {
             <source srcSet="/images/k4/lineart-product.webp" type="image/webp" />
             <img
               src="/images/k4/lineart-product.jpg"
-              alt="K4 Neon Noir finalized product line art"
+              alt="K4 Cyber Skull finalized product line art"
               className="w-full h-full object-cover"
               loading="lazy"
             />
@@ -92,7 +92,7 @@ export default function EnK4Story() {
       <h2>Styling Tips</h2>
 
       <p>
-        Who is the K4 Neon Noir for?
+        Who is the K4 Cyber Skull for?
       </p>
       <ul>
         <li><strong>No-look-alikes</strong> — Among a sea of black, white, and brown headcovers, the K4's fluorescent accents make you stand out instantly</li>
@@ -103,7 +103,7 @@ export default function EnK4Story() {
       <div className="my-8 aspect-[4/3] rounded-sm bg-spicy-darkgray overflow-hidden">
         <img
           src="/images/k4/img-7.jpg"
-          alt="K4 Neon Noir collection"
+          alt="K4 Cyber Skull collection"
           className="w-full h-full object-cover"
           loading="lazy"
         />
@@ -112,7 +112,7 @@ export default function EnK4Story() {
       <h2>From Seoul to Your Bag</h2>
 
             <p className="text-spicy-white font-semibold">
-        The K4 Neon Noir Signature Limited Edition — available now.
+        The K4 Cyber Skull Signature Limited Edition — available now.
       </p>
     </article>
   );
