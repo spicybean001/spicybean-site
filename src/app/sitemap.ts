@@ -38,6 +38,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const page of staticPages) {
     push(page.path, page.priority, "weekly");
   }
+
+  // Press & media kit (GEO 2026-10-25) — English-only document with a single
+  // canonical (/press), so one entry and one hreflang set instead of six.
+  entries.push({
+    url: localeUrl("en", "/press"),
+    lastModified,
+    changeFrequency: "monthly",
+    priority: 0.6,
+    alternates: {
+      languages: {
+        en: localeUrl("en", "/press"),
+        "x-default": localeUrl("en", "/press"),
+      },
+    },
+  });
   for (const slug of articles) {
     push(`/blog/${slug}`, 0.7, "monthly");
   }
@@ -47,3 +62,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return entries;
 }
+
