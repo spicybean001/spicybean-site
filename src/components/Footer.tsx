@@ -174,11 +174,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-spicy-red/10 text-center">
+        <div className="mt-12 pt-8 border-t border-spicy-red/10 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
           <p className="text-xs text-spicy-gray/60">{t("footer.rights")}</p>
+          <Link
+            href="/press"
+            className="text-xs tracking-widest uppercase text-spicy-gray hover:text-spicy-neon transition-colors"
+          >
+            Press
+          </Link>
         </div>
       </div>
     </footer>
   );
 }
+
 
