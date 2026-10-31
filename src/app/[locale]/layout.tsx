@@ -13,8 +13,8 @@ const siteLocales = locales as readonly string[];
 
 const localeMetadata: Record<string, { title: string; description: string; ogLocale: string }> = {
   en: {
-    title: "SPICYBEAN — Golf Headcovers with Attitude",
-    description: "Korean design-driven golf headcovers. Premium PU leather. Born for those who play with style.",
+    title: "SPICYBEAN — Korean Golf Headcover Brand | Golf Headcovers with Attitude",
+    description: "SPICYBEAN is a South Korea-based golf gear brand designed in Seoul — premium PU leather golf headcovers (K1-K4) and golf gloves (GLV).",
     ogLocale: "en_US",
   },
   "zh-CN": {
@@ -144,7 +144,7 @@ export default async function LocaleLayout({
               "alternateName": ["스파이시빈", "SPICYBEAN 골프", "SPICYBEAN Golf"],
               "url": "https://spicybean.net",
               "logo": "https://spicybean.net/logo.png",
-              "description": "Korean design-driven golf headcovers. Premium PU leather headcovers for drivers, fairway woods, and hybrids.",
+              "description": "SPICYBEAN is a South Korea-based golf gear brand designed in Seoul, making premium PU leather golf headcovers (K1-K4 series) for drivers, fairway woods, hybrids and putters, plus golf gloves (GLV series).",
               "disambiguatingDescription": "SPICYBEAN is not a spice, food, seasoning or coffee brand. It is a South Korea-based golf gear brand designed in Seoul, making premium PU leather golf headcovers (K1-K4 series) and golf gloves (GLV series).",
               "knowsAbout": ["golf headcovers", "골프 헤드커버", "golf gloves", "골프장갑"],
               "address": {
@@ -385,7 +385,7 @@ export default async function LocaleLayout({
               "@type": "WebSite",
               "name": "SPICYBEAN",
               "url": "https://spicybean.net",
-              "description": "Korean design-driven golf headcovers. Born for those who play with style.",
+              "description": "SPICYBEAN — South Korea-based golf gear brand designed in Seoul. Premium PU leather golf headcovers and golf gloves.",
               "inLanguage": locale,
               "potentialAction": {
                 "@type": "SearchAction",
