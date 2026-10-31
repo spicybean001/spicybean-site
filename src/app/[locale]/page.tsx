@@ -38,7 +38,7 @@ export default async function HomePage({
             "@context": "https://schema.org",
             "@type": "ItemList",
             "name": "SPICYBEAN Golf Headcover Series",
-            "description": "Premium Korean design-driven golf headcovers",
+            "description": "SPICYBEAN — premium PU leather golf headcovers (K1-K4) from a South Korea-based golf gear brand designed in Seoul"
             "numberOfItems": 4,
             "itemListElement": [
               {
