@@ -37,6 +37,11 @@ const localeMetadata: Record<string, { title: string; description: string; ogLoc
     description: "韓国発のデザインが生み出すプレミアムゴルフヘッドカバー。レッドドット賞受賞デザイン、高品質PUレザー製。",
     ogLocale: "ja_JP",
   },
+  "th-TH": {
+    title: "SPICYBEAN — ปลอกหัวไม้กอล์ฟ｜แบรนด์ดีไซน์จากเกาหลี",
+    description: "SPICYBEAN แบรนด์อุปกรณ์กอล์ฟจากเกาหลีใต้ ออกแบบที่โซล — ปลอกหัวไม้กอล์ฟหนัง PU ระดับพรีเมียม (K1–K4) และถุงมือกอล์ฟ GLV",
+    ogLocale: "th_TH",
+  },
 };
 
 export async function generateMetadata({
