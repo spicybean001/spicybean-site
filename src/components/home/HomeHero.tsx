@@ -2,114 +2,85 @@
 
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 /**
- * HomeHero — 首页主视觉（优化版）
- * 保留正式版文案与暗色调性，收敛排布：左侧文字 + 右侧产品主图，
- * 背景改为低透明度球场图 + 细线网格，避免满屏噪点堆叠。
+ * HomeHero — 首页主视觉（极简版）
+ *
+ * 设计参照 /showcase：纸感浅底 + 大留白 + 细线 + 克制字号层级。
+ * 首页只保留一个主张、一句话、两个入口，不做数据条与标签堆叠。
  */
 export default function HomeHero() {
   const t = useTranslations();
 
   return (
-    <section className="relative flex min-h-[calc(100vh-64px)] items-center overflow-hidden bg-spicy-black">
-      {/* 背景图 */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/bg-hero-desktop.jpg"
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover opacity-[0.28]"
-          style={{ filter: "grayscale(100%) brightness(0.55) contrast(1.15)", objectPosition: "center 62%" }}
-        />
-        <div className="absolute inset-0 bg-linear-to-r from-spicy-black via-spicy-black/85 to-spicy-black/35" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-t from-spicy-black to-transparent" />
-      </div>
-
-      {/* 细线网格 */}
+    <section className="relative flex min-h-[86vh] items-center overflow-hidden bg-[#F7F6F3] text-[#111111]">
+      {/* 极细网格，几乎不可见，只为给出秩序感 */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        {[18, 38, 58, 78].map((p) => (
-          <div key={p} className="absolute left-0 h-px w-full bg-white/[0.045]" style={{ top: `${p}%` }} />
-        ))}
-        {[16.66, 33.33, 50, 66.66, 83.33].map((p) => (
-          <div key={p} className="absolute top-0 h-full w-px bg-white/[0.03]" style={{ left: `${p}%` }} />
-        ))}
+        <div className="absolute left-0 top-[62%] h-px w-full bg-black/[0.06]" />
+        <div className="absolute left-[62%] top-0 h-full w-px bg-black/[0.04]" />
       </div>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-16 md:px-10 md:py-20">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-          {/* 左：文案 */}
-          <div>
-            <div className="mb-7 flex items-center gap-3">
-              <span className="h-px w-10 bg-spicy-neon/70" />
-              <span className="text-[10px] uppercase tracking-[0.34em] text-spicy-neon/80">
-                Seoul Design · Est. 2024
-              </span>
-            </div>
+      <div className="relative z-10 mx-auto w-full max-w-[1280px] px-6 md:px-12">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
+          {/* 文字 */}
+          <div className="py-16 md:py-24">
+            <p className="text-[10px] uppercase tracking-[0.32em] text-[#8A887F]">
+              Spicybean — Korean Design Headcovers
+            </p>
 
-            <h1 className="text-[2.6rem] font-bold leading-[1.06] tracking-tight text-spicy-white md:text-6xl lg:text-[4.4rem]">
+            <h1 className="mt-9 text-[2.4rem] font-extrabold leading-[1.1] tracking-[-0.02em] md:text-[4rem] md:leading-[1.05]">
               {t("hero.tagline")}
             </h1>
 
-            <p className="mt-7 max-w-lg text-[15px] leading-[1.85] text-spicy-gray/80 md:text-base">
+            <p className="mt-7 max-w-[26rem] text-[14px] leading-[1.95] text-[#6B6B6B] md:text-[15px]">
               {t("hero.subtitle")}
             </p>
 
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-4">
-              <a
-                href="#products"
-                className="inline-flex items-center justify-center gap-2 bg-spicy-red px-8 py-3.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:bg-spicy-neon"
+            <div className="mt-12 flex items-center gap-8">
+              <Link
+                href="/showcase"
+                className="group inline-flex items-center gap-3 bg-[#111111] px-8 py-3.5 text-[11px] uppercase tracking-[0.2em] text-[#F7F6F3] transition-colors hover:bg-[#C0433A]"
               >
                 {t("hero.cta")}
-                <span aria-hidden>→</span>
-              </a>
-              <a
-                href="#about"
-                className="inline-flex items-center justify-center gap-2 border border-white/20 px-8 py-3.5 text-[11px] font-semibold uppercase tracking-[0.22em] text-spicy-white transition-colors hover:border-white/60"
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+              <Link
+                href="/#products"
+                className="text-[11px] uppercase tracking-[0.2em] text-[#111111] transition-opacity hover:opacity-55"
               >
                 {t("hero.cta_alt")}
-              </a>
+              </Link>
             </div>
-
-            {/* 三个数据点 */}
-            <dl className="mt-14 grid max-w-lg grid-cols-3 gap-4 border-t border-white/10 pt-7">
-              {[
-                ["04", "Series"],
-                ["6万+", "Stitches"],
-                ["Red Dot", "Designed"],
-              ].map(([v, k]) => (
-                <div key={k}>
-                  <dt className="text-lg font-semibold text-spicy-white md:text-xl">{v}</dt>
-                  <dd className="mt-1 text-[10px] uppercase tracking-[0.2em] text-spicy-gray/60">{k}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
 
-          {/* 右：产品主图 */}
+          {/* 主视觉：单图，不加边框不加角标 */}
           <div className="relative hidden lg:block">
-            <div className="relative aspect-square w-full overflow-hidden border border-white/10 bg-[#0E0E0E]">
+            <motion.div
+              initial={{ opacity: 0, y: 26 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+              className="relative aspect-[4/5] w-full"
+            >
               <Image
                 src="/images/k4/cover.webp"
                 alt="SPICYBEAN K4"
                 fill
                 priority
-                sizes="(max-width: 1024px) 0px, 40vw"
-                className="object-contain p-[8%]"
+                sizes="(max-width: 1024px) 0px, 44vw"
+                className="object-contain"
               />
-            </div>
-            <div className="absolute -bottom-5 -left-5 bg-spicy-red px-5 py-3">
-              <p className="text-[9px] uppercase tracking-[0.22em] text-white/70">Flagship</p>
-              <p className="text-sm font-semibold text-white">K4 · Cyber Skull</p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 md:block">
-        <span className="text-[9px] uppercase tracking-[0.3em] text-spicy-gray/40">Scroll</span>
+      {/* 底部细线 + 编号（仅此一处小字） */}
+      <div className="absolute inset-x-0 bottom-10 mx-auto hidden max-w-[1280px] items-center justify-between px-12 md:flex">
+        <span className="text-[9px] uppercase tracking-[0.3em] text-[#A8A69F]">01 — Hero</span>
+        <span className="h-px flex-1 bg-black/[0.07] mx-8" />
+        <span className="text-[9px] uppercase tracking-[0.3em] text-[#A8A69F]">Scroll</span>
       </div>
     </section>
   );

@@ -1,68 +1,62 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { Link } from "@/i18n/routing";
+import { motion } from "framer-motion";
 
 /**
- * HomeContact — 采购/合作引导（优化版）
- * 正式版把联系方式分散在 Footer，这里单独成段，承接批发与合作需求。
+ * HomeContact — 收尾（与 /showcase 一致的深色落款）
+ * 一段话 + 一行字，不做卡片、不堆二维码、不铺渠道块。
  */
 export default function HomeContact() {
   const t = useTranslations();
   const locale = useLocale();
   const zh = locale === "zh-CN" || locale === "zh-TW";
 
-  const channels = [
-    { label: t("contact.email"), value: "hi@spicybean.net", href: "mailto:hi@spicybean.net" },
-    { label: t("contact.xiaohongshu"), value: zh ? "SPICYBEAN 高尔夫" : "SPICYBEAN Golf", href: "https://www.xiaohongshu.com/user/profile/5f9e0d2e0000000001004b6e" },
-    { label: t("contact.instagram"), value: "@spicybeangolf", href: "https://instagram.com/spicybeangolf" },
-  ];
-
   return (
-    <section id="contact" className="relative bg-spicy-dark py-20 md:py-24">
-      <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <div className="grid items-center gap-10 border border-white/10 p-8 md:grid-cols-[1.2fr_1fr] md:p-12">
-          <div>
-            <p className="mb-4 text-[10px] uppercase tracking-[0.32em] text-spicy-neon/70">
-              Wholesale & Partnership
-            </p>
-            <h2 className="text-2xl font-bold leading-snug tracking-tight text-spicy-white md:text-4xl">
-              {t("contact.title")}
-            </h2>
-            <p className="mt-5 max-w-md text-sm leading-[1.9] text-spicy-gray/70">
-              {t("contact.subtitle")}
-            </p>
+    <section id="contact" className="relative flex min-h-[56vh] items-center justify-center bg-[#0B0B0B] px-6 py-20 text-[#F2F1ED] md:py-28">
+      <motion.div
+        initial={{ opacity: 0, y: 22 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-12%" }}
+        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+        className="text-center"
+      >
+        <p className="text-[10px] uppercase tracking-[0.3em] text-[#9A9A9A]">Since 2024 · Seoul</p>
 
-            <div className="mt-9 grid grid-cols-1 gap-3 sm:grid-cols-3">
-              {channels.map((c) => (
-                <a
-                  key={c.label}
-                  href={c.href}
-                  target={c.href.startsWith("mailto") ? undefined : "_blank"}
-                  rel="noopener noreferrer"
-                  className="group border border-white/10 px-4 py-4 transition-colors hover:border-white/40"
-                >
-                  <p className="text-[9px] uppercase tracking-[0.2em] text-spicy-gray/50">{c.label}</p>
-                  <p className="mt-2 text-[12px] text-spicy-white/85 group-hover:text-spicy-neon">{c.value}</p>
-                </a>
-              ))}
-            </div>
-          </div>
+        <h2 className="mt-7 max-w-[26rem] text-[1.5rem] font-extrabold leading-[1.35] tracking-[-0.02em] md:max-w-none md:text-[2.1rem]">
+          {t("contact.title")}
+        </h2>
 
-          <div className="flex flex-col items-center justify-center gap-4 border-white/10 md:border-l">
-            <div className="flex h-32 w-32 items-center justify-center border border-white/10 bg-black/40 p-2">
-              <img src="/images/brand/xiaohongshu-qr.png" alt="小红书" className="h-full w-full object-contain" />
-            </div>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-spicy-gray/50">{t("contact.follow")}</p>
-            <Link
-              href="/about"
-              className="mt-1 text-[11px] uppercase tracking-[0.2em] text-spicy-neon/80 hover:text-spicy-neon"
+        <p className="mx-auto mt-5 max-w-[24rem] text-[13px] leading-[1.9] text-[#9A9A9A]">
+          {t("contact.subtitle")}
+        </p>
+
+        <div className="mx-auto mt-12 h-px w-16 bg-white/20" />
+
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-[11px] uppercase tracking-[0.2em]">
+          <a href="mailto:hi@spicybean.net" className="transition-opacity hover:opacity-60">
+            hi@spicybean.net
+          </a>
+          <a
+            href="https://instagram.com/spicybeangolf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-opacity hover:opacity-60"
+          >
+            {t("contact.instagram")}
+          </a>
+          {zh && (
+            <a
+              href="https://www.xiaohongshu.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity hover:opacity-60"
             >
-              {t("nav.about")} →
-            </Link>
-          </div>
+              {t("contact.xiaohongshu")}
+            </a>
+          )}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
