@@ -12,10 +12,10 @@ import { Link } from "@/i18n/routing";
  */
 
 const SERIES: { key: string; index: string; color: string; hex: string; image: string; accent: string }[] = [
-  { key: "k1", index: "01", color: "CARBON NOIR", hex: "#1A1A1A", image: "/images/k1/cover.webp", tmpl: "/images/k1/img-5.webp", accent: "#C9C9C9" },
-  { key: "k2", index: "02", color: "SIGNATURE WHITE", hex: "#F4F2EE", image: "/images/k2/cover.webp", tmpl: "/images/k2/img-5.webp", accent: "#EED9D3" },
-  { key: "k3", index: "03", color: "SPICY RED", hex: "#B4453C", image: "/images/k3/cover.webp", tmpl: "/images/k3/img-5.webp", accent: "#E8A79D" },
-  { key: "k4", index: "04", color: "NEON NOIR", hex: "#2A2140", image: "/images/k4/cover.webp", tmpl: "/images/k4/img-5.webp", accent: "#C4A6FF" },
+  { key: "k1", index: "01", color: "CARBON NOIR", hex: "#1A1A1A", image: "/images/k1/cover.webp", accent: "#C9C9C9" },
+  { key: "k2", index: "02", color: "SIGNATURE WHITE", hex: "#F4F2EE", image: "/images/k2/cover.webp", accent: "#EED9D3" },
+  { key: "k3", index: "03", color: "SPICY RED", hex: "#B4453C", image: "/images/k3/cover.webp", accent: "#E8A79D" },
+  { key: "k4", index: "04", color: "NEON NOIR", hex: "#2A2140", image: "/images/k4/cover.webp", accent: "#C4A6FF" },
 ];
 
 export default function HomeLineup() {
