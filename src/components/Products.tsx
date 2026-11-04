@@ -78,13 +78,13 @@ export default function Products() {
               className={`group relative overflow-hidden rounded-sm border ${s.borderColor} ${s.className} transition-all duration-500 hover:border-spicy-red/40 block`}
             >
               {/* Product Image */}
-              <div className="aspect-[4/3] overflow-hidden bg-spicy-black/50">
+              <div className="aspect-[4/3] overflow-hidden bg-[#101010]">
                 <picture>
                   <source srcSet={s.image.replace(/\.jpg$/, '.webp')} type="image/webp" />
                   <img
                     src={s.image}
                     alt={t(`series.${s.key}.name`)}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
                   />
                 </picture>
               </div>
