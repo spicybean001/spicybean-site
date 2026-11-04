@@ -8,7 +8,6 @@ import HomeContact from "@/components/home/HomeContact";
 export const metadata: Metadata = {
   title: "SPICYBEAN — 首页优化版预览",
   robots: { index: false, follow: false },
-  alternatives: { canonical: "https://spicybean.net/zh-CN/home-v2" },
 };
 
 /**
