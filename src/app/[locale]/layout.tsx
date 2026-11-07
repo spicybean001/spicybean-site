@@ -19,12 +19,12 @@ const localeMetadata: Record<string, { title: string; description: string; ogLoc
   },
   "zh-CN": {
     title: "SPICYBEAN — 高尔夫杆头套｜韩式设计潮牌",
-    description: "韩国设计驱动的高尔夫杆头套品牌。红点奖工作室设计，高品质PU皮革，彰显个性的球场印记。",
+    description: "SPICYBEAN 是韩国设计驱动的高尔夫杆头套品牌，红点奖工作室设计，高品质 PU 皮革，K1~K4 杆头套与 GLV 高尔夫手套。",
     ogLocale: "zh_CN",
   },
   "zh-TW": {
     title: "SPICYBEAN — 高爾夫桿頭套｜韓式設計潮牌",
-    description: "韓國設計驅動的高爾夫桿頭套品牌。紅點獎工作室設計，高品質PU皮革，彰顯個性的球場印記。",
+    description: "SPICYBEAN 是韓國首爾設計的高爾夫用品品牌，紅點獎工作室設計，高品質 PU 皮革桿頭套 K1~K4 與高爾夫手套。",
     ogLocale: "zh_TW",
   },
   "ko-KR": {
@@ -34,7 +34,7 @@ const localeMetadata: Record<string, { title: string; description: string; ogLoc
   },
   "ja-JP": {
     title: "SPICYBEAN — ゴルフヘッドカバー｜韓国発デザインブランド",
-    description: "韓国発のデザインが生み出すプレミアムゴルフヘッドカバー。レッドドット賞受賞デザイン、高品質PUレザー製。",
+    description: "SPICYBEAN は韓国・ソウルでデザインするゴルフ用品ブランド。レッドドット賞受賞デザイン、高品質 PU レザーのヘッドカバー K1〜K4 とゴルフグローブ。",
     ogLocale: "ja_JP",
   },
   "th-TH": {
